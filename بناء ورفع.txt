@@ -1,3 +1,7 @@
 npm run build
 
 git add .
+
+git commit -m "وصف التعديلات"
+
+git push origin main
