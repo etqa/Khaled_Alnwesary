@@ -1,4 +1,4 @@
-import { Building2, ArrowLeft } from "lucide-react";
+import { Building2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -59,7 +59,7 @@ export const ServicesPreview = () => {
           <Button variant="outline" size="lg" asChild>
             <Link to="/services">
               {t("services.preview.cta_all")}
-              <ArrowLeft className="w-5 h-5 rtl:rotate-180" />
+              <ArrowRight className="w-5 h-5 rtl:rotate-180" />
             </Link>
           </Button>
         </div>

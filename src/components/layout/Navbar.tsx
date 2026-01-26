@@ -1,16 +1,16 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Moon, Sun } from "lucide-react";
+import { Menu, X, Moon, Sun, Home, LayoutGrid, Package, Gift, GraduationCap } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
 
 const navLinks = [
-  { href: "/", labelKey: "nav.home" },
-  { href: "/services", labelKey: "nav.services" },
-  { href: "/products", labelKey: "nav.products" },
-  { href: "/tools", labelKey: "nav.tools" },
-  { href: "/courses", labelKey: "nav.courses" },
+  { href: "/", labelKey: "nav.home", icon: Home },
+  { href: "/services", labelKey: "nav.services", icon: LayoutGrid },
+  { href: "/products", labelKey: "nav.products", icon: Package },
+  { href: "/tools", labelKey: "nav.tools", icon: Gift },
+  { href: "/courses", labelKey: "nav.courses", icon: GraduationCap },
 ];
 
 export const Navbar = () => {
@@ -75,11 +75,12 @@ export const Navbar = () => {
               <Link
                 key={link.href}
                 to={link.href}
-                className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${location.pathname === link.href
+                className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 ${location.pathname === link.href
                   ? "text-primary bg-primary/10"
                   : "text-muted-foreground hover:text-foreground hover:bg-muted"
                   }`}
               >
+                <link.icon className="w-4 h-4" />
                 {t(link.labelKey)}
               </Link>
             ))}
@@ -126,11 +127,12 @@ export const Navbar = () => {
                 <Link
                   to={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`w-full text-center px-4 py-4 rounded-xl font-bold text-lg transition-all duration-300 ${location.pathname === link.href
+                  className={`w-full text-center px-4 py-4 rounded-xl font-bold text-lg transition-all duration-300 flex items-center justify-center gap-3 ${location.pathname === link.href
                     ? "text-primary bg-primary/5"
                     : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
                     }`}
                 >
+                  <link.icon className="w-5 h-5" />
                   {t(link.labelKey)}
                 </Link>
                 {index < navLinks.length - 1 && (

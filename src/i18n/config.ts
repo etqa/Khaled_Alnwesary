@@ -27,9 +27,6 @@ i18n
         },
     });
 
-i18n.on('languageChanged', (lng) => {
-    document.documentElement.dir = i18n.dir(lng);
-    document.documentElement.lang = lng;
-});
+// Direction and lang handling moved to App.tsx for better React lifecycle integration
 
 export default i18n;

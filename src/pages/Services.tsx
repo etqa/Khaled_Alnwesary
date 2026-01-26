@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { Building2, Layers, Video, Palette, ArrowLeft, Check } from "lucide-react";
+import { Building2, Layers, Video, Palette, ArrowRight, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 
@@ -129,7 +129,7 @@ const Services = () => {
               <Button variant="hero" size="lg" asChild>
                 <a href="https://wa.me/218928198656" target="_blank" rel="noopener noreferrer">
                   {t("services.page.cta_whatsapp")}
-                  <ArrowLeft className="w-5 h-5 rtl:pl-1 rtl:rotate-180" />
+                  <ArrowRight className="w-5 h-5 rtl:pl-1 rtl:rotate-180" />
                 </a>
               </Button>
             </div>

@@ -1,4 +1,4 @@
-import { Play, Clock, Users, ArrowLeft } from "lucide-react";
+import { Play, Clock, Users, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -48,7 +48,7 @@ export const CoursesPreview = () => {
                 <Button variant="hero" size="lg" asChild>
                   <Link to="/courses/blender">
                     {t("courses.preview.cta_details")}
-                    <ArrowLeft className="w-5 h-5 rtl:rotate-180" />
+                    <ArrowRight className="w-5 h-5 rtl:rotate-180" />
                   </Link>
                 </Button>
                 <Button variant="glass" size="lg" asChild>

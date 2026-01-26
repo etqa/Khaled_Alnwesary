@@ -15,10 +15,20 @@ import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/utils/ScrollToTop";
 import MobileNav from "./components/layout/MobileNav";
 
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
+
 const queryClient = new QueryClient();
 
 const App = () => {
+  const { i18n } = useTranslation();
   const basename = window.location.hostname.includes("github.io") ? "/wep" : "";
+
+  useEffect(() => {
+    const dir = i18n.dir(i18n.language);
+    document.documentElement.dir = dir;
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
 
   return (
     <QueryClientProvider client={queryClient}>

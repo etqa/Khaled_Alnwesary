@@ -1,4 +1,4 @@
-import { ArrowLeft, Code2, Building2, Layers } from "lucide-react";
+import { ArrowRight, Code2, Building2, Layers } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -10,8 +10,8 @@ export const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden geometric-pattern">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "-3s" }} />
+        <div className="absolute top-1/4 end-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-1/4 start-1/4 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "-3s" }} />
       </div>
 
       <div className="container mx-auto px-4 pt-24 pb-16 relative z-10">
@@ -37,25 +37,25 @@ export const HeroSection = () => {
             <Button variant="outline" size="lg" asChild className="w-full sm:w-52 text-sm sm:text-base px-2 sm:px-8">
               <Link to="/services">
                 {t("hero.cta_services")}
-                <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5 rtl:rotate-180" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 rtl:rotate-180" />
               </Link>
             </Button>
             <Button variant="outline" size="lg" asChild className="w-full sm:w-52 text-sm sm:text-base px-2 sm:px-8">
               <Link to="/products">
                 {t("hero.cta_products")}
-                <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5 rtl:rotate-180" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 rtl:rotate-180" />
               </Link>
             </Button>
             <Button variant="outline" size="lg" asChild className="w-full sm:w-52 text-sm sm:text-base px-2 sm:px-8">
               <Link to="/tools">
                 {t("hero.cta_tools")}
-                <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5 rtl:rotate-180" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 rtl:rotate-180" />
               </Link>
             </Button>
             <Button variant="outline" size="lg" asChild className="w-full sm:w-52 text-sm sm:text-base px-2 sm:px-8">
               <Link to="/courses">
                 {t("hero.cta_courses")}
-                <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5 rtl:rotate-180" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 rtl:rotate-180" />
               </Link>
             </Button>
           </div>

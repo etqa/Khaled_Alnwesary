@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { Home, LayoutGrid, Package, Wrench, GraduationCap } from "lucide-react";
+import { Home, LayoutGrid, Package, Gift, GraduationCap } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const MobileNav = () => {
@@ -9,7 +9,7 @@ const MobileNav = () => {
         { href: "/", labelKey: "nav.home", icon: Home },
         { href: "/services", labelKey: "nav.services", icon: LayoutGrid },
         { href: "/products", labelKey: "nav.products", icon: Package },
-        { href: "/tools", labelKey: "nav.tools", icon: Wrench },
+        { href: "/tools", labelKey: "nav.tools", icon: Gift },
         { href: "/courses", labelKey: "nav.courses", icon: GraduationCap },
     ];
 

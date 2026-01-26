@@ -1,4 +1,4 @@
-import { Puzzle, BookOpen, CheckSquare, ArrowLeft } from "lucide-react";
+import { Puzzle, BookOpen, CheckSquare, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -44,7 +44,7 @@ export const ToolsPreview = () => {
             <Button variant="outline" size="lg" asChild>
               <Link to="/tools">
                 {t("tools.preview.cta_all")}
-                <ArrowLeft className="w-5 h-5 rtl:rotate-180" />
+                <ArrowRight className="w-5 h-5 rtl:rotate-180" />
               </Link>
             </Button>
           </div>
@@ -63,7 +63,7 @@ export const ToolsPreview = () => {
                   <h3 className="font-bold text-foreground mb-1">{tool.title}</h3>
                   <p className="text-sm text-muted-foreground">{tool.description}</p>
                 </div>
-                <ArrowLeft className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:-translate-x-1 rtl:group-hover:translate-x-1 transition-all" />
+                <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 rtl:group-hover:-translate-x-1 rtl:rotate-180 transition-all" />
               </Link>
             ))}
           </div>

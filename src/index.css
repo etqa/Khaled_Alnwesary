@@ -94,7 +94,6 @@
 
   body {
     @apply bg-background text-foreground font-cairo antialiased;
-    direction: rtl;
   }
 }
 

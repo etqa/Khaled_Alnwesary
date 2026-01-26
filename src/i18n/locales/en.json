@@ -3,8 +3,8 @@
         "home": "Home",
         "services": "Services",
         "products": "Products",
-        "tools": "Tools",
-        "courses": "Courses",
+        "tools": "Freebies",
+        "courses": "Training",
         "brand_name": "Khaled Al-Nwesary"
     },
     "footer": {
@@ -23,8 +23,8 @@
         "more": "More",
         "back_to_home": "Back to Home",
         "back_to_products": "Back to Products",
-        "back_to_tools": "Back to Tools",
-        "back_to_courses": "Back to Courses",
+        "back_to_tools": "Back to Freebies",
+        "back_to_courses": "Back to Training",
         "not_found": "Page not found",
         "product_not_found": "Product not found",
         "tool_not_found": "Tool not found",
@@ -38,7 +38,9 @@
         "course_content": "Course Content",
         "what_you_get": "What will you get?",
         "oops": "Oops! Page not found",
-        "return_to_home": "Return to Home"
+        "return_to_home": "Return to Home",
+        "search_placeholder": "Search what you want...",
+        "no_results": "Sorry, we couldn't find any results matching your search."
     },
     "hero": {
         "badge": "Architectural Visualization & Digital Solutions",
@@ -47,8 +49,8 @@
         "description": "Specializing in professional architectural visualization and developing innovative digital solutions and applications serving engineers and engineering firms.",
         "cta_services": "Browse Services",
         "cta_products": "Browse Products",
-        "cta_tools": "Browse Tools",
-        "cta_courses": "Browse Courses",
+        "cta_tools": "Browse Freebies",
+        "cta_courses": "Browse Training",
         "stats": {
             "experience": "Years Experience",
             "products": "App & Product",
@@ -244,9 +246,9 @@
             "cta_all": "All Courses"
         },
         "page": {
-            "hero_tag": "Training Courses",
-            "hero_title": "Professional Training Courses",
-            "hero_desc": "Learn architectural visualization and modern technologies through comprehensive practical courses",
+            "hero_tag": "Training",
+            "hero_title": "Professional Training",
+            "hero_desc": "Learn architectural visualization and modern technologies through comprehensive practical training",
             "main_course_badge": "Main Course",
             "content_label": "Course Content:"
         },

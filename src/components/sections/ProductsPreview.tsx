@@ -1,4 +1,4 @@
-import { Shield, Wrench, ArrowLeft } from "lucide-react";
+import { Shield, Wrench, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -46,7 +46,7 @@ export const ProductsPreview = () => {
               className="group relative p-8 rounded-2xl bg-gradient-card border border-border hover-lift overflow-hidden"
             >
               {product.badge && (
-                <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-medium">
+                <span className="absolute top-4 end-4 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-medium">
                   {product.badge}
                 </span>
               )}
@@ -61,7 +61,7 @@ export const ProductsPreview = () => {
               </p>
               <div className="flex items-center gap-2 text-primary font-medium group-hover:gap-4 transition-all">
                 <span>{t("common.more")}</span>
-                <ArrowLeft className="w-4 h-4 rtl:rotate-180" />
+                <ArrowRight className="w-4 h-4 rtl:rotate-180" />
               </div>
             </Link>
           ))}
@@ -71,7 +71,7 @@ export const ProductsPreview = () => {
           <Button variant="hero" size="lg" asChild>
             <Link to="/products">
               {t("products.preview.cta_all")}
-              <ArrowLeft className="w-5 h-5 rtl:rotate-180" />
+              <ArrowRight className="w-5 h-5 rtl:rotate-180" />
             </Link>
           </Button>
         </div>
