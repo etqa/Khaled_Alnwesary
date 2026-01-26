@@ -37,7 +37,7 @@ const ToolDetail = () => {
       description: t("tools.items.quran_app.desc"),
       longDescription: t("tools.items.quran_app.long_desc_detail"),
       icon: BookOpen,
-      downloadUrl: "#",
+      downloadUrl: "https://etqangroup2019.github.io/quran/",
       features: [
         t("tools.items.quran_app.features.0"),
         t("tools.items.quran_app.features.1"),
