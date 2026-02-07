@@ -57,17 +57,15 @@ const ToolDetail = () => {
   useEffect(() => {
     if (tool?.readmeUrl) {
       setLoading(true);
-      // Add a timestamp to bypass browser cache
+      // Add a timestamp and cache: 'no-store' to bypass all caches
       const cacheBustUrl = `${tool.readmeUrl}?t=${new Date().getTime()}`;
-      fetch(cacheBustUrl)
+      fetch(cacheBustUrl, { cache: 'no-store' })
         .then((res) => res.text())
         .then((text) => {
           const currentLang = i18n.language; // 'ar' or 'en'
           let processedContent = text;
 
           // Splitting logic for READMEs that contain both English and Arabic sections
-          // Markers examples: ## English, ## English 🌍, ## العربية, ## العربية 🕋, ## العربية (Arabic)
-
           const englishMarkers = [/##\s+English/i, /##\s+🌍\s+English/i, /##\s+English\s+🌍/i];
           const arabicMarkers = [/##\s+العربية/i, /##\s+🕌\s+العربية/i, /##\s+العربية\s+🕌/i, /##\s+العربية\s+\(Arabic\)/i];
 
@@ -92,14 +90,12 @@ const ToolDetail = () => {
 
           if (englishPos !== -1 && arabicPos !== -1) {
             if (currentLang === 'ar') {
-              // Arabic is likely after English or vice versa
               if (arabicPos > englishPos) {
                 processedContent = text.substring(arabicPos);
               } else {
                 processedContent = text.substring(arabicPos, englishPos);
               }
             } else {
-              // English section
               if (englishPos > arabicPos) {
                 processedContent = text.substring(englishPos);
               } else {
@@ -115,25 +111,22 @@ const ToolDetail = () => {
           // Clean up: remove the language header itself if it's at the very beginning
           processedContent = processedContent.replace(/^(?:##\s+.*(?:\r?\n|$))/, '').trim();
 
-          // Remove version indicator from the markdown content as it's already shown in the badge
+          // Remove version indicator from the markdown content
           processedContent = processedContent.replace(/(?:\*\*Version:\*\*|\*\*الإصدار:\*\*)\s*[\d.]+\s*(?:\r?\n|$)/i, '').trim();
 
           // Extract Overview section if it exists
-          // Looks for headers like ### Overview or ### نظرة عامة
           const overviewRegex = /(###\s+(?:Overview|نظرة عامة).*?)(?=###|$)/s;
           const overviewMatch = processedContent.match(overviewRegex);
 
           if (overviewMatch) {
             setOverviewContent(overviewMatch[1].trim());
-            // Remove it from the main content
             processedContent = processedContent.replace(overviewRegex, '').trim();
           } else {
             setOverviewContent(null);
           }
 
-          // Extract Download Link if it exists in the raw text (to cover all locations) or processed content
-          // We look for patterns like ### رابط التحميل or **Download Link** followed by a URL
-          const downloadRegex = /(?:###\s*|(?:\*\*|__)?)(?:رابط التحميل|Download Link|تحميل|Download)(?:(?:\*\*|__)?)\s*(?:\r?\n)+\s*(?:\[.*?\]\((https?:\/\/[^\)]+)\)|(https?:\/\/[^\s]+))/i;
+          // Extract Download Link - Improved regex to be more flexible
+          const downloadRegex = /(?:###\s*|(?:\*\*|__)?)(?:رابط التحميل|Download Link|تحميل|Download)(?:(?:\*\*|__)?)?[:\s]*[\r\n]*\s*(?:\[.*?\]\((https?:\/\/[^\)]+)\)|(https?:\/\/[^\s\r\n]+))/i;
           const downloadMatch = text.match(downloadRegex);
           if (downloadMatch) {
             const url = downloadMatch[1] || downloadMatch[2];
@@ -141,7 +134,6 @@ const ToolDetail = () => {
               setDynamicDownloadUrl(url);
             }
           } else {
-            // Try searching in processed content as fallback
             const processedDownloadMatch = processedContent.match(downloadRegex);
             if (processedDownloadMatch) {
               const url = processedDownloadMatch[1] || processedDownloadMatch[2];
