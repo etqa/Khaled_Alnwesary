@@ -8,7 +8,7 @@
     // 1. Determine the base path immediately
     (function () {
       var base = "/";
-      if (window.location.hostname.includes("github.io")) {
+      if (window.location.hostname.includes("github.io") && window.location.pathname.startsWith("/wep/")) {
         base = "/wep/";
       }
       // Inject base tag BEFORE anything else is parsed
@@ -68,7 +68,7 @@
       console.log('PWA Install condition met! Prompt can be shown.');
     });
   </script>
-  <script type="module" crossorigin src="./assets/index-D1CBsiPH.js"></script>
+  <script type="module" crossorigin src="./assets/index-3e6GZIFe.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-DYgOirHw.css">
 </head>
 

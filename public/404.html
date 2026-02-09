@@ -7,12 +7,12 @@
     <script>
         // Single Page Apps for GitHub Pages with subfolder
         // Redirect to index.html preserving the path
-        var repo = '/wep';
+        var repo = window.location.pathname.startsWith('/wep') ? '/wep' : '';
         var l = window.location;
         var path = l.pathname;
 
         // Remove the repo prefix if it exists
-        if (path.startsWith(repo)) {
+        if (repo && path.startsWith(repo)) {
             path = path.slice(repo.length);
         }
 
