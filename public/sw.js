@@ -1,9 +1,12 @@
-const CACHE_NAME = 'alnwesary-v3';
+const CACHE_NAME = 'alnwesary-v4';
 const ASSETS_TO_CACHE = [
     './',
     'index.html',
     'manifest.json',
-    'images/logo.jpg',
+    'images/icons/manifest-icon-192.maskable.png',
+    'images/icons/manifest-icon-512.maskable.png',
+    'images/icons/apple-icon-180.png',
+    'images/icons/favicon-196.png',
     'favicon.jpg'
 ];
 

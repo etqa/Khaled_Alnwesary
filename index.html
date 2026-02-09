@@ -31,14 +31,14 @@
     content="خالد النويصري - متخصص في الإظهار المعماري الاحترافي وتطوير التطبيقات والحلول الرقمية للمهندسين والشركات الهندسية" />
   <meta name="keywords" content="إظهار معماري, بلندر, تصميم معماري, تطبيقات هندسية, خالد النويصري" />
   <meta name="author" content="خالد النويصري" />
-  <link rel="icon" href="favicon.jpg" />
-  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" sizes="196x196" href="images/icons/favicon-196.png" />
+  <link rel="manifest" href="./manifest.json" crossorigin="use-credentials" />
   <meta name="theme-color" content="#000000" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="apple-mobile-web-app-title" content="Al-Nwesary" />
-  <link rel="apple-touch-icon" href="images/logo.jpg" />
+  <link rel="apple-touch-icon" href="images/icons/apple-icon-180.png" />
 
   <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website" />
@@ -55,11 +55,18 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js')
-          .then(reg => console.log('Service Worker registered', reg))
-          .catch(err => console.error('Service Worker registration failed', err));
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => {
+            console.log('SW Registered with scope:', reg.scope);
+          })
+          .catch(err => console.error('SW Registration failed:', err));
       });
     }
+
+    // Capture PWA Install Prompt
+    window.addEventListener('beforeinstallprompt', (e) => {
+      console.log('PWA Install condition met! Prompt can be shown.');
+    });
   </script>
 </head>
 
