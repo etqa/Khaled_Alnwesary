@@ -1,10 +1,12 @@
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
+import { GlobalBackground } from "./components/layout/GlobalBackground";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
+import ServiceDetail from "./pages/ServiceDetail";
 import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
 import Tools from "./pages/Tools";
@@ -36,21 +38,25 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter basename={basename}>
-          <ScrollToTop />
-          <div className="pb-20 lg:pb-0">
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/products" element={<Products />} />
-              <Route path="/products/:id" element={<ProductDetail />} />
-              <Route path="/tools" element={<Tools />} />
-              <Route path="/tools/:id" element={<ToolDetail />} />
-              <Route path="/courses" element={<Courses />} />
-              <Route path="/courses/:id" element={<CourseDetail />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+          <div className="relative isolate min-h-screen">
+            <GlobalBackground />
+            <ScrollToTop />
+            <div className="pb-20 lg:pb-0">
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/services/:id" element={<ServiceDetail />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/products/:id" element={<ProductDetail />} />
+                <Route path="/tools" element={<Tools />} />
+                <Route path="/tools/:id" element={<ToolDetail />} />
+                <Route path="/courses" element={<Courses />} />
+                <Route path="/courses/:id" element={<CourseDetail />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </div>
+            <MobileNav />
           </div>
-          <MobileNav />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

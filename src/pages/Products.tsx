@@ -52,7 +52,7 @@ const Products = () => {
   );
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <Navbar />
       <main className="pt-24">
         {/* Hero */}
@@ -85,52 +85,55 @@ const Products = () => {
         </section>
 
         {/* Products */}
-        <section className="py-16 bg-muted/30 min-h-[400px]">
+        <section className="py-16 bg-card/80 backdrop-blur-md shadow-card min-h-[400px]">
           <div className="container mx-auto px-4">
             {filteredProducts.length > 0 ? (
               <div className="space-y-8">
                 {filteredProducts.map((product, index) => (
                   <div
                     key={product.id}
-                    className="animate-fade-up relative p-8 md:p-12 rounded-3xl bg-card border border-border overflow-hidden hover-lift"
+                    className="animate-fade-up relative rounded-3xl border border-border overflow-hidden hover-lift group"
                     style={{ animationDelay: `${index * 0.15}s` }}
                   >
-                    {product.badge && (
-                      <span className="absolute top-6 end-6 px-4 py-1.5 rounded-full bg-primary text-primary-foreground text-sm font-medium flex items-center gap-2">
-                        <Star className="w-4 h-4" />
-                        {product.badge}
-                      </span>
-                    )}
+                    {/* Background */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/15 via-accent/5 to-primary/5 opacity-40 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 geometric-pattern opacity-[0.05] group-hover:opacity-[0.1] transition-opacity duration-500" />
 
-                    <div className="flex flex-col lg:flex-row gap-8">
-                      <div className="lg:w-2/3">
-                        <div className="w-20 h-20 rounded-2xl bg-accent/10 flex items-center justify-center mb-6">
-                          <product.icon className="w-10 h-10 text-accent" />
+                    <div className="relative p-8 md:p-12">
+                      {product.badge && (
+                        <span className="absolute top-6 end-6 px-4 py-1.5 rounded-full bg-primary text-primary-foreground text-sm font-medium flex items-center gap-2">
+                          <Star className="w-4 h-4" />
+                          {product.badge}
+                        </span>
+                      )}
+
+                      <div className="flex flex-col lg:flex-row gap-8">
+                        <div className="lg:w-2/3">
+                          <h2 className="text-3xl font-bold text-foreground mb-4">
+                            {product.title}
+                          </h2>
+                          <p className="text-lg text-muted-foreground mb-6">
+                            {product.longDescription}
+                          </p>
+                          <Button variant="hero" size="lg" asChild>
+                            <Link to={product.link}>
+                              {t("products.page.cta_details")}
+                              <ArrowRight className="w-5 h-5 rtl:rotate-180" />
+                            </Link>
+                          </Button>
                         </div>
-                        <h2 className="text-3xl font-bold text-foreground mb-4">
-                          {product.title}
-                        </h2>
-                        <p className="text-lg text-muted-foreground mb-6">
-                          {product.longDescription}
-                        </p>
-                        <Button variant="hero" size="lg" asChild>
-                          <Link to={product.link}>
-                            {t("products.page.cta_details")}
-                            <ArrowRight className="w-5 h-5 rtl:rotate-180" />
-                          </Link>
-                        </Button>
-                      </div>
 
-                      <div className="lg:w-1/3">
-                        <h4 className="font-bold text-foreground mb-4">{t("products.page.features_label")}</h4>
-                        <ul className="space-y-3">
-                          {product.features.map((feature, idx) => (
-                            <li key={idx} className="flex items-center gap-3 text-muted-foreground">
-                              <div className="w-2 h-2 rounded-full bg-primary shrink-0" />
-                              <span>{feature}</span>
-                            </li>
-                          ))}
-                        </ul>
+                        <div className="lg:w-1/3">
+                          <h4 className="font-bold text-foreground mb-4">{t("products.page.features_label")}</h4>
+                          <ul className="space-y-3">
+                            {product.features.map((feature, idx) => (
+                              <li key={idx} className="flex items-center gap-3 text-muted-foreground">
+                                <div className="w-2 h-2 rounded-full bg-primary shrink-0" />
+                                <span>{feature}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>

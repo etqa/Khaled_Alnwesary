@@ -48,7 +48,7 @@ const Tools = () => {
   );
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <Navbar />
       <main className="pt-24">
         {/* Hero */}
@@ -81,39 +81,42 @@ const Tools = () => {
         </section>
 
         {/* Tools Grid */}
-        <section className="py-16 bg-muted/30 min-h-[400px]">
+        <section className="py-16 bg-card/80 backdrop-blur-md shadow-card min-h-[400px]">
           <div className="container mx-auto px-4">
             {filteredTools.length > 0 ? (
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredTools.map((tool, index) => (
                   <div
                     key={tool.id}
-                    className="animate-fade-up group relative overflow-hidden p-8 rounded-2xl bg-card border border-border hover-lift flex flex-col h-full"
+                    className="animate-fade-up group relative overflow-hidden rounded-2xl border border-border hover-lift flex flex-col h-full transition-all duration-300"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <div className="absolute top-6 end-6 z-10">
-                      <span className="px-4 py-1.5 rounded-full bg-green-500/10 text-green-600 text-sm font-bold border border-green-500/20">
-                        {t("common.free")}
-                      </span>
+                    {/* Background */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/15 via-accent/5 to-primary/5 opacity-40 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 geometric-pattern opacity-[0.05] group-hover:opacity-[0.1] transition-opacity duration-500" />
+
+                    <div className="relative p-8 flex flex-col h-full z-10">
+                      <div className="absolute top-6 end-6">
+                        <span className="px-4 py-1.5 rounded-full bg-green-500/10 text-green-600 text-sm font-bold border border-green-500/20">
+                          {t("common.free")}
+                        </span>
+                      </div>
+
+
+                      <h3 className="text-xl font-bold text-foreground mb-3">
+                        {tool.title}
+                      </h3>
+                      <p className="text-muted-foreground mb-6 leading-relaxed flex-1">
+                        {tool.longDescription}
+                      </p>
+
+                      <Button variant="outline" className="w-full mt-auto" asChild>
+                        <Link to={tool.link}>
+                          {t("products.page.cta_details")}
+                          <ArrowRight className="w-4 h-4 rtl:rotate-180" />
+                        </Link>
+                      </Button>
                     </div>
-
-                    <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                      <tool.icon className="w-8 h-8 text-primary" />
-                    </div>
-
-                    <h3 className="text-xl font-bold text-foreground mb-3">
-                      {tool.title}
-                    </h3>
-                    <p className="text-muted-foreground mb-6 leading-relaxed flex-1">
-                      {tool.longDescription}
-                    </p>
-
-                    <Button variant="outline" className="w-full mt-auto" asChild>
-                      <Link to={tool.link}>
-                        {t("products.page.cta_details")}
-                        <ArrowRight className="w-4 h-4 rtl:rotate-180" />
-                      </Link>
-                    </Button>
                   </div>
                 ))}
               </div>

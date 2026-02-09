@@ -28,7 +28,7 @@ export const ToolsPreview = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-card/90 backdrop-blur-md shadow-card border-y border-border/10">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-1/2">
@@ -56,9 +56,6 @@ export const ToolsPreview = () => {
                 to={tool.link}
                 className="flex items-center gap-5 p-5 rounded-xl bg-card border border-border hover:border-primary/50 hover:shadow-card transition-all group"
               >
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                  <tool.icon className="w-7 h-7 text-primary" />
-                </div>
                 <div className="flex-1">
                   <h3 className="font-bold text-foreground mb-1">{tool.title}</h3>
                   <p className="text-sm text-muted-foreground">{tool.description}</p>

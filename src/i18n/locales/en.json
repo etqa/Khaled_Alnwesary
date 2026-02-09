@@ -31,8 +31,10 @@
         "course_not_found": "Course not found",
         "features": "Features",
         "order_product": "Order Product",
+        "order_service": "Order Service",
         "inquire_price": "Inquire Price",
         "free": "Free",
+        "paid": "Paid",
         "free_download": "Free Download",
         "register_course": "Register for Course",
         "course_content": "Course Content",
@@ -68,7 +70,20 @@
             "hero_desc": "We provide professional architectural visualization services for engineering firms and architectural offices using the latest technologies.",
             "cta_title": "Have a Project?",
             "cta_desc": "Contact us now to get a customized quote for your project",
-            "cta_whatsapp": "Contact via WhatsApp"
+            "cta_whatsapp": "Contact via WhatsApp",
+            "cta_details": "Service Details",
+            "detail": {
+                "portfolio_title": "Portfolio",
+                "terms_title": "Terms of Work",
+                "collaboration_way": "How to Collaborate",
+                "coming_soon": "Coming Soon...",
+                "terms_list": [
+                    "Clearly define requirements before starting.",
+                    "50% down payment before starting.",
+                    "Limited revisions (3 main revisions).",
+                    "Final delivery after full payment."
+                ]
+            }
         },
         "items": {
             "exterior": {

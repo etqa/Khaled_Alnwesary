@@ -22,7 +22,7 @@ export const ServicesPreview = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-card/90 backdrop-blur-md shadow-card border-b border-border/10">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
@@ -42,9 +42,6 @@ export const ServicesPreview = () => {
               key={index}
               className="group p-8 rounded-2xl bg-card border border-border hover-lift cursor-pointer"
             >
-              <div className="w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <Building2 className="w-7 h-7 text-primary-foreground" />
-              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
                 {service.title}
               </h3>

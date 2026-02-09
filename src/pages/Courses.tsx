@@ -38,7 +38,7 @@ const Courses = () => {
   );
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <Navbar />
       <main className="pt-24">
         {/* Hero */}
@@ -72,75 +72,63 @@ const Courses = () => {
         </section>
 
         {/* Courses */}
-        <section className="py-16 bg-muted/30 min-h-[400px]">
+        <section className="py-16 bg-card/80 backdrop-blur-md shadow-card min-h-[400px]">
           <div className="container mx-auto px-4">
             {filteredCourses.length > 0 ? (
-              filteredCourses.map((course, index) => (
-                <div
-                  key={course.id}
-                  className="animate-fade-up max-w-5xl mx-auto rounded-3xl overflow-hidden bg-card border border-border"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  {/* Course Header */}
-                  <div className="relative p-8 md:p-12 bg-gradient-to-br from-primary/10 via-accent/5 to-transparent">
-                    <div className="absolute inset-0 geometric-pattern opacity-30" />
-                    <div className="relative">
-                      {course.featured && (
-                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-primary-foreground text-sm font-medium mb-6">
-                          <BookOpen className="w-4 h-4" />
-                          {t("courses.page.main_course_badge")}
-                        </span>
-                      )}
-                      <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                        {course.title}
-                      </h2>
-                      <p className="text-lg text-muted-foreground max-w-2xl mb-8">
-                        {course.description}
-                      </p>
+              <div className="grid gap-8 max-w-5xl mx-auto">
+                {filteredCourses.map((course, index) => (
+                  <div
+                    key={course.id}
+                    className="animate-fade-up relative rounded-3xl border border-border overflow-hidden hover-lift group"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    {/* Background */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/15 via-accent/5 to-primary/5 opacity-40 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 geometric-pattern opacity-[0.05] group-hover:opacity-[0.1] transition-opacity duration-500" />
 
-                      <div className="flex flex-wrap gap-6 mb-8">
-                        <div className="flex items-center gap-2 text-foreground">
-                          <Clock className="w-5 h-5 text-primary" />
-                          <span>{course.duration}</span>
-                        </div>
-                        <div className="flex items-center gap-2 text-foreground">
-                          <Users className="w-5 h-5 text-primary" />
-                          <span>{course.students}</span>
-                        </div>
-                        <div className="flex items-center gap-2 text-foreground">
-                          <Play className="w-5 h-5 text-primary" />
-                          <span>{course.type}</span>
-                        </div>
+                    <div className="relative p-8 md:p-12">
+                      <div className="absolute top-6 end-6">
+                        <span className="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-bold border border-primary/20">
+                          {t("common.paid")}
+                        </span>
                       </div>
 
-                      <Button variant="hero" size="lg" asChild>
-                        <Link to={course.link}>
-                          {t("courses.preview.cta_details")}
-                          <ArrowRight className="w-5 h-5 rtl:rotate-180" />
-                        </Link>
-                      </Button>
-                    </div>
-                  </div>
+                      <div className="flex flex-col lg:flex-row gap-8 items-start">
+                        <div className="flex-1">
+                          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                            {course.title}
+                          </h2>
+                          <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
+                            {course.description}
+                          </p>
 
-                  {/* Course Modules */}
-                  <div className="p-8 md:p-12">
-                    <h3 className="text-xl font-bold text-foreground mb-6">{t("courses.page.content_label")}</h3>
-                    <div className="grid md:grid-cols-2 gap-4">
-                      {course.modules.map((module, idx) => (
-                        <div
-                          key={idx}
-                          className="flex items-center gap-3 p-4 rounded-xl bg-muted/50"
-                        >
-                          <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                            <Check className="w-4 h-4 text-primary" />
+                          <div className="flex flex-wrap gap-6 mb-8">
+                            <div className="flex items-center gap-2 text-foreground/80">
+                              <Clock className="w-5 h-5 text-primary" />
+                              <span className="font-medium">{course.duration}</span>
+                            </div>
+                            <div className="flex items-center gap-2 text-foreground/80">
+                              <Users className="w-5 h-5 text-primary" />
+                              <span className="font-medium">{course.students}</span>
+                            </div>
+                            <div className="flex items-center gap-2 text-foreground/80">
+                              <Play className="w-5 h-5 text-primary" />
+                              <span className="font-medium">{course.type}</span>
+                            </div>
                           </div>
-                          <span className="text-foreground">{module}</span>
+
+                          <Button variant="hero" size="lg" asChild className="rounded-xl px-10 shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95">
+                            <Link to={course.link}>
+                              {t("courses.preview.cta_details")}
+                              <ArrowRight className="w-5 h-5 rtl:mr-2 ltr:ml-2 rtl:rotate-180" />
+                            </Link>
+                          </Button>
                         </div>
-                      ))}
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))
+                ))}
+              </div>
             ) : (
               <div className="text-center py-20 animate-fade-in">
                 <div className="w-20 h-20 rounded-full bg-muted flex items-center justify-center mx-auto mb-6">

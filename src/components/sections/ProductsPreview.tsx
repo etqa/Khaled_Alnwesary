@@ -24,7 +24,7 @@ export const ProductsPreview = () => {
   ];
 
   return (
-    <section className="py-20">
+    <section className="py-20 bg-card/40 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-medium mb-4">
@@ -50,9 +50,6 @@ export const ProductsPreview = () => {
                   {product.badge}
                 </span>
               )}
-              <div className="w-16 h-16 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
-                <product.icon className="w-8 h-8 text-accent" />
-              </div>
               <h3 className="text-xl font-bold text-foreground mb-3">
                 {product.title}
               </h3>

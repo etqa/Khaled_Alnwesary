@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Building2, Layers, Video, Palette, ArrowRight, Check } from "lucide-react";
@@ -59,7 +60,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <Navbar />
       <main className="pt-24">
         {/* Hero */}
@@ -80,19 +81,20 @@ const Services = () => {
         </section>
 
         {/* Services Grid */}
-        <section className="py-16 bg-muted/30">
+        <section className="py-16 bg-card/80 backdrop-blur-md shadow-card">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-8">
               {services.map((service, index) => (
                 <div
                   key={service.id}
-                  className="animate-fade-up p-8 rounded-2xl bg-card border border-border hover-lift"
+                  className="animate-fade-up relative rounded-2xl border border-border hover-lift group overflow-hidden"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="flex items-start gap-6">
-                    <div className="w-16 h-16 rounded-2xl bg-gradient-primary flex items-center justify-center shrink-0 shadow-glow">
-                      <service.icon className="w-8 h-8 text-primary-foreground" />
-                    </div>
+                  {/* Background */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/15 via-accent/5 to-primary/5 opacity-40 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 geometric-pattern opacity-[0.05] group-hover:opacity-[0.1] transition-opacity duration-500" />
+
+                  <div className="relative p-8 flex items-start gap-6">
                     <div className="flex-1">
                       <h3 className="text-2xl font-bold text-foreground mb-3">
                         {service.title}
@@ -100,14 +102,20 @@ const Services = () => {
                       <p className="text-muted-foreground mb-6">
                         {service.description}
                       </p>
-                      <ul className="space-y-3">
+                      <ul className="space-y-3 mb-8">
                         {service.features.map((feature, idx) => (
-                          <li key={idx} className="flex items-center gap-3 text-foreground">
+                          <li key={idx} className="flex items-center gap-3 text-foreground/80">
                             <Check className="w-5 h-5 text-primary shrink-0" />
                             <span>{feature}</span>
                           </li>
                         ))}
                       </ul>
+                      <Button variant="hero" asChild className="rounded-xl px-8 shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95">
+                        <Link to={`/services/${service.id}`}>
+                          {t("services.page.cta_details")}
+                          <ArrowRight className="w-5 h-5 rtl:mr-2 ltr:ml-2 rtl:rotate-180" />
+                        </Link>
+                      </Button>
                     </div>
                   </div>
                 </div>
