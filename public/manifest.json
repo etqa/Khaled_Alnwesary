@@ -1,39 +1,39 @@
 {
-  "id": "/wep/",
-  "name": "Al-Nwesary",
-  "short_name": "Al-Nwesary",
-  "description": "خالد النويصري - متخصص في الإظهار المعماري الاحترافي وتطوير التطبيقات والحلول الرقمية",
-  "start_url": "./index.html",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
-  "dir": "rtl",
-  "lang": "ar",
-  "orientation": "portrait-primary",
-  "icons": [
-    {
-      "src": "public/images/icons/manifest-icon-192.maskable.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "public/images/icons/manifest-icon-192.maskable.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "public/images/icons/manifest-icon-512.maskable.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "public/images/icons/manifest-icon-512.maskable.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
-  ]
+    "id": "/wep/",
+    "name": "Al-Nwesary",
+    "short_name": "Al-Nwesary",
+    "description": "خالد النويصري - متخصص في الإظهار المعماري الاحترافي وتطوير التطبيقات والحلول الرقمية",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "dir": "rtl",
+    "lang": "ar",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "images/icons/manifest-icon-192.maskable.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "images/icons/manifest-icon-192.maskable.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "images/icons/manifest-icon-512.maskable.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "images/icons/manifest-icon-512.maskable.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
 }
