@@ -1,9 +1,10 @@
-const CACHE_NAME = 'alnwesary-v2'; // Increment version
+const CACHE_NAME = 'alnwesary-v3';
 const ASSETS_TO_CACHE = [
-    '/',
-    './index.html',
-    './manifest.json',
-    './images/logo.jpg'
+    './',
+    'index.html',
+    'manifest.json',
+    'images/logo.jpg',
+    'favicon.jpg'
 ];
 
 // Install Event
