@@ -1,13 +1,14 @@
-const CACHE_NAME = 'alnwesary-v1';
+const CACHE_NAME = 'alnwesary-v2'; // Increment version
 const ASSETS_TO_CACHE = [
     '/',
-    '/index.html',
-    '/manifest.json',
-    '/images/logo.jpg'
+    './index.html',
+    './manifest.json',
+    './images/logo.jpg'
 ];
 
 // Install Event
 self.addEventListener('install', (event) => {
+    self.skipWaiting();
     event.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
             console.log('Service Worker: Caching Assets');
@@ -28,12 +29,20 @@ self.addEventListener('activate', (event) => {
                     }
                 })
             );
-        })
+        }).then(() => self.clients.claim())
     );
 });
 
 // Fetch Event
 self.addEventListener('fetch', (event) => {
+    // Use a network-first strategy for the main page to avoid 404 on assets
+    if (event.request.mode === 'navigate') {
+        event.respondWith(
+            fetch(event.request).catch(() => caches.match(event.request))
+        );
+        return;
+    }
+
     event.respondWith(
         fetch(event.request).catch(() => caches.match(event.request))
     );

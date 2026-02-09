@@ -94,8 +94,8 @@ const InteriorDesign = () => {
                             <div className="grid md:grid-cols-2 gap-8 animate-fade-up">
                                 {/* Collaboration Section */}
                                 {collaborationContent && (
-                                    <div className="bg-primary/5 border border-primary/10 rounded-[2.5rem] p-8 shadow-sm">
-                                        <div className="flex items-center gap-3 border-b border-primary/10 pb-4 mb-6">
+                                    <div className="bg-card/80 backdrop-blur-md border border-border/50 rounded-[2.5rem] p-8 shadow-sm">
+                                        <div className="flex items-center gap-3 border-b border-border/50 pb-4 mb-6">
                                             <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                                                 <ImageIcon className="w-5 h-5 text-primary" />
                                             </div>
@@ -122,8 +122,8 @@ const InteriorDesign = () => {
 
                                 {/* Terms Section */}
                                 {termsContent && (
-                                    <div className="bg-primary/5 border border-primary/10 rounded-[2.5rem] p-8 shadow-sm">
-                                        <div className="flex items-center gap-3 border-b border-primary/10 pb-4 mb-6">
+                                    <div className="bg-card/80 backdrop-blur-md border border-border/50 rounded-[2.5rem] p-8 shadow-sm">
+                                        <div className="flex items-center gap-3 border-b border-border/50 pb-4 mb-6">
                                             <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                                                 <FileText className="w-5 h-5 text-primary" />
                                             </div>
