@@ -258,7 +258,7 @@
 
 
 /* Portfolio Grid Images - Target only images in portfolio section */
-.prose p:has(img[src*="/portfolio/"]) {
+.prose p:has(img[src*="portfolio/"]) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
@@ -266,7 +266,7 @@
   margin-bottom: 1.5rem;
 }
 
-.prose p:has(img[src*="/portfolio/"]) img {
+.prose p:has(img[src*="portfolio/"]) img {
   width: 100%;
   height: auto;
   margin: 0;

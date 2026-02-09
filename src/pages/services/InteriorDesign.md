@@ -12,11 +12,11 @@ Designing interior spaces with precise details and realistic lighting for reside
 
 ### Portfolio
 
-![تصميم غرفة معيشة عصرية - تصميم خالد النويصري](/portfolio/interior/1.jpg) ![ديكور مطبخ مودرن - استغلال مثالي للمساحات](/portfolio/interior/2.jpg)
+![Designed by Al-Atyoush Office, Benghazi](portfolio/interior/1.jpg) ![Designed by Al-Atyoush Office, Benghazi](portfolio/interior/2.jpg)
 
-![تصميم مكتب إداري - بيئة عمل محفزة](/portfolio/interior/3.jpg) ![غرفة نوم رئيسية - أناقة وراحة](/portfolio/interior/4.jpg)
+![Designed by Al-Rakeza Company, Benghazi](portfolio/interior/3.jpg) ![Designed by Al-Rakeza Company, Benghazi](portfolio/interior/4.jpg)
 
-![ديكور صالة استقبال - لمسات كلاسيكية](/portfolio/interior/5.jpg) ![تصميم حمام مودرن - أناقة وبساطة](/portfolio/interior/6.jpg)
+![Designed by Imtiaz Company, Tripoli](portfolio/interior/5.jpg) ![Designed by Imtiaz Company, Tripoli](portfolio/interior/6.jpg)
 
 
 ### Features
@@ -48,11 +48,11 @@ Designing interior spaces with precise details and realistic lighting for reside
 
 ### معرض الأعمال
 
-![تصميم غرفة معيشة عصرية - تصميم خالد النويصري](/portfolio/interior/1.jpg) ![ديكور مطبخ مودرن - استغلال مثالي للمساحات](/portfolio/interior/2.jpg)
+![من تصميم مكتب الاطيوش/بنغازي](portfolio/interior/1.jpg) ![من تصميم مكتب الاطيوش/بنغازي](portfolio/interior/2.jpg)
 
-![تصميم مكتب إداري - بيئة عمل محفزة](/portfolio/interior/3.jpg) ![غرفة نوم رئيسية - أناقة وراحة](/portfolio/interior/4.jpg)
+![من تصميم شركة الراكزة/بنغازي](portfolio/interior/3.jpg) ![من تصميم شركة الراكزة/بنغازي](portfolio/interior/4.jpg)
 
-![ديكور صالة استقبال - لمسات كلاسيكية](/portfolio/interior/5.jpg) ![تصميم حمام مودرن - أناقة وبساطة](/portfolio/interior/6.jpg)
+![من تصميم شركة امتياز/طرابلس](portfolio/interior/5.jpg) ![من تصميم شركة امتياز/طرابلس](portfolio/interior/6.jpg)
 
 
 ### المميزات

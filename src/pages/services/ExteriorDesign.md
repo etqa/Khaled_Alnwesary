@@ -12,11 +12,11 @@ High-quality design for building facades and architectural projects including vi
 
 ### Portfolio
 
-![مشروع فيلا سكنية - تصميم خالد النويصري](/portfolio/exterior/1.jpg) ![واجهة مجمع تجاري - إظهار معماري احترافي](/portfolio/exterior/2.jpg)
+![Designed by Al-Atyoush Office, Benghazi](portfolio/exterior/1.jpg) ![Designed by Al-Sindiyan Company, Tripoli](portfolio/exterior/2.jpg)
 
-![تصميم استراحة خاصة - لمسة عصرية](/portfolio/exterior/3.jpg) ![تطوير واجهة مبنى إداري - تفاصيل دقيقة](/portfolio/exterior/4.jpg)
+![Designed by Al-Atyoush Office, Benghazi](portfolio/exterior/3.jpg) ![Designed by Al-Qadis Company, Tripoli](portfolio/exterior/4.jpg)
 
-![تصميم مدخل فيلا مودرن - فخامة التفاصيل](/portfolio/exterior/5.jpg) ![إظهار واجهة ليلية - إضاءة واقعية](/portfolio/exterior/6.jpg)
+![Designed by Al-Qadis Company, Tripoli](portfolio/exterior/5.jpg) ![Designed by Al-Qadis Company, Tripoli](portfolio/exterior/6.jpg)
 
 
 ### Features
@@ -48,11 +48,11 @@ High-quality design for building facades and architectural projects including vi
 
 ### معرض الأعمال
 
-![مشروع فيلا سكنية - تصميم خالد النويصري](/portfolio/exterior/1.jpg) ![واجهة مجمع تجاري - إظهار معماري احترافي](/portfolio/exterior/2.jpg)
+![من تصميم مكتب الاطيوش/بنغازي](portfolio/exterior/1.jpg) ![من تصميم شركة السنديان/طرابلس](portfolio/exterior/2.jpg)
 
-![تصميم استراحة خاصة - لمسة عصرية](/portfolio/exterior/3.jpg) ![تطوير واجهة مبنى إداري - تفاصيل دقيقة](/portfolio/exterior/4.jpg)
+![من تصميم مكتب الاطيوش/بنغازي](portfolio/exterior/3.jpg) ![من تصميم شركة القادس/طرابلس](portfolio/exterior/4.jpg)
 
-![تصميم مدخل فيلا مودرن - فخامة التفاصيل](/portfolio/exterior/5.jpg) ![إظهار واجهة ليلية - إضاءة واقعية](/portfolio/exterior/6.jpg)
+![من تصميم شركة القادس/طرابلس](portfolio/exterior/5.jpg) ![من تصميم شركة القادس/طرابلس](portfolio/exterior/6.jpg)
 
 
 ### المميزات
