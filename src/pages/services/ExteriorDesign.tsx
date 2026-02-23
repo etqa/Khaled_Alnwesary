@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Building2, MessageCircle, Image as ImageIcon, FileText } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Building2, Image as ImageIcon, FileText } from "lucide-react";
 import { DetailLayout } from "@/components/layout/DetailLayout";
 import { useReadme } from "@/hooks/useReadme";
 import { MarkdownContent } from "@/components/details/MarkdownContent";
@@ -9,6 +8,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import { ImageModal } from "@/components/ui/ImageModal";
+import { DynamicButtons } from "@/components/details/DynamicButtons";
 import localReadme from "./ExteriorDesign.md?raw";
 
 const ExteriorDesign = () => {
@@ -20,7 +20,8 @@ const ExteriorDesign = () => {
         featuresContent,
         termsContent,
         collaborationContent,
-        readmeContent
+        readmeContent,
+        buttons
     } = useReadme({
         localContent: localReadme,
         id: "exterior",
@@ -49,14 +50,7 @@ const ExteriorDesign = () => {
                                     {service.title}
                                 </h1>
 
-                                <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 mb-10 w-full">
-                                    <Button variant="hero" size="lg" asChild className="rounded-2xl shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95">
-                                        <a href="https://wa.me/218928198656" target="_blank" rel="noopener noreferrer">
-                                            <MessageCircle className="w-5 h-5 rtl:ml-2 ltr:mr-2" />
-                                            {t("common.order_service")}
-                                        </a>
-                                    </Button>
-                                </div>
+                                <DynamicButtons buttons={buttons} />
 
                                 <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
                                     {service.description}

@@ -35,15 +35,13 @@ DR Video Protection Suite is a powerful security solution designed for content c
 - Saves the last played video and the timestamp of the last session.
 - Can also be used to play regular videos in an organized manner.
 
+### Buttons
+- [Order Product](https://wa.me/218928198656)
+- [Encoder Tool](https://u.pcloud.link/publink/show?code=XZd0Al5Z7KIE4xOyCLLdC4THj3qkp58g1gCX)
+- [Free Player](https://u.pcloud.link/publink/show?code=XZK0Al5ZUNYkQSng2XJS4lsisXxmX8mjQSYy)
+
 ### Tutorials
 
-https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A
-
-### Download
-- Encryption Software for Windows:
-https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A
-
-- Player Software for Windows (Free):
 https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A
 
 ### Installation
@@ -85,17 +83,16 @@ https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%
 - يحفظ اخر فيديو تم تشغيله وتوقيت اخر تشغيل .
 - يكمن الاعتماد عليه في تشغيل الفيديوهات العادية ايضا بشكل منظم ومرتب.
 
+### الأزرار
+- [طلب تفعيل](https://wa.me/218928198656)
+- [أداة التشفير](https://u.pcloud.link/publink/show?code=XZd0Al5Z7KIE4xOyCLLdC4THj3qkp58g1gCX)
+- [المشغل المجاني](https://u.pcloud.link/publink/show?code=XZK0Al5ZUNYkQSng2XJS4lsisXxmX8mjQSYy)
+- [فيديو الشرح](https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A)
+
 ### دروس تعليمية
 
 https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A
 
-### رابط التحميل
-
-- برنامج التشفير للويندوز :
-https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A
-
-- برنامج المشغل للويندوز مجانا:
-https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A
 
 ### التثبيت
 1. قم بتشغيل `Setup_DR_Lock.exe` لتثبيت أداة التشفير.

@@ -42,8 +42,8 @@ export const HeroSection = () => {
               </Link>
             </Button>
             <Button variant="outline" size="lg" asChild className="w-full sm:w-52 text-sm sm:text-base px-2 sm:px-8">
-              <Link to="/tools">
-                {t("hero.cta_tools")}
+              <Link to="/free">
+                {t("hero.cta_free")}
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 rtl:rotate-180" />
               </Link>
             </Button>

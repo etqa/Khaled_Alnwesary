@@ -24,7 +24,7 @@ const navLinks = [
   { href: "/", labelKey: "nav.home" },
   { href: "/services", labelKey: "nav.services" },
   { href: "/products", labelKey: "nav.products" },
-  { href: "/tools", labelKey: "nav.tools" },
+  { href: "/free", labelKey: "nav.free" },
   { href: "/courses", labelKey: "nav.courses" },
 ];
 

@@ -6,6 +6,7 @@ import { useReadme } from "@/hooks/useReadme";
 import { MarkdownContent } from "@/components/details/MarkdownContent";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { DynamicButtons } from "@/components/details/DynamicButtons";
 import localReadme from "./BlenderCourse.md?raw";
 
 const BlenderCourse = () => {
@@ -15,12 +16,14 @@ const BlenderCourse = () => {
         courseContent,
         featuresContent,
         statsContent,
-        readmeContent
+        readmeContent,
+        buttons
     } = useReadme({
         localContent: localReadme,
         id: "blender-course",
         isCourse: true
     });
+
 
     const course = {
         title: t("courses.blender.title"),
@@ -106,19 +109,26 @@ const BlenderCourse = () => {
                             )}
                         </div>
 
-                        <div className="animate-fade-up delay-400 flex flex-col sm:flex-row gap-4">
-                            <Button variant="hero" size="lg" asChild>
-                                <a href="https://wa.me/218928198656" target="_blank" rel="noopener noreferrer">
-                                    <MessageCircle className="w-5 h-5 rtl:ml-2 ltr:mr-2" />
-                                    {t("common.register_course")}
-                                </a>
-                            </Button>
-                            <Button variant="outline" size="lg" asChild>
-                                <a href="https://wa.me/218928198656" target="_blank" rel="noopener noreferrer">
-                                    {t("common.inquire_price")}
-                                </a>
-                            </Button>
-                        </div>
+                        {buttons && buttons.length > 0 ? (
+                            <div className="animate-fade-up delay-400">
+                                <DynamicButtons buttons={buttons} />
+                            </div>
+                        ) : (
+                            <div className="animate-fade-up delay-400 flex flex-col sm:flex-row gap-4">
+                                <Button variant="hero" size="lg" asChild>
+                                    <a href="https://wa.me/218928198656" target="_blank" rel="noopener noreferrer">
+                                        <MessageCircle className="w-5 h-5 rtl:ml-2 ltr:mr-2" />
+                                        {t("common.register_course")}
+                                    </a>
+                                </Button>
+                                <Button variant="outline" size="lg" asChild>
+                                    <a href="https://wa.me/218928198656" target="_blank" rel="noopener noreferrer">
+                                        {t("common.inquire_price")}
+                                    </a>
+                                </Button>
+                            </div>
+                        )}
+
                     </div>
                 </div>
             </section>

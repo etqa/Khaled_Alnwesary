@@ -1,48 +1,48 @@
 import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { Puzzle, BookOpen, CheckSquare, ArrowRight, Download, Search } from "lucide-react";
+import { Puzzle, BookOpen, CheckSquare, ArrowRight, Download, Search, Gift } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-const Tools = () => {
+const Free = () => {
   const { t, i18n } = useTranslation();
   const isRtl = i18n.dir() === "rtl";
   const [searchQuery, setSearchQuery] = useState("");
 
-  const tools = [
+  const freeItems = [
     {
       id: "kh-tools",
-      title: t("tools.items.kh_tools.title"),
-      description: t("tools.items.kh_tools.desc"),
-      longDescription: t("tools.items.kh_tools.long_desc"),
+      title: t("free.items.kh_tools.title"),
+      description: t("free.items.kh_tools.desc"),
+      longDescription: t("free.items.kh_tools.long_desc"),
       icon: Puzzle,
-      category: t("tools.categories.blender"),
-      link: "/tools/kh-tools",
+      category: t("free.categories.blender"),
+      link: "/free/kh-tools",
     },
     {
       id: "quran-app",
-      title: t("tools.items.quran_app.title"),
-      description: t("tools.items.quran_app.desc"),
-      longDescription: t("tools.items.quran_app.long_desc"),
+      title: t("free.items.quran_app.title"),
+      description: t("free.items.quran_app.desc"),
+      longDescription: t("free.items.quran_app.long_desc"),
       icon: BookOpen,
-      category: t("tools.categories.mobile_app"),
-      link: "/tools/quran-app",
+      category: t("free.categories.mobile_app"),
+      link: "/free/quran-app",
     },
     {
       id: "task-manager",
-      title: t("tools.items.task_manager.title"),
-      description: t("tools.items.task_manager.desc"),
-      longDescription: t("tools.items.task_manager.long_desc"),
+      title: t("free.items.task_manager.title"),
+      description: t("free.items.task_manager.desc"),
+      longDescription: t("free.items.task_manager.long_desc"),
       icon: CheckSquare,
-      category: t("tools.categories.mobile_app"),
-      link: "/tools/task-manager",
+      category: t("free.categories.mobile_app"),
+      link: "/free/task-manager",
     },
   ];
 
-  const filteredTools = tools.filter((tool) =>
+  const filteredFreeItems = freeItems.filter((tool) =>
     tool.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
     tool.longDescription.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -56,13 +56,13 @@ const Tools = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <span className="animate-fade-up inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-                {t("tools.preview.tag")}
+                {t("free.preview.tag")}
               </span>
               <h1 className="animate-fade-up delay-100 text-4xl md:text-5xl font-bold text-foreground mb-6">
-                {t("tools.page.hero_title")}
+                {t("free.page.hero_title")}
               </h1>
               <p className="animate-fade-up delay-200 text-lg text-muted-foreground mb-10">
-                {t("tools.page.hero_desc")}
+                {t("free.page.hero_desc")}
               </p>
 
               {/* Search Bar */}
@@ -80,33 +80,35 @@ const Tools = () => {
           </div>
         </section>
 
-        {/* Tools Grid */}
+        {/* Free Items Grid */}
         <section className="py-16 bg-card/80 backdrop-blur-md shadow-card min-h-[400px]">
           <div className="container mx-auto px-4">
-            {filteredTools.length > 0 ? (
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {filteredTools.map((tool, index) => (
+            {filteredFreeItems.length > 0 ? (
+              <div className="flex flex-wrap justify-center gap-8">
+                {filteredFreeItems.map((tool, index) => (
                   <div
                     key={tool.id}
-                    className="animate-fade-up group relative overflow-hidden rounded-2xl border border-border hover-lift flex flex-col h-full transition-all duration-300"
+                    className="animate-fade-up group relative overflow-hidden rounded-2xl border border-border hover-lift flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-md transition-all duration-300"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     {/* Background */}
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/15 via-accent/5 to-primary/5 opacity-40 group-hover:opacity-100 transition-opacity duration-500" />
                     <div className="absolute inset-0 geometric-pattern opacity-[0.05] group-hover:opacity-[0.1] transition-opacity duration-500" />
 
-                    <div className="relative p-8 flex flex-col h-full z-10">
-                      <div className="absolute top-6 end-6">
-                        <span className="px-4 py-1.5 rounded-full bg-green-500/10 text-green-600 text-sm font-bold border border-green-500/20">
-                          {t("common.free")}
-                        </span>
-                      </div>
+                    {/* Card Header with Badge */}
+                    <div className="relative z-20 py-4 px-8 bg-green-500/5 border-b border-border/50 flex justify-center items-center">
+                      <div className="absolute inset-0 bg-gradient-to-r from-green-500/10 via-green-500/5 to-green-500/10 opacity-50" />
+                      <span className="relative z-10 flex items-center gap-2 text-green-600 text-sm font-bold">
+                        <Gift className="w-4 h-4 fill-green-500/20" />
+                        {t("common.free")}
+                      </span>
+                    </div>
 
-
-                      <h3 className="text-xl font-bold text-foreground mb-3">
+                    <div className="relative p-8 flex flex-col h-full z-10 items-center text-center">
+                      <h3 className="text-2xl font-bold text-foreground mb-4">
                         {tool.title}
                       </h3>
-                      <p className="text-muted-foreground mb-6 leading-relaxed flex-1">
+                      <p className="text-muted-foreground mb-8 leading-relaxed flex-1">
                         {tool.longDescription}
                       </p>
 
@@ -138,4 +140,4 @@ const Tools = () => {
   );
 };
 
-export default Tools;
+export default Free;

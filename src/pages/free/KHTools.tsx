@@ -1,38 +1,35 @@
 import { useTranslation } from "react-i18next";
-import { BookOpen, Download } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Puzzle } from "lucide-react";
 import { DetailLayout } from "@/components/layout/DetailLayout";
 import { useReadme } from "@/hooks/useReadme";
 import { MarkdownContent } from "@/components/details/MarkdownContent";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import localReadme from "./QuranApp.md?raw";
+import { DynamicButtons } from "@/components/details/DynamicButtons";
+import localReadme from "./KHTools.md?raw";
 
-const QuranApp = () => {
+const KHTools = () => {
     const { t } = useTranslation();
     const {
         readmeContent,
         overviewContent,
         version,
-        encryptionDownloadUrl
+        buttons
     } = useReadme({
         localContent: localReadme,
-        id: "quran-app"
+        id: "kh-tools"
     });
 
     const tool = {
-        title: t("tools.items.quran_app.title"),
-        description: t("tools.items.quran_app.desc"),
-        downloadUrl: "https://etqangroup2019.github.io/quran/",
-        icon: BookOpen,
+        title: t("free.items.kh_tools.title"),
+        description: t("free.items.kh_tools.desc"),
+        icon: Puzzle,
     };
-
-    const currentDownloadUrl = encryptionDownloadUrl || tool.downloadUrl;
 
     return (
         <DetailLayout
-            parentLink="/tools"
-            parentText={t("tools.preview.tag")}
+            parentLink="/free"
+            parentText={t("free.preview.tag")}
             itemTitle={tool.title}
         >
             <section className="py-12">
@@ -55,16 +52,8 @@ const QuranApp = () => {
                                     )}
                                 </div>
 
-                                {currentDownloadUrl && (
-                                    <div className="mb-8">
-                                        <Button variant="hero" size="lg" asChild className="rounded-2xl shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95">
-                                            <a href={currentDownloadUrl} target="_blank" rel="noopener noreferrer">
-                                                <Download className="w-5 h-5 rtl:ml-2 ltr:mr-2" />
-                                                {t("common.free_download")}
-                                            </a>
-                                        </Button>
-                                    </div>
-                                )}
+                                <DynamicButtons buttons={buttons} />
+
 
                                 <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
                                     {tool.description}
@@ -100,4 +89,4 @@ const QuranApp = () => {
     );
 };
 
-export default QuranApp;
+export default KHTools;

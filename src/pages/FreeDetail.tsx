@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
 import NotFound from "./NotFound";
-import KHTools from "./tools/KHTools";
-import QuranApp from "./tools/QuranApp";
-import TaskManager from "./tools/TaskManager";
+import KHTools from "./free/KHTools";
+import QuranApp from "./free/QuranApp";
+import TaskManager from "./free/TaskManager";
 
-const ToolDetail = () => {
+const FreeDetail = () => {
   const { id } = useParams();
 
   switch (id) {
@@ -19,4 +19,4 @@ const ToolDetail = () => {
   }
 };
 
-export default ToolDetail;
+export default FreeDetail;

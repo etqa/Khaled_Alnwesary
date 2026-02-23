@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { Wrench, Shield, ArrowRight, Star, Search } from "lucide-react";
+import { ArrowRight, Star, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";
@@ -17,7 +17,6 @@ const Products = () => {
       title: t("products.items.engineer_system.title"),
       description: t("products.items.engineer_system.desc"),
       longDescription: t("products.items.engineer_system.long_desc"),
-      icon: Wrench,
       badge: t("products.badges.popular"),
       features: [
         t("products.items.engineer_system.features.0"),
@@ -29,11 +28,25 @@ const Products = () => {
       link: "/products/engineer-system",
     },
     {
+      id: "engineer-system-lite",
+      title: t("products.items.engineer_system_lite.title"),
+      description: t("products.items.engineer_system_lite.desc"),
+      longDescription: t("products.items.engineer_system_lite.long_desc"),
+      badge: t("products.badges.new"),
+      features: [
+        t("products.items.engineer_system_lite.features.0"),
+        t("products.items.engineer_system_lite.features.1"),
+        t("products.items.engineer_system_lite.features.2"),
+        t("products.items.engineer_system_lite.features.3"),
+        t("products.items.engineer_system_lite.features.4"),
+      ],
+      link: "/products/engineer-system-lite",
+    },
+    {
       id: "file-encryption",
       title: t("products.items.file_encryption.title"),
       description: t("products.items.file_encryption.desc"),
       longDescription: t("products.items.file_encryption.long_desc"),
-      icon: Shield,
       badge: t("products.badges.new"),
       features: [
         t("products.items.file_encryption.features.0"),
@@ -88,53 +101,46 @@ const Products = () => {
         <section className="py-16 bg-card/80 backdrop-blur-md shadow-card min-h-[400px]">
           <div className="container mx-auto px-4">
             {filteredProducts.length > 0 ? (
-              <div className="space-y-8">
+              <div className="flex flex-wrap justify-center gap-8">
                 {filteredProducts.map((product, index) => (
                   <div
                     key={product.id}
-                    className="animate-fade-up relative rounded-3xl border border-border overflow-hidden hover-lift group"
-                    style={{ animationDelay: `${index * 0.15}s` }}
+                    className="animate-fade-up group relative overflow-hidden rounded-2xl border border-border hover-lift flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-md transition-all duration-300"
+                    style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     {/* Background */}
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/15 via-accent/5 to-primary/5 opacity-40 group-hover:opacity-100 transition-opacity duration-500" />
                     <div className="absolute inset-0 geometric-pattern opacity-[0.05] group-hover:opacity-[0.1] transition-opacity duration-500" />
 
-                    <div className="relative p-8 md:p-12">
-                      {product.badge && (
-                        <span className="absolute top-6 end-6 px-4 py-1.5 rounded-full bg-primary text-primary-foreground text-sm font-medium flex items-center gap-2">
-                          <Star className="w-4 h-4" />
+                    {/* Card Header with Badge */}
+                    <div className="relative z-20 py-4 px-8 bg-primary/5 border-b border-border/50 flex justify-center items-center">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 opacity-50" />
+                      {product.badge ? (
+                        <span className="relative z-10 flex items-center gap-2 text-primary text-sm font-bold">
+                          <Star className="w-4 h-4 fill-primary/20" />
                           {product.badge}
                         </span>
+                      ) : (
+                        <span className="relative z-10 flex items-center gap-2 text-muted-foreground/60 text-sm font-bold italic">
+                          {t("products.preview.tag")}
+                        </span>
                       )}
+                    </div>
 
-                      <div className="flex flex-col lg:flex-row gap-8">
-                        <div className="lg:w-2/3">
-                          <h2 className="text-3xl font-bold text-foreground mb-4">
-                            {product.title}
-                          </h2>
-                          <p className="text-lg text-muted-foreground mb-6">
-                            {product.longDescription}
-                          </p>
-                          <Button variant="hero" size="lg" asChild>
-                            <Link to={product.link}>
-                              {t("products.page.cta_details")}
-                              <ArrowRight className="w-5 h-5 rtl:rotate-180" />
-                            </Link>
-                          </Button>
-                        </div>
+                    <div className="relative p-8 flex flex-col h-full z-10 items-center text-center">
+                      <h3 className="text-2xl font-bold text-foreground mb-4">
+                        {product.title}
+                      </h3>
+                      <p className="text-muted-foreground mb-8 leading-relaxed flex-1">
+                        {product.longDescription}
+                      </p>
 
-                        <div className="lg:w-1/3">
-                          <h4 className="font-bold text-foreground mb-4">{t("products.page.features_label")}</h4>
-                          <ul className="space-y-3">
-                            {product.features.map((feature, idx) => (
-                              <li key={idx} className="flex items-center gap-3 text-muted-foreground">
-                                <div className="w-2 h-2 rounded-full bg-primary shrink-0" />
-                                <span>{feature}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
+                      <Button variant="outline" className="w-full mt-auto" asChild>
+                        <Link to={product.link}>
+                          {t("products.page.cta_details")}
+                          <ArrowRight className="w-4 h-4 rtl:rotate-180" />
+                        </Link>
+                      </Button>
                     </div>
                   </div>
                 ))}

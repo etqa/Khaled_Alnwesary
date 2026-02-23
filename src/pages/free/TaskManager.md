@@ -22,8 +22,8 @@ A simple and effective application for managing your daily tasks. It helps you o
 - Track achievements
 - Simple and fast interface
 
-### Download
-https://task-manager-example.com
+### Buttons
+- [Free Download](https://task-manager-example.com)
 
 ---
 
@@ -35,6 +35,9 @@ https://task-manager-example.com
 
 ### نظرة عامة
 تطبيق بسيط وفعال لإدارة مهامك اليومية. يساعدك على تنظيم عملك، تحديد الأولويات، ومتابعة إنجازاتك بطريقة سهلة ومرنة.
+
+### الأزرار
+- [تحميل مجاني](https://task-manager-example.com)
 
 ### المميزات الرئيسية
 

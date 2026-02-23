@@ -1,38 +1,35 @@
 import { useTranslation } from "react-i18next";
-import { Puzzle, Download, PlayCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { CheckSquare } from "lucide-react";
 import { DetailLayout } from "@/components/layout/DetailLayout";
 import { useReadme } from "@/hooks/useReadme";
 import { MarkdownContent } from "@/components/details/MarkdownContent";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import localReadme from "./KHTools.md?raw";
+import { DynamicButtons } from "@/components/details/DynamicButtons";
+import localReadme from "./TaskManager.md?raw";
 
-const KHTools = () => {
-    const { t, i18n } = useTranslation();
+const TaskManager = () => {
+    const { t } = useTranslation();
     const {
         readmeContent,
         overviewContent,
         version,
-        encryptionDownloadUrl,
-        tutorialsUrl
+        buttons
     } = useReadme({
         localContent: localReadme,
-        id: "kh-tools"
+        id: "task-manager"
     });
 
     const tool = {
-        title: t("tools.items.kh_tools.title"),
-        description: t("tools.items.kh_tools.desc"),
-        icon: Puzzle,
+        title: t("free.items.task_manager.title"),
+        description: t("free.items.task_manager.desc"),
+        icon: CheckSquare,
     };
-
-    const currentDownloadUrl = encryptionDownloadUrl;
 
     return (
         <DetailLayout
-            parentLink="/tools"
-            parentText={t("tools.preview.tag")}
+            parentLink="/free"
+            parentText={t("free.preview.tag")}
             itemTitle={tool.title}
         >
             <section className="py-12">
@@ -55,25 +52,8 @@ const KHTools = () => {
                                     )}
                                 </div>
 
-                                <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 mb-10 w-full">
-                                    {currentDownloadUrl && (
-                                        <Button variant="hero" size="lg" asChild className="w-full sm:w-[190px] rounded-2xl shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95 text-sm sm:text-base">
-                                            <a href={currentDownloadUrl} target="_blank" rel="noopener noreferrer">
-                                                <Download className="w-5 h-5 rtl:ml-2 ltr:mr-2" />
-                                                {t("common.free_download")}
-                                            </a>
-                                        </Button>
-                                    )}
+                                <DynamicButtons buttons={buttons} />
 
-                                    {tutorialsUrl && (
-                                        <Button variant="hero" size="lg" asChild className="w-full sm:w-[190px] rounded-2xl shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95 text-sm sm:text-base">
-                                            <a href={tutorialsUrl} target="_blank" rel="noopener noreferrer">
-                                                <PlayCircle className="w-5 h-5 rtl:ml-2 ltr:mr-2" />
-                                                {i18n.language === "ar" ? "دروس تعليمية" : "Tutorials"}
-                                            </a>
-                                        </Button>
-                                    )}
-                                </div>
 
                                 <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
                                     {tool.description}
@@ -109,4 +89,4 @@ const KHTools = () => {
     );
 };
 
-export default KHTools;
+export default TaskManager;

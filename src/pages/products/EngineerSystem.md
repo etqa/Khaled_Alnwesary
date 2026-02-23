@@ -24,6 +24,10 @@ The Engineer System is a comprehensive tool designed specifically for engineers 
 - Free lifetime updates
 - Continuous technical support
 
+### Buttons
+- [Order Product](https://wa.me/218928198656)
+- [Download for Windows](https://u.pcloud.link/publink/show?code=XZK0Al5ZUNYkQSng2XJS4lsisXxmX8mjQSYy)
+
 ---
 
 <a name="arabic"></a>
@@ -34,6 +38,10 @@ The Engineer System is a comprehensive tool designed specifically for engineers 
 
 ### نظرة عامة
 منظومة المهندس هي أداة شاملة مصممة خصيصاً للمهندسين والشركات الهندسية. تساعدك في إدارة مشاريعك، حساب الكميات، متابعة التقدم، وتوثيق العمل بشكل احترافي. واجهة سهلة الاستخدام مع ميزات متقدمة تلبي احتياجاتك اليومية.
+
+### الأزرار
+- [طلب المنتج](https://wa.me/218928198656)
+- [تحميل للويندوز](https://u.pcloud.link/publink/show?code=XZK0Al5ZUNYkQSng2XJS4lsisXxmX8mjQSYy)
 
 ### المميزات الرئيسية
 

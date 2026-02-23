@@ -53,9 +53,9 @@ KH-Tools is a comprehensive productivity suite for Blender designed to streamlin
 
 https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A
 
-### Download
-https://t.me/Khalid_Alnwesary/65
-
+### Buttons
+- [Telegram Download](https://t.me/Khalid_Alnwesary/65)
+- [YouTube Channel](https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A)
 
 ### Installation
 1. Download the repository as a ZIP.
@@ -73,6 +73,10 @@ https://t.me/Khalid_Alnwesary/65
 
 ### نظرة عامة
 تعتبر أدوات KH حزمة إنتاجية شاملة لبلندر، مصممة لتبسيط سير العمل في التصور المعماري، وتصميم البيئات، والإنشاء ثلاثي الأبعاد بشكل عام. تدمج هذه الحزمة العديد من الأدوات والمديرين المتخصصين في واجهة واحدة متماسكة.
+
+### الأزرار
+- [تحميل عبر تلجرام](https://t.me/Khalid_Alnwesary/65)
+- [قناة اليوتيوب](https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A)
 
 ### المميزات الجديدة
 - **دعم بلندر 5.0**: تم تحسينه واختباره بالكامل ليعمل مع بلندر 5.0، بما في ذلك تحسينات الواجهة وتوافق الـ API.

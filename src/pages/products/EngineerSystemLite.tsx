@@ -1,39 +1,40 @@
 import { useTranslation } from "react-i18next";
-import { CheckSquare, Download } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Wrench } from "lucide-react";
 import { DetailLayout } from "@/components/layout/DetailLayout";
 import { useReadme } from "@/hooks/useReadme";
 import { MarkdownContent } from "@/components/details/MarkdownContent";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import localReadme from "./TaskManager.md?raw";
+import { PricingSection } from "@/components/products/PricingSection";
+import { DynamicButtons } from "@/components/details/DynamicButtons";
+import localReadme from "./EngineerSystemLite.md?raw";
+import pricingMarkdown from "./EngineerSystemLite_Prices.md?raw";
 
-const TaskManager = () => {
-    const { t, i18n } = useTranslation();
+const EngineerSystemLite = () => {
+    const { t } = useTranslation();
     const {
         readmeContent,
         overviewContent,
         version,
-        encryptionDownloadUrl
+        buttons
     } = useReadme({
         localContent: localReadme,
-        id: "task-manager"
+        id: "engineer-system-lite",
+        isProduct: true
     });
 
-    const tool = {
-        title: t("tools.items.task_manager.title"),
-        description: t("tools.items.task_manager.desc"),
-        downloadUrl: "https://task-manager-example.com",
-        icon: CheckSquare,
-    };
 
-    const currentDownloadUrl = encryptionDownloadUrl || tool.downloadUrl;
+    const product = {
+        title: t("products.items.engineer_system_lite.title"),
+        description: t("products.items.engineer_system_lite.desc"),
+        icon: Wrench,
+    };
 
     return (
         <DetailLayout
-            parentLink="/tools"
-            parentText={t("tools.preview.tag")}
-            itemTitle={tool.title}
+            parentLink="/products"
+            parentText={t("products.preview.tag")}
+            itemTitle={product.title}
         >
             <section className="py-12">
                 <div className="container mx-auto px-4">
@@ -41,13 +42,10 @@ const TaskManager = () => {
                         <div className="animate-fade-up flex flex-col md:flex-row items-center md:items-start justify-between gap-8 mb-12">
                             <div className="flex flex-col items-center md:items-start text-center md:text-start flex-1 order-2 md:order-1 pt-4">
                                 <h1 className="text-3xl md:text-5xl font-black text-foreground mb-6 tracking-tight">
-                                    {tool.title}
+                                    {product.title}
                                 </h1>
 
                                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 mb-8">
-                                    <span className="inline-block px-4 py-1.5 rounded-full bg-green-500/10 text-green-600 text-sm font-bold border border-green-500/20">
-                                        {t("common.free")}
-                                    </span>
                                     {version && (
                                         <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-bold border border-primary/20">
                                             v{version}
@@ -55,19 +53,11 @@ const TaskManager = () => {
                                     )}
                                 </div>
 
-                                {currentDownloadUrl && (
-                                    <div className="mb-8">
-                                        <Button variant="hero" size="lg" asChild className="rounded-2xl shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95">
-                                            <a href={currentDownloadUrl} target="_blank" rel="noopener noreferrer">
-                                                <Download className="w-5 h-5 rtl:ml-2 ltr:mr-2" />
-                                                {t("common.free_download")}
-                                            </a>
-                                        </Button>
-                                    </div>
-                                )}
+                                <DynamicButtons buttons={buttons} />
+
 
                                 <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-                                    {tool.description}
+                                    {product.description}
                                 </p>
 
                                 {/* Dynamic Overview from README */}
@@ -84,13 +74,16 @@ const TaskManager = () => {
 
                             <div className="order-1 md:order-2">
                                 <div className="w-24 h-24 md:w-32 md:h-32 rounded-[2rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5">
-                                    <tool.icon className="w-12 h-12 md:w-16 md:h-16 text-primary" />
+                                    <product.icon className="w-12 h-12 md:w-16 md:h-16 text-primary" />
                                 </div>
                             </div>
                         </div>
 
+                        {/* Pricing Section */}
+                        <PricingSection markdownContent={pricingMarkdown} />
+
                         {/* Main Content (README) */}
-                        <div className="animate-fade-up delay-150 mb-20">
+                        <div className="animate-fade-up delay-150 mb-20 text-balance">
                             {readmeContent && <MarkdownContent content={readmeContent} />}
                         </div>
                     </div>
@@ -100,4 +93,4 @@ const TaskManager = () => {
     );
 };
 
-export default TaskManager;
+export default EngineerSystemLite;

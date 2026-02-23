@@ -10,6 +10,11 @@
 ### Overview
 Learn professional architectural visualization using Blender from scratch to mastery. High-quality recorded videos you can watch anytime.
 
+### Buttons
+- [Register Course](https://wa.me/218928198656)
+- [Inquire Price](https://wa.me/218928198656)
+- [Portfolio](https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A)
+
 ### Stats
 - **Duration:** +40 Training Hours
 - **Students:** +300 Students
@@ -67,6 +72,11 @@ Learn professional architectural visualization using Blender from scratch to mas
 
 ### نظرة عامة
 تعلم الإظهار المعماري الاحترافي باستخدام برنامج بلندر من الصفر حتى الاحتراف. فيديوهات مسجلة بجودة عالية يمكنك مشاهدتها في أي وقت.
+
+### الأزرار
+- [تسجيل في الدورة](https://wa.me/218928198656)
+- [استفسار عن السعر](https://wa.me/218928198656)
+- [معرض الأعمال](https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A)
 
 ### الإحصائيات
 - **المدة:** +40 ساعة تدريبية

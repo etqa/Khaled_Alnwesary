@@ -1,17 +1,17 @@
 import { useTranslation } from "react-i18next";
-import { Shield, MessageCircle, Download } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Shield } from "lucide-react";
 import { DetailLayout } from "@/components/layout/DetailLayout";
 import { useReadme } from "@/hooks/useReadme";
 import { MarkdownContent } from "@/components/details/MarkdownContent";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { PricingSection } from "@/components/products/PricingSection";
+import { DynamicButtons } from "@/components/details/DynamicButtons";
 import localReadme from "./FileEncryption.md?raw";
 import pricingMarkdown from "./FileEncryption_Prices.md?raw";
 
 const FileEncryption = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     // Main product info hook
     const productInfo = useReadme({
@@ -24,9 +24,9 @@ const FileEncryption = () => {
         readmeContent,
         overviewContent,
         version,
-        encryptionDownloadUrl,
-        playerDownloadUrl
+        buttons
     } = productInfo;
+
 
     const product = {
         title: t("products.items.file_encryption.title"),
@@ -58,32 +58,8 @@ const FileEncryption = () => {
                                     )}
                                 </div>
 
-                                <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 mb-10 w-full">
-                                    <Button variant="hero" size="lg" asChild className="w-full sm:w-[190px] rounded-2xl shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95 text-sm sm:text-base">
-                                        <a href="https://wa.me/218928198656" target="_blank" rel="noopener noreferrer">
-                                            <MessageCircle className="w-5 h-5 rtl:ml-2 ltr:mr-2" />
-                                            {t("common.order_product")}
-                                        </a>
-                                    </Button>
+                                <DynamicButtons buttons={buttons} />
 
-                                    {encryptionDownloadUrl && (
-                                        <Button variant="hero" size="lg" asChild className="w-full sm:w-[190px] rounded-2xl shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95 text-sm sm:text-base">
-                                            <a href={encryptionDownloadUrl} target="_blank" rel="noopener noreferrer">
-                                                <Download className="w-5 h-5 rtl:ml-2 ltr:mr-2" />
-                                                {i18n.language === "ar" ? "أداة التشفير" : "Encoder Tool"}
-                                            </a>
-                                        </Button>
-                                    )}
-
-                                    {playerDownloadUrl && (
-                                        <Button variant="hero" size="lg" asChild className="w-full sm:w-[190px] rounded-2xl shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95 text-sm sm:text-base">
-                                            <a href={playerDownloadUrl} target="_blank" rel="noopener noreferrer">
-                                                <Download className="w-5 h-5 rtl:ml-2 ltr:mr-2" />
-                                                {i18n.language === "ar" ? "المشغل المجاني" : "Free Player"}
-                                            </a>
-                                        </Button>
-                                    )}
-                                </div>
 
                                 <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
                                     {product.description}

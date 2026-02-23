@@ -3,27 +3,27 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-export const ToolsPreview = () => {
+export const FreePreview = () => {
   const { t } = useTranslation();
 
-  const tools = [
+  const freeItems = [
     {
-      title: t("tools.items.kh_tools.title"),
-      description: t("tools.items.kh_tools.desc"),
+      title: t("free.items.kh_tools.title"),
+      description: t("free.items.kh_tools.desc"),
       icon: Puzzle,
-      link: "/tools/kh-tools",
+      link: "/free/kh-tools",
     },
     {
-      title: t("tools.items.quran_app.title"),
-      description: t("tools.items.quran_app.desc"),
+      title: t("free.items.quran_app.title"),
+      description: t("free.items.quran_app.desc"),
       icon: BookOpen,
-      link: "/tools/quran-app",
+      link: "/free/quran-app",
     },
     {
-      title: t("tools.items.task_manager.title"),
-      description: t("tools.items.task_manager.desc"),
+      title: t("free.items.task_manager.title"),
+      description: t("free.items.task_manager.desc"),
       icon: CheckSquare,
-      link: "/tools/task-manager",
+      link: "/free/task-manager",
     },
   ];
 
@@ -33,24 +33,24 @@ export const ToolsPreview = () => {
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-1/2">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-              {t("tools.preview.tag")}
+              {t("free.preview.tag")}
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              {t("tools.preview.title")}
+              {t("free.preview.title")}
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              {t("tools.preview.subtitle")}
+              {t("free.preview.subtitle")}
             </p>
             <Button variant="outline" size="lg" asChild>
-              <Link to="/tools">
-                {t("tools.preview.cta_all")}
+              <Link to="/free">
+                {t("free.preview.cta_all")}
                 <ArrowRight className="w-5 h-5 rtl:rotate-180" />
               </Link>
             </Button>
           </div>
 
           <div className="lg:w-1/2 space-y-4">
-            {tools.map((tool, index) => (
+            {freeItems.map((tool, index) => (
               <Link
                 key={index}
                 to={tool.link}

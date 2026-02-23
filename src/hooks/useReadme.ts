@@ -19,6 +19,7 @@ export const useReadme = ({ readmeUrl, id, isProduct, isService, isCourse, local
     const [encryptionDownloadUrl, setEncryptionDownloadUrl] = useState<string | null>(null);
     const [playerDownloadUrl, setPlayerDownloadUrl] = useState<string | null>(null);
     const [tutorialsUrl, setTutorialsUrl] = useState<string | null>(null);
+    const [buttons, setButtons] = useState<{ label: string; url: string }[]>([]);
 
     // Product specific content
     const [pricingContent, setPricingContent] = useState<string | null>(null);
@@ -106,6 +107,16 @@ export const useReadme = ({ readmeUrl, id, isProduct, isService, isCourse, local
             // Pricing
             const pricing = extractSection(/(?:###\s+)(?:Pricing|Pricing Plans|الأسعار|خطط الأسعار)\s*(.*?)(?=###|$)/si);
             setPricingContent(pricing);
+
+            // Buttons Section
+            const buttonsSectionStr = extractSection(/(?:###\s+)(?:Buttons|الأزرار|الروابط|التحميلات|Links)\s*(.*?)(?=###|$)/si);
+            if (buttonsSectionStr) {
+                const buttonMatches = Array.from(buttonsSectionStr.matchAll(/\[(.*?)\]\((.*?)\)/g));
+                const parsedButtons = buttonMatches.map(m => ({ label: m[1], url: m[2] }));
+                setButtons(parsedButtons);
+            } else {
+                setButtons([]);
+            }
 
             // Service specific sections
             if (isService) {
@@ -208,6 +219,7 @@ export const useReadme = ({ readmeUrl, id, isProduct, isService, isCourse, local
         version,
         encryptionDownloadUrl,
         playerDownloadUrl,
-        tutorialsUrl
+        tutorialsUrl,
+        buttons
     };
 };

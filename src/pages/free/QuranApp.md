@@ -22,8 +22,9 @@ A comprehensive free application for reading the Holy Quran with an easy-to-use 
 - Night reading mode
 - Works offline
 
-### Download
-https://play.google.com/store/apps/details?id=com.khaled.quran
+### Buttons
+- [Android Download](https://play.google.com/store/apps/details?id=com.khaled.quran)
+- [Online Version](https://example-quran-online.com)
 
 ---
 
@@ -35,6 +36,10 @@ https://play.google.com/store/apps/details?id=com.khaled.quran
 
 ### نظرة عامة
 تطبيق مجاني شامل لقراءة القرآن الكريم بواجهة سهلة الاستخدام. يحتوي على المصحف كاملاً مع إمكانية الاستماع للتلاوات بأصوات مختلف القراء، بالإضافة لميزات البحث والعلامات المرجعية.
+
+### الأزرار
+- [تحميل للأندرويد](https://play.google.com/store/apps/details?id=com.khaled.quran)
+- [نسخة الأونلاين](https://example-quran-online.com)
 
 ### المميزات الرئيسية
 

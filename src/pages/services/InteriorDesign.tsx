@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Sofa, MessageCircle, Image as ImageIcon, FileText } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Sofa, Image as ImageIcon, FileText } from "lucide-react";
 import { DetailLayout } from "@/components/layout/DetailLayout";
 import { useReadme } from "@/hooks/useReadme";
 import { MarkdownContent } from "@/components/details/MarkdownContent";
@@ -9,6 +8,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import { ImageModal } from "@/components/ui/ImageModal";
+import { DynamicButtons } from "@/components/details/DynamicButtons";
 import localReadme from "./InteriorDesign.md?raw";
 
 const InteriorDesign = () => {
@@ -20,7 +20,8 @@ const InteriorDesign = () => {
         featuresContent,
         termsContent,
         collaborationContent,
-        readmeContent
+        readmeContent,
+        buttons
     } = useReadme({
         localContent: localReadme,
         id: "interior",
@@ -48,14 +49,7 @@ const InteriorDesign = () => {
                                     {service.title}
                                 </h1>
 
-                                <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 mb-10 w-full">
-                                    <Button variant="hero" size="lg" asChild className="rounded-2xl shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95">
-                                        <a href="https://wa.me/218928198656" target="_blank" rel="noopener noreferrer">
-                                            <MessageCircle className="w-5 h-5 rtl:ml-2 ltr:mr-2" />
-                                            {t("common.order_service")}
-                                        </a>
-                                    </Button>
-                                </div>
+                                <DynamicButtons buttons={buttons} />
 
                                 <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
                                     {service.description}
@@ -151,7 +145,7 @@ const InteriorDesign = () => {
 
                             {/* Portfolio Section */}
                             {portfolioContent && (
-                                <div className="bg-card/50 border border-border/50 rounded-[2.5rem] p-8 md:p-12 shadow-sm animate-fade-up">
+                                <div className="bg-card/80 border border-border/50 rounded-[2.5rem] p-8 md:p-12 shadow-sm animate-fade-up backdrop-blur-md">
                                     <div className="flex items-center gap-3 mb-8">
                                         <ImageIcon className="w-6 h-6 text-primary" />
                                         <h2 className="text-3xl font-black text-foreground tracking-tight">{t("services.page.detail.portfolio_title")}</h2>
@@ -180,7 +174,7 @@ const InteriorDesign = () => {
 
                             {/* Features Section */}
                             {featuresContent && (
-                                <div className="bg-card/50 border border-border/50 rounded-[2.5rem] p-8 md:p-12 shadow-sm animate-fade-up">
+                                <div className="bg-card/80 border border-border/50 rounded-[2.5rem] p-8 md:p-12 shadow-sm animate-fade-up backdrop-blur-md">
                                     <h2 className="text-2xl font-bold text-foreground mb-8">{t("common.features")}</h2>
                                     <div className="prose prose-slate dark:prose-invert max-w-none">
                                         <ReactMarkdown

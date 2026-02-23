@@ -17,6 +17,11 @@ interface PricingSectionProps {
 
 export const PricingSection: React.FC<PricingSectionProps> = ({ markdownContent }) => {
     const { i18n } = useTranslation();
+    const isZero = (s: string) => {
+        if (!s) return false;
+        const numeric = s.replace(/[^\d.]/g, '');
+        return numeric !== '' && parseFloat(numeric) === 0;
+    };
 
     const getPricingPlans = () => {
         if (!markdownContent) return [];
@@ -48,8 +53,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ markdownContent 
             const priceMatch = section.match(/\*\*Price:\*\* (.*?)$|\*\*السعر:\*\* (.*?)$/m);
             const discountMatch = section.match(/\*\*Discount:\*\* (.*?)$|\*\*الخصم:\*\* (.*?)$/m);
             const rawDiscount = discountMatch ? (discountMatch[1] || discountMatch[2]).trim() : null;
-            // Treat "0", "0 دينار", "$0" etc as no discount
-            const discount = (rawDiscount && !rawDiscount.startsWith('0')) ? rawDiscount : null;
+            const discount = (rawDiscount && !isZero(rawDiscount)) ? rawDiscount : null;
             const descMatch = section.match(/\*\*Description:\*\* (.*?)$|\*\*الوصف:\*\* (.*?)$/m);
 
             const extractList = (headerAr: string, headerEn: string) => {
@@ -116,7 +120,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ markdownContent 
                                     </div>
                                 ) : (
                                     <span className="text-4xl font-black tracking-tight text-primary">
-                                        {(plan.price === "0" || plan.price === "$0" || plan.price?.startsWith("0"))
+                                        {isZero(plan.price)
                                             ? (i18n.language === "ar" ? "مجاني" : "FREE")
                                             : plan.price}
                                     </span>

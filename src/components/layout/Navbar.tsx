@@ -9,7 +9,7 @@ const navLinks = [
   { href: "/", labelKey: "nav.home", icon: Home },
   { href: "/services", labelKey: "nav.services", icon: LayoutGrid },
   { href: "/products", labelKey: "nav.products", icon: Package },
-  { href: "/tools", labelKey: "nav.tools", icon: Gift },
+  { href: "/free", labelKey: "nav.free", icon: Gift },
   { href: "/courses", labelKey: "nav.courses", icon: GraduationCap },
 ];
 

@@ -27,29 +27,9 @@
 
 ---
 
-#### Annual Subscription
-**Price:** $450
-**Discount:** $0
-**Description:** Per Year
-
-##### Features
-- Full encryption system
-- Unlimited protected projects
-- License activation with device binding
-- Anti screen-recording protection
-- Free updates during subscription period
-- Technical support
-
-##### Restrictions
-- License valid for one year only
-- One device per license
-- Renewal required to continue usage
-
----
-
 #### Lifetime License
-**Price:** $800
-**Discount:** $600
+**Price:** $95
+**Discount:** $0
 **Description:** One-time payment
 
 ##### Features
@@ -113,7 +93,7 @@
 
 #### ترخيص دائم
 **السعر:** 800 دينار
-**الخصم:** 600 دينار
+**الخصم:** 0 دينار
 **الوصف:** مدى الحياة
 
 ##### المميزات:

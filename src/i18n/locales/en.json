@@ -3,7 +3,7 @@
         "home": "Home",
         "services": "Services",
         "products": "Products",
-        "tools": "Freebies",
+        "free": "Freebies",
         "courses": "Training",
         "brand_name": "Khaled Al-Nwesary"
     },
@@ -23,11 +23,11 @@
         "more": "More",
         "back_to_home": "Back to Home",
         "back_to_products": "Back to Products",
-        "back_to_tools": "Back to Freebies",
+        "back_to_free": "Back to Freebies",
         "back_to_courses": "Back to Training",
         "not_found": "Page not found",
         "product_not_found": "Product not found",
-        "tool_not_found": "Tool not found",
+        "free_item_not_found": "Item not found",
         "course_not_found": "Course not found",
         "features": "Features",
         "order_product": "Order Product",
@@ -51,7 +51,7 @@
         "description": "Specializing in professional architectural visualization and developing innovative digital solutions and applications serving engineers and engineering firms.",
         "cta_services": "Browse Services",
         "cta_products": "Browse Products",
-        "cta_tools": "Browse Freebies",
+        "cta_free": "Browse Freebies",
         "cta_courses": "Browse Training",
         "stats": {
             "experience": "Years Experience",
@@ -142,26 +142,49 @@
         },
         "items": {
             "engineer_system": {
-                "title": "Engineer System",
-                "desc": "Integrated application for engineering project management and accounting",
-                "long_desc": "A comprehensive system helping engineers manage their projects, calculate quantities, track progress, and document work professionally.",
-                "long_desc_detail": "The Engineer System is a comprehensive tool designed specifically for engineers and engineering firms. It helps you manage your projects, calculate quantities, track progress, and document work professionally. An easy-to-use interface with advanced features to meet your daily needs.",
+                "title": "Engineer System Pro",
+                "desc": "Integrated application for engineering projects and accounting (Pro Version)",
+                "long_desc": "A comprehensive system linked to an accounting system and server database supporting multiple devices and users for large firms.",
+                "long_desc_detail": "Engineer System Pro is a comprehensive tool designed for large engineering firms and offices that need an integrated accounting system and a server database supporting multiple users and devices. It helps you manage projects, calculate quantities, and track finances with high precision.",
                 "features": {
-                    "0": "Engineering project management",
-                    "1": "Quantity and material calculation",
-                    "2": "Detailed reports",
-                    "3": "Progress tracking",
-                    "4": "Easy to use interface"
+                    "0": "Integrated Accounting System",
+                    "1": "Server Database",
+                    "2": "Multi-user & Multi-device",
+                    "3": "Large Project Management",
+                    "4": "Detailed Financial Reports"
                 },
                 "features_detail": {
-                    "0": "Comprehensive engineering project management",
-                    "1": "High-precision quantity and material calculation",
-                    "2": "Create and export detailed reports",
-                    "3": "Real-time progress tracking",
-                    "4": "Easy and intuitive user interface",
-                    "5": "Full Arabic language support",
-                    "6": "Free lifetime updates",
-                    "7": "Continuous technical support"
+                    "0": "Comprehensive integrated accounting system",
+                    "1": "Server database for multi-device support",
+                    "2": "Multi-user support with different permissions",
+                    "3": "Large-scale engineering project management",
+                    "4": "High-precision quantity and material calculation",
+                    "5": "Detailed financial and administrative reports",
+                    "6": "Free updates and continuous technical support",
+                    "7": "Support for local network and internet connectivity"
+                }
+            },
+            "engineer_system_lite": {
+                "title": "Engineer System Lite",
+                "desc": "Lighter version for small and medium engineering firms",
+                "long_desc": "An effective tool for engineering project management and quantity calculation, specifically designed for small and medium offices.",
+                "long_desc_detail": "Engineer System Lite is the lighter and most suitable version for small engineering offices and freelancers. It provides essential tools for project management, quantity calculation, and reporting without the complexity of large accounting systems and servers.",
+                "features": {
+                    "0": "Engineering Project Management",
+                    "1": "Quantity and Material Calculation",
+                    "2": "Project Reports",
+                    "3": "Progress Tracking",
+                    "4": "Ease and Speed of Operation"
+                },
+                "features_detail": {
+                    "0": "Simplified engineering project management",
+                    "1": "Basic quantity and material calculation",
+                    "2": "Create and export project reports",
+                    "3": "Progress tracking",
+                    "4": "Fast and easy user interface",
+                    "5": "Excellent technical support",
+                    "6": "Regular updates",
+                    "7": "Suitable for small and medium offices"
                 }
             },
             "file_encryption": {
@@ -193,7 +216,7 @@
             "new": "New"
         }
     },
-    "tools": {
+    "free": {
         "preview": {
             "tag": "Free Tools",
             "title": "Free Tools & Apps",
@@ -211,7 +234,7 @@
         },
         "items": {
             "kh_tools": {
-                "title": "KH Tools",
+                "title": "KH Tools Addon",
                 "desc": "Free Blender addon facilitating architectural visualization",
                 "long_desc": "A set of free tools for Blender that facilitate architectural visualization and save time and effort in scene setup.",
                 "long_desc_detail": "KH Tools is a set of free tools for Blender designed to facilitate and speed up the architectural visualization process. It contains various tools for scene setup, material application, and lighting adjustment with a single button click.",
@@ -349,6 +372,18 @@
                 "4": "Completion certificate",
                 "5": "Private support group"
             }
+        },
+        "blender_free_ext": {
+            "title": "Blender Exterior ",
+            "desc": "A comprehensive free course to learn architectural exterior visualization with Blender."
+        },
+        "d5_render_free": {
+            "title": "D5 Render Exterior ",
+            "desc": "Learn how to produce realistic and fast exterior renders using the powerful D5 Render engine."
+        },
+        "blender_free_int": {
+            "title": "Blender Interior ",
+            "desc": "A specialized free course for learning interior architectural visualization skills."
         }
     },
     "contact": {

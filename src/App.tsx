@@ -9,8 +9,8 @@ import Services from "./pages/Services";
 import ServiceDetail from "./pages/ServiceDetail";
 import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
-import Tools from "./pages/Tools";
-import ToolDetail from "./pages/ToolDetail";
+import Free from "./pages/Free";
+import FreeDetail from "./pages/FreeDetail";
 import Courses from "./pages/Courses";
 import CourseDetail from "./pages/CourseDetail";
 import NotFound from "./pages/NotFound";
@@ -48,8 +48,8 @@ const App = () => {
                 <Route path="/services/:id" element={<ServiceDetail />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/products/:id" element={<ProductDetail />} />
-                <Route path="/tools" element={<Tools />} />
-                <Route path="/tools/:id" element={<ToolDetail />} />
+                <Route path="/free" element={<Free />} />
+                <Route path="/free/:id" element={<FreeDetail />} />
                 <Route path="/courses" element={<Courses />} />
                 <Route path="/courses/:id" element={<CourseDetail />} />
                 <Route path="*" element={<NotFound />} />
