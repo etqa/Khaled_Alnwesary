@@ -24,7 +24,7 @@ const queryClient = new QueryClient();
 
 const App = () => {
   const { i18n } = useTranslation();
-  const basename = (window.location.hostname.includes("github.io") && window.location.pathname.startsWith("/wep")) ? "/wep" : "";
+  const basename = (window.location.hostname.includes("github.io") && window.location.pathname.startsWith("/Khaled_Alnwesary")) ? "/Khaled_Alnwesary" : "";
 
   useEffect(() => {
     const dir = i18n.dir(i18n.language);
