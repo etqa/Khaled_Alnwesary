@@ -1,31 +1,58 @@
-# Virtual Tours
+# Virtual Tours Service
 
 [English](#english) | [العربية](#arabic)
+
+---
+
+[wa_order]: whatsapp:218928198656?message=السلام عليكم، أريد طلب خدمة الجولات الافتراضية التفاعلية (Virtual Tours)
+
+[yt_port]: https://www.youtube.com/@خالدالنويصري
+
+[fb_port]: https://www.facebook.com/Khaled.alnwesary.2019/posts/pfbid02R8Prt6zWoyXj6Y2f69yS9iEj5W8W6z8vS6z5z5z5z5z5z5z5z5z5z5z5z
+
+[v1]: https://www.facebook.com/photo/?fbid=620968626911677
+
+[v2]: https://www.facebook.com/photo/?fbid=10230538805315657
+
+[v3]: https://www.facebook.com/photo/?fbid=2133149760221715
+
+[v4]: https://www.facebook.com/reel/922254829295774/?s=single_unit
 
 ---
 
 <a name="english"></a>
 ## English
 
-### Overview
-Creating interactive 3D tours for projects including 360 degree tours for web and mobile.
+### Title
+Virtual Tours
+
+### Short Description
+Creating interactive 3D tours for projects
+
+### Video Tutorials
+- [Virtual Tours Portfolio Youtube][yt_port]
+- [Virtual Tours Portfolio Facebook][fb_port]
 
 ### Buttons
-- [Order Service](https://wa.me/218928198656)
-- [Portfolio](https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A)
+- [Order Service][wa_order]
+- [View Portfolio][yt_port]
+- [Contact Us][wa_order]
+
+### Overview
+Experience your project in a fully immersive way with our 360-degree virtual tours. We create interactive experiences that allow your clients to explore every corner of a space as if they were actually there, directly from their browser or smartphone.
 
 ### Portfolio
-- https://www.facebook.com/photo/?fbid=620968626911677
-- https://www.facebook.com/photo/?fbid=10230538805315657
-- https://www.facebook.com/photo/?fbid=2133149760221715
-- https://www.facebook.com/reel/922254829295774/?s=single_unit
-
+- [Luxury Villa 360 Tour][v1]
+- [Modern Office Interactive Walkthrough][v2]
+- [Commercial Showroom Tour][v3]
+- [Apartment Floor Plan Explorer][v4]
 
 ### Features
-- 360 degree tours
-- Interactive experience
-- Web and mobile viewing
-- Easy sharing
+- Immersive 360-degree panoramas
+- Interactive "hotspots" for information
+- Seamless navigation between rooms
+- Responsive design for mobile and web
+- VR headset compatibility
 
 ### Terms of Service
 1. Clearly define requirements before starting.
@@ -47,24 +74,41 @@ Creating interactive 3D tours for projects including 360 degree tours for web an
 <a name="arabic"></a>
 ## العربية (Arabic)
 
+### Title
+جولات افتراضية
+
+### Short Description
+إنشاء جولات تفاعلية ثلاثية الأبعاد للمشاريع
+
 ### نظرة عامة
 إنشاء جولات تفاعلية ثلاثية الأبعاد للمشاريع تشمل جولات 360 درجة للعرض على الويب والموبايل.
 
 ### الأزرار
-- [طلب الخدمة](https://wa.me/218928198656)
-- [معرض الأعمال](https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A)
+- [طلب الخدمة][wa_order]
+- [معرض الأعمال][yt_port]
 
 ### معرض الأعمال
-- https://www.facebook.com/photo/?fbid=620968626911677
-- https://www.facebook.com/photo/?fbid=10230538805315657
-- https://www.facebook.com/photo/?fbid=2133149760221715
-- https://www.facebook.com/reel/922254829295774/?s=single_unit
+- [جولة 360 درجة لفيلا سكنية فاخرة][v1]
+- [جولة تفاعلية لمكتب عمل مودرن][v2]
+- [مشروع معرض تجاري تفاعلي][v3]
+- [مستكشف مساقط أفقية لشقة][v4]
+
+### فيديوهات توضيحية
+- [عرض الجولات التفاعلية - يوتيوب][yt_port]
+- [معرض الجولات - فيسبوك][fb_port]
 
 ### المميزات
 - جولات 360 درجة
 - تجربة تفاعلية
 - عرض على الويب والموبايل
 - سهولة المشاركة
+
+### طريقة التعاون
+1. ارسال ملف المشروع للإطلاع عليه مع توضيح المتطلبات الأولية.
+2. بعد الإطلاع على ملف المشروع يتم الرد بالوقت والسعر خلال يوم أو يومين.
+3. في حال اعتماد الوقت والسعر يتم البدء في تجهيز تست للمشروع.
+4. بعد تقديم الملاحظات واعتماد التست يتم ارسال مبلغ المشروع بالكامل.
+5. نبدا في تجهيز الصور النهائية للمشروع ثم ارسال الملفات النهائية بعد استلام المبلغ.
 
 ### شروط التعامل
 1. تحديد المتطلبات بوضوح قبل البدء.
@@ -74,9 +118,3 @@ Creating interactive 3D tours for projects including 360 degree tours for web an
 5. عدد التعديلات على التست لايتجاوز 3 تعديلات ثم قد يتم فرض رسوم اضافية .
 6. اي شروط او ملاحظات تتعلق بحقوق النشر او التنزيل على النت او غيرها يتم توضيحه في بداية الاتفاق قبل البدء في المشروع 
 
-### طريقة التعاون
-1. ارسال ملف المشروع للإطلاع عليه مع توضيح المتطلبات الأولية.
-2. بعد الإطلاع على ملف المشروع يتم الرد بالوقت والسعر خلال يوم أو يومين.
-3. في حال اعتماد الوقت والسعر يتم البدء في تجهيز تست للمشروع.
-4. بعد تقديم الملاحظات واعتماد التست يتم ارسال مبلغ المشروع بالكامل.
-5. نبدا في تجهيز الصور النهائية للمشروع ثم ارسال الملفات النهائية بعد استلام المبلغ.

@@ -13,6 +13,8 @@ const QuranApp = () => {
     const {
         readmeContent,
         overviewContent,
+        titleContent,
+        shortDesc,
         version,
         buttons
     } = useReadme({
@@ -21,8 +23,8 @@ const QuranApp = () => {
     });
 
     const tool = {
-        title: t("free.items.quran_app.title"),
-        description: t("free.items.quran_app.desc"),
+        title: titleContent || "",
+        description: shortDesc || "",
         icon: BookOpen,
     };
 

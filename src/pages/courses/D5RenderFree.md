@@ -7,6 +7,12 @@
 <a name="english"></a>
 ## English
 
+### Title
+D5 Render Exterior
+
+### Short Description
+Learn how to produce realistic and fast exterior renders using the powerful D5 Render engine.
+
 ### Overview
 Master exterior rendering with D5 Render. Learn how to create stunning, realistic architectural visualizations quickly and efficiently using this powerful real-time engine.
 
@@ -26,6 +32,12 @@ Master exterior rendering with D5 Render. Learn how to create stunning, realisti
 
 <a name="arabic"></a>
 ## العربية (Arabic)
+
+### Title
+كورس D5 Render خارجي
+
+### Short Description
+تعلم كيفية إنتاج رندر خارجي واقعي وسريع باستخدام محرك D5 Render القوي في هذا الكورس المجاني.
 
 ### نظرة عامة
 أتقن الرندر الخارجي باستخدام محرك D5 Render. تعلم كيفية إنشاء إظهار معماري واقعي ومذهل بسرعة وكفاءة باستخدام هذا المحرك القوي الذي يعمل بالوقت الفعلي.

@@ -1,33 +1,64 @@
-# Interior Design
+# Interior Design Service
 
 [English](#english) | [العربية](#arabic)
+
+---
+
+[wa_order]: whatsapp:218928198656?message=السلام عليكم، أريد طلب خدمة الإظهار المعماري الداخلي
+
+[fb_port]: https://www.facebook.com/Khaled.alnwesary.2019/posts/pfbid02R8Prt6zWoyXj6Y2f69yS9iEj5W8W6z8vS6z5z5z5z5z5z5z5z5z5z5z5z
+
+[yt_port]: https://www.youtube.com/@خالدالنويصري
+
+[img1]: portfolio/interior/1.jpg
+
+[img2]: portfolio/interior/2.jpg
+
+[img3]: portfolio/interior/3.jpg
+
+[img4]: portfolio/interior/4.jpg
+
+[img5]: portfolio/interior/5.jpg
+
+[img6]: portfolio/interior/6.jpg
 
 ---
 
 <a name="english"></a>
 ## English
 
-### Overview
-Designing interior spaces with precise details and realistic lighting for residential and commercial spaces.
+### Title
+Interior Visualization
+
+### Short Description
+Designing interior spaces with precise details and realistic lighting
+
+### Video Tutorials
+- [Interior Portfolio Youtube][yt_port]
+- [Interior Portfolio Facebook][fb_port]
 
 ### Buttons
-- [Order Service](https://wa.me/218928198656)
-- [Portfolio](https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A)
+- [Order Service][wa_order]
+- [View Portfolio][yt_port]
+- [Contact Us][wa_order]
+
+### Overview
+Transform your spaces with our creative interior Visualization services. We focus on creating elegant, comfortable, and functional interiors that reflect your personal style while optimizing space and light.
 
 ### Portfolio
 
-![Designed by Al-Atyoush Office, Benghazi](portfolio/interior/1.jpg) ![Designed by Al-Atyoush Office, Benghazi](portfolio/interior/2.jpg)
+![Luxury Living Room][img1] ![Modern Kitchen Design][img2]
 
-![Designed by Al-Rakeza Company, Benghazi](portfolio/interior/3.jpg) ![Designed by Al-Rakeza Company, Benghazi](portfolio/interior/4.jpg)
+![Master Bedroom Suite][img3] ![Office Workspace Design][img4]
 
-![Designed by Imtiaz Company, Tripoli](portfolio/interior/5.jpg) ![Designed by Imtiaz Company, Tripoli](portfolio/interior/6.jpg)
-
+![Luxury Suite][img5] ![Architectural Detail][img6]
 
 ### Features
-- Living rooms and lounges
-- Kitchens and bathrooms
-- Offices and shops
-- Hotels and restaurants
+- Photorealistic 3D rendering
+- Lighting and material selection
+- Furniture layout planning
+- Custom cabinetry and detail design
+- Color palette and texture consulting
 
 ### Terms of Service
 1. Clearly define requirements before starting.
@@ -49,27 +80,37 @@ Designing interior spaces with precise details and realistic lighting for reside
 <a name="arabic"></a>
 ## العربية (Arabic)
 
+### Title
+إظهار داخلي
+
+### Short Description
+تصميم الفراغات الداخلية بتفاصيل دقيقة وإضاءة واقعية
+
 ### نظرة عامة
-تصميم الفراغات الداخلية بتفاصيل دقيقة وإضاءة واقعية للمساحات السكنية والتجارية.
+إظهار الفراغات الداخلية بتفاصيل دقيقة وإضاءة واقعية للمساحات السكنية والتجارية.
 
 ### الأزرار
-- [طلب الخدمة](https://wa.me/218928198656)
-- [معرض الأعمال](https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A)
+- [طلب الخدمة][wa_order]
+- [معرض الأعمال][yt_port]
 
 ### معرض الأعمال
 
-![من تصميم مكتب الاطيوش/بنغازي](portfolio/interior/1.jpg) ![من تصميم مكتب الاطيوش/بنغازي](portfolio/interior/2.jpg)
+![تصميم داخلي 1][img1] ![تصميم داخلي 2][img2]
 
-![من تصميم شركة الراكزة/بنغازي](portfolio/interior/3.jpg) ![من تصميم شركة الراكزة/بنغازي](portfolio/interior/4.jpg)
+![تصميم داخلي 3][img3] ![تصميم داخلي 4][img4]
 
-![من تصميم شركة امتياز/طرابلس](portfolio/interior/5.jpg) ![من تصميم شركة امتياز/طرابلس](portfolio/interior/6.jpg)
+![تصميم داخلي 5][img5] ![تصميم داخلي 6][img6]
 
+### فيديوهات توضيحية
+- [معرض أعمال التصميم الداخلي - يوتيوب][yt_port]
+- [معرض أعمال التصميم الداخلي - فيسبوك][fb_port]
 
 ### المميزات
 - غرف معيشة وصالات
 - مطابخ وحمامات
 - مكاتب ومحلات تجارية
 - فنادق ومطاعم
+
 
 ### شروط التعامل
 1. تحديد المتطلبات بوضوح قبل البدء.

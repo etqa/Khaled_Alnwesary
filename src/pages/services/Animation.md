@@ -4,27 +4,57 @@
 
 ---
 
+[wa_order]: whatsapp:218928198656?message=السلام عليكم، أريد طلب خدمة الإظهار المعماري المتحرك (Animation)
+
+[yt_port]: https://www.youtube.com/playlist?list=PLRrETGQR_7qIzNCAUiudxC4dpuUoheiIo
+
+[yt_promo]: https://www.youtube.com/watch?v=VRzW72Ptnug&t=52s
+
+[fb_port]: https://www.facebook.com/Khaled.alnwesary.2019/posts/pfbid02R8Prt6zWoyXj6Y2f69yS9iEj5W8W6z8vS6z5z5z5z5z5z5z5z5z5z5z5z
+
+[v1]: https://www.youtube.com/watch?v=1I9IZZiq4Kc
+
+[v2]: https://www.youtube.com/watch?v=4CI7PdRZTqs
+
+[v3]: https://www.youtube.com/watch?v=LYVU1PFk3Gg
+
+[v4]: https://www.youtube.com/watch?v=DP0nM047m3E
+
+---
+
 <a name="english"></a>
 ## English
 
-### Overview
-High-quality animated videos for architectural projects including animated tours and marketing presentations.
+### Title
+Video Animation
+
+### Short Description
+High-quality animated videos for architectural projects
+
+### Video Tutorials
+- [Animation Service Promo][yt_promo]
+- [Full Animation Portfolio][yt_port]
 
 ### Buttons
-- [Order Service](https://wa.me/218928198656)
-- [Portfolio](https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A)
+- [Order Service][wa_order]
+- [View Portfolio][yt_port]
+- [Contact Us][wa_order]
+
+### Overview
+Bring your designs to life with our professional 3D animation services. We create high-quality walkthroughs, cinematic tours, and product presentations that help you showcase your vision with impact.
 
 ### Portfolio
-- https://www.youtube.com/watch?v=1I9IZZiq4Kc&list=PLRrETGQR_7qIzNCAUiudxC4dpuUoheiIo
-- https://www.youtube.com/watch?v=4CI7PdRZTqs&list=PLRrETGQR_7qIzNCAUiudxC4dpuUoheiIo&index=6
-- https://www.youtube.com/watch?v=LYVU1PFk3Gg&list=PLRrETGQR_7qIzNCAUiudxC4dpuUoheiIo&index=7
-- https://www.youtube.com/watch?v=DP0nM047m3E&list=PLRrETGQR_7qIzNCAUiudxC4dpuUoheiIo&index=5
+- [Luxury Villa Walkthrough][v1]
+- [Commercial Building Tour][v2]
+- [Interior Design Animation][v3]
+- [Real Estate Presentation][v4]
 
 ### Features
-- Animated tours
-- Presentations
-- Marketing video
-- Visual effects
+- Cinematic 4K rendering
+- Realistic lighting and sound
+- Custom camera paths
+- Fast turnaround time
+- Professional post-production
 
 ### Terms of Service
 1. Clearly define requirements before starting.
@@ -46,24 +76,41 @@ High-quality animated videos for architectural projects including animated tours
 <a name="arabic"></a>
 ## العربية (Arabic)
 
+### Title
+فيديو أنيميشن
+
+### Short Description
+إنتاج فيديوهات متحركة عالية الجودة للمشاريع المعمارية
+
 ### نظرة عامة
 إنتاج فيديوهات متحركة عالية الجودة للمشاريع المعمارية تشمل جولات متحركة وعروض تقديمية تسويقية.
 
 ### الأزرار
-- [طلب الخدمة](https://wa.me/218928198656)
-- [معرض الأعمال](https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A)
+- [طلب الخدمة][wa_order]
+- [معرض الأعمال][yt_port]
 
 ### معرض الأعمال
-- https://www.youtube.com/watch?v=1I9IZZiq4Kc&list=PLRrETGQR_7qIzNCAUiudxC4dpuUoheiIo
-- https://www.youtube.com/watch?v=4CI7PdRZTqs&list=PLRrETGQR_7qIzNCAUiudxC4dpuUoheiIo&index=6
-- https://www.youtube.com/watch?v=LYVU1PFk3Gg&list=PLRrETGQR_7qIzNCAUiudxC4dpuUoheiIo&index=7
-- https://www.youtube.com/watch?v=DP0nM047m3E&list=PLRrETGQR_7qIzNCAUiudxC4dpuUoheiIo&index=5
+- [مشروع فيلا سكنية متحرك][v1]
+- [جولة في مبنى تجاري][v2]
+- [تصميم داخلي متحرك][v3]
+- [عرض تقديمي عقاري][v4]
+
+### فيديوهات توضيحية
+- [معرض أعمال التحريك - يوتيوب][yt_port]
+- [برومو الخدمة][yt_promo]
 
 ### المميزات
 - جولات متحركة
 - عروض تقديمية
 - فيديو تسويقي
 - مؤثرات بصرية
+
+### طريقة التعاون
+1. ارسال ملف المشروع للإطلاع عليه مع توضيح المتطلبات الأولية.
+2. بعد الإطلاع على ملف المشروع يتم الرد بالوقت والسعر خلال يوم أو يومين.
+3. في حال اعتماد الوقت والسعر يتم البدء في تجهيز تست للمشروع.
+4. بعد تقديم الملاحظات واعتماد التست يتم ارسال مبلغ المشروع بالكامل.
+5. نبدا في تجهيز الصور النهائية للمشروع ثم ارسال الملفات النهائية بعد استلام المبلغ.
 
 ### شروط التعامل
 1. تحديد المتطلبات بوضوح قبل البدء.
@@ -72,10 +119,3 @@ High-quality animated videos for architectural projects including animated tours
 4. التأخير في الرد بعد ارسال التست يضاف على الوقت المتفق علية .
 5. عدد التعديلات على التست لايتجاوز 3 تعديلات ثم قد يتم فرض رسوم اضافية .
 6. اي شروط او ملاحظات تتعلق بحقوق النشر او التنزيل على النت او غيرها يتم توضيحه في بداية الاتفاق قبل البدء في المشروع 
-
-### طريقة التعاون
-1. ارسال ملف المشروع للإطلاع عليه مع توضيح المتطلبات الأولية.
-2. بعد الإطلاع على ملف المشروع يتم الرد بالوقت والسعر خلال يوم أو يومين.
-3. في حال اعتماد الوقت والسعر يتم البدء في تجهيز تست للمشروع.
-4. بعد تقديم الملاحظات واعتماد التست يتم ارسال مبلغ المشروع بالكامل.
-5. نبدا في تجهيز الصور النهائية للمشروع ثم ارسال الملفات النهائية بعد استلام المبلغ.

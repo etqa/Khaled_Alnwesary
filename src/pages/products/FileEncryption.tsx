@@ -29,8 +29,8 @@ const FileEncryption = () => {
 
 
     const product = {
-        title: t("products.items.file_encryption.title"),
-        description: t("products.items.file_encryption.desc"),
+        title: productInfo.titleContent || "",
+        description: productInfo.shortDesc || "",
         icon: Shield,
     };
 

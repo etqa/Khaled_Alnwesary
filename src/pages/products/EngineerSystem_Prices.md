@@ -4,6 +4,10 @@
 
 ---
 
+[dl_trial]: https://example.com/download-engineer
+[wa_annual]: whatsapp:218928198656?message=السلام عليكم، أريد الاشتراك في نظام المهندس برو - سنوي
+[wa_permanent]: whatsapp:218928198656?message=السلام عليكم، أريد طلب ترخيص دائم لنظام المهندس برو
+
 <a name="english-pricing"></a>
 ## English
 
@@ -18,6 +22,9 @@
 - 1 active project
 - Standard reports
 - Community support
+
+##### Buttons
+- [Try Now][dl_trial]
 
 ##### Restrictions
 - No multi-user support
@@ -40,6 +47,9 @@
 - Priority technical support
 - Full cloud backup
 
+##### Buttons
+- [Subscribe Now][wa_annual]
+
 ##### Restrictions
 - Renewal required annually
 - Multi-user limited to 5 seats
@@ -59,6 +69,9 @@
 - Lifetime updates
 - Unlimited multi-user seats
 - Direct database access
+
+##### Buttons
+- [Buy Permanent License][wa_permanent]
 
 ##### Restrictions
 - Single server installation
@@ -84,6 +97,9 @@
 - تقارير قياسية
 - دعم مجتمعي
 
+##### الطلب:
+- [تجربة الآن][dl_trial]
+
 ##### القيود:
 - لا يدعم تعدد المستخدمين
 - لا توجد تحليلات متقدمة
@@ -105,6 +121,9 @@
 - دعم فني ذو أولوية
 - نسخ احتياطي سحابي كامل
 
+##### الطلب:
+- [اشترك الآن][wa_annual]
+
 ##### القيود:
 - التجديد مطلوب سنوياً
 - تعدد المستخدمين محدود بـ 5 مقاعد
@@ -124,6 +143,9 @@
 - تحديثات مدى الحياة
 - عدد مفتوح من مقاعد المستخدمين
 - وصول مباشر لقاعدة البيانات
+
+##### الطلب:
+- [طلب الترخيص الدائم][wa_permanent]
 
 ##### القيود:
 - ترخيص لجهاز/سيرفر واحد

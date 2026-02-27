@@ -150,7 +150,7 @@ export const Footer = () => {
             {/* Signature */}
             <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground/70">
               <span>Made with</span>
-              <span className="text-primary animate-pulse">♥</span>
+              <span className="text-primary animate-pulse">🧡</span>
               <span>by {t("nav.brand_name")}</span>
             </div>
           </div>

@@ -7,6 +7,12 @@
 <a name="english"></a>
 ## English
 
+### Title
+Blender Interior
+
+### Short Description
+A specialized free course for learning interior architectural visualization skills.
+
 ### Overview
 Learn the secrets of interior architectural visualization in Blender. This free course focuses on interior lighting, materials, and creating a cozy, realistic atmosphere.
 
@@ -26,6 +32,12 @@ Learn the secrets of interior architectural visualization in Blender. This free 
 
 <a name="arabic"></a>
 ## العربية (Arabic)
+
+### Title
+كورس Blender للإظهار داخلي
+
+### Short Description
+كورس مجاني مخصص لتعلم مهارات الإظهار المعماري الداخلي، من توزيع الإضاءة إلى ضبط الخامات والظلال.
 
 ### نظرة عامة
 تعلم أسرار الإظهار المعماري الداخلي في برنامج بلندر. يركز هذا الكورس المجاني على الإضاءة الداخلية، المواد، وخلق أجواء واقعية ومريحة للفراغات.

@@ -9,6 +9,7 @@ interface PricingPlan {
     description: string | null;
     features: string[];
     restrictions: string[];
+    buttons?: { label: string; url: string }[];
 }
 
 interface PricingSectionProps {
@@ -21,6 +22,19 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ markdownContent 
         if (!s) return false;
         const numeric = s.replace(/[^\d.]/g, '');
         return numeric !== '' && parseFloat(numeric) === 0;
+    };
+
+    const formatUrl = (url: string) => {
+        if (!url) return "";
+        // Handle whatsapp: protocol
+        if (url.startsWith('whatsapp:')) {
+            const parts = url.replace('whatsapp:', '').split('?');
+            const number = parts[0].replace(/\/\/+/, ''); // Remove any stray slashes
+            const params = new URLSearchParams(parts[1] || "");
+            const message = params.get('message') || params.get('text') || "";
+            return `https://wa.me/${number}${message ? `?text=${encodeURIComponent(message)}` : ''}`;
+        }
+        return url;
     };
 
     const getPricingPlans = () => {
@@ -40,6 +54,15 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ markdownContent 
 
         const content = isAr ? arabicPart : englishPart;
         if (!content) return [];
+
+        // 1. Collect ALL link references from the entire markdown content
+        const globalLinkRefs: Record<string, string> = {};
+        markdownContent.split(/\r?\n/).forEach(line => {
+            const m = line.trim().match(/^\[([^\]]+)\]:\s*(.*)$/i);
+            if (m) {
+                globalLinkRefs[m[1].toLowerCase().trim()] = m[2].trim();
+            }
+        });
 
         const plans: PricingPlan[] = [];
         // Split by 4 hashes to get each plan
@@ -68,13 +91,38 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ markdownContent 
                 return [];
             };
 
+            const extractButtons = () => {
+                const regex = new RegExp(`#####\\s+(?:Buttons|الروابط|الأزرار|الطلب)\\s*([\\s\\S]*?)(?=(?:#####|####|$|---))`, 'i');
+                const match = section.match(regex);
+                if (match && match[1]) {
+                    const buttonLines = match[1].trim().split('\n');
+                    const parsed = buttonLines
+                        .map(l => l.trim())
+                        .map(l => {
+                            // Match [label](url) OR [label][id]
+                            const m = l.match(/\[(.*?)\](?:\((.*?)\)|\[(.*?)\])/);
+                            if (m) {
+                                const label = m[1];
+                                const urlOrId = (m[2] || m[3] || "").trim();
+                                const finalUrl = globalLinkRefs[urlOrId.toLowerCase()] || urlOrId;
+                                return { label, url: formatUrl(finalUrl) };
+                            }
+                            return null;
+                        })
+                        .filter((b): b is { label: string; url: string } => b !== null);
+                    return parsed.length > 0 ? parsed : null;
+                }
+                return null;
+            };
+
             plans.push({
                 title,
                 price: priceMatch ? (priceMatch[1] || priceMatch[2]).trim() : "0",
                 discount,
                 description: descMatch ? (descMatch[1] || descMatch[2]).trim() : null,
                 features: extractList("المميزات", "Features"),
-                restrictions: extractList("القيود", "Restrictions")
+                restrictions: extractList("القيود", "Restrictions"),
+                buttons: extractButtons() || undefined
             });
         });
         return plans;
@@ -111,7 +159,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ markdownContent 
                             <div className="flex flex-col items-center justify-center min-h-[80px]">
                                 {plan.discount ? (
                                     <div className="flex flex-col items-center">
-                                        <span className="text-lg font-bold mb-1 line-through text-muted-foreground opacity-40">
+                                        <span className="text-xl font-bold mb-1 line-through decoration-red-500 text-muted-foreground opacity-60">
                                             {plan.price}
                                         </span>
                                         <span className="text-4xl font-black tracking-tight text-primary">
@@ -165,16 +213,31 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ markdownContent 
                             )}
                         </div>
 
-                        <div className="p-10 pt-0">
-                            <button
-                                onClick={() => window.open("https://wa.me/218928198656", "_blank")}
-                                className={`w-full h-14 rounded-2xl font-black transition-all duration-300 shadow-sm active:scale-95 group-hover:scale-[1.02] ${index === 1
-                                    ? "bg-primary text-white shadow-lg shadow-primary/20 hover:bg-primary/90"
-                                    : "bg-background border-2 border-primary/20 text-primary hover:bg-primary/5 hover:border-primary/40"
-                                    }`}
-                            >
-                                {i18n.language === "ar" ? "طلب المنتج" : "Order Product"}
-                            </button>
+                        <div className={`p-10 pt-0 flex flex-col gap-3`}>
+                            {plan.buttons && plan.buttons.length > 0 ? (
+                                plan.buttons.map((btn, btnIndex) => (
+                                    <button
+                                        key={btnIndex}
+                                        onClick={() => window.open(btn.url, "_blank")}
+                                        className={`w-full h-14 rounded-2xl font-black transition-all duration-300 shadow-sm active:scale-95 group-hover:scale-[1.02] ${btnIndex === 0 && index === 1
+                                            ? "bg-primary text-white shadow-lg shadow-primary/20 hover:bg-primary/90"
+                                            : "bg-background border-2 border-primary/20 text-primary hover:bg-primary/5 hover:border-primary/40"
+                                            }`}
+                                    >
+                                        {btn.label}
+                                    </button>
+                                ))
+                            ) : (
+                                <button
+                                    onClick={() => window.open("https://wa.me/218928198656", "_blank")}
+                                    className={`w-full h-14 rounded-2xl font-black transition-all duration-300 shadow-sm active:scale-95 group-hover:scale-[1.02] ${index === 1
+                                        ? "bg-primary text-white shadow-lg shadow-primary/20 hover:bg-primary/90"
+                                        : "bg-background border-2 border-primary/20 text-primary hover:bg-primary/5 hover:border-primary/40"
+                                        }`}
+                                >
+                                    {i18n.language === "ar" ? "طلب المنتج" : "Order Product"}
+                                </button>
+                            )}
                         </div>
                     </div>
                 ))}

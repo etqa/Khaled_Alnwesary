@@ -4,11 +4,30 @@
 
 ---
 
+[yt_chan]: https://www.youtube.com/@خالدالنويصري
+[tg_dl]: https://t.me/Khalid_Alnwesary/65
+
 <a name="english"></a>
 ## English
 
-**Version:** 1.99 
-**Blender Compatibility:** 4.0.0+ 
+**Version:** 1.99
+**Blender Compatibility:** 4.0.0+
+
+### Title
+KH Tools Addon
+
+### Short Description
+Free Blender addon facilitating architectural visualization
+
+### Long Description
+A set of free tools for Blender that facilitate architectural visualization and save time and effort in scene setup.
+
+### Video Tutorials
+- [Khaled Alnwesary Channel][yt_chan]
+
+### Buttons
+- [Telegram Download][tg_dl]
+- [YouTube Channel][yt_chan]
 
 ### Overview
 KH-Tools is a comprehensive productivity suite for Blender designed to streamline the workflow for architectural visualization, environment design, and general 3D creation. It integrates multiple specialized managers and tools into a single, cohesive interface.
@@ -49,14 +68,6 @@ KH-Tools is a comprehensive productivity suite for Blender designed to streamlin
 #### 7. Material Tools
 - Material management and quick assignment tools.
 
-### Tutorials
-
-https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A
-
-### Buttons
-- [Telegram Download](https://t.me/Khalid_Alnwesary/65)
-- [YouTube Channel](https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A)
-
 ### Installation
 1. Download the repository as a ZIP.
 2. In Blender, go to `Edit > Preferences > Add-ons > Install`.
@@ -68,15 +79,26 @@ https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%
 <a name="arabic"></a>
 ## العربية (Arabic)
 
-**الإصدار:** 1.99  
-**متوافق مع بلندر :** 4.0.0+ 
+**متوافق مع بلندر :** 4.0.0+
+
+### Title
+KH Tools Addon
+
+### Short Description
+أدون مجاني لبرنامج بلندر يسهل عملية الإظهار المعماري
+
+### Long Description
+مجموعة أدوات مجانية لبرنامج Blender تسهل عملية الإظهار المعماري وتوفر الوقت والجهد في إعداد المشاهد.
+
+### فيديوهات توضيحية
+- [قناة خالد النويصري][yt_chan]
+
+### الأزرار
+- [تحميل عبر تلجرام][tg_dl]
+- [قناة اليوتيوب][yt_chan]
 
 ### نظرة عامة
 تعتبر أدوات KH حزمة إنتاجية شاملة لبلندر، مصممة لتبسيط سير العمل في التصور المعماري، وتصميم البيئات، والإنشاء ثلاثي الأبعاد بشكل عام. تدمج هذه الحزمة العديد من الأدوات والمديرين المتخصصين في واجهة واحدة متماسكة.
-
-### الأزرار
-- [تحميل عبر تلجرام](https://t.me/Khalid_Alnwesary/65)
-- [قناة اليوتيوب](https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A)
 
 ### المميزات الجديدة
 - **دعم بلندر 5.0**: تم تحسينه واختباره بالكامل ليعمل مع بلندر 5.0، بما في ذلك تحسينات الواجهة وتوافق الـ API.
@@ -114,12 +136,6 @@ https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%
 #### 7. أدوات المواد (Materials)
 - أدوات إدارة المواد والتعيين السريع.
 
-### دروس تعليمية
-
-https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A
-
-### رابط التحميل
-https://t.me/Khalid_Alnwesary/65
 
 ### التثبيت
 1. قم بتحميل المستودع بصيغة ZIP.

@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Layers, Video, FileText, Image as ImageIcon } from "lucide-react";
+import { Layers, Video, Film, Image as ImageIcon, FileText, Sparkles } from "lucide-react";
 import { DetailLayout } from "@/components/layout/DetailLayout";
 import { useReadme } from "@/hooks/useReadme";
 import { MarkdownContent } from "@/components/details/MarkdownContent";
@@ -27,7 +27,7 @@ const YouTubeEmbed = ({ url }: { url: string }) => {
                 allowFullScreen
                 className="absolute top-0 left-0 w-full h-full border-0"
             />
-        </div>
+        </div >
     );
 
     return null;
@@ -42,7 +42,9 @@ const Animation = () => {
         termsContent,
         collaborationContent,
         readmeContent,
-        buttons
+        buttons,
+        titleContent,
+        shortDesc
     } = useReadme({
         localContent: localReadme,
         id: "animation",
@@ -50,8 +52,8 @@ const Animation = () => {
     });
 
     const service = {
-        title: t("services.items.animation.title"),
-        description: t("services.items.animation.desc"),
+        title: titleContent || "",
+        description: shortDesc || "",
         icon: Layers,
     };
 
@@ -97,64 +99,112 @@ const Animation = () => {
                         </div>
 
                         <div className="space-y-8 mb-16">
-                            {/* Terms & Collaboration Container */}
-                            <div className="grid md:grid-cols-2 gap-8 animate-fade-up">
-                                {/* Collaboration Section */}
-                                {collaborationContent && (
-                                    <div className="bg-card/80 backdrop-blur-md border border-border/50 rounded-[2.5rem] p-8 shadow-sm">
-                                        <div className="flex items-center gap-3 border-b border-border/50 pb-4 mb-6">
-                                            <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                                                <ImageIcon className="w-5 h-5 text-primary" />
+                            {/* Consolidated Service Info Section */}
+                            {(featuresContent || collaborationContent || termsContent) && (
+                                <div className="bg-card/80 border border-border/50 rounded-[2.5rem] p-8 md:p-12 shadow-sm animate-fade-up backdrop-blur-md">
+                                    {/* Features Subsection */}
+                                    {featuresContent && (
+                                        <div className="mb-12 last:mb-0">
+                                            <div className="flex items-center gap-3 mb-8">
+                                                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                                                    <Sparkles className="w-5 h-5 text-primary" />
+                                                </div>
+                                                <h2 className="text-xl font-bold text-foreground">{t("common.features")}</h2>
                                             </div>
-                                            <h2 className="text-xl font-bold text-foreground">{t("services.page.detail.collaboration_way")}</h2>
+                                            <div className="prose prose-slate dark:prose-invert max-w-none">
+                                                <ReactMarkdown
+                                                    remarkPlugins={[remarkGfm]}
+                                                    rehypePlugins={[rehypeRaw]}
+                                                    components={{
+                                                        ul: ({ node, ...props }) => <ul {...props} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 list-none p-0" />,
+                                                        li: ({ node, children, ...props }) => (
+                                                            <li className="flex items-center justify-center p-4 rounded-2xl bg-background/50 border border-border hover:border-primary/20 transition-colors text-center">
+                                                                <span className="text-foreground font-medium">{children}</span>
+                                                            </li>
+                                                        )
+                                                    }}
+                                                >
+                                                    {featuresContent}
+                                                </ReactMarkdown>
+                                            </div>
                                         </div>
-                                        <div className="prose prose-slate dark:prose-invert max-w-none">
-                                            <ReactMarkdown
-                                                remarkPlugins={[remarkGfm]}
-                                                components={{
-                                                    ol: ({ node, ...props }) => <ol {...props} className="grid grid-cols-1 gap-y-4 list-none p-0 m-0" />,
-                                                    li: ({ node, children, ...props }) => (
-                                                        <li className="flex items-start gap-3 text-base md:text-lg text-muted-foreground leading-relaxed group">
-                                                            <div className="w-2 h-2 rounded-full bg-primary mt-2.5 shrink-0 shadow-glow"></div>
-                                                            <span className="group-hover:text-foreground transition-colors">{children}</span>
-                                                        </li>
-                                                    )
-                                                }}
-                                            >
-                                                {collaborationContent}
-                                            </ReactMarkdown>
-                                        </div>
-                                    </div>
-                                )}
+                                    )}
 
-                                {/* Terms Section */}
-                                {termsContent && (
-                                    <div className="bg-card/80 backdrop-blur-md border border-border/50 rounded-[2.5rem] p-8 shadow-sm">
-                                        <div className="flex items-center gap-3 border-b border-border/50 pb-4 mb-6">
-                                            <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                                                <FileText className="w-5 h-5 text-primary" />
+                                    {/* Divider if Features and (Collaboration or Terms) exist */}
+                                    {featuresContent && (collaborationContent || termsContent) && (
+                                        <div className="h-px bg-border/50 my-12" />
+                                    )}
+
+                                    {/* Collaboration Subsection */}
+                                    {collaborationContent && (
+                                        <div className="mb-12 last:mb-0">
+                                            <div className="flex items-center gap-3 mb-8">
+                                                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                                                    <ImageIcon className="w-5 h-5 text-primary" />
+                                                </div>
+                                                <h2 className="text-xl font-bold text-foreground">{t("services.page.detail.collaboration_way")}</h2>
                                             </div>
-                                            <h2 className="text-xl font-bold text-foreground">{t("services.page.detail.terms_title")}</h2>
+                                            <div className="prose prose-slate dark:prose-invert max-w-none">
+                                                <ReactMarkdown
+                                                    remarkPlugins={[remarkGfm]}
+                                                    components={{
+                                                        ol: ({ node, ...props }) => <ol {...props} className="not-prose flex flex-col gap-y-4 !p-0 !m-0 [counter-reset:service-step]" />,
+                                                        li: ({ node, children, ...props }) => (
+                                                            <li className="flex items-start gap-3 text-base md:text-lg text-muted-foreground leading-relaxed group [counter-increment:service-step]">
+                                                                <div className="w-10 flex justify-center shrink-0 mt-1">
+                                                                    <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20 group-hover:bg-primary/20 transition-colors">
+                                                                        <span className="text-xs font-bold text-primary leading-none after:content-[counter(service-step)]" />
+                                                                    </div>
+                                                                </div>
+                                                                <span className="group-hover:text-foreground transition-colors">{children}</span>
+                                                            </li>
+                                                        )
+                                                    }}
+                                                >
+                                                    {collaborationContent}
+                                                </ReactMarkdown>
+                                            </div>
                                         </div>
-                                        <div className="prose prose-slate dark:prose-invert max-w-none">
-                                            <ReactMarkdown
-                                                remarkPlugins={[remarkGfm]}
-                                                components={{
-                                                    ul: ({ node, ...props }) => <ul {...props} className="grid grid-cols-1 gap-y-4 list-none p-0 m-0" />,
-                                                    li: ({ node, children, ...props }) => (
-                                                        <li className="flex items-start gap-3 text-base md:text-lg text-muted-foreground leading-relaxed group">
-                                                            <div className="w-2 h-2 rounded-full bg-primary mt-2.5 shrink-0 shadow-glow"></div>
-                                                            <span className="group-hover:text-foreground transition-colors">{children}</span>
-                                                        </li>
-                                                    )
-                                                }}
-                                            >
-                                                {termsContent}
-                                            </ReactMarkdown>
+                                    )}
+
+                                    {/* Divider if Collaboration and Terms exist */}
+                                    {collaborationContent && termsContent && (
+                                        <div className="h-px bg-border/50 my-12" />
+                                    )}
+
+                                    {/* Terms Subsection */}
+                                    {termsContent && (
+                                        <div>
+                                            <div className="flex items-center gap-3 mb-8">
+                                                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                                                    <FileText className="w-5 h-5 text-primary" />
+                                                </div>
+                                                <h2 className="text-xl font-bold text-foreground">{t("services.page.detail.terms_title")}</h2>
+                                            </div>
+                                            <div className="prose prose-slate dark:prose-invert max-w-none">
+                                                <ReactMarkdown
+                                                    remarkPlugins={[remarkGfm]}
+                                                    components={{
+                                                        ol: ({ node, ...props }) => <ol {...props} className="not-prose flex flex-col gap-y-4 !p-0 !m-0 [counter-reset:service-step]" />,
+                                                        li: ({ node, children, ...props }) => (
+                                                            <li className="flex items-start gap-3 text-base md:text-lg text-muted-foreground leading-relaxed group [counter-increment:service-step]">
+                                                                <div className="w-10 flex justify-center shrink-0 mt-1">
+                                                                    <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20 group-hover:bg-primary/20 transition-colors">
+                                                                        <span className="text-xs font-bold text-primary leading-none after:content-[counter(service-step)]" />
+                                                                    </div>
+                                                                </div>
+                                                                <span className="group-hover:text-foreground transition-colors">{children}</span>
+                                                            </li>
+                                                        )
+                                                    }}
+                                                >
+                                                    {termsContent}
+                                                </ReactMarkdown>
+                                            </div>
                                         </div>
-                                    </div>
-                                )}
-                            </div>
+                                    )}
+                                </div>
+                            )}
 
                             {/* Portfolio Section with Videos */}
                             {portfolioContent && (
@@ -179,32 +229,6 @@ const Animation = () => {
                                             }}
                                         >
                                             {portfolioContent}
-                                        </ReactMarkdown>
-                                    </div>
-                                </div>
-                            )}
-
-                            {/* Features Section */}
-                            {featuresContent && (
-                                <div className="bg-card/80 backdrop-blur-md border border-border/50 rounded-[2.5rem] p-8 md:p-12 shadow-sm animate-fade-up">
-                                    <h2 className="text-2xl font-bold text-foreground mb-8">{t("common.features")}</h2>
-                                    <div className="prose prose-slate dark:prose-invert max-w-none">
-                                        <ReactMarkdown
-                                            remarkPlugins={[remarkGfm]}
-                                            rehypePlugins={[rehypeRaw]}
-                                            components={{
-                                                ul: ({ node, ...props }) => <ul {...props} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none p-0" />,
-                                                li: ({ node, children, ...props }) => (
-                                                    <li className="flex items-center gap-3 p-5 rounded-2xl bg-card border border-border hover:border-primary/20 transition-colors">
-                                                        <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                                                            <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                                                        </div>
-                                                        <span className="text-foreground font-medium">{children}</span>
-                                                    </li>
-                                                )
-                                            }}
-                                        >
-                                            {featuresContent}
                                         </ReactMarkdown>
                                     </div>
                                 </div>

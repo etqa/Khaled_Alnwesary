@@ -107,11 +107,13 @@ export const Navbar = () => {
 
             <Button
               variant="ghost"
-              size="icon"
-              className="lg:hidden"
+              size="sm"
+              className="lg:hidden h-9 w-9 p-0 rounded-full hover:bg-muted relative group transition-all duration-300"
               onClick={() => setIsOpen(!isOpen)}
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              <div className="flex h-7 w-7 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-glow group-hover:scale-110 transition-transform">
+                {isOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+              </div>
             </Button>
           </div>
         </div>

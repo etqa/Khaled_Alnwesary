@@ -15,6 +15,8 @@ const EngineerSystem = () => {
     const {
         readmeContent,
         overviewContent,
+        titleContent,
+        shortDesc,
         version,
         buttons
     } = useReadme({
@@ -25,8 +27,8 @@ const EngineerSystem = () => {
 
 
     const product = {
-        title: t("products.items.engineer_system.title"),
-        description: t("products.items.engineer_system.desc"),
+        title: titleContent || "",
+        description: shortDesc || "",
         icon: Wrench,
     };
 

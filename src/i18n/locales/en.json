@@ -84,48 +84,6 @@
                     "Final delivery after full payment."
                 ]
             }
-        },
-        "items": {
-            "exterior": {
-                "title": "Exterior Visualization",
-                "desc": "High-quality design for building facades and architectural projects",
-                "features": {
-                    "0": "Residential and commercial facades",
-                    "1": "Villa and complex projects",
-                    "2": "Landscape design",
-                    "3": "Day and night lighting"
-                }
-            },
-            "interior": {
-                "title": "Interior Visualization",
-                "desc": "Designing interior spaces with precise details and realistic lighting",
-                "features": {
-                    "0": "Living rooms and lounges",
-                    "1": "Kitchens and bathrooms",
-                    "2": "Offices and shops",
-                    "3": "Hotels and restaurants"
-                }
-            },
-            "virtual_tours": {
-                "title": "Virtual Tours",
-                "desc": "Creating interactive 3D tours for projects",
-                "features": {
-                    "0": "360 degree tours",
-                    "1": "Interactive experience",
-                    "2": "Web and mobile viewing",
-                    "3": "Easy sharing"
-                }
-            },
-            "animation": {
-                "title": "Video Animation",
-                "desc": "High-quality animated videos for architectural projects",
-                "features": {
-                    "0": "Animated tours",
-                    "1": "Presentations",
-                    "2": "Marketing video",
-                    "3": "Visual effects"
-                }
-            }
         }
     },
     "products": {
@@ -137,79 +95,7 @@
         },
         "page": {
             "hero_desc": "Innovative applications designed to facilitate engineering work and protect digital content",
-            "features_label": "Features:",
             "cta_details": "Product Details"
-        },
-        "items": {
-            "engineer_system": {
-                "title": "Engineer System Pro",
-                "desc": "Integrated application for engineering projects and accounting (Pro Version)",
-                "long_desc": "A comprehensive system linked to an accounting system and server database supporting multiple devices and users for large firms.",
-                "long_desc_detail": "Engineer System Pro is a comprehensive tool designed for large engineering firms and offices that need an integrated accounting system and a server database supporting multiple users and devices. It helps you manage projects, calculate quantities, and track finances with high precision.",
-                "features": {
-                    "0": "Integrated Accounting System",
-                    "1": "Server Database",
-                    "2": "Multi-user & Multi-device",
-                    "3": "Large Project Management",
-                    "4": "Detailed Financial Reports"
-                },
-                "features_detail": {
-                    "0": "Comprehensive integrated accounting system",
-                    "1": "Server database for multi-device support",
-                    "2": "Multi-user support with different permissions",
-                    "3": "Large-scale engineering project management",
-                    "4": "High-precision quantity and material calculation",
-                    "5": "Detailed financial and administrative reports",
-                    "6": "Free updates and continuous technical support",
-                    "7": "Support for local network and internet connectivity"
-                }
-            },
-            "engineer_system_lite": {
-                "title": "Engineer System Lite",
-                "desc": "Lighter version for small and medium engineering firms",
-                "long_desc": "An effective tool for engineering project management and quantity calculation, specifically designed for small and medium offices.",
-                "long_desc_detail": "Engineer System Lite is the lighter and most suitable version for small engineering offices and freelancers. It provides essential tools for project management, quantity calculation, and reporting without the complexity of large accounting systems and servers.",
-                "features": {
-                    "0": "Engineering Project Management",
-                    "1": "Quantity and Material Calculation",
-                    "2": "Project Reports",
-                    "3": "Progress Tracking",
-                    "4": "Ease and Speed of Operation"
-                },
-                "features_detail": {
-                    "0": "Simplified engineering project management",
-                    "1": "Basic quantity and material calculation",
-                    "2": "Create and export project reports",
-                    "3": "Progress tracking",
-                    "4": "Fast and easy user interface",
-                    "5": "Excellent technical support",
-                    "6": "Regular updates",
-                    "7": "Suitable for small and medium offices"
-                }
-            },
-            "file_encryption": {
-                "title": "File Encryption",
-                "desc": "Application for encrypting and protecting files, videos, and courses",
-                "long_desc": "Strong protection for your files and educational courses from copying and piracy using the latest encryption technologies.",
-                "long_desc_detail": "File Encryption and Protection application provides strong protection for your digital files and educational courses from copying and piracy. It uses the latest encryption technologies to ensure the security of your content with ease of use and license management.",
-                "features": {
-                    "0": "Advanced file encryption",
-                    "1": "Video protection",
-                    "2": "Course protection",
-                    "3": "Prevent unauthorized copying",
-                    "4": "License management"
-                },
-                "features_detail": {
-                    "0": "Advanced AES-256 encryption",
-                    "1": "Protect videos from recording and copying",
-                    "2": "Protect educational courses",
-                    "3": "Advanced license management system",
-                    "4": "Bind files to user device",
-                    "5": "Control panel for license management",
-                    "6": "Detailed usage reports",
-                    "7": "24/7 technical support"
-                }
-            }
         },
         "badges": {
             "popular": "Most Popular",
@@ -231,50 +117,6 @@
         "categories": {
             "blender": "Blender",
             "mobile_app": "Mobile App"
-        },
-        "items": {
-            "kh_tools": {
-                "title": "KH Tools Addon",
-                "desc": "Free Blender addon facilitating architectural visualization",
-                "long_desc": "A set of free tools for Blender that facilitate architectural visualization and save time and effort in scene setup.",
-                "long_desc_detail": "KH Tools is a set of free tools for Blender designed to facilitate and speed up the architectural visualization process. It contains various tools for scene setup, material application, and lighting adjustment with a single button click.",
-                "features": {
-                    "0": "Fast architectural scene setup",
-                    "1": "Ready-made materials library",
-                    "2": "Advanced lighting tools",
-                    "3": "Fast image export",
-                    "4": "Compatible with latest Blender versions",
-                    "5": "Continuous updates"
-                }
-            },
-            "quran_app": {
-                "title": "Quran App",
-                "desc": "Free mobile application for reading and reciting the Holy Quran",
-                "long_desc": "A free application for reading and reciting the Holy Quran with an easy-to-use interface and multiple features.",
-                "long_desc_detail": "A comprehensive free application for reading the Holy Quran with an easy-to-use interface. It contains the full Quran with the ability to listen to recitations by various readers, in addition to search and bookmark features.",
-                "features": {
-                    "0": "Full Holy Quran",
-                    "1": "Recitations by multiple readers",
-                    "2": "Search in the Holy Quran",
-                    "3": "Add bookmarks",
-                    "4": "Night reading mode",
-                    "5": "Works offline"
-                }
-            },
-            "task_manager": {
-                "title": "Task Manager",
-                "desc": "Free application to organize and manage your daily tasks",
-                "long_desc": "A simple and effective application to organize and manage your daily tasks and track your achievements.",
-                "long_desc_detail": "A simple and effective application for managing your daily tasks. It helps you organize your work, set priorities, and track your achievements in an easy and flexible way.",
-                "features": {
-                    "0": "Create tasks easily",
-                    "1": "Categorize tasks by project",
-                    "2": "Set priorities",
-                    "3": "Smart reminders",
-                    "4": "Track achievements",
-                    "5": "Simple and fast interface"
-                }
-            }
         }
     },
     "courses": {
@@ -289,101 +131,6 @@
             "hero_desc": "Learn architectural visualization and modern technologies through comprehensive practical training",
             "main_course_badge": "Main Course",
             "content_label": "Course Content:"
-        },
-        "blender": {
-            "title": "Blender for ArchViz Course",
-            "desc": "Learn professional architectural visualization using Blender from scratch to mastery. High-quality recorded videos you can watch anytime.",
-            "long_desc": "A comprehensive and integrated course to learn architectural visualization using the free Blender software. Takes you from beginner to professional level through detailed explanation and practical applications on real projects. The course consists of high-quality recorded videos you can watch anytime and anywhere.",
-            "stats": {
-                "hours": "+40 Training Hours",
-                "students": "+300 Students",
-                "type": "Recorded Videos",
-                "type_detail": "Recorded Offline Videos"
-            },
-            "modules": {
-                "0": "Blender Basics",
-                "1": "Architectural Modeling",
-                "2": "Materials & Textures",
-                "3": "Professional Lighting",
-                "4": "Rendering & Post-production",
-                "5": "Practical Projects"
-            },
-            "modules_detail": [
-                {
-                    "title": "Blender Basics",
-                    "lessons": [
-                        "Interface",
-                        "Control Tools",
-                        "Basic Shapes",
-                        "Editing and Animation"
-                    ]
-                },
-                {
-                    "title": "Architectural Modeling",
-                    "lessons": [
-                        "Walls and Ceilings",
-                        "Windows and Doors",
-                        "Furniture and Decor",
-                        "Landscaping"
-                    ]
-                },
-                {
-                    "title": "Materials & Textures",
-                    "lessons": [
-                        "Material Basics",
-                        "Realistic Textures",
-                        "Architectural Materials",
-                        "Material Libraries"
-                    ]
-                },
-                {
-                    "title": "Professional Lighting",
-                    "lessons": [
-                        "Lighting Types",
-                        "Interior Lighting",
-                        "Exterior Lighting",
-                        "HDRI and Environment"
-                    ]
-                },
-                {
-                    "title": "Rendering & Post-production",
-                    "lessons": [
-                        "Render Settings",
-                        "Cycles vs Eevee",
-                        "Post-processing",
-                        "High Quality Export"
-                    ]
-                },
-                {
-                    "title": "Practical Projects",
-                    "lessons": [
-                        "Full Villa Project",
-                        "Interior Apartment Project",
-                        "Commercial Building Project",
-                        "Professional Portfolio"
-                    ]
-                }
-            ],
-            "features": {
-                "0": "High-quality recorded videos",
-                "1": "Project files for training",
-                "2": "Technical support via WhatsApp",
-                "3": "Free content updates",
-                "4": "Completion certificate",
-                "5": "Private support group"
-            }
-        },
-        "blender_free_ext": {
-            "title": "Blender Exterior ",
-            "desc": "A comprehensive free course to learn architectural exterior visualization with Blender."
-        },
-        "d5_render_free": {
-            "title": "D5 Render Exterior ",
-            "desc": "Learn how to produce realistic and fast exterior renders using the powerful D5 Render engine."
-        },
-        "blender_free_int": {
-            "title": "Blender Interior ",
-            "desc": "A specialized free course for learning interior architectural visualization skills."
         }
     },
     "contact": {

@@ -4,15 +4,27 @@
 
 ---
 
+[yt_playlist]: https://www.youtube.com/playlist?list=PLRrETGQR_7qKlNAsNfTqj96NqOInA6m3m
+[wa_contact]: https://wa.me/218928198656
+
 <a name="english"></a>
 ## English
 
-### Overview
-Learn professional exterior architectural visualization using Blender for free. This course covers everything from modeling to realistic lighting and rendering.
+### Title
+Blender Exterior
+
+### Short Description
+A comprehensive free course to learn architectural exterior visualization with Blender.
+
+### Video Tutorials
+- [Watch Full Training Course][yt_playlist]
 
 ### Buttons
-- [View Playlist](https://www.youtube.com/playlist?list=PLRrETGQR_7qKlNAsNfTqj96NqOInA6m3m)
-- [Contact Us](https://wa.me/218928198656)
+- [View Playlist][yt_playlist]
+- [Contact Us][wa_contact]
+
+### Overview
+Learn professional exterior architectural visualization using Blender for free. This course covers everything from modeling to realistic lighting and rendering.
 
 ### Course Content
 - 0 - Introduction to Exterior ArchViz Course
@@ -27,12 +39,21 @@ Learn professional exterior architectural visualization using Blender for free. 
 <a name="arabic"></a>
 ## العربية (Arabic)
 
-### نظرة عامة
-تعلم الإظهار المعماري الخارجي الاحترافي باستخدام برنامج بلندر مجاناً. يغطي الكورس كافة المراحل من النمذجة وصولاً إلى الإضاءة واقعية والرندر النهائي.
+### Title
+كورس Blender للإظهار خارجي
+
+### Short Description
+كورس مجاني شامل لتعلم فنون الإظهار المعماري الخارجي باستخدام بلندر، يغطي النمذجة والإضاءة والرندر.
+
+### فيديوهات توضيحية
+- [مشاهدة كورس التدريب الكامل][yt_playlist]
 
 ### الأزرار
-- [مشاهدة القائمة](https://www.youtube.com/playlist?list=PLRrETGQR_7qKlNAsNfTqj96NqOInA6m3m)
-- [تواصل معنا](https://wa.me/218928198656)
+- [مشاهدة القائمة][yt_playlist]
+- [تواصل معنا][wa_contact]
+
+### نظرة عامة
+تعلم الإظهار المعماري الخارجي الاحترافي باستخدام برنامج بلندر مجاناً. يغطي الكورس كافة المراحل من النمذجة وصولاً إلى الإضاءة واقعية والرندر النهائي.
 
 ### محتوى الكورس
 - 0 - مقدمة كورس الإظهار الخارجي لبرنامج blender

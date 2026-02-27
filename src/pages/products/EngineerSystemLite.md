@@ -4,11 +4,31 @@
 
 ---
 
+[wa_order]: https://wa.me/218928198656
+[dl_win]: https://u.pcloud.link/publink/show?code=XZK0Al5ZUNYkQSng2XJS4lsisXxmX8mjQSYy
+[yt_chan]: https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A
+
 <a name="english"></a>
 ## English
 
 **Version:** 1.2.0
 **Compatibility:** Windows 10/11
+
+### Title
+Engineer System Lite
+
+### Short Description
+Lighter version for small and medium engineering firms
+
+### Long Description
+An effective tool for engineering project management and quantity calculation, specifically designed for small and medium offices.
+
+### Video Tutorials
+- [Khaled Alnwesary Channel][yt_chan]
+
+### Buttons
+- [Order Product][wa_order]
+- [Download for Windows][dl_win]
 
 ### Overview
 Engineer System Lite is the lighter and most suitable version for small engineering offices and freelancers. It provides essential tools for project management, quantity calculation, and reporting without the complexity of large accounting systems and servers.
@@ -24,24 +44,31 @@ Engineer System Lite is the lighter and most suitable version for small engineer
 - Regular updates
 - Excellent technical support
 
-### Buttons
-- [Order Product](https://wa.me/218928198656)
-- [Download for Windows](https://u.pcloud.link/publink/show?code=XZK0Al5ZUNYkQSng2XJS4lsisXxmX8mjQSYy)
-
 ---
 
 <a name="arabic"></a>
 ## العربية (Arabic)
 
-**الإصدار:** 1.2.0
 **متوافق مع:** ويندوز 10/11
+
+### Title
+منظومة المهندس Lite
+
+### Short Description
+نسخة أخف للمكاتب والشركات الهندسية المتوسطة والصغيرة
+
+### Long Description
+أداة فعالة لإدارة المشاريع الهندسية وحساب الكميات، مصممة خصيصاً للمكاتب الصغيرة والمتوسطة.
+
+### فيديوهات توضيحية
+- [قناة خالد النويصري][yt_chan]
+
+### الأزرار
+- [طلب المنتج][wa_order]
+- [تحميل للويندوز][dl_win]
 
 ### نظرة عامة
 منظومة المهندس Lite هي النسخة الأخف والأنسب للمكاتب الهندسية الصغيرة والمستقلين. توفر الأدوات الأساسية لإدارة المشاريع وحساب الكميات والتقرير دون الحاجة لتعقيدات الأنظمة المحاسبية الكبيرة والسيرفرات.
-
-### الأزرار
-- [طلب المنتج](https://wa.me/218928198656)
-- [تحميل للويندوز](https://u.pcloud.link/publink/show?code=XZK0Al5ZUNYkQSng2XJS4lsisXxmX8mjQSYy)
 
 ### المميزات الرئيسية
 

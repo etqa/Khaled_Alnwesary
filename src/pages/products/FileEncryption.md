@@ -4,11 +4,35 @@
 
 ---
 
+[yt_lock]: https://www.youtube.com/watch?v=VRzW72Ptnug&t=52s
+[yt_player]: https://www.youtube.com/watch?v=VRzW72Ptnug&t=52s
+[wa_order]: whatsapp:218928198656?message=السلام عليكم، أريد طلب برنامج حماية الفيديوهات (DR Video Protection)
+[dl_lock]: https://u.pcloud.link/publink/show?code=XZd0Al5Z7KIE4xOyCLLdC4THj3qkp58g1gCX
+[dl_player]: https://u.pcloud.link/publink/show?code=XZK0Al5ZUNYkQSng2XJS4lsisXxmX8mjQSYy
+
 <a name="english"></a>
 ## English
 
-**Version:** 1.0.0 
-**Compatibility:** Windows 10/11 
+**Version:** 1.0.0
+**Compatibility:** Windows 10/11
+
+### Title
+File Encryption
+
+### Short Description
+Application for encrypting and protecting files, videos, and courses
+
+### Long Description
+Strong protection for your files and educational courses from copying and piracy using the latest encryption technologies.
+
+### Video Tutorials
+- [DR Lock Activation Guide][yt_lock]
+- [DR Player Activation Guide][yt_player]
+
+### Buttons
+- [Order Product][wa_order]
+- [Encoder Tool][dl_lock]
+- [Free Player][dl_player]
 
 ### Overview
 DR Video Protection Suite is a powerful security solution designed for content creators, educators, and businesses to protect their video content, PDF documents, and images from piracy. The suite consists of two main components: **DR Lock** for encryption and **DR Player** for secure playback.
@@ -35,15 +59,6 @@ DR Video Protection Suite is a powerful security solution designed for content c
 - Saves the last played video and the timestamp of the last session.
 - Can also be used to play regular videos in an organized manner.
 
-### Buttons
-- [Order Product](https://wa.me/218928198656)
-- [Encoder Tool](https://u.pcloud.link/publink/show?code=XZd0Al5Z7KIE4xOyCLLdC4THj3qkp58g1gCX)
-- [Free Player](https://u.pcloud.link/publink/show?code=XZK0Al5ZUNYkQSng2XJS4lsisXxmX8mjQSYy)
-
-### Tutorials
-
-https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A
-
 ### Installation
 1. Run the `Setup_DR_Lock.exe` to install the encryption tool.
 2. Distribute the `DR_Player` to your students or clients.
@@ -54,8 +69,25 @@ https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%
 <a name="arabic"></a>
 ## العربية (Arabic)
 
-**الإصدار:** 2.0.0  
-**متوافق مع :** ويندوز 10/11 
+**متوافق مع:** ويندوز 10/11
+
+### Title
+تشفير وحماية الملفات
+
+### Short Description
+تطبيق لتشفير وحماية الملفات والفيديوهات والكورسات
+
+### Long Description
+حماية قوية لملفاتك وكورساتك التعليمية من النسخ والقرصنة باستخدام أحدث تقنيات التشفير.
+
+### فيديوهات توضيحية
+- [شرح كيفية تفعيل DR Lock][yt_lock]
+- [شرح كيفية تفعيل DR Player][yt_player]
+
+### الأزرار
+- [طلب تفعيل][wa_order]
+- [أداة التشفير][dl_lock]
+- [المشغل المجاني][dl_player]
 
 ### نظرة عامة
 تعتبر حزمة DR لحماية الفيديوهات حلاً أمنياً قوياً مصمماً لمنشئي المحتوى والمعلمين والشركات لحماية محتواهم من الفيديوهات وملفات PDF والصور من القرصنة. تتكون الحزمة من مكونين رئيسيين: **DR Lock** للتشفير و **DR Player** للتشغيل الآمن.
@@ -82,16 +114,6 @@ https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%
 - فك تشفير سريع دون المساس بمستوى الأمان.
 - يحفظ اخر فيديو تم تشغيله وتوقيت اخر تشغيل .
 - يكمن الاعتماد عليه في تشغيل الفيديوهات العادية ايضا بشكل منظم ومرتب.
-
-### الأزرار
-- [طلب تفعيل](https://wa.me/218928198656)
-- [أداة التشفير](https://u.pcloud.link/publink/show?code=XZd0Al5Z7KIE4xOyCLLdC4THj3qkp58g1gCX)
-- [المشغل المجاني](https://u.pcloud.link/publink/show?code=XZK0Al5ZUNYkQSng2XJS4lsisXxmX8mjQSYy)
-- [فيديو الشرح](https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A)
-
-### دروس تعليمية
-
-https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A
 
 
 ### التثبيت

@@ -19,6 +19,10 @@ const getIcon = (label: string) => {
         lowerLabel.includes("whatsapp") ||
         lowerLabel.includes("واتس") ||
         lowerLabel.includes("طلب") ||
+        lowerLabel.includes("order") ||
+        lowerLabel.includes("تفعيل") ||
+        lowerLabel.includes("اشتراك") ||
+        lowerLabel.includes("subscribe") ||
         lowerLabel.includes("استفسار") ||
         lowerLabel.includes("تسجيل") ||
         lowerLabel.includes("register") ||

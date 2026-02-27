@@ -6,36 +6,44 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useReadme } from "@/hooks/useReadme";
+import khToolsMd from "@/pages/free/KHTools.md?raw";
+import quranAppMd from "@/pages/free/QuranApp.md?raw";
+import taskManagerMd from "@/pages/free/TaskManager.md?raw";
 
 const Free = () => {
   const { t, i18n } = useTranslation();
   const isRtl = i18n.dir() === "rtl";
   const [searchQuery, setSearchQuery] = useState("");
 
+  const kh = useReadme({ localContent: khToolsMd, id: "kh-tools" });
+  const quran = useReadme({ localContent: quranAppMd, id: "quran-app" });
+  const task = useReadme({ localContent: taskManagerMd, id: "task-manager" });
+
   const freeItems = [
     {
       id: "kh-tools",
-      title: t("free.items.kh_tools.title"),
-      description: t("free.items.kh_tools.desc"),
-      longDescription: t("free.items.kh_tools.long_desc"),
+      title: kh.titleContent || "",
+      description: kh.shortDesc || "",
+      longDescription: kh.longDesc || "",
       icon: Puzzle,
       category: t("free.categories.blender"),
       link: "/free/kh-tools",
     },
     {
       id: "quran-app",
-      title: t("free.items.quran_app.title"),
-      description: t("free.items.quran_app.desc"),
-      longDescription: t("free.items.quran_app.long_desc"),
+      title: quran.titleContent || "",
+      description: quran.shortDesc || "",
+      longDescription: quran.longDesc || "",
       icon: BookOpen,
       category: t("free.categories.mobile_app"),
       link: "/free/quran-app",
     },
     {
       id: "task-manager",
-      title: t("free.items.task_manager.title"),
-      description: t("free.items.task_manager.desc"),
-      longDescription: t("free.items.task_manager.long_desc"),
+      title: task.titleContent || "",
+      description: task.shortDesc || "",
+      longDescription: task.longDesc || "",
       icon: CheckSquare,
       category: t("free.categories.mobile_app"),
       link: "/free/task-manager",

@@ -4,6 +4,9 @@
 
 ---
 
+[dl_lite]: https://example.com/download-lite
+[wa_lite_perm]: whatsapp:218928198656?message=السلام عليكم، أريد طلب ترخيص دائم لنظام المهندس لايت
+
 <a name="english-pricing"></a>
 ## English
 
@@ -18,6 +21,9 @@
 - 1 active project
 - Standard reports
 - Community support
+
+##### Buttons
+- [Try Lite][dl_lite]
 
 ##### Restrictions
 - Single user only
@@ -38,6 +44,9 @@
 - Offline mode support
 - Lifetime updates
 - Single user seat
+
+##### Buttons
+- [Get Lite Lifetime][wa_lite_perm]
 
 ##### Restrictions
 - No multi-user support
@@ -61,6 +70,9 @@
 - تقارير قياسية
 - دعم مجتمعي
 
+##### الطلب:
+- [تجربة الآن][dl_lite]
+
 ##### القيود
 - مستخدم واحد فقط
 - لا تشمل قاعدة بيانات سيرفر
@@ -80,6 +92,9 @@
 - دعم العمل بدون إنترنت
 - تحديثات دورية مجانية
 - ترخيص لمستخدم واحد (جهاز واحد)
+
+##### الطلب:
+- [طلب ترخيص لايت][wa_lite_perm]
 
 ##### القيود
 - لا يدعم تعدد المستخدمين

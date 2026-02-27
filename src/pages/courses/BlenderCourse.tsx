@@ -17,7 +17,10 @@ const BlenderCourse = () => {
         featuresContent,
         statsContent,
         readmeContent,
-        buttons
+        buttons,
+        titleContent,
+        shortDesc,
+        longDesc
     } = useReadme({
         localContent: localReadme,
         id: "blender-course",
@@ -26,8 +29,9 @@ const BlenderCourse = () => {
 
 
     const course = {
-        title: t("courses.blender.title"),
-        description: t("courses.blender.desc"),
+        title: titleContent || "",
+        description: shortDesc || "",
+        longDescription: longDesc || "",
         duration: t("courses.blender.stats.hours"),
         students: t("courses.blender.stats.students"),
         type: t("courses.blender.stats.type_detail"),
@@ -61,7 +65,7 @@ const BlenderCourse = () => {
                             </div>
                         ) : (
                             <p className="animate-fade-up delay-200 text-lg text-muted-foreground leading-relaxed mb-8">
-                                {t("courses.blender.long_desc")}
+                                {course.longDescription}
                             </p>
                         )}
 

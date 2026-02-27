@@ -13,6 +13,8 @@ const KHTools = () => {
     const {
         readmeContent,
         overviewContent,
+        titleContent,
+        shortDesc,
         version,
         buttons
     } = useReadme({
@@ -21,8 +23,8 @@ const KHTools = () => {
     });
 
     const tool = {
-        title: t("free.items.kh_tools.title"),
-        description: t("free.items.kh_tools.desc"),
+        title: titleContent || "",
+        description: shortDesc || "",
         icon: Puzzle,
     };
 

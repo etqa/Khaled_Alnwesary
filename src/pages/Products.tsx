@@ -6,55 +6,42 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useReadme } from "@/hooks/useReadme";
+import engineerSystemMd from "@/pages/products/EngineerSystem.md?raw";
+import engineerSystemLiteMd from "@/pages/products/EngineerSystemLite.md?raw";
+import fileEncryptionMd from "@/pages/products/FileEncryption.md?raw";
 
 const Products = () => {
   const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState("");
 
+  const es = useReadme({ localContent: engineerSystemMd, id: "engineer-system", isProduct: true });
+  const esLite = useReadme({ localContent: engineerSystemLiteMd, id: "engineer-system-lite", isProduct: true });
+  const fe = useReadme({ localContent: fileEncryptionMd, id: "file-encryption", isProduct: true });
+
   const products = [
     {
       id: "engineer-system",
-      title: t("products.items.engineer_system.title"),
-      description: t("products.items.engineer_system.desc"),
-      longDescription: t("products.items.engineer_system.long_desc"),
+      title: es.titleContent || "",
+      description: es.shortDesc || "",
+      longDescription: es.longDesc || "",
       badge: t("products.badges.popular"),
-      features: [
-        t("products.items.engineer_system.features.0"),
-        t("products.items.engineer_system.features.1"),
-        t("products.items.engineer_system.features.2"),
-        t("products.items.engineer_system.features.3"),
-        t("products.items.engineer_system.features.4"),
-      ],
       link: "/products/engineer-system",
     },
     {
       id: "engineer-system-lite",
-      title: t("products.items.engineer_system_lite.title"),
-      description: t("products.items.engineer_system_lite.desc"),
-      longDescription: t("products.items.engineer_system_lite.long_desc"),
+      title: esLite.titleContent || "",
+      description: esLite.shortDesc || "",
+      longDescription: esLite.longDesc || "",
       badge: t("products.badges.new"),
-      features: [
-        t("products.items.engineer_system_lite.features.0"),
-        t("products.items.engineer_system_lite.features.1"),
-        t("products.items.engineer_system_lite.features.2"),
-        t("products.items.engineer_system_lite.features.3"),
-        t("products.items.engineer_system_lite.features.4"),
-      ],
       link: "/products/engineer-system-lite",
     },
     {
       id: "file-encryption",
-      title: t("products.items.file_encryption.title"),
-      description: t("products.items.file_encryption.desc"),
-      longDescription: t("products.items.file_encryption.long_desc"),
+      title: fe.titleContent || "",
+      description: fe.shortDesc || "",
+      longDescription: fe.longDesc || "",
       badge: t("products.badges.new"),
-      features: [
-        t("products.items.file_encryption.features.0"),
-        t("products.items.file_encryption.features.1"),
-        t("products.items.file_encryption.features.2"),
-        t("products.items.file_encryption.features.3"),
-        t("products.items.file_encryption.features.4"),
-      ],
       link: "/products/file-encryption",
     },
   ];

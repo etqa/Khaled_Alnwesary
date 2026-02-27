@@ -21,14 +21,15 @@ const FreeYoutubeCourse = ({ id, markdownContent, youtubeLink, playlistLink }: F
         overviewContent,
         courseContent,
         readmeContent,
-        buttons
+        buttons,
+        titleContent
     } = useReadme({
         localContent: markdownContent,
         id: id,
         isCourse: true
     });
 
-    const courseTitle = t(`courses.${id.replace(/-/g, '_')}.title`);
+    const courseTitle = titleContent || "";
 
     let moduleIndex = 0;
 

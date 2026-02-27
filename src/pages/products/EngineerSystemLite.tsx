@@ -15,6 +15,8 @@ const EngineerSystemLite = () => {
     const {
         readmeContent,
         overviewContent,
+        titleContent,
+        shortDesc,
         version,
         buttons
     } = useReadme({
@@ -25,8 +27,8 @@ const EngineerSystemLite = () => {
 
 
     const product = {
-        title: t("products.items.engineer_system_lite.title"),
-        description: t("products.items.engineer_system_lite.desc"),
+        title: titleContent || "",
+        description: shortDesc || "",
         icon: Wrench,
     };
 

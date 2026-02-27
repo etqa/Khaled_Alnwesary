@@ -1,61 +1,47 @@
 import { Link } from "react-router-dom";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { Building2, Layers, Video, Palette, ArrowRight, Check } from "lucide-react";
+import { Building2, Layers, Video, Palette, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
+import { useReadme } from "@/hooks/useReadme";
+import exteriorMd from "@/pages/services/ExteriorDesign.md?raw";
+import interiorMd from "@/pages/services/InteriorDesign.md?raw";
+import virtualToursMd from "@/pages/services/VirtualTours.md?raw";
+import animationMd from "@/pages/services/Animation.md?raw";
 
 const Services = () => {
   const { t } = useTranslation();
 
+  const ext = useReadme({ localContent: exteriorMd, id: "exterior", isService: true });
+  const int_ = useReadme({ localContent: interiorMd, id: "interior", isService: true });
+  const vt = useReadme({ localContent: virtualToursMd, id: "virtual-tours", isService: true });
+  const anim = useReadme({ localContent: animationMd, id: "animation", isService: true });
+
   const services = [
     {
       id: "exterior",
-      title: t("services.items.exterior.title"),
-      description: t("services.items.exterior.desc"),
+      title: ext.titleContent || "",
+      description: ext.overviewContent || "",
       icon: Building2,
-      features: [
-        t("services.items.exterior.features.0"),
-        t("services.items.exterior.features.1"),
-        t("services.items.exterior.features.2"),
-        t("services.items.exterior.features.3"),
-      ],
     },
     {
       id: "interior",
-      title: t("services.items.interior.title"),
-      description: t("services.items.interior.desc"),
+      title: int_.titleContent || "",
+      description: int_.overviewContent || "",
       icon: Palette,
-      features: [
-        t("services.items.interior.features.0"),
-        t("services.items.interior.features.1"),
-        t("services.items.interior.features.2"),
-        t("services.items.interior.features.3"),
-      ],
     },
     {
       id: "virtual-tours",
-      title: t("services.items.virtual_tours.title"),
-      description: t("services.items.virtual_tours.desc"),
+      title: vt.titleContent || "",
+      description: vt.overviewContent || "",
       icon: Video,
-      features: [
-        t("services.items.virtual_tours.features.0"),
-        t("services.items.virtual_tours.features.1"),
-        t("services.items.virtual_tours.features.2"),
-        t("services.items.virtual_tours.features.3"),
-      ],
     },
     {
       id: "animation",
-      title: t("services.items.animation.title"),
-      description: t("services.items.animation.desc"),
+      title: anim.titleContent || "",
+      description: anim.overviewContent || "",
       icon: Layers,
-      features: [
-        t("services.items.animation.features.0"),
-        t("services.items.animation.features.1"),
-        t("services.items.animation.features.2"),
-        t("services.items.animation.features.3"),
-      ],
     },
   ];
 
@@ -83,34 +69,33 @@ const Services = () => {
         {/* Services Grid */}
         <section className="py-16 bg-card/80 backdrop-blur-md shadow-card">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
               {services.map((service, index) => (
                 <div
                   key={service.id}
-                  className="animate-fade-up relative rounded-2xl border border-border hover-lift group overflow-hidden"
+                  className="animate-fade-up group relative overflow-hidden rounded-2xl border border-border hover-lift flex flex-col transition-all duration-300 bg-card"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  {/* Background */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/15 via-accent/5 to-primary/5 opacity-40 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="absolute inset-0 geometric-pattern opacity-[0.05] group-hover:opacity-[0.1] transition-opacity duration-500" />
+                  {/* Card Content Overlay Background */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
 
-                  <div className="relative p-8 flex items-start gap-6">
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-foreground mb-3">
-                        {service.title}
-                      </h3>
-                      <p className="text-muted-foreground mb-6">
-                        {service.description}
-                      </p>
-                      <ul className="space-y-3 mb-8">
-                        {service.features.map((feature, idx) => (
-                          <li key={idx} className="flex items-center gap-3 text-foreground/80">
-                            <Check className="w-5 h-5 text-primary shrink-0" />
-                            <span>{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                      <Button variant="hero" asChild className="rounded-xl px-8 shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95">
+                  <div className="relative p-8 flex flex-col items-center text-center h-full z-10">
+                    <div className="mb-6">
+                      <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-500 transform group-hover:scale-110">
+                        <service.icon className="w-8 h-8" />
+                      </div>
+                    </div>
+
+                    <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+
+                    <p className="text-muted-foreground mb-8 leading-relaxed line-clamp-4 text-sm max-w-md">
+                      {service.description}
+                    </p>
+
+                    <div className="mt-auto pt-6 flex items-center justify-center border-t border-border/40 w-full">
+                      <Button variant="hero" asChild className="rounded-xl px-10 shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95">
                         <Link to={`/services/${service.id}`}>
                           {t("services.page.cta_details")}
                           <ArrowRight className="w-5 h-5 rtl:mr-2 ltr:ml-2 rtl:rotate-180" />

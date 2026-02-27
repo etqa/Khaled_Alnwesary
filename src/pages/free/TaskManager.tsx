@@ -13,6 +13,8 @@ const TaskManager = () => {
     const {
         readmeContent,
         overviewContent,
+        titleContent,
+        shortDesc,
         version,
         buttons
     } = useReadme({
@@ -21,8 +23,8 @@ const TaskManager = () => {
     });
 
     const tool = {
-        title: t("free.items.task_manager.title"),
-        description: t("free.items.task_manager.desc"),
+        title: titleContent || "",
+        description: shortDesc || "",
         icon: CheckSquare,
     };
 
