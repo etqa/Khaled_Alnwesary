@@ -16,9 +16,9 @@ export const DetailLayout = ({ children, parentLink, parentText, itemTitle }: De
     const { t } = useTranslation();
 
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen flex flex-col">
             <Navbar />
-            <main className="pt-24 pb-16">
+            <main className="flex-1 pt-24 pb-8">
                 {/* Breadcrumb */}
                 <div className="container mx-auto px-4 py-6">
                     <nav className="flex items-center gap-2 text-sm text-muted-foreground">

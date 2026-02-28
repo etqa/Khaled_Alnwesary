@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { ArrowRight, Star, Search } from "lucide-react";
+import { ArrowRight, Star, Search, Shield, Layout, Calculator } from "lucide-react";
+import { ItemLogo } from "@/components/details/ItemLogo";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";
@@ -23,26 +24,32 @@ const Products = () => {
     {
       id: "engineer-system",
       title: es.titleContent || "",
-      description: es.shortDesc || "",
+      description: es.shortDesc || es.overviewContent || es.longDesc || "",
       longDescription: es.longDesc || "",
       badge: t("products.badges.popular"),
       link: "/products/engineer-system",
+      icon: Layout,
+      imageName: "EngineerSystem"
     },
     {
       id: "engineer-system-lite",
       title: esLite.titleContent || "",
-      description: esLite.shortDesc || "",
+      description: esLite.shortDesc || esLite.overviewContent || esLite.longDesc || "",
       longDescription: esLite.longDesc || "",
       badge: t("products.badges.new"),
       link: "/products/engineer-system-lite",
+      icon: Calculator,
+      imageName: "EngineerSystemLite"
     },
     {
       id: "file-encryption",
       title: fe.titleContent || "",
-      description: fe.shortDesc || "",
+      description: fe.shortDesc || fe.overviewContent || fe.longDesc || "",
       longDescription: fe.longDesc || "",
       badge: t("products.badges.new"),
       link: "/products/file-encryption",
+      icon: Shield,
+      imageName: "FileEncryption"
     },
   ];
 
@@ -115,11 +122,21 @@ const Products = () => {
                     </div>
 
                     <div className="relative p-8 flex flex-col h-full z-10 items-center text-center">
+                      <div className="mb-4">
+                        <div className="w-16 h-16 rounded-[1rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2">
+                          <ItemLogo
+                            imageName={product.imageName}
+                            fallbackIcon={product.icon}
+                            className="w-full h-full object-contain"
+                            iconClassName="w-8 h-8 text-primary"
+                          />
+                        </div>
+                      </div>
                       <h3 className="text-2xl font-bold text-foreground mb-4">
                         {product.title}
                       </h3>
                       <p className="text-muted-foreground mb-8 leading-relaxed flex-1">
-                        {product.longDescription}
+                        {product.description}
                       </p>
 
                       <Button variant="outline" className="w-full mt-auto" asChild>

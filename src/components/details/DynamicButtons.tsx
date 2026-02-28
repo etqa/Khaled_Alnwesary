@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Download, Globe, Smartphone, Monitor, ExternalLink, Youtube, Play, Video } from "lucide-react";
+import { MessageCircle, Download, Globe, Smartphone, Monitor, ExternalLink, Youtube, Play, Video, Clock } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 interface ButtonData {
@@ -92,6 +92,12 @@ const getIcon = (label: string) => {
     ) {
         return Globe;
     }
+    if (
+        lowerLabel.includes("قريبا") ||
+        lowerLabel.includes("soon")
+    ) {
+        return Clock;
+    }
     return ExternalLink;
 };
 
@@ -101,10 +107,36 @@ export const DynamicButtons = ({ buttons }: DynamicButtonsProps) => {
 
     if (!buttons || buttons.length === 0) return null;
 
+    const isValidUrl = (url: string) => {
+        if (!url) return false;
+        // Check if it's a valid web URL or a specific scheme like whatsapp/mailto
+        // If it's just a placeholder name or empty, it's invalid
+        return /^(https?:\/\/|mailto:|tel:|#)/i.test(url);
+    };
+
     return (
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 mb-10 w-full">
             {buttons.map((button, index) => {
                 const Icon = getIcon(button.label);
+                const isUrlValid = isValidUrl(button.url);
+
+                if (!isUrlValid) {
+                    return (
+                        <Button
+                            key={index}
+                            variant="hero"
+                            size="lg"
+                            className="w-full sm:w-auto min-w-[190px] rounded-2xl shadow-lg shadow-primary/20 transition-all opacity-70 cursor-default text-sm sm:text-base px-6 h-14"
+                            onClick={(e) => e.preventDefault()}
+                        >
+                            <div className="flex items-center justify-center">
+                                <Icon className="w-5 h-5 rtl:ml-2 ltr:mr-2" />
+                                {button.label}
+                            </div>
+                        </Button>
+                    );
+                }
+
                 return (
                     <Button
                         key={index}

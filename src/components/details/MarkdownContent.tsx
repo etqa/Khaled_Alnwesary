@@ -31,6 +31,7 @@ const getYoutubeEmbedUrl = (url: string) => {
 
 export const MarkdownContent = ({ content }: MarkdownContentProps) => {
     const [selectedImage, setSelectedImage] = useState<{ src: string; alt?: string } | null>(null);
+    const cleanContent = content.replace(/<!--[\s\S]*?-->/g, '');
 
     return (
         <div className="bg-card/80 border border-border/50 rounded-[2.5rem] p-6 md:p-12 shadow-sm backdrop-blur-md">
@@ -189,18 +190,28 @@ export const MarkdownContent = ({ content }: MarkdownContentProps) => {
                                 const message = params.get('message') || params.get('text') || "";
                                 url = `https://wa.me/${number}${message ? `?text=${encodeURIComponent(message)}` : ''}`;
                             }
+
+                            const isValidUrl = (u: string) => {
+                                if (!u) return false;
+                                return /^(https?:\/\/|mailto:|tel:|#)/i.test(u);
+                            };
+
+                            const isUrlValid = isValidUrl(url);
+
                             return (
                                 <a
                                     {...props}
-                                    href={url}
-                                    target={url.startsWith('http') ? "_blank" : undefined}
-                                    rel={url.startsWith('http') ? "noopener noreferrer" : undefined}
+                                    href={isUrlValid ? url : undefined}
+                                    onClick={!isUrlValid ? (e) => e.preventDefault() : props.onClick}
+                                    style={!isUrlValid ? { cursor: 'default', opacity: 0.8 } : props.style}
+                                    target={isUrlValid && url.startsWith('http') ? "_blank" : undefined}
+                                    rel={isUrlValid && url.startsWith('http') ? "noopener noreferrer" : undefined}
                                 />
                             );
                         }
                     }}
                 >
-                    {content}
+                    {cleanContent}
                 </ReactMarkdown>
             </div>
 

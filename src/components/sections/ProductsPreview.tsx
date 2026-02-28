@@ -1,4 +1,5 @@
 import { Shield, Wrench, ArrowRight, Star, Zap, Layout, Calculator } from "lucide-react";
+import { ItemLogo } from "@/components/details/ItemLogo";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -17,30 +18,33 @@ export const ProductsPreview = () => {
   const products = [
     {
       title: es.titleContent || "",
-      description: es.shortDesc || "",
+      description: es.shortDesc || es.overviewContent || es.longDesc || "",
       icon: Layout,
       link: "/products/engineer-system",
       badge: t("products.badges.popular"),
       badgeIcon: Star,
-      type: "popular"
+      type: "popular",
+      imageName: "EngineerSystem"
     },
     {
       title: esl.titleContent || "",
-      description: esl.shortDesc || "",
+      description: esl.shortDesc || esl.overviewContent || esl.longDesc || "",
       icon: Calculator,
       link: "/products/engineer-system-lite",
       badge: t("products.badges.new"),
       badgeIcon: Zap,
-      type: "new"
+      type: "new",
+      imageName: "EngineerSystemLite"
     },
     {
       title: fe.titleContent || "",
-      description: fe.shortDesc || "",
+      description: fe.shortDesc || fe.overviewContent || fe.longDesc || "",
       icon: Shield,
       link: "/products/file-encryption",
       badge: t("products.badges.new"),
       badgeIcon: Zap,
-      type: "new"
+      type: "new",
+      imageName: "FileEncryption"
     },
   ];
 
@@ -61,11 +65,11 @@ export const ProductsPreview = () => {
         </div>
 
         {/* Products Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {products.map((product, index) => (
             <div
               key={index}
-              className="animate-fade-up group relative overflow-hidden rounded-2xl border border-border hover-lift flex flex-col transition-all duration-300 bg-card"
+              className="animate-fade-up group relative overflow-hidden rounded-2xl border border-border hover-lift flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm transition-all duration-300 bg-card"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Background Pattern */}
@@ -81,8 +85,13 @@ export const ProductsPreview = () => {
 
               <div className="relative p-8 flex flex-col h-full z-10 items-center text-center">
                 <div className="flex flex-col items-center mb-4">
-                  <div className="p-3 rounded-lg mb-4 bg-primary/10 text-primary">
-                    <product.icon className="w-6 h-6" />
+                  <div className="w-16 h-16 rounded-[1rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2 mb-4">
+                    <ItemLogo
+                      imageName={product.imageName}
+                      fallbackIcon={product.icon}
+                      className="w-full h-full object-contain"
+                      iconClassName="w-8 h-8 text-primary"
+                    />
                   </div>
                   <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
                     {product.title}

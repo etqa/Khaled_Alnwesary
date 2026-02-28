@@ -1,4 +1,5 @@
 import { Play, ArrowRight, Clock, Users, Gift, Crown } from "lucide-react";
+import { ItemLogo } from "@/components/details/ItemLogo";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -18,23 +19,26 @@ export const CoursesPreview = () => {
     {
       id: "blender",
       title: blender.titleContent || "",
-      description: blender.shortDesc || "",
+      description: blender.shortDesc || blender.overviewContent || blender.longDesc || "",
       link: "/courses/blender",
       isFree: false,
+      imageName: "BlenderCourse"
     },
     {
       id: "blender-free-ext",
       title: bFreeExt.titleContent || "",
-      description: bFreeExt.shortDesc || "",
+      description: bFreeExt.shortDesc || bFreeExt.overviewContent || bFreeExt.longDesc || "",
       link: "/courses/blender-free-ext",
       isFree: true,
+      imageName: "BlenderFreeExt"
     },
     {
       id: "d5-render-free",
       title: d5Free.titleContent || "",
-      description: d5Free.shortDesc || "",
+      description: d5Free.shortDesc || d5Free.overviewContent || d5Free.longDesc || "",
       link: "/courses/d5-render-free",
       isFree: true,
+      imageName: "D5RenderFree"
     },
   ];
 
@@ -55,11 +59,11 @@ export const CoursesPreview = () => {
         </div>
 
         {/* Courses Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {courses.map((course, index) => (
             <div
               key={index}
-              className="animate-fade-up group relative overflow-hidden rounded-2xl border border-border hover-lift flex flex-col transition-all duration-300 bg-card"
+              className="animate-fade-up group relative overflow-hidden rounded-2xl border border-border hover-lift flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm transition-all duration-300 bg-card"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Background Patterns */}
@@ -78,6 +82,16 @@ export const CoursesPreview = () => {
               </div>
 
               <div className="relative p-8 flex flex-col items-center text-center h-full z-10">
+                <div className="mb-4">
+                  <div className="w-16 h-16 rounded-[1rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2">
+                    <ItemLogo
+                      imageName={course.imageName}
+                      fallbackIcon={Play}
+                      className="w-full h-full object-contain"
+                      iconClassName="w-8 h-8 text-primary"
+                    />
+                  </div>
+                </div>
                 <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {course.title}
                 </h3>

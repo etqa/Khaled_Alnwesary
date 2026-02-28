@@ -2,13 +2,11 @@
 
 [English](#english) | [العربية](#arabic)
 
----
-
 [wa_order]: whatsapp:218928198656?message=السلام عليكم، أريد طلب خدمة الإظهار المعماري الداخلي
 
 [fb_port]: https://www.facebook.com/Khaled.alnwesary.2019/posts/pfbid02R8Prt6zWoyXj6Y2f69yS9iEj5W8W6z8vS6z5z5z5z5z5z5z5z5z5z5z5z
 
-[yt_port]: https://www.youtube.com/@خالدالنويصري
+[yt_port]: https://www.behance.net/mstrben88a928
 
 [img1]: portfolio/interior/1.jpg
 
@@ -24,6 +22,60 @@
 
 ---
 
+<a name="arabic"></a>
+## العربية (Arabic)
+
+### Title
+إظهار داخلي
+
+### Short Description
+إظهار الفراغات الداخلية بتفاصيل دقيقة وإضاءة واقعية
+
+### نظرة عامة
+إظهار الفراغات الداخلية بتفاصيل دقيقة وإضاءة واقعية للمساحات السكنية والتجارية.
+
+### الأزرار
+- [طلب الخدمة][wa_order]
+- [معرض الأعمال][yt_port]
+
+### معرض الأعمال
+
+![مشروع من تصميم شركة الاطيوش - بنغازي][img1] ![مشروع من تصميم شركة الاطيوش - بنغازي][img2]
+
+![مشروع من تصميم شركة الراكزة - بنغازي][img3] ![مشروع من تصميم شركة الراكزة - بنغازي][img4]
+
+![مشروع من تصميم شركة امتياز - طرابلس][img5] ![مشروع من تصميم شركة امتياز - طرابلس][img6]
+
+<!-- ### فيديوهات توضيحية
+- [معرض أعمال التصميم الداخلي - يوتيوب][yt_port]
+- [معرض أعمال التصميم الداخلي - فيسبوك][fb_port] -->
+
+### المميزات
+- صور ثلاثية الأبعاد عالية الجودة
+- مواد وبيئة واقعية
+- دراسات دقيقة للضوء والظلال
+- زوايا  كاميرا احترافية
+- معالجة ما بعد الإنتاج احترافي
+- الالتزام بالوقت المحدد
+
+
+### شروط التعامل
+1. تحديد المتطلبات بوضوح قبل البدء.
+2. إرسال الملف النهائي بحيث يكون نظيف وخالي من اخطاء الرسم.
+3. لايتم ارسال الملف النهائي للمشروع الابعد استلام المبلغ كامل.
+4. التأخير في الرد بعد ارسال التست يضاف على الوقت المتفق علية .
+5. عدد التعديلات على التست لايتجاوز 3 تعديلات ثم قد يتم فرض رسوم اضافية .
+6. اي شروط او ملاحظات تتعلق بحقوق النشر او التنزيل على النت او غيرها يتم توضيحه في بداية الاتفاق قبل البدء في المشروع 
+
+### طريقة التعاون
+1. ارسال ملف المشروع للإطلاع عليه مع توضيح المتطلبات الأولية.
+2. بعد الإطلاع على ملف المشروع يتم الرد بالوقت والسعر خلال يوم أو يومين.
+3. في حال اعتماد الوقت والسعر يتم البدء في تجهيز تست للمشروع.
+4. بعد تقديم الملاحظات واعتماد التست يتم ارسال مبلغ المشروع بالكامل.
+5. نبدا في تجهيز الصور النهائية للمشروع ثم ارسال الملفات النهائية بعد استلام المبلغ.
+
+-------------------------------------------------------
+
 <a name="english"></a>
 ## English
 
@@ -33,9 +85,9 @@ Interior Visualization
 ### Short Description
 Designing interior spaces with precise details and realistic lighting
 
-### Video Tutorials
+<!-- ### Video Tutorials
 - [Interior Portfolio Youtube][yt_port]
-- [Interior Portfolio Facebook][fb_port]
+- [Interior Portfolio Facebook][fb_port] -->
 
 ### Buttons
 - [Order Service][wa_order]
@@ -54,11 +106,12 @@ Transform your spaces with our creative interior Visualization services. We focu
 ![Luxury Suite][img5] ![Architectural Detail][img6]
 
 ### Features
-- Photorealistic 3D rendering
-- Lighting and material selection
-- Furniture layout planning
-- Custom cabinetry and detail design
-- Color palette and texture consulting
+- High-quality 3D images
+- Realistic materials and environments
+- Meticulous lighting and shadow analysis
+- Professional camera angles
+- Professional post-production processing
+- On-time delivery
 
 ### Terms of Service
 1. Clearly define requirements before starting.
@@ -75,54 +128,4 @@ Transform your spaces with our creative interior Visualization services. We focu
 4. After feedback is provided and the test is approved, the full project amount is sent.
 5. We start preparing the final images/files and then send them after receiving the payment.
 
----
 
-<a name="arabic"></a>
-## العربية (Arabic)
-
-### Title
-إظهار داخلي
-
-### Short Description
-تصميم الفراغات الداخلية بتفاصيل دقيقة وإضاءة واقعية
-
-### نظرة عامة
-إظهار الفراغات الداخلية بتفاصيل دقيقة وإضاءة واقعية للمساحات السكنية والتجارية.
-
-### الأزرار
-- [طلب الخدمة][wa_order]
-- [معرض الأعمال][yt_port]
-
-### معرض الأعمال
-
-![تصميم داخلي 1][img1] ![تصميم داخلي 2][img2]
-
-![تصميم داخلي 3][img3] ![تصميم داخلي 4][img4]
-
-![تصميم داخلي 5][img5] ![تصميم داخلي 6][img6]
-
-### فيديوهات توضيحية
-- [معرض أعمال التصميم الداخلي - يوتيوب][yt_port]
-- [معرض أعمال التصميم الداخلي - فيسبوك][fb_port]
-
-### المميزات
-- غرف معيشة وصالات
-- مطابخ وحمامات
-- مكاتب ومحلات تجارية
-- فنادق ومطاعم
-
-
-### شروط التعامل
-1. تحديد المتطلبات بوضوح قبل البدء.
-2. إرسال الملف النهائي بحيث يكون نظيف وخالي من اخطاء الرسم.
-3. لايتم ارسال الملف النهائي للمشروع الابعد استلام المبلغ كامل.
-4. التأخير في الرد بعد ارسال التست يضاف على الوقت المتفق علية .
-5. عدد التعديلات على التست لايتجاوز 3 تعديلات ثم قد يتم فرض رسوم اضافية .
-6. اي شروط او ملاحظات تتعلق بحقوق النشر او التنزيل على النت او غيرها يتم توضيحه في بداية الاتفاق قبل البدء في المشروع 
-
-### طريقة التعاون
-1. ارسال ملف المشروع للإطلاع عليه مع توضيح المتطلبات الأولية.
-2. بعد الإطلاع على ملف المشروع يتم الرد بالوقت والسعر خلال يوم أو يومين.
-3. في حال اعتماد الوقت والسعر يتم البدء في تجهيز تست للمشروع.
-4. بعد تقديم الملاحظات واعتماد التست يتم ارسال مبلغ المشروع بالكامل.
-5. نبدا في تجهيز الصور النهائية للمشروع ثم ارسال الملفات النهائية بعد استلام المبلغ.

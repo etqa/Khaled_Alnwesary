@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Puzzle, BookOpen, CheckSquare, ArrowRight, Download, Search, Gift } from "lucide-react";
+import { ItemLogo } from "@/components/details/ItemLogo";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";
@@ -24,29 +25,32 @@ const Free = () => {
     {
       id: "kh-tools",
       title: kh.titleContent || "",
-      description: kh.shortDesc || "",
+      description: kh.shortDesc || kh.overviewContent || kh.longDesc || "",
       longDescription: kh.longDesc || "",
       icon: Puzzle,
       category: t("free.categories.blender"),
       link: "/free/kh-tools",
+      imageName: "KHTools"
     },
     {
       id: "quran-app",
       title: quran.titleContent || "",
-      description: quran.shortDesc || "",
+      description: quran.shortDesc || quran.overviewContent || quran.longDesc || "",
       longDescription: quran.longDesc || "",
       icon: BookOpen,
       category: t("free.categories.mobile_app"),
       link: "/free/quran-app",
+      imageName: "QuranApp"
     },
     {
       id: "task-manager",
       title: task.titleContent || "",
-      description: task.shortDesc || "",
+      description: task.shortDesc || task.overviewContent || task.longDesc || "",
       longDescription: task.longDesc || "",
       icon: CheckSquare,
       category: t("free.categories.mobile_app"),
       link: "/free/task-manager",
+      imageName: "TaskManager"
     },
   ];
 
@@ -113,11 +117,21 @@ const Free = () => {
                     </div>
 
                     <div className="relative p-8 flex flex-col h-full z-10 items-center text-center">
+                      <div className="mb-4">
+                        <div className="w-16 h-16 rounded-[1rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2">
+                          <ItemLogo
+                            imageName={tool.imageName}
+                            fallbackIcon={tool.icon}
+                            className="w-full h-full object-contain"
+                            iconClassName="w-8 h-8 text-primary"
+                          />
+                        </div>
+                      </div>
                       <h3 className="text-2xl font-bold text-foreground mb-4">
                         {tool.title}
                       </h3>
                       <p className="text-muted-foreground mb-8 leading-relaxed flex-1">
-                        {tool.longDescription}
+                        {tool.description}
                       </p>
 
                       <Button variant="outline" className="w-full mt-auto" asChild>

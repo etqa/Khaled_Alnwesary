@@ -119,7 +119,7 @@ export const useReadme = ({ readmeUrl, id, isProduct, isService, isCourse, local
             }
 
             let processedContent = preamble ? preamble + "\n\n" + langContent : langContent;
-            processedContent = processedContent.replace(/(?:\*\*Version:\*\*|\*\*الإصدار:\*\*)\s*[\d.]+\s*(?:\r?\n|$)/i, '').trim();
+            processedContent = processedContent.replace(/(?:\*\*Version:\*\*|\*\*الإصدار:\*\*)\s*[vV]?\s*[\d.]+\s*(?:\r?\n|$)/i, '').trim();
             processedContent = processedContent.replace(/<a\s+name="[^"]*"><\/a>/gi, '').trim();
             processedContent = processedContent.replace(/^-{3,}\s*$/gm, '').trim();
 
@@ -168,7 +168,7 @@ export const useReadme = ({ readmeUrl, id, isProduct, isService, isCourse, local
             setTitleContent(title?.trim() || null);
 
             // Short Description
-            const shortDescVal = extractSection(/(?:###\s+)(?:Short Description)\s*(.*?)(?=###|$)/si);
+            const shortDescVal = extractSection(/(?:###\s+)(?:Short Description|الوصف المختصر)\s*(.*?)(?=###|$)/si);
             setShortDesc(shortDescVal?.trim() || null);
 
             // Long Description
@@ -190,8 +190,24 @@ export const useReadme = ({ readmeUrl, id, isProduct, isService, isCourse, local
                 const buttonMatches = Array.from(buttonsSectionStr.matchAll(/\[(.*?)\](?:\((.*?)\)|\[(.*?)\])/g));
                 const parsedButtons = buttonMatches.map(m => {
                     const label = m[1];
-                    const urlOrId = (m[2] || m[3] || "").trim();
-                    const finalUrl = linkRefs[urlOrId.toLowerCase()] || urlOrId;
+                    const inlineUrl = m[2];
+                    const refId = m[3];
+
+                    let finalUrl = "";
+                    if (refId !== undefined) {
+                        // Case: [label][id] or [label][]
+                        finalUrl = linkRefs[refId.toLowerCase()] || "";
+                    } else if (inlineUrl !== undefined) {
+                        // Case: [label](url) or [label](id)
+                        finalUrl = linkRefs[inlineUrl.toLowerCase()] || inlineUrl;
+                    }
+
+                    // If the final URL doesn't look like a real URL/anchor/scheme, 
+                    // and it wasn't a confirmed reference, treat it as empty
+                    if (finalUrl && !/^(https?:\/\/|mailto:|tel:|#|whatsapp:)/i.test(finalUrl) && !finalUrl.includes('.')) {
+                        finalUrl = "";
+                    }
+
                     return { label, url: formatUrl(finalUrl) };
                 });
                 setButtons(parsedButtons);
@@ -214,7 +230,7 @@ export const useReadme = ({ readmeUrl, id, isProduct, isService, isCourse, local
 
             // Course specific sections
             if (isCourse) {
-                const course = extractSection(/(?:###\s+)(?:Course Content|محتوى الدورة)\s*(.*?)(?=###|$)/si);
+                const course = extractSection(/(?:###\s+)(?:Course Content|محتوى الدورة|محتوى الكورس)\s*(.*?)(?=###|$)/si);
                 const stats = extractSection(/(?:###\s+)(?:Stats|الإحصائيات)\s*(.*?)(?=###|$)/si);
                 const features = extractSection(/(?:###\s+)(?:Features|المميزات)\s*(.*?)(?=###|$)/si);
 
@@ -261,11 +277,11 @@ export const useReadme = ({ readmeUrl, id, isProduct, isService, isCourse, local
             }
 
             // Also remove any stray version lines
-            processedContent = processedContent.replace(/(?:\*\*Version:\*\*|\*\*الإصدار:\*\*)\s*[\d.]+\s*(?:\r?\n|$)/i, '').trim();
+            processedContent = processedContent.replace(/(?:\*\*Version:\*\*|\*\*الإصدار:\*\*)\s*[vV]?\s*[\d.]+\s*(?:\r?\n|$)/i, '').trim();
 
             setReadmeContent(resolveReferences(processedContent));
 
-            const versionMatch = text.match(/(?:\*\*Version:\*\*|\*\*الإصدار:\*\*)\s*([\d.]+)/i);
+            const versionMatch = text.match(/(?:\*\*Version:\*\*|\*\*الإصدار:\*\*)\s*[vV]?\s*([\d.]+)/i);
             if (versionMatch) {
                 setVersion(versionMatch[1]);
             }

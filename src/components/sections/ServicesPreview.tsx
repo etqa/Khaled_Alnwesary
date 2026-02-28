@@ -1,4 +1,4 @@
-import { Building2, ArrowRight, Layers, Palette, Video } from "lucide-react";
+import { Building2, ArrowRight, Layers, Sofa, Orbit, Film } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -20,23 +20,30 @@ export const ServicesPreview = () => {
     {
       id: "exterior",
       title: ext.titleContent || "",
-      description: ext.overviewContent || "",
+      description: ext.shortDesc || ext.overviewContent || "",
       icon: Building2,
       link: "/services/exterior",
     },
     {
       id: "interior",
       title: int_.titleContent || "",
-      description: int_.overviewContent || "",
-      icon: Palette,
+      description: int_.shortDesc || int_.overviewContent || "",
+      icon: Sofa,
       link: "/services/interior",
     },
     {
       id: "virtual-tours",
       title: vt.titleContent || "",
-      description: vt.overviewContent || "",
-      icon: Video,
+      description: vt.shortDesc || vt.overviewContent || "",
+      icon: Orbit,
       link: "/services/virtual-tours",
+    },
+    {
+      id: "animation",
+      title: anim.titleContent || "",
+      description: anim.shortDesc || anim.overviewContent || "",
+      icon: Film,
+      link: "/services/animation",
     }
   ];
 
@@ -57,11 +64,11 @@ export const ServicesPreview = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="animate-fade-up group relative overflow-hidden rounded-2xl border border-border hover-lift flex flex-col transition-all duration-300 bg-card"
+              className="animate-fade-up group relative overflow-hidden rounded-2xl border border-border hover-lift flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm transition-all duration-300 bg-card"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Card Content Overlay Background */}

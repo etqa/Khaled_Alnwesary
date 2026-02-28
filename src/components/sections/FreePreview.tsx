@@ -1,4 +1,5 @@
 import { Puzzle, BookOpen, CheckSquare, ArrowRight, Sparkles } from "lucide-react";
+import { ItemLogo } from "@/components/details/ItemLogo";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -17,21 +18,24 @@ export const FreePreview = () => {
   const freeItems = [
     {
       title: kh.titleContent || "",
-      description: kh.shortDesc || "",
+      description: kh.shortDesc || kh.overviewContent || kh.longDesc || "",
       icon: Puzzle,
       link: "/free/kh-tools",
+      imageName: "KHTools"
     },
     {
       title: quran.titleContent || "",
-      description: quran.shortDesc || "",
+      description: quran.shortDesc || quran.overviewContent || quran.longDesc || "",
       icon: BookOpen,
       link: "/free/quran-app",
+      imageName: "QuranApp"
     },
     {
       title: task.titleContent || "",
-      description: task.shortDesc || "",
+      description: task.shortDesc || task.overviewContent || task.longDesc || "",
       icon: CheckSquare,
       link: "/free/task-manager",
+      imageName: "TaskManager"
     },
   ];
 
@@ -52,22 +56,25 @@ export const FreePreview = () => {
         </div>
 
         {/* Free Items Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {freeItems.map((tool, index) => (
             <div
               key={index}
-              className="animate-fade-up group relative overflow-hidden rounded-2xl border border-border hover-lift flex flex-col transition-all duration-300 bg-card"
+              className="animate-fade-up group relative overflow-hidden rounded-2xl border border-border hover-lift flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm transition-all duration-300 bg-card"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="h-1 w-full bg-primary/20 group-hover:bg-primary transition-colors duration-500" />
 
               <div className="relative p-8 flex flex-col items-center text-center h-full z-10">
-                {/* Icon Circle */}
-                <div className="mb-6 relative">
-                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-500 transform group-hover:-rotate-6">
-                    <tool.icon className="w-7 h-7" />
+                <div className="flex flex-col items-center mb-4">
+                  <div className="w-16 h-16 rounded-[1rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2 mb-4 relative z-10">
+                    <ItemLogo
+                      imageName={tool.imageName}
+                      fallbackIcon={tool.icon}
+                      className="w-full h-full object-contain"
+                      iconClassName="w-8 h-8 text-primary group-hover:text-primary-foreground transition-all duration-500 transform group-hover:-rotate-6"
+                    />
                   </div>
-                  {/* Subtle floating background icon */}
                   <Sparkles className="absolute -top-2 -right-2 w-6 h-6 text-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 animate-pulse" />
                 </div>
 

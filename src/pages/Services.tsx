@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { Building2, Layers, Video, Palette, ArrowRight } from "lucide-react";
+import { Building2, Layers, Orbit, Film, Sofa, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import { useReadme } from "@/hooks/useReadme";
@@ -22,26 +22,26 @@ const Services = () => {
     {
       id: "exterior",
       title: ext.titleContent || "",
-      description: ext.overviewContent || "",
+      description: ext.shortDesc || ext.overviewContent || "",
       icon: Building2,
     },
     {
       id: "interior",
       title: int_.titleContent || "",
-      description: int_.overviewContent || "",
-      icon: Palette,
+      description: int_.shortDesc || int_.overviewContent || "",
+      icon: Sofa,
     },
     {
       id: "virtual-tours",
       title: vt.titleContent || "",
-      description: vt.overviewContent || "",
-      icon: Video,
+      description: vt.shortDesc || vt.overviewContent || "",
+      icon: Orbit,
     },
     {
       id: "animation",
       title: anim.titleContent || "",
-      description: anim.overviewContent || "",
-      icon: Layers,
+      description: anim.shortDesc || anim.overviewContent || "",
+      icon: Film,
     },
   ];
 
@@ -69,11 +69,11 @@ const Services = () => {
         {/* Services Grid */}
         <section className="py-16 bg-card/80 backdrop-blur-md shadow-card">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
               {services.map((service, index) => (
                 <div
                   key={service.id}
-                  className="animate-fade-up group relative overflow-hidden rounded-2xl border border-border hover-lift flex flex-col transition-all duration-300 bg-card"
+                  className="animate-fade-up group relative overflow-hidden rounded-2xl border border-border hover-lift flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-md transition-all duration-300 bg-card"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {/* Card Content Overlay Background */}

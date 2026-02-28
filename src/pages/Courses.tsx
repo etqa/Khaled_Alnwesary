@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Play, ArrowRight, Search, Crown, Gift } from "lucide-react";
+import { ItemLogo } from "@/components/details/ItemLogo";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";
@@ -36,6 +37,16 @@ const CourseCard = ({ course, index, t }: { course: any, index: number, t: any }
       </div>
 
       <div className="relative p-8 flex flex-col h-full z-10 items-center text-center">
+        <div className="mb-4">
+          <div className="w-16 h-16 rounded-[1rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2">
+            <ItemLogo
+              imageName={course.imageName}
+              fallbackIcon={Play}
+              className="w-full h-full object-contain"
+              iconClassName="w-8 h-8 text-primary"
+            />
+          </div>
+        </div>
         <h3 className="text-2xl font-bold text-foreground mb-4">
           {course.title}
         </h3>
@@ -67,34 +78,38 @@ const Courses = () => {
     {
       id: "blender",
       title: bRead.titleContent || "",
-      description: bRead.shortDesc || "",
+      description: bRead.shortDesc || bRead.overviewContent || bRead.longDesc || "",
       featured: true,
       link: "/courses/blender",
       isFree: false,
+      imageName: "BlenderCourse"
     },
     {
       id: "blender-free-ext",
       title: bExtFreeRead.titleContent || "",
-      description: bExtFreeRead.shortDesc || "",
+      description: bExtFreeRead.shortDesc || bExtFreeRead.overviewContent || bExtFreeRead.longDesc || "",
       featured: false,
       link: "/courses/blender-free-ext",
       isFree: true,
+      imageName: "BlenderFreeExt"
     },
     {
       id: "d5-render-free",
       title: d5FreeRead.titleContent || "",
-      description: d5FreeRead.shortDesc || "",
+      description: d5FreeRead.shortDesc || d5FreeRead.overviewContent || d5FreeRead.longDesc || "",
       featured: false,
       link: "/courses/d5-render-free",
       isFree: true,
+      imageName: "D5RenderFree"
     },
     {
       id: "blender-free-int",
       title: bIntFreeRead.titleContent || "",
-      description: bIntFreeRead.shortDesc || "",
+      description: bIntFreeRead.shortDesc || bIntFreeRead.overviewContent || bIntFreeRead.longDesc || "",
       featured: false,
       link: "/courses/blender-free-int",
       isFree: true,
+      imageName: "BlenderFreeInt"
     },
   ];
 

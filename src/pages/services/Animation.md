@@ -2,11 +2,9 @@
 
 [English](#english) | [العربية](#arabic)
 
----
-
 [wa_order]: whatsapp:218928198656?message=السلام عليكم، أريد طلب خدمة الإظهار المعماري المتحرك (Animation)
 
-[yt_port]: https://www.youtube.com/playlist?list=PLRrETGQR_7qIzNCAUiudxC4dpuUoheiIo
+[yt_port]: https://www.youtube.com/watch?v=1I9IZZiq4Kc&list=PLRrETGQR_7qIzNCAUiudxC4dpuUoheiIo
 
 [yt_promo]: https://www.youtube.com/watch?v=VRzW72Ptnug&t=52s
 
@@ -19,57 +17,6 @@
 [v3]: https://www.youtube.com/watch?v=LYVU1PFk3Gg
 
 [v4]: https://www.youtube.com/watch?v=DP0nM047m3E
-
----
-
-<a name="english"></a>
-## English
-
-### Title
-Video Animation
-
-### Short Description
-High-quality animated videos for architectural projects
-
-### Video Tutorials
-- [Animation Service Promo][yt_promo]
-- [Full Animation Portfolio][yt_port]
-
-### Buttons
-- [Order Service][wa_order]
-- [View Portfolio][yt_port]
-- [Contact Us][wa_order]
-
-### Overview
-Bring your designs to life with our professional 3D animation services. We create high-quality walkthroughs, cinematic tours, and product presentations that help you showcase your vision with impact.
-
-### Portfolio
-- [Luxury Villa Walkthrough][v1]
-- [Commercial Building Tour][v2]
-- [Interior Design Animation][v3]
-- [Real Estate Presentation][v4]
-
-### Features
-- Cinematic 4K rendering
-- Realistic lighting and sound
-- Custom camera paths
-- Fast turnaround time
-- Professional post-production
-
-### Terms of Service
-1. Clearly define requirements before starting.
-2. Send the final file clean and free of drawing errors.
-3. The final project file will not be sent until full payment is received.
-4. Delays in response after sending tests will be added to the agreed-upon time.
-5. The number of modifications on the test must not exceed 3, otherwise additional fees may apply.
-6. Any terms or notes regarding copyright, online posting, or others must be clarified at the start of the agreement before beginning the project.
-
-### How to Collaborate
-1. Send the project file for review along with initial requirements.
-2. After reviewing the project file, a response with time and price will be provided within one or two days.
-3. Once the time and price are approved, preparation of a project test begins.
-4. After feedback is provided and the test is approved, the full project amount is sent.
-5. We start preparing the final images/files and then send them after receiving the payment.
 
 ---
 
@@ -95,15 +42,18 @@ Bring your designs to life with our professional 3D animation services. We creat
 - [تصميم داخلي متحرك][v3]
 - [عرض تقديمي عقاري][v4]
 
-### فيديوهات توضيحية
+<!-- ### فيديوهات توضيحية
 - [معرض أعمال التحريك - يوتيوب][yt_port]
-- [برومو الخدمة][yt_promo]
+- [برومو الخدمة][yt_promo] -->
 
 ### المميزات
 - جولات متحركة
 - عروض تقديمية
 - فيديو تسويقي
 - مؤثرات بصرية
+- جودة عالية
+- سعر مناسب
+
 
 ### طريقة التعاون
 1. ارسال ملف المشروع للإطلاع عليه مع توضيح المتطلبات الأولية.
@@ -119,3 +69,58 @@ Bring your designs to life with our professional 3D animation services. We creat
 4. التأخير في الرد بعد ارسال التست يضاف على الوقت المتفق علية .
 5. عدد التعديلات على التست لايتجاوز 3 تعديلات ثم قد يتم فرض رسوم اضافية .
 6. اي شروط او ملاحظات تتعلق بحقوق النشر او التنزيل على النت او غيرها يتم توضيحه في بداية الاتفاق قبل البدء في المشروع 
+
+
+-------------------------------------------------------
+
+<a name="english"></a>
+## English
+
+### Title
+Video Animation
+
+### Short Description
+High-quality animated videos for architectural projects
+
+<!-- ### Video Tutorials
+- [Animation Service Promo][yt_promo]
+- [Full Animation Portfolio][yt_port] -->
+
+### Buttons
+- [Order Service][wa_order]
+- [View Portfolio][yt_port]
+- [Contact Us][wa_order]
+
+### Overview
+Bring your designs to life with our professional 3D animation services. We create high-quality walkthroughs, cinematic tours, and product presentations that help you showcase your vision with impact.
+
+### Portfolio
+- [Luxury Villa Walkthrough][v1]
+- [Commercial Building Tour][v2]
+- [Interior Design Animation][v3]
+- [Real Estate Presentation][v4]
+
+### Features
+- Cinematic 4K rendering
+- Realistic lighting and sound
+- Custom camera paths
+- Fast turnaround time
+- Professional post-production
+- High quality
+- Reasonable price
+
+### Terms of Service
+1. Clearly define requirements before starting.
+2. Send the final file clean and free of drawing errors.
+3. The final project file will not be sent until full payment is received.
+4. Delays in response after sending tests will be added to the agreed-upon time.
+5. The number of modifications on the test must not exceed 3, otherwise additional fees may apply.
+6. Any terms or notes regarding copyright, online posting, or others must be clarified at the start of the agreement before beginning the project.
+
+### How to Collaborate
+1. Send the project file for review along with initial requirements.
+2. After reviewing the project file, a response with time and price will be provided within one or two days.
+3. Once the time and price are approved, preparation of a project test begins.
+4. After feedback is provided and the test is approved, the full project amount is sent.
+5. We start preparing the final images/files and then send them after receiving the payment.
+

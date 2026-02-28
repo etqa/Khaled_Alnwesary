@@ -40,10 +40,13 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ markdownContent 
     const getPricingPlans = () => {
         if (!markdownContent) return [];
 
+        // Remove HTML comments
+        const cleanMarkdown = markdownContent.replace(/<!--[\s\S]*?-->/g, '');
+
         const isAr = i18n.language === "ar";
 
         // Split by language markers
-        const langBlocks = markdownContent.split(/##\s+(?=English|🌍\s+English|English\s+🌍|العربية|Arabic|العربية\s+🕌)/i);
+        const langBlocks = cleanMarkdown.split(/##\s+(?=English|🌍\s+English|English\s+🌍|العربية|Arabic|العربية\s+🕌)/i);
         let englishPart = "";
         let arabicPart = "";
 
@@ -103,8 +106,16 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ markdownContent 
                             const m = l.match(/\[(.*?)\](?:\((.*?)\)|\[(.*?)\])/);
                             if (m) {
                                 const label = m[1];
-                                const urlOrId = (m[2] || m[3] || "").trim();
-                                const finalUrl = globalLinkRefs[urlOrId.toLowerCase()] || urlOrId;
+                                const inlineUrl = m[2];
+                                const refId = m[3];
+
+                                let finalUrl = "";
+                                if (refId !== undefined) {
+                                    finalUrl = globalLinkRefs[refId.toLowerCase()] || "";
+                                } else if (inlineUrl !== undefined) {
+                                    finalUrl = globalLinkRefs[inlineUrl.toLowerCase()] || inlineUrl;
+                                }
+
                                 return { label, url: formatUrl(finalUrl) };
                             }
                             return null;
@@ -215,18 +226,26 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ markdownContent 
 
                         <div className={`p-10 pt-0 flex flex-col gap-3`}>
                             {plan.buttons && plan.buttons.length > 0 ? (
-                                plan.buttons.map((btn, btnIndex) => (
-                                    <button
-                                        key={btnIndex}
-                                        onClick={() => window.open(btn.url, "_blank")}
-                                        className={`w-full h-14 rounded-2xl font-black transition-all duration-300 shadow-sm active:scale-95 group-hover:scale-[1.02] ${btnIndex === 0 && index === 1
-                                            ? "bg-primary text-white shadow-lg shadow-primary/20 hover:bg-primary/90"
-                                            : "bg-background border-2 border-primary/20 text-primary hover:bg-primary/5 hover:border-primary/40"
-                                            }`}
-                                    >
-                                        {btn.label}
-                                    </button>
-                                ))
+                                plan.buttons.map((btn, btnIndex) => {
+                                    const isValidUrl = (url: string) => {
+                                        if (!url) return false;
+                                        return /^(https?:\/\/|mailto:|tel:|#)/i.test(url);
+                                    };
+                                    const isUrlValid = isValidUrl(btn.url);
+
+                                    return (
+                                        <button
+                                            key={btnIndex}
+                                            onClick={() => isUrlValid && window.open(btn.url, "_blank")}
+                                            className={`w-full h-14 rounded-2xl font-black transition-all duration-300 shadow-sm active:scale-95 group-hover:scale-[1.02] ${btnIndex === 0 && index === 1
+                                                ? "bg-primary text-white shadow-lg shadow-primary/20 hover:bg-primary/90"
+                                                : "bg-background border-2 border-primary/20 text-primary hover:bg-primary/5 hover:border-primary/40"
+                                                } ${!isUrlValid ? "opacity-70 cursor-default grayscale-[0.5]" : ""}`}
+                                        >
+                                            {btn.label}
+                                        </button>
+                                    );
+                                })
                             ) : (
                                 <button
                                     onClick={() => window.open("https://wa.me/218928198656", "_blank")}

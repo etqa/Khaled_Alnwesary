@@ -2,13 +2,11 @@
 
 [English](#english) | [العربية](#arabic)
 
----
-
 [wa_order]: whatsapp:218928198656?message=السلام عليكم، أريد طلب خدمة الإظهار المعماري الخارجي
 
 [fb_port]: https://www.facebook.com/Khaled.alnwesary.2019/posts/pfbid02R8Prt6zWoyXj6Y2f69yS9iEj5W8W6z8vS6z5z5z5z5z5z5z5z5z5z5z5z
 
-[yt_port]: https://www.youtube.com/watch?v=VRzW72Ptnug&t=52s
+[yt_port]: https://www.behance.net/mstrben88a928
 
 [img1]: portfolio/exterior/1.jpg
 
@@ -21,59 +19,6 @@
 [img5]: portfolio/exterior/5.jpg
 
 [img6]: portfolio/exterior/6.jpg
-
----
-
-<a name="english"></a>
-## English
-
-### Title
-Exterior Visualization
-
-### Short Description
-High-quality design for building facades and architectural projects
-
-### Video Tutorials
-- [Exterior Portfolio Youtube][yt_port]
-- [Exterior Portfolio Facebook][fb_port]
-
-### Buttons
-- [Order Service][wa_order]
-- [View Portfolio][yt_port]
-- [Contact Us][wa_order]
-
-### Overview
-We provide stunning exterior architectural Visualization that combine aesthetics with functionality. From modern villas to commercial building facades, we create visuals that help you visualize your project before construction begins.
-
-### Portfolio
-
-![Modern Residential Villa][img1] ![Luxury Commercial Facade][img2]
-
-![Urban Landscape Project][img3] ![Commercial Project][img4]
-
-![Night Lighting Presentation][img5] ![Architectural Detail][img6]
-
-### Features
-- High-quality 3D renders
-- Realistic materials and environment
-- Accurate sunlight and shadow studies
-- Landscape and site planning
-- Post-production for professional look
-
-### Terms of Service
-1. Clearly define requirements before starting.
-2. Send the final file clean and free of drawing errors.
-3. The final project file will not be sent until full payment is received.
-4. Delays in response after sending tests will be added to the agreed-upon time.
-5. The number of modifications on the test must not exceed 3, otherwise additional fees may apply.
-6. Any terms or notes regarding copyright, online posting, or others must be clarified at the start of the agreement before beginning the project.
-
-### How to Collaborate
-1. Send the project file for review along with initial requirements.
-2. After reviewing the project file, a response with time and price will be provided within one or two days.
-3. Once the time and price are approved, preparation of a project test begins.
-4. After feedback is provided and the test is approved, the full project amount is sent.
-5. We start preparing the final images/files and then send them after receiving the payment.
 
 ---
 
@@ -95,21 +40,23 @@ We provide stunning exterior architectural Visualization that combine aesthetics
 
 ### معرض الأعمال
 
-![تصميم خارجي 1][img1] ![تصميم خارجي 2][img2]
+![مشروع من تصميم شركة الاطيوش - بنغازي][img1] ![مشروع من تصميم شركة السنديان - طرابلس][img2]
 
-![تصميم خارجي 3][img3] ![تصميم خارجي 4][img4]
+![مشروع من تصميم شركة الاطيوش - بنغازي][img3] ![مشروع من تصميم شركة القادس - طرابلس][img4]
 
-![تصميم خارجي 5][img5] ![تصميم خارجي 6][img6]
+![مشروع من تصميم شركة القادس - طرابلس][img5] ![مشروع من تصميم شركة القادس - طرابلس][img6]
 
-### فيديوهات توضيحية
-- [معرض أعمال التصميم الخارجي - يوتيوب][yt_port]
-- [معرض أعمال التصميم الخارجي - فيسبوك][fb_port]
+<!-- ### فيديوهات توضيحية -->
+<!-- - [معرض أعمال التصميم الخارجي - يوتيوب][yt_port]
+- [معرض أعمال التصميم الخارجي - فيسبوك][fb_port] -->
 
 ### المميزات
-- واجهات مباني سكنية وتجارية
-- مشاريع فلل ومجمعات
-- تصميم المناظر الطبيعية
-- إضاءة نهارية وليلية
+- صور ثلاثية الأبعاد عالية الجودة
+- مواد وبيئة واقعية
+- دراسات دقيقة للضوء والظلال
+- تنسيق المناظر الطبيعية والموقع
+- معالجة ما بعد الإنتاج احترافي
+- الالتزام بالوقت المحدد
 
 ### طريقة التعاون
 
@@ -127,4 +74,58 @@ We provide stunning exterior architectural Visualization that combine aesthetics
 4. التأخير في الرد بعد ارسال التست يضاف على الوقت المتفق علية .
 5. عدد التعديلات على التست لايتجاوز 3 تعديلات ثم قد يتم فرض رسوم اضافية .
 6. اي شروط او ملاحظات تتعلق بحقوق النشر او التنزيل على النت او غيرها يتم توضيحه في بداية الاتفاق قبل البدء في المشروع 
+
+-------------------------------------------------------
+
+<a name="english"></a>
+## English
+
+### Title
+Exterior Visualization
+
+### Short Description
+High-quality design for building facades and architectural projects
+
+<!-- ### Video Tutorials
+- [Exterior Portfolio Youtube][yt_port]
+- [Exterior Portfolio Facebook][fb_port] -->
+
+### Buttons
+- [Order Service][wa_order]
+- [View Portfolio][yt_port]
+- [Contact Us][wa_order]
+
+### Overview
+We provide stunning exterior architectural Visualization that combine aesthetics with functionality. From modern villas to commercial building facades, we create visuals that help you visualize your project before construction begins.
+
+### Portfolio
+
+![مشروع من تصميم شركة الاطيوش - بنغازي][img1] ![مشروع من تصميم شركة السنديان - طرابلس][img2]
+
+![مشروع من تصميم شركة الاطيوش - بنغازي][img3] ![مشروع من تصميم شركة القادس - طرابلس][img4]
+
+![مشروع من تصميم شركة القادس - طرابلس][img5] ![مشروع من تصميم شركة القادس - طرابلس][img6]
+
+### Features
+- High-quality 3D images
+- Realistic materials and environments
+- Meticulous light and shadow studies
+- Landscape and site coordination
+- Professional post-production
+- On-time delivery
+
+### Terms of Service
+1. Clearly define requirements before starting.
+2. Send the final file clean and free of drawing errors.
+3. The final project file will not be sent until full payment is received.
+4. Delays in response after sending tests will be added to the agreed-upon time.
+5. The number of modifications on the test must not exceed 3, otherwise additional fees may apply.
+6. Any terms or notes regarding copyright, online posting, or others must be clarified at the start of the agreement before beginning the project.
+
+### How to Collaborate
+1. Send the project file for review along with initial requirements.
+2. After reviewing the project file, a response with time and price will be provided within one or two days.
+3. Once the time and price are approved, preparation of a project test begins.
+4. After feedback is provided and the test is approved, the full project amount is sent.
+5. We start preparing the final images/files and then send them after receiving the payment.
 
