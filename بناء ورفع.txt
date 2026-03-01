@@ -1,7 +1,14 @@
 npm run build
 
+npm install
+
+npm run dev
+
 git add .
 
 git commit -m "وصف التعديلات"
 
 git push origin main
+
+سوبا بيز
+kh55089@#$%

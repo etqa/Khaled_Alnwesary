@@ -2,13 +2,16 @@
 
 [English](#english) | [العربية](#arabic)
 
-[wa_order]: whatsapp:218928198656?message=السلام عليكم، أريد طلب خدمة الإظهار المعماري المتحرك (Animation)
+[wa_order]: whatsapp:218928198656?message=السلام عليكم، أريد طلب خدمة الإظهار المعماري المتحرك (فيديو انيميشن)
 
 [yt_port]: https://www.youtube.com/watch?v=1I9IZZiq4Kc&list=PLRrETGQR_7qIzNCAUiudxC4dpuUoheiIo
 
 [yt_promo]: https://www.youtube.com/watch?v=VRzW72Ptnug&t=52s
 
 [fb_port]: https://www.facebook.com/Khaled.alnwesary.2019/posts/pfbid02R8Prt6zWoyXj6Y2f69yS9iEj5W8W6z8vS6z5z5z5z5z5z5z5z5z5z5z5z
+
+[tg_send]: https://t.me/EtqanGroup
+
 
 [v1]: https://www.youtube.com/watch?v=1I9IZZiq4Kc
 
@@ -29,12 +32,38 @@
 ### Short Description
 إنتاج فيديوهات متحركة عالية الجودة للمشاريع المعمارية
 
-### نظرة عامة
-إنتاج فيديوهات متحركة عالية الجودة للمشاريع المعمارية تشمل جولات متحركة وعروض تقديمية تسويقية.
-
 ### الأزرار
 - [طلب الخدمة][wa_order]
+- [ارسال الملفات][tg_send]
 - [معرض الأعمال][yt_port]
+
+
+### نظرة عامة
+ننتج فيديوهات متحركة وعروضاً تسويقية عالية الجودة تجسد المشاريع المعمارية من خلال لقطات سينمائية وجولات افتراضية. نهدف إلى تقديم سرد بصري متكامل يعزز القيمة التسويقية للمشروع ويجذب المستثمرين.
+
+### المميزات
+- جولات متحركة
+- عروض تقديمية
+- فيديو تسويقي
+- مؤثرات بصرية
+- جودة عالية
+- التسليم في الوقت المحدد
+
+### طريقة التعاون
+1. التجهيز : يقوم المصمم بتجهيز ملف المشروع بشكل نهائي ومكتمل تماماً قبل الإرسال.
+2. المراجعة  : يتم إرسال ملف المشروع للاطلاع عليه، مع توضيح المتطلبات الأساسية بشكل كامل.
+3. التسعير والمدة : بعد مراجعة الملف، سيتم الرد بالوقت المتوقع والتكلفة خلال يوم أو يومين عمل.
+4. مرحلة الاختبار (Test) : في حال الموافقة على الوقت والسعر، يتم البدء في تجهيز نسخة تجريبية للمشروع.
+5. الاعتماد والدفع : بعد مراجعة النموذج التجريبي وتقديم الملاحظات واعتماده، يتم تحويل المبلغ المتفق عليه.
+6. التسليم النهائي : نبدأ في تجهيز الملفات النهائية، ويتم إرسالها بعد استلام كامل المبلغ.
+
+### شروط التعامل
+1. الوضوح : يجب تحديد كافة المتطلبات والملاحظات بدقة قبل البدء في التنفيذ.
+2. الملفات : يلتزم المصمم بتقديم ملفات نظيفة واحترافية خالية من أخطاء الرسم أو النواقص.
+3. الدفع : لا يتم تسليم الملفات النهائية للمشروع إلا بعد استلام كامل المبلغ المتفق عليه.
+4. التأخير : أي تأخير من العميل في الرد بعد إرسال النموذج التجريبي (Test) يتم إضافته إلى الوقت المتفق عليه مسبقاً.
+5. التعديلات : يسمح بـ 3 تعديلات كحد أقصى على النموذج التجريبي، وأي تعديلات إضافية قد تخضع لرسوم إضافية.
+6. الطلبات الخاصة : أي متطلبات خاصة تتعلق بحقوق النشر، أو النشر الإلكتروني، أو قيود الاستخدام، يجب توضيحها في بداية الاتفاق قبل البدء.
 
 ### معرض الأعمال
 - [مشروع فيلا سكنية متحرك][v1]
@@ -46,30 +75,6 @@
 - [معرض أعمال التحريك - يوتيوب][yt_port]
 - [برومو الخدمة][yt_promo] -->
 
-### المميزات
-- جولات متحركة
-- عروض تقديمية
-- فيديو تسويقي
-- مؤثرات بصرية
-- جودة عالية
-- سعر مناسب
-
-
-### طريقة التعاون
-1. ارسال ملف المشروع للإطلاع عليه مع توضيح المتطلبات الأولية.
-2. بعد الإطلاع على ملف المشروع يتم الرد بالوقت والسعر خلال يوم أو يومين.
-3. في حال اعتماد الوقت والسعر يتم البدء في تجهيز تست للمشروع.
-4. بعد تقديم الملاحظات واعتماد التست يتم ارسال مبلغ المشروع بالكامل.
-5. نبدا في تجهيز الصور النهائية للمشروع ثم ارسال الملفات النهائية بعد استلام المبلغ.
-
-### شروط التعامل
-1. تحديد المتطلبات بوضوح قبل البدء.
-2. إرسال الملف النهائي بحيث يكون نظيف وخالي من اخطاء الرسم.
-3. لايتم ارسال الملف النهائي للمشروع الابعد استلام المبلغ كامل.
-4. التأخير في الرد بعد ارسال التست يضاف على الوقت المتفق علية .
-5. عدد التعديلات على التست لايتجاوز 3 تعديلات ثم قد يتم فرض رسوم اضافية .
-6. اي شروط او ملاحظات تتعلق بحقوق النشر او التنزيل على النت او غيرها يتم توضيحه في بداية الاتفاق قبل البدء في المشروع 
-
 
 -------------------------------------------------------
 
@@ -80,19 +85,41 @@
 Video Animation
 
 ### Short Description
-High-quality animated videos for architectural projects
-
-<!-- ### Video Tutorials
-- [Animation Service Promo][yt_promo]
-- [Full Animation Portfolio][yt_port] -->
+Producing high-quality animated videos for architectural projects
 
 ### Buttons
 - [Order Service][wa_order]
+- [Send Files][tg_send]
 - [View Portfolio][yt_port]
-- [Contact Us][wa_order]
+
 
 ### Overview
-Bring your designs to life with our professional 3D animation services. We create high-quality walkthroughs, cinematic tours, and product presentations that help you showcase your vision with impact.
+We produce high-quality architectural animations and marketing presentations featuring cinematic shots and virtual walkthroughs. Our goal is to deliver a complete visual narrative that enhances the project's market value and attracts investors.
+
+### Features
+- Cinematic 4K rendering
+- Mobile tours
+- Presentations
+- Marketing videos
+- Visual effects
+- High quality
+- On-time delivery
+
+### How to Collaborate
+1. Preparation: The designer prepares the project file in its final, fully completed form before sending.
+2. Review: The project file is sent for review, accompanied by a comprehensive explanation of all core requirements.
+3. Quotation & Timeline: After reviewing the file, a response regarding the estimated timeframe and cost will be provided within one to two business days.
+4. Testing Phase: Upon agreement on the time and price, work begins on a trial version (test sample) of the project.
+5. Approval & Payment: Once the trial version is reviewed, feedback is provided, and the sample is approved, the agreed-upon amount is transferred.
+6. Final Delivery: We begin preparing the final files, which are sent immediately upon receipt of the full payment.
+
+### Terms of Service
+1. Clarity: All requirements and notes must be precisely defined before execution begins.
+2. File Quality: The designer is committed to providing clean, professional files free of drawing errors or missing elements.
+3. Payment: Final project files will not be delivered until the full agreed-upon amount has been received.
+4. Delays: Any delay by the client in responding after the trial version (Test) is sent will be added to the previously agreed timeline.
+5. Revisions: A maximum of 3 revisions are permitted on the trial version. Any additional revisions may be subject to extra fees.
+6. Special Requests: Any special requirements regarding copyrights, digital publishing, or usage restrictions must be clarified at the start of the agreement before work commences.
 
 ### Portfolio
 - [Luxury Villa Walkthrough][v1]
@@ -100,27 +127,6 @@ Bring your designs to life with our professional 3D animation services. We creat
 - [Interior Design Animation][v3]
 - [Real Estate Presentation][v4]
 
-### Features
-- Cinematic 4K rendering
-- Realistic lighting and sound
-- Custom camera paths
-- Fast turnaround time
-- Professional post-production
-- High quality
-- Reasonable price
-
-### Terms of Service
-1. Clearly define requirements before starting.
-2. Send the final file clean and free of drawing errors.
-3. The final project file will not be sent until full payment is received.
-4. Delays in response after sending tests will be added to the agreed-upon time.
-5. The number of modifications on the test must not exceed 3, otherwise additional fees may apply.
-6. Any terms or notes regarding copyright, online posting, or others must be clarified at the start of the agreement before beginning the project.
-
-### How to Collaborate
-1. Send the project file for review along with initial requirements.
-2. After reviewing the project file, a response with time and price will be provided within one or two days.
-3. Once the time and price are approved, preparation of a project test begins.
-4. After feedback is provided and the test is approved, the full project amount is sent.
-5. We start preparing the final images/files and then send them after receiving the payment.
-
+<!-- ### Video Tutorials
+- [Animation Service Promo][yt_promo]
+- [Full Animation Portfolio][yt_port] -->

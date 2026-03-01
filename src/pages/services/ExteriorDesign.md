@@ -6,7 +6,9 @@
 
 [fb_port]: https://www.facebook.com/Khaled.alnwesary.2019/posts/pfbid02R8Prt6zWoyXj6Y2f69yS9iEj5W8W6z8vS6z5z5z5z5z5z5z5z5z5z5z5z
 
-[yt_port]: https://www.behance.net/mstrben88a928
+[ph_port]: https://www.behance.net/mstrben88a928
+
+[tg_send]: https://t.me/EtqanGroup
 
 [img1]: portfolio/exterior/1.jpg
 
@@ -29,14 +31,40 @@
 إظهار خارجي
 
 ### Short Description
-إظهار واجهات المباني والمشاريع المعمارية بجودة عالية
-
-### نظرة عامة
-إظهار واجهات المباني والمشاريع المعمارية بجودة عالية تشمل الفلل والمجمعات السكنية والتجارية.
+إظهار معماري للمباني والمشاريع المعمارية بجودة عالية
 
 ### الأزرار
 - [طلب الخدمة][wa_order]
-- [معرض الأعمال][yt_port]
+- [ارسال الملفات][tg_send]
+- [معرض الأعمال][ph_port]
+
+
+### نظرة عامة
+نقدم خدمات إظهار معماري احترافية لواجهات المشاريع والفلل والمجمعات السكنية والتجارية بدقة بصرية فائقة. نهدف من خلال أعمالنا إلى تجسيد التفاصيل الهندسية بواقعية عالية تبرز جمالية التصميم وتدعم سرعة اتخاذ القرار.
+
+### المميزات
+- صور ثلاثية الأبعاد عالية الجودة
+- مواد وبيئة واقعية
+- دراسات دقيقة للضوء والظلال
+- تنسيق المناظر الطبيعية والموقع
+- معالجة ما بعد الإنتاج احترافي
+- الالتزام بالوقت المحدد
+
+### طريقة التعاون
+1. التجهيز : يقوم المصمم بتجهيز ملف المشروع بشكل نهائي ومكتمل تماماً قبل الإرسال.
+2. المراجعة  : يتم إرسال ملف المشروع للاطلاع عليه، مع توضيح المتطلبات الأساسية بشكل كامل.
+3. التسعير والمدة : بعد مراجعة الملف، سيتم الرد بالوقت المتوقع والتكلفة خلال يوم أو يومين عمل.
+4. مرحلة الاختبار (Test) : في حال الموافقة على الوقت والسعر، يتم البدء في تجهيز نسخة تجريبية للمشروع.
+5. الاعتماد والدفع : بعد مراجعة النموذج التجريبي وتقديم الملاحظات واعتماده، يتم تحويل المبلغ المتفق عليه.
+6. التسليم النهائي : نبدأ في تجهيز الملفات النهائية، ويتم إرسالها بعد استلام كامل المبلغ.
+
+### شروط التعامل
+1. الوضوح : يجب تحديد كافة المتطلبات والملاحظات بدقة قبل البدء في التنفيذ.
+2. الملفات : يلتزم المصمم بتقديم ملفات نظيفة واحترافية خالية من أخطاء الرسم أو النواقص.
+3. الدفع : لا يتم تسليم الملفات النهائية للمشروع إلا بعد استلام كامل المبلغ المتفق عليه.
+4. التأخير : أي تأخير من العميل في الرد بعد إرسال النموذج التجريبي (Test) يتم إضافته إلى الوقت المتفق عليه مسبقاً.
+5. التعديلات : يسمح بـ 3 تعديلات كحد أقصى على النموذج التجريبي، وأي تعديلات إضافية قد تخضع لرسوم إضافية.
+6. الطلبات الخاصة : أي متطلبات خاصة تتعلق بحقوق النشر، أو النشر الإلكتروني، أو قيود الاستخدام، يجب توضيحها في بداية الاتفاق قبل البدء.
 
 ### معرض الأعمال
 
@@ -50,31 +78,6 @@
 <!-- - [معرض أعمال التصميم الخارجي - يوتيوب][yt_port]
 - [معرض أعمال التصميم الخارجي - فيسبوك][fb_port] -->
 
-### المميزات
-- صور ثلاثية الأبعاد عالية الجودة
-- مواد وبيئة واقعية
-- دراسات دقيقة للضوء والظلال
-- تنسيق المناظر الطبيعية والموقع
-- معالجة ما بعد الإنتاج احترافي
-- الالتزام بالوقت المحدد
-
-### طريقة التعاون
-
-1. ارسال ملف المشروع للإطلاع عليه مع توضيح المتطلبات الأولية.
-2. بعد الإطلاع على ملف المشروع يتم الرد بالوقت والسعر خلال يوم أو يومين.
-3. في حال اعتماد الوقت والسعر يتم البدء في تجهيز تست للمشروع.
-4. بعد تقديم الملاحظات واعتماد التست يتم ارسال مبلغ المشروع بالكامل.
-5. نبدا في تجهيز الصور النهائية للمشروع ثم ارسال الملفات النهائية بعد استلام المبلغ.
-
-### شروط التعامل
-
-1. تحديد المتطلبات بوضوح قبل البدء.
-2. إرسال الملف النهائي بحيث يكون نظيف وخالي من اخطاء الرسم.
-3. لايتم ارسال الملف النهائي للمشروع الابعد استلام المبلغ كامل.
-4. التأخير في الرد بعد ارسال التست يضاف على الوقت المتفق علية .
-5. عدد التعديلات على التست لايتجاوز 3 تعديلات ثم قد يتم فرض رسوم اضافية .
-6. اي شروط او ملاحظات تتعلق بحقوق النشر او التنزيل على النت او غيرها يتم توضيحه في بداية الاتفاق قبل البدء في المشروع 
-
 -------------------------------------------------------
 
 <a name="english"></a>
@@ -84,27 +87,16 @@
 Exterior Visualization
 
 ### Short Description
-High-quality design for building facades and architectural projects
-
-<!-- ### Video Tutorials
-- [Exterior Portfolio Youtube][yt_port]
-- [Exterior Portfolio Facebook][fb_port] -->
+High-quality architectural rendering of buildings and architectural projects
 
 ### Buttons
 - [Order Service][wa_order]
-- [View Portfolio][yt_port]
-- [Contact Us][wa_order]
+- [Send Files][tg_send]
+- [View Portfolio][ph_port]
+
 
 ### Overview
 We provide stunning exterior architectural Visualization that combine aesthetics with functionality. From modern villas to commercial building facades, we create visuals that help you visualize your project before construction begins.
-
-### Portfolio
-
-![مشروع من تصميم شركة الاطيوش - بنغازي][img1] ![مشروع من تصميم شركة السنديان - طرابلس][img2]
-
-![مشروع من تصميم شركة الاطيوش - بنغازي][img3] ![مشروع من تصميم شركة القادس - طرابلس][img4]
-
-![مشروع من تصميم شركة القادس - طرابلس][img5] ![مشروع من تصميم شركة القادس - طرابلس][img6]
 
 ### Features
 - High-quality 3D images
@@ -114,18 +106,30 @@ We provide stunning exterior architectural Visualization that combine aesthetics
 - Professional post-production
 - On-time delivery
 
-### Terms of Service
-1. Clearly define requirements before starting.
-2. Send the final file clean and free of drawing errors.
-3. The final project file will not be sent until full payment is received.
-4. Delays in response after sending tests will be added to the agreed-upon time.
-5. The number of modifications on the test must not exceed 3, otherwise additional fees may apply.
-6. Any terms or notes regarding copyright, online posting, or others must be clarified at the start of the agreement before beginning the project.
-
 ### How to Collaborate
-1. Send the project file for review along with initial requirements.
-2. After reviewing the project file, a response with time and price will be provided within one or two days.
-3. Once the time and price are approved, preparation of a project test begins.
-4. After feedback is provided and the test is approved, the full project amount is sent.
-5. We start preparing the final images/files and then send them after receiving the payment.
+1. Preparation: The designer prepares the project file in its final, fully completed form before sending.
+2. Review: The project file is sent for review, accompanied by a comprehensive explanation of all core requirements.
+3. Quotation & Timeline: After reviewing the file, a response regarding the estimated timeframe and cost will be provided within one to two business days.
+4. Testing Phase: Upon agreement on the time and price, work begins on a trial version (test sample) of the project.
+5. Approval & Payment: Once the trial version is reviewed, feedback is provided, and the sample is approved, the agreed-upon amount is transferred.
+6. Final Delivery: We begin preparing the final files, which are sent immediately upon receipt of the full payment.
 
+### Terms of Service
+1. Clarity: All requirements and notes must be precisely defined before execution begins.
+2. File Quality: The designer is committed to providing clean, professional files free of drawing errors or missing elements.
+3. Payment: Final project files will not be delivered until the full agreed-upon amount has been received.
+4. Delays: Any delay by the client in responding after the trial version (Test) is sent will be added to the previously agreed timeline.
+5. Revisions: A maximum of 3 revisions are permitted on the trial version. Any additional revisions may be subject to extra fees.
+6. Special Requests: Any special requirements regarding copyrights, digital publishing, or usage restrictions must be clarified at the start of the agreement before work commences.
+
+### Portfolio
+
+![Project designed by Al-Atyoush Company - Benghazi][img1] ![Project designed by Al-Sindyan Company - Tripoli][img2]
+
+![Project designed by Al-Atyoush Company - Benghazi][img3] ![Project designed by Al-Qadis Company - Tripoli][img4]
+
+![Project designed by Al-Qadis Company - Tripoli][img5] ![Project designed by Al-Qadis Company - Tripoli][img6]
+
+<!-- ### Video Tutorials
+- [Exterior Portfolio Youtube][yt_port]
+- [Exterior Portfolio Facebook][fb_port] -->
