@@ -17,10 +17,7 @@
 منظومة المهندس لايت
 
 ### Short Description
-نسخة أخف من منظومة المهندس برو للمكاتب والشركات الهندسية المتوسطة والصغيرة
-
-### Long Description
-أداة فعالة لإدارة المشاريع الهندسية وحساب الكميات، مصممة خصيصاً للمكاتب الصغيرة والمتوسطة.
+نسخة أخف من منظومة المهندس برو وهي أداة فعالة لإدارة المشاريع الهندسية وحساب الكميات، مصممة خصيصاً للمكاتب الصغيرة والمتوسطة.
 
 ### فيديوهات توضيحية
 - [قناة خالد النويصري][yt_chan]
@@ -58,9 +55,6 @@ Engineer System Lite
 
 ### Short Description
 Lighter version of Engineer System Pro for small and medium engineering firms
-
-### Long Description
-An effective tool for engineering project management and quantity calculation, specifically designed for small and medium offices.
 
 ### Video Tutorials
 - [Khaled Alnwesary Channel][yt_chan]

@@ -1,4 +1,4 @@
-import { Shield, Wrench, ArrowRight, Star, Zap, Layout, Calculator } from "lucide-react";
+import { Shield, Wrench, ArrowRight, Star, Zap, Layout, Calculator, Layers } from "lucide-react";
 import { ItemLogo } from "@/components/details/ItemLogo";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -103,8 +103,8 @@ export const ProductsPreview = () => {
                 </p>
 
                 <div className="mt-auto pt-4 flex items-center justify-center border-t border-border/40 w-full">
-                  <div className="flex items-center gap-2 text-primary font-medium group-hover:gap-3 transition-all">
-                    <span className="text-sm">{t("common.more")}</span>
+                  <div className="flex items-center gap-2 px-6 py-2 rounded-xl border border-primary/20 text-primary font-medium group-hover:border-primary group-hover:bg-primary/5 transition-all duration-300">
+                    <span className="text-sm">{t("products.page.cta_details")}</span>
                     <ArrowRight className="w-4 h-4 rtl:rotate-180" />
                   </div>
                   <Link to={product.link} className="absolute inset-0 z-20">
@@ -118,10 +118,10 @@ export const ProductsPreview = () => {
 
         {/* View All Button */}
         <div className="text-center mt-12">
-          <Button variant="hero" size="lg" asChild className="rounded-xl px-12 group">
+          <Button variant="outline" size="lg" asChild className="rounded-xl px-12 group transition-all hover:bg-primary hover:text-primary-foreground">
             <Link to="/products">
               {t("products.preview.cta_all")}
-              <ArrowRight className="w-4 h-4 ms-2 group-hover:translate-x-1 transition-transform rtl:rotate-180" />
+              <Layers className="w-4 h-4 ms-2 group-hover:scale-110 transition-transform" />
             </Link>
           </Button>
         </div>

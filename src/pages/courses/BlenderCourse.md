@@ -14,13 +14,10 @@
 كورس Blender للإظهار المعماري
 
 ### Short Description
-تعلم الإظهار المعماري الاحترافي باستخدام برنامج Blender من الصفر إلى الاحتراف. فيديوهات مسجلة عالية الجودة يمكنك مشاهدتها في أي وقت.
-
-### Long Description
-كورس شامل ومتكامل لتعلم الإظهار المعماري باستخدام برنامج Blender المجاني. يأخذك من مستوى المبتدئين إلى الاحتراف من خلال شرح مفصل وتطبيقات عملية على مشاريع حقيقية. الكورس عبارة عن فيديوهات مسجلة عالية الجودة يمكنك مشاهدتها في أي وقت ومن أي مكان.
+تعلم الإظهار المعماري الاحترافي باستخدام Blender من الصفر إلى الاحتراف ،الكورس عبارة عن فيديوهات مسجلة عالية الجودة يمكنك مشاهدتها في أي وقت.
 
 ### فيديوهات توضيحية
-- [برومو كورس بلندر][yt_promo]
+- [برومو كورس Blender][yt_promo]
 
 ### الأزرار
 <!-- - [اشترك الآن][wa_order]
@@ -35,7 +32,7 @@
 - **المستوى:** من الصفر للاحتراف
 
 ### نظرة عامة
-احترف الإظهار المعماري باستخدام برنامج بلندر. يأخذك هذا الكورس الشامل من أساسيات النمذجة ثلاثية الأبعاد وصولاً إلى إنشاء رندرات داخلية وخارجية بمستوى احترافي. تعلم أسرار الإضاءة الواقعية، المواد عالية الجودة، وتقنيات المعالجة البعدية المتقدمة.
+احترف الإظهار المعماري باستخدام برنامج Blender. يأخذك هذا الكورس الشامل من أساسيات النمذجة ثلاثية الأبعاد وصولاً إلى إنشاء رندرات داخلية وخارجية بمستوى احترافي. تعلم أسرار الإضاءة الواقعية، المواد عالية الجودة، وتقنيات المعالجة البعدية المتقدمة.
 
 ### محتوى الكورس
 - **الوحدة 1:** مقدمة لواجهة Blender 4.0
@@ -72,9 +69,6 @@ Blender for ArchViz Course
 
 ### Short Description
 Learn professional architectural visualization using Blender from scratch to mastery. High-quality recorded videos you can watch anytime.
-
-### Long Description
-A comprehensive and integrated course to learn architectural visualization using the free Blender software. Takes you from beginner to professional level through detailed explanation and practical applications on real projects. The course consists of high-quality recorded videos you can watch anytime and anywhere.
 
 ### Video Tutorials
 - [Blender Course Promo][yt_promo]

@@ -145,7 +145,7 @@ const Courses = () => {
                   placeholder={t("common.search_placeholder")}
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="h-14 ps-12 pe-4 rounded-2xl bg-card border-border/50 focus:ring-primary/20 transition-all text-lg shadow-sm"
+                  className="h-14 px-12 rounded-2xl bg-card border-border/50 focus:ring-primary/20 transition-all text-lg shadow-sm text-center"
                 />
               </div>
             </div>

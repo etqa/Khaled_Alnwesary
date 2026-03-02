@@ -17,10 +17,8 @@
 منظومة المهندس برو
 
 ### Short Description
-تطبيق متكامل لإدارة المشاريع الهندسية والحسابات (النسخة الاحترافية)
-
-### Long Description
 منظومة شاملة مربوطة بنظام محاسبي وقاعدة بيانات سيرفر تدعم تعدد الأجهزة والمستخدمين للمكاتب والشركات الكبيرة.
+(النسخة الاحترافية)
 
 ### نظرة عامة
 منظومة المهندس هي أداة شاملة مصممة خصيصاً للمهندسين والشركات الهندسية. تساعدك في إدارة مشاريعك، حساب الكميات، متابعة التقدم، وتوثيق العمل بشكل احترافي. واجهة سهلة الاستخدام مع ميزات متقدمة تلبي احتياجاتك اليومية.
@@ -57,9 +55,6 @@ Engineer System Pro
 
 ### Short Description
 Integrated application for engineering projects and accounting (Pro Version)
-
-### Long Description
-A comprehensive system linked to an accounting system and server database supporting multiple devices and users for large firms.
 
 ### Overview
 The Engineer System is a comprehensive tool designed specifically for engineers and engineering firms. It helps you manage your projects, calculate quantities, track progress, and document work professionally. An easy-to-use interface with advanced features to meet your daily needs.

@@ -6,6 +6,7 @@
 [dl_and]: https://u.pcloud.link/publink/show?code=XZs4Fd5ZHaqw3vKIW95JB9yWm9lkRHsVa0Mk
 [dl_web]: https://task-manager-23r.pages.dev/
 [yt_chan]: https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A
+[contact]: whatsapp:218928198656?message=السلام عليكم، أريد التواصل معكم بخصوص تطبيق إدارة المهام
 
 ---
 
@@ -18,31 +19,29 @@
 تطبيق إدارة المهام
 
 ### Short Description
-تطبيق مجاني لتنظيم وإدارة مهامك اليومية
-
-### Long Description
-تطبيق بسيط وفعال لتنظيم وإدارة مهامك اليومية ومتابعة إنجازاتك.
-
-### نظرة عامة
-أداة مبسطة لإدارة المهام مصممة للأفراد والفرق الصغيرة لتنظيم أنشطتهم اليومية، ومتابعة المواعيد النهائية للمشاريع، وتحسين الإنتاجية العامة.
-
-### فيديوهات توضيحية
-<!-- - [قناة خالد النويصري][yt_chan] -->
-
-### المميزات الرئيسية
-- إنشاء المهام وتصنيفها بسهولة
-- مستويات الأولوية ومتابعة الحالة
-- تذكيرات بالمواعيد النهائية وإشعارات
-- واجهة مستخدم بسيطة ونظيفة
-- إمكانيات البحث والفلترة
-- النسخ الاحتياطي واستعادة البيانات
-- دعم كامل للغة العربية
-- أداء سريع وموثوق
+تطبيق مجاني لتنظيم وإدارة المهام والإيرادات والديون والمصروفات اليومية
 
 ### الأزرار
 - [تحميل للويندوز][dl_win]
 - [تحميل للاندرويد][dl_and]
 - [اونلاين][dl_web]
+- [تواصل معنا][contact]
+
+### نظرة عامة
+تطبيق بسيط لإدارة المهام مصمم للأفراد والفرق الصغيرة لتنظيم أنشطتهم اليومية، ومتابعة الايرادات والمصروفات والديون، وتحسين الإنتاجية العامة مع امكانية طباعة التقارير.
+
+### المميزات الرئيسية
+- إنشاء المهام بسهولة : أنشئ مهامك وصنفها دون عناء.
+- التتبع المالي : إدارة الدخل، والمصروفات، والديون مع سهولة التصنيف والتتبع.
+- الأولوية والحالة : تحديد مستويات الأهمية ومراقبة حالة التقدم.
+- تنبيهات ذكية : إشعارات فورية وتنبيهات للمواعيد النهائية.
+- واجهة مستخدم سهلة : تصميم بسيط، نظيف، وسلس الاستخدام.
+- البحث والتصفية : إمكانيات بحث متقدمة للعثور على ما تحتاجه بدقة.
+- أمان البيانات : خيارات موثوقة للنسخ الاحتياطي واستعادة البيانات.
+- طباعة التقارير : استخراج وطباعة تقارير مفصلة.
+
+### فيديوهات توضيحية
+<!-- - [قناة خالد النويصري][yt_chan] -->
 
 -------------------------------------------------------------
 
@@ -56,32 +55,28 @@
 Task Manager
 
 ### Short Description
-Free application to organize and manage your daily tasks
-
-### Long Description
-A simple and effective application to organize and manage your daily tasks and track your achievements.
-
-### Overview
-A streamlined task management tool designed for individuals and small teams to organize their daily activities, track project deadlines, and improve overall productivity.
-
-### Video Tutorials
-- [Khaled Alnwesary Channel][yt_chan]
-
-### Main Features
-
-- Easy task creation and categorization
-- Priority levels and status tracking
-- Deadline reminders and notifications
-- Simple and clean user interface
-- Search and filter capabilities
-- Data backup and recovery
-- Full Arabic support
-- Fast and reliable performance
+A free application to organize and manage daily tasks, income, debts, and expenses.
 
 ### Buttons
 - [Download Windows][dl_win]
 - [Download Android][dl_and]
 - [Online][dl_web]
+- [Contact Us][contact]
 
+### Overview
+A simple task management application designed for individuals and small teams to organize daily activities, track income, expenses, and debts, and improve overall productivity with built-in report printing capabilities.
+
+### Main Features
+- Easy Task Creation: Create and categorize tasks effortlessly.
+- Financial Tracking: Manage income, expenses, and debts with easy categorization and tracking.
+- Priority & Status: Set priority levels and monitor progress status.
+- Smart Reminders: Deadline alerts and push notifications.
+- User-Friendly Interface: Clean, simple, and intuitive UI.
+- Search & Filter: Advanced capabilities to find exactly what you need.
+- Data Security: Reliable backup and restore options.
+- Report Printing: Generate and print detailed reports.
+
+### Video Tutorials
+<!-- - [Khaled Alnwesary Channel][yt_chan] -->
 
 

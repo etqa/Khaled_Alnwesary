@@ -19,9 +19,6 @@
 تشفير وحماية الملفات
 
 ### Short Description
-تطبيق لتشفير وحماية الملفات والفيديوهات والكورسات
-
-### Long Description
 حماية قوية لملفاتك وكورساتك التعليمية من النسخ والقرصنة باستخدام أحدث تقنيات التشفير.
 
 ### فيديوهات توضيحية
@@ -77,9 +74,6 @@
 File Encryption
 
 ### Short Description
-Application for encrypting and protecting files, videos, and courses
-
-### Long Description
 Strong protection for your files and educational courses from copying and piracy using the latest encryption technologies.
 
 ### Video Tutorials

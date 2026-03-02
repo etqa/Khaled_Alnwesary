@@ -1,4 +1,4 @@
-import { Building2, ArrowRight, Layers, Sofa, Orbit, Film } from "lucide-react";
+import { Building2, ArrowRight, Layers, Sofa, Orbit } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -6,7 +6,6 @@ import { useReadme } from "@/hooks/useReadme";
 import exteriorMd from "@/pages/services/ExteriorDesign.md?raw";
 import interiorMd from "@/pages/services/InteriorDesign.md?raw";
 import virtualToursMd from "@/pages/services/VirtualTours.md?raw";
-import animationMd from "@/pages/services/Animation.md?raw";
 
 export const ServicesPreview = () => {
   const { t } = useTranslation();
@@ -14,7 +13,6 @@ export const ServicesPreview = () => {
   const ext = useReadme({ localContent: exteriorMd, id: "exterior", isService: true });
   const int_ = useReadme({ localContent: interiorMd, id: "interior", isService: true });
   const vt = useReadme({ localContent: virtualToursMd, id: "virtual-tours", isService: true });
-  const anim = useReadme({ localContent: animationMd, id: "animation", isService: true });
 
   const services = [
     {
@@ -38,13 +36,6 @@ export const ServicesPreview = () => {
       icon: Orbit,
       link: "/services/virtual-tours",
     },
-    {
-      id: "animation",
-      title: anim.titleContent || "",
-      description: anim.shortDesc || anim.overviewContent || "",
-      icon: Film,
-      link: "/services/animation",
-    }
   ];
 
   return (
@@ -93,7 +84,7 @@ export const ServicesPreview = () => {
                 </p>
 
                 <div className="mt-auto pt-4 flex items-center justify-center border-t border-border/40 w-full">
-                  <div className="flex items-center gap-2 text-primary font-medium group-hover:gap-3 transition-all">
+                  <div className="flex items-center gap-2 px-6 py-2 rounded-xl border border-primary/20 text-primary font-medium group-hover:border-primary group-hover:bg-primary/5 transition-all duration-300">
                     <span className="text-sm">{t("services.page.cta_details")}</span>
                     <ArrowRight className="w-4 h-4 rtl:rotate-180" />
                   </div>
