@@ -13,17 +13,16 @@
 <a name="arabic"></a>
 ## العربية (Arabic)
 
+**النوع:** مدفوع
+**Version:** 1.0.0
+
 **متوافق مع:** ويندوز 10/11
 
 ### Title
 تشفير وحماية الملفات
 
 ### Short Description
-حماية قوية لملفاتك وكورساتك التعليمية من النسخ والقرصنة باستخدام أحدث تقنيات التشفير.
-
-### فيديوهات توضيحية
-- [شرح كيفية تفعيل DR Lock][yt_lock]
-- [شرح كيفية تفعيل DR Player][yt_player]
+حماية قوية لملفاتك وكورساتك التعليمية من النسخ والقرصنة وتسجيل الشاشة باستخدام أحدث تقنيات التشفير.
 
 ### الأزرار
 - [طلب تفعيل][wa_order]
@@ -47,7 +46,6 @@
 - واجهة لإدارة التراخيص والتحقق منها في الوقت الفعلي.
 - حفظ سجلات التفعيل في قاعدة بيانات مشفرة .
 
-
 #### 2. المشغل الآمن المتخصص (DR Player)
 - ربط المحتوى تلقائياً بمعرف الجهاز الخاص بالمستخدم للحماية من التشغيل على اجهزة اخرى.
 - منع مشاركة الحسابات والتوزيع غير المصرح به للمحتوى.
@@ -56,18 +54,21 @@
 - يحفظ اخر فيديو تم تشغيله وتوقيت اخر تشغيل .
 - يكمن الاعتماد عليه في تشغيل الفيديوهات العادية ايضا بشكل منظم ومرتب.
 
-
 ### التثبيت
 1. قم بتشغيل `Setup_DR_Lock.exe` لتثبيت أداة التشفير.
 2. قم بتوزيع `DR_Player` على الطلاب أو العملاء.
 3. استخدم DR Lock لتشفير ملفاتك وتوليد مفاتيح التفعيل.
 
+### فيديوهات توضيحية
+- [شرح كيفية تفعيل DR Lock][yt_lock]
+- [شرح كيفية تفعيل DR Player][yt_player]
+
 -------------------------------------------------------
 
 <a name="english"></a>
 ## English
+**Type:** Paid
 
-**Version:** 1.0.0
 **Compatibility:** Windows 10/11
 
 ### Title
@@ -75,10 +76,6 @@ File Encryption
 
 ### Short Description
 Strong protection for your files and educational courses from copying and piracy using the latest encryption technologies.
-
-### Video Tutorials
-- [DR Lock Activation Guide][yt_lock]
-- [DR Player Activation Guide][yt_player]
 
 ### Buttons
 - [Order Product][wa_order]
@@ -115,5 +112,8 @@ DR Video Protection Suite is a powerful security solution designed for content c
 2. Distribute the `DR_Player` to your students or clients.
 3. Use DR Lock to encrypt your files and generate activation keys.
 
+### Video Tutorials
+- [DR Lock Activation Guide][yt_lock]
+- [DR Player Activation Guide][yt_player]
 
 

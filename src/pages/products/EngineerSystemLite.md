@@ -11,16 +11,16 @@
 <a name="arabic"></a>
 ## العربية (Arabic)
 
-**متوافق مع:** ويندوز 10/11
+**النوع:** مدفوع
+**Version:** 2.0
+
+<!-- **متوافق مع:** ويندوز 10/11 -->
 
 ### Title
 منظومة المهندس لايت
 
 ### Short Description
-نسخة أخف من منظومة المهندس برو وهي أداة فعالة لإدارة المشاريع الهندسية وحساب الكميات، مصممة خصيصاً للمكاتب الصغيرة والمتوسطة.
-
-### فيديوهات توضيحية
-- [قناة خالد النويصري][yt_chan]
+نسخة أخف من منظومة المهندس برو وهي منظومة فعالة لإدارة المشاريع الهندسية، مصممة خصيصاً للمكاتب الصغيرة والمتوسطة.
 
 ### الأزرار
 <!-- - [طلب المنتج][wa_order] -->
@@ -32,7 +32,7 @@
 ### نظرة عامة
 منظومة المهندس Lite هي النسخة الأخف والأنسب للمكاتب الهندسية الصغيرة والمستقلين. توفر الأدوات الأساسية لإدارة المشاريع وحساب الكميات والتقرير دون الحاجة لتعقيدات الأنظمة المحاسبية الكبيرة والسيرفرات.
 
-### المميزات الرئيسية
+<!-- ### المميزات الرئيسية
 - إدارة المشاريع الهندسية بشكل مبسط
 - حساب الكميات والمواد الأساسية
 - إنشاء تقارير المشروع وتصديرها
@@ -40,24 +40,23 @@
 - واجهة مستخدم سريعة وسهلة
 - دعم اللغة العربية بالكامل
 - تحديثات دورية
-- دعم فني متميز
+- دعم فني متميز -->
 
+<!-- ### فيديوهات توضيحية -->
+<!-- - [قناة خالد النويصري][yt_chan] -->
 --------------------------------------------------
 
 <a name="english"></a>
 ## English
+**Type:** Paid
 
-**Version:** 1.2.0
-**Compatibility:** Windows 10/11
+<!-- **Compatibility:** Windows 10/11 -->
 
 ### Title
 Engineer System Lite
 
 ### Short Description
-Lighter version of Engineer System Pro for small and medium engineering firms
-
-### Video Tutorials
-- [Khaled Alnwesary Channel][yt_chan]
+A streamlined edition of Engineer System Pro , offering powerful engineering project management tailored for small to mid-sized firms.
 
 ### Buttons
 <!-- - [Order Product][wa_order] -->
@@ -68,15 +67,15 @@ Lighter version of Engineer System Pro for small and medium engineering firms
 ### Overview
 Engineer System Lite is the lighter and most suitable version for small engineering offices and freelancers. It provides essential tools for project management, quantity calculation, and reporting without the complexity of Engineer System Pro.
 
-### Main Features
-
-- Simplified engineering project management
+<!-- ### Main Features -->
+<!-- - Simplified engineering project management
 - Basic quantity and material calculation
 - Create and export project reports
 - Progress tracking
 - Fast and easy user interface
 - Full Arabic language support
 - Regular updates
-- Excellent technical support
+- Excellent technical support -->
 
-
+<!-- ### Video Tutorials -->
+<!-- - [Khaled Alnwesary Channel][yt_chan] -->

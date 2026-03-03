@@ -144,24 +144,35 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ markdownContent 
     if (pricingPlans.length === 0) return null;
 
     const headerStyles = [
-        "bg-emerald-600 text-white border-b-emerald-500/20",
-        "bg-primary text-white border-b-primary/20",
-        "bg-blue-600 text-white border-b-blue-500/20",
+        "bg-emerald-600/85 text-white border-b-emerald-500/20",
+        "bg-primary/85 text-white border-b-primary/20",
+        "bg-blue-500/85 text-white border-b-blue-500/20",
     ];
 
     return (
-        <div className="mb-20 animate-fade-up delay-100">
-            <h2 className="text-2xl md:text-3xl font-black mb-12 text-center md:text-start">
-                {i18n.language === "ar" ? "الخطط والأسعار" : "Plans & Pricing"}
-            </h2>
-            <div className={`grid grid-cols-1 gap-6 ${pricingPlans.length === 1 ? 'max-w-md mx-auto' :
-                pricingPlans.length === 2 ? 'md:grid-cols-2 max-w-4xl mx-auto' :
+        <div className="mb-20 animate-fade-up delay-100 p-6 md:p-10 bg-card/70 backdrop-blur-md border border-border/40 rounded-[2.5rem] shadow-sm relative overflow-hidden">
+            {/* Background decorative glow - subtler */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-24 bg-primary/5 blur-[80px] pointer-events-none"></div>
+
+            <div className="flex flex-col items-center mb-10 relative z-10">
+                <div className="flex items-center gap-3 mb-2">
+                    <div className="w-8 h-[2px] bg-primary/30 rounded-full"></div>
+                    <h2 className="text-xl md:text-2xl font-black text-primary uppercase tracking-widest">
+                        {i18n.language === "ar" ? "الخطط والأسعار" : "Plans & Pricing"}
+                    </h2>
+                    <div className="w-8 h-[2px] bg-primary/30 rounded-full"></div>
+                </div>
+                <div className="h-1 w-20 bg-primary/10 rounded-full"></div>
+            </div>
+
+            <div className={`grid grid-cols-1 gap-8 relative z-10 ${pricingPlans.length === 1 ? 'max-w-md mx-auto' :
+                pricingPlans.length === 2 ? 'md:grid-cols-2 max-w-5xl mx-auto' :
                     'md:grid-cols-3'
                 }`}>
                 {pricingPlans.map((plan, index) => (
-                    <div key={index} className="flex flex-col rounded-[2.5rem] bg-card/80 backdrop-blur-md border border-border shadow-sm hover:border-primary/50 transition-all duration-300 overflow-hidden group">
+                    <div key={index} className="flex flex-col rounded-[2.5rem] bg-card/90 backdrop-blur-sm border border-border/80 shadow-md hover:border-primary/40 transition-all duration-500 overflow-hidden group/card hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1">
                         {/* Header Area (Only Title) */}
-                        <div className={`py-4 px-6 text-center ${headerStyles[index % 3]}`}>
+                        <div className={`py-5 px-6 text-center shadow-inner ${headerStyles[index % 3]}`}>
                             <h3 className="text-2xl font-black tracking-tight">{plan.title}</h3>
                         </div>
 

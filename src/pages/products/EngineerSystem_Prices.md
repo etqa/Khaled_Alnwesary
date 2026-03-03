@@ -91,7 +91,7 @@
 
 ### Pricing
 
-#### Free Trial
+<!-- #### Free Trial -->
 **Price:** $0
 **Description:** Limited Trial
 
@@ -113,7 +113,7 @@
 
 --------------------
 
-#### Annual Subscription
+<!-- #### Annual Subscription -->
 **Price:** $90
 **Discount:** 0
 **Description:** Per Year
@@ -137,7 +137,7 @@
 
 ----------------------
 
-#### Permanent License
+<!-- #### Permanent License -->
 **Price:** $350
 **Discount:** $0
 **Description:** Lifetime

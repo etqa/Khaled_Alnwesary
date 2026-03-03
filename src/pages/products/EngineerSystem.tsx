@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Wrench, Sparkles } from "lucide-react";
+import { Wrench, Sparkles, Crown } from "lucide-react";
 import { DetailLayout } from "@/components/layout/DetailLayout";
 import { useReadme } from "@/hooks/useReadme";
 import { MarkdownContent } from "@/components/details/MarkdownContent";
@@ -20,6 +20,7 @@ const EngineerSystem = () => {
         titleContent,
         shortDesc,
         version,
+        isPaid,
         buttons
     } = useReadme({
         localContent: localReadme,
@@ -50,6 +51,12 @@ const EngineerSystem = () => {
                                 </h1>
 
                                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 mb-8">
+                                    {isPaid && (
+                                        <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-bold border border-primary/20">
+                                            <Crown className="w-4 h-4 inline-block rtl:ml-2 ltr:mr-2" />
+                                            {t("common.paid")}
+                                        </span>
+                                    )}
                                     {version && (
                                         <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-bold border border-primary/20">
                                             V{version}

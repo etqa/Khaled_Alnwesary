@@ -16,9 +16,6 @@
 ### Short Description
 تعلم الإظهار المعماري الاحترافي باستخدام Blender من الصفر إلى الاحتراف ،الكورس عبارة عن فيديوهات مسجلة عالية الجودة يمكنك مشاهدتها في أي وقت.
 
-### فيديوهات توضيحية
-- [برومو كورس Blender][yt_promo]
-
 ### الأزرار
 <!-- - [اشترك الآن][wa_order]
 - [عرض المحتوى](#course-content)
@@ -34,7 +31,7 @@
 ### نظرة عامة
 احترف الإظهار المعماري باستخدام برنامج Blender. يأخذك هذا الكورس الشامل من أساسيات النمذجة ثلاثية الأبعاد وصولاً إلى إنشاء رندرات داخلية وخارجية بمستوى احترافي. تعلم أسرار الإضاءة الواقعية، المواد عالية الجودة، وتقنيات المعالجة البعدية المتقدمة.
 
-### محتوى الكورس
+<!-- ### محتوى الكورس
 - **الوحدة 1:** مقدمة لواجهة Blender 4.0
 - **الوحدة 2:** النمذجة المعمارية المتقدمة
 - **الوحدة 3:** إنشاء مواد واقعية وخامات PBR
@@ -55,8 +52,10 @@
 - ملفات المشاريع للتدريب
 - دعم مباشر عبر واتساب
 - شهادة إتمام الدورة
-- تحديثات دورية للمحتوى
+- تحديثات دورية للمحتوى -->
 
+<!-- ### فيديوهات توضيحية
+- [برومو كورس Blender][yt_promo] -->
 -------------------------------------------------------------
 
 <a name="english"></a>
@@ -69,9 +68,6 @@ Blender for ArchViz Course
 
 ### Short Description
 Learn professional architectural visualization using Blender from scratch to mastery. High-quality recorded videos you can watch anytime.
-
-### Video Tutorials
-- [Blender Course Promo][yt_promo]
 
 ### Buttons
 - [Enroll Now][wa_order]
@@ -87,7 +83,7 @@ Learn professional architectural visualization using Blender from scratch to mas
 ### Overview
 Master architectural visualization using Blender. This comprehensive course takes you from the basics of 3D modeling to creating professional-grade interior and exterior renders. Learn the secrets of realistic lighting, high-quality materials, and advanced post-production techniques.
 
-### Course Content
+<!-- ### Course Content
 - **Module 1:** Introduction to Blender 4.0 Interface
 - **Module 2:** Advanced Architectural Modeling
 - **Module 3:** Creating Realistic Materials & PBR Textures
@@ -110,4 +106,6 @@ Master architectural visualization using Blender. This comprehensive course take
 - Certificate of completion
 - Regular content updates
 
+### Video Tutorials
+- [Blender Course Promo][yt_promo] -->
 

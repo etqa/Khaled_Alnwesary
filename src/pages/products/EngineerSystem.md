@@ -7,23 +7,25 @@
 [yt_chan]: https://www.youtube.com/watch?v=wTG37oZESmw&list=PLRrETGQR_7qIGebxDJUAPiXHbvVrpaRai
 
 ---
+**Version:** 1.0
 
 <a name="arabic"></a>
 ## العربية (Arabic)
+**النوع:** مدفوع
+**الإصدار:** 1.0
 
-**متوافق مع:** ويندوز 10/11
+<!-- **متوافق مع:** ويندوز 10/11 -->
 
 ### Title
 منظومة المهندس برو
 
 ### Short Description
-منظومة شاملة مربوطة بنظام محاسبي وقاعدة بيانات سيرفر تدعم تعدد الأجهزة والمستخدمين للمكاتب والشركات الكبيرة.
-(النسخة الاحترافية)
+منظومة هندسية متربطة بنظام محاسبي وقاعدة بيانات سيرفر تدعم تعدد الأجهزة والمستخدمين للمكاتب والشركات الكبيرة.
 
 ### نظرة عامة
 منظومة المهندس هي أداة شاملة مصممة خصيصاً للمهندسين والشركات الهندسية. تساعدك في إدارة مشاريعك، حساب الكميات، متابعة التقدم، وتوثيق العمل بشكل احترافي. واجهة سهلة الاستخدام مع ميزات متقدمة تلبي احتياجاتك اليومية.
 
-### المميزات الرئيسية
+<!-- ### المميزات الرئيسية
 - إدارة المشاريع الهندسية بشكل متكامل
 - حساب الكميات والمواد بدقة عالية
 - إنشاء تقارير مفصلة وتصديرها
@@ -31,7 +33,7 @@
 - واجهة مستخدم سهلة وبديهية
 - دعم اللغة العربية بالكامل
 - تحديثات مجانية مدى الحياة
-- دعم فني متواصل
+- دعم فني متواصل -->
 
 ### الأزرار
 <!-- - [طلب المنتج][wa_order] -->
@@ -39,27 +41,27 @@
 <!-- - [تحميل للاندرويد][dl_and] -->
 - [قريباً...][]
 
-### فيديوهات توضيحية
-- [قناة خالد النويصري][yt_chan]
+<!-- ### فيديوهات توضيحية -->
+<!-- - [قناة خالد النويصري][yt_chan] -->
 
 ----------------------------------------------------
 
 <a name="english"></a>
 ## English
+**Type:** Paid
 
-**Version:** 1.5.0
-**Compatibility:** Windows 10/11
+<!-- **Compatibility:** Windows 10/11 -->
 
 ### Title
 Engineer System Pro
 
 ### Short Description
-Integrated application for engineering projects and accounting (Pro Version)
+An enterprise-grade engineering solution with a built-in accounting system and server database, designed to support multiple users and devices for large-scale organizations. (Pro Version)
 
 ### Overview
 The Engineer System is a comprehensive tool designed specifically for engineers and engineering firms. It helps you manage your projects, calculate quantities, track progress, and document work professionally. An easy-to-use interface with advanced features to meet your daily needs.
 
-### Main Features
+<!-- ### Main Features
 - Comprehensive engineering project management
 - High-precision quantity and material calculation
 - Create and export detailed reports
@@ -67,7 +69,7 @@ The Engineer System is a comprehensive tool designed specifically for engineers 
 - Easy and intuitive user interface
 - Full Arabic language support
 - Free lifetime updates
-- Continuous technical support
+- Continuous technical support -->
 
 ### Buttons
 <!-- - [Order Product][wa_order] -->
@@ -75,7 +77,7 @@ The Engineer System is a comprehensive tool designed specifically for engineers 
 <!-- - [Download for Android][dl_and] -->
 - [Coming soon...][]
 
-### Video Tutorials
-- [Khaled Alnwesary Channel][yt_chan]
+<!-- ### Video Tutorials -->
+<!-- - [Khaled Alnwesary Channel][yt_chan] -->
 
 
