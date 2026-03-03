@@ -5,7 +5,7 @@
 [dl_win]: https://u.pcloud.link/publink/show?code=XZW4Fd5ZeHUIb3Y1E1V2jGXQp0GlRbkKR1bV
 [dl_and]: https://u.pcloud.link/publink/show?code=XZs4Fd5ZHaqw3vKIW95JB9yWm9lkRHsVa0Mk
 [dl_web]: https://task-manager-23r.pages.dev/
-[yt_chan]: https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A
+[yt_chan]: https://youtu.be/xLHL8nFDqeg
 [contact]: whatsapp:218928198656?message=السلام عليكم، أريد التواصل معكم بخصوص تطبيق إدارة المهام
 
 ---
@@ -41,7 +41,7 @@
 - طباعة التقارير : استخراج وطباعة تقارير مفصلة.
 
 ### فيديوهات توضيحية
-<!-- - [قناة خالد النويصري][yt_chan] -->
+- [شرح تطبيق إدارة المهام][yt_chan]
 
 -------------------------------------------------------------
 
@@ -77,6 +77,6 @@ A simple task management application designed for individuals and small teams to
 - Report Printing: Generate and print detailed reports.
 
 ### Video Tutorials
-<!-- - [Khaled Alnwesary Channel][yt_chan] -->
+- [Task Manager Tutorial][yt_chan]
 
 

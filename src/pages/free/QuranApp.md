@@ -5,7 +5,7 @@
 [dl_win]: https://u.pcloud.link/publink/show?code=XZ1W8d5ZlMHfruFUXgLrFAgqxhiqIpQGjRly
 [dl_and]: https://u.pcloud.link/publink/show?code=XZnded5Z9K5V6f4CKizmEz4LNJI34ymX8MPy
 [dl_web]: https://quran-2e1.pages.dev/
-[yt_chan]: https://www.youtube.com/@%D8%AE%D8%A7%D9%84%D8%AF%D8%A7%D9%84%D9%86%D9%88%D9%8A%D8%B5%D8%B1%D9%8A
+[yt_chan]: https://www.youtube.com/watch?v=IoqC9d4hric
 [contact]: whatsapp:218928198656?message=السلام عليكم، أريد التواصل معكم بخصوص تطبيق القرآن الكريم
 
 ---
@@ -40,7 +40,7 @@
 - تخصيص كامل : إمكانية تعديل ألوان الواجهة وتخصيص الثيمات في الوضع النهاري بما يتناسب مع ذوقك الشخصي.
 
 ### فيديوهات توضيحية
-<!-- - [قناة خالد النويصري][yt_chan] -->
+- [شرح تطبيق القرآن الكريم][yt_chan]
 
 -------------------------------------------------------------
 
@@ -75,6 +75,6 @@ The Holy Quran App offers a seamless listening experience. It features high-qual
 - Full Customization: Personalize your experience by adjusting interface colors and themes (Light Mode) to suit your personal taste.
 
 ### Video Tutorials
-<!-- - [Khaled Alnwesary Channel][yt_chan] -->
+- [Quran App Tutorial][yt_chan]
 
 
