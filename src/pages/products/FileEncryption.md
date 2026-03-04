@@ -30,11 +30,11 @@
 - [المشغل المجاني][dl_player]
 
 ### نظرة عامة
-تعتبر حزمة DR لحماية الفيديوهات حلاً أمنياً قوياً مصمماً لمنشئي المحتوى والمعلمين والشركات لحماية محتواهم من الفيديوهات وملفات PDF والصور من القرصنة. تتكون الحزمة من مكونين رئيسيين: **DR Lock** للتشفير و **DR Player** للتشغيل الآمن.
+تعتبر حزمة DR لحماية الفيديوهات حلاً أمنياً قوياً مصمماً لمنشئي المحتوى والمعلمين والشركات لحماية محتواهم من الفيديوهات وملفات PDF والصور من القرصنة وتسجيل الشاشة. تتكون الحزمة من مكونين رئيسيين: **DR Lock** للتشفير و **DR Player** للتشغيل الآمن.
 
-### المميزات الجديدة
+<!-- ### المميزات الجديدة
 - **تحسين منع تصوير الشاشة**: تقنيات متقدمة لكشف وحظر برامج وأجهزة تسجيل الشاشة.
-- **تحكم متطور في التراخيص**: نظام متكامل لتوليد وإدارة مفاتيح التفعيل مع ربطها بالأجهزة.
+- **تحكم متطور في التراخيص**: نظام متكامل لتوليد وإدارة مفاتيح التفعيل مع ربطها بالأجهزة. -->
 
 ### المميزات الرئيسية
 
@@ -59,9 +59,9 @@
 2. قم بتوزيع `DR_Player` على الطلاب أو العملاء.
 3. استخدم DR Lock لتشفير ملفاتك وتوليد مفاتيح التفعيل.
 
-### فيديوهات توضيحية
+<!-- ### فيديوهات توضيحية
 - [شرح كيفية تفعيل DR Lock][yt_lock]
-- [شرح كيفية تفعيل DR Player][yt_player]
+- [شرح كيفية تفعيل DR Player][yt_player] -->
 
 -------------------------------------------------------
 
@@ -72,45 +72,45 @@
 File Encryption
 
 ### Short Description
-Strong protection for your files and educational courses from copying, piracy, and screen recording using the latest encryption technologies.
+Robust protection for your files and educational courses against copying, piracy, and screen recording using state-of-the-art encryption technologies.
 
 ### Buttons
-- [Order Product][wa_order]
+- [Request Activation][wa_order]
 - [Encoder Tool][dl_lock]
 - [Free Player][dl_player]
 
 ### Overview
-DR Video Protection Suite is a powerful security solution designed for content creators, educators, and businesses to protect their video content, PDF documents, and images from piracy. The suite consists of two main components: **DR Lock** for encryption and **DR Player** for secure playback.
+The DR Video Protection Suite is a powerful security solution designed for content creators, educators, and businesses to safeguard their video content, PDF files, and images from piracy and screen recording. The suite consists of two primary components: DR Lock for encryption and DR Player for secure playback.
 
-### New Features
+<!-- ### New Features
 - **Enhanced Anti-Screen Recording**: Advanced detection and blocking of screen capture software and hardware.
-- **Advanced License Control**: Integrated system for generating and managing activation keys with device binding.
+- **Advanced License Control**: Integrated system for generating and managing activation keys with device binding. -->
 
 ### Main Features
-
-#### 1. Secure Encryption (DR Lock)
-- High-level encryption for video, PDF, and image files.
-- Protects intellectual property by ensuring content can only be accessed through the authorized player.
-- Built-in protection against screen recording, virtual machines, and remote desktop tools.
-- Ease of generating activation codes for different subscription levels.
-- Real-time license verification and management interface.
-- Saves activation logs in an encrypted database.
+ 
+#### 1. Secure Encryption System (DR Lock)
+- High-Level Encryption: Advanced encryption for videos, PDFs, and images.
+- IP Protection: Ensures content can only be accessed through the authorized player.
+- Anti-Recording: Built-in protection against screen recording software, virtual machines, and remote desktop tools.
+- Easy Activation: Seamlessly generate activation codes for various subscription levels.
+- License Management: Real-time interface to manage and verify licenses.
+- Secure Logging: Saves activation records in an encrypted database.
 
 #### 2. Specialized Secure Player (DR Player)
-- Automatically locks content to the user's specific hardware ID to prevent playback on other devices.
-- Prevents account sharing and unauthorized distribution of content.
-- Support for major video formats (MP4, MKV, AVI, etc.), PDF documents, and images.
-- Fast decoding without compromising security.
-- Saves the last played video and the timestamp of the last session.
-- Can also be used to play regular videos in an organized manner.
+- Hardware ID (HWID) Binding: Automatically links content to the user’s specific device to prevent playback on unauthorized hardware.
+- Anti-Sharing: Prevents account sharing and unauthorized distribution of content.
+- Multi-Format Support: Supports all major video formats (MP4, MKV, AVI, etc.) as well as PDFs and images.
+- High Performance: Fast decryption without compromising security levels.
+- Session Tracking: Saves the last played video and the exact timestamp where the user left off.
+- General Media Tool: Can be used as a reliable, organized player for standard (unencrypted) videos.
 
 ### Installation
-1. Run the `Setup_DR_Lock.exe` to install the encryption tool.
-2. Distribute the `DR_Player` to your students or clients.
+1. Run `Setup_DR_Lock.exe` to install the encryption tool.
+2. Distribute `DR_Player` to your students or clients.
 3. Use DR Lock to encrypt your files and generate activation keys.
 
-### Video Tutorials
-- [DR Lock Activation Guide][yt_lock]
-- [DR Player Activation Guide][yt_player]
+<!-- ### Video Tutorials
+- [How to activate DR Lock][yt_lock]
+- [How to activate DR Player][yt_player] -->
 
 

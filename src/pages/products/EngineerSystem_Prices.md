@@ -18,6 +18,10 @@
 **السعر:** مجاني
 **الوصف:** تجربة محدودة
 
+##### الطلب:
+<!-- - [تجربة الآن][dl_trial] -->
+- [قريباً...][]
+
 ##### المميزات:
 - أدوات تقدير أساسية
 - مشروع واحد نشط
@@ -30,10 +34,6 @@
 - لا توجد قوالب مخصصة
 - غير مسموح بالاستخدام التجاري
 
-##### الطلب:
-<!-- - [تجربة الآن][dl_trial] -->
-- [قريباً...][]
-
 ----------------------
 
 <!-- #### الاشتراك السنوي -->
@@ -41,6 +41,10 @@
 **السعر:** قريباً...
 **الخصم:** 0 دينار
 **الوصف:** لمدة سنة
+
+##### الطلب:
+<!-- - [اشترك الآن][wa_annual] -->
+- [قريباً...][]
 
 ##### المميزات:
 - عدد غير محدود من تقديرات المشاريع
@@ -55,10 +59,6 @@
 - تعدد المستخدمين محدود بـ 5 مقاعد
 - يتطلب اتصالاً بالإنترنت
 
-##### الطلب:
-<!-- - [اشترك الآن][wa_annual] -->
-- [قريباً...][]
-
 -------------------
 
 <!-- #### ترخيص دائم -->
@@ -66,6 +66,10 @@
 <!-- **السعر:** 1600 دينار -->
 **الخصم:** 0 دينار
 **الوصف:** مدى الحياة
+
+##### الطلب:
+<!-- - [طلب الترخيص الدائم][wa_permanent] -->
+- [قريباً...][]
 
 ##### المميزات:
 - جميع مميزات الاشتراك السنوي
@@ -80,10 +84,6 @@
 - غير قابل للنقل
 - الدعم المميز للسنة الأولى فقط
 
-##### الطلب:
-<!-- - [طلب الترخيص الدائم][wa_permanent] -->
-- [قريباً...][]
-
 ------------------------------------------------------
 
 <a name="english-pricing"></a>
@@ -94,6 +94,10 @@
 <!-- #### Free Trial -->
 **Price:** $0
 **Description:** Limited Trial
+
+##### Buttons
+<!-- - [Try Now][dl_trial] -->
+- [Coming soon...][]
 
 ##### Features
 - Basic estimation tools
@@ -107,16 +111,16 @@
 - No custom templates
 - No commercial use
 
-##### Buttons
-<!-- - [Try Now][dl_trial] -->
-- [Coming soon...][]
-
 --------------------
 
 <!-- #### Annual Subscription -->
 **Price:** $90
 **Discount:** 0
 **Description:** Per Year
+
+##### Buttons
+<!-- - [Subscribe Now][wa_annual] -->
+- [Coming soon...][]
 
 ##### Features
 - Unlimited project estimates
@@ -131,16 +135,16 @@
 - Multi-user limited to 5 seats
 - Internet connection required
 
-##### Buttons
-<!-- - [Subscribe Now][wa_annual] -->
-- [Coming soon...][]
-
 ----------------------
 
 <!-- #### Permanent License -->
 **Price:** $350
 **Discount:** $0
 **Description:** Lifetime
+
+##### Buttons
+<!-- - [Buy Permanent License][wa_permanent] -->
+- [Coming soon...][]
 
 ##### Features
 - Everything in Annual plan
@@ -154,8 +158,4 @@
 - Single server installation
 - Non-transferable license
 - Premium support for 1st year only
-
-##### Buttons
-<!-- - [Buy Permanent License][wa_permanent] -->
-- [Coming soon...][]
 

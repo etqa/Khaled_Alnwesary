@@ -16,15 +16,15 @@
 **السعر:** مجاني
 **الوصف:** تجربة محدودة
 
+##### الطلب:
+<!-- - [تجربة الآن][dl_lite] -->
+- [قريباً...][]
+
 ##### المميزات
 - أدوات أساسية للمشاريع
 - مشروع واحد نشط
 - تقارير قياسية
 - دعم مجتمعي
-
-##### الطلب:
-<!-- - [تجربة الآن][dl_lite] -->
-- [قريباً...][]
 
 ##### القيود
 - مستخدم واحد فقط
@@ -39,6 +39,10 @@
 **الخصم:** 0 دينار
 **الوصف:** مدى الحياة
 
+##### الطلب:
+<!-- - [طلب ترخيص لايت][wa_lite_perm] -->
+- [قريباً...][]
+
 ##### المميزات
 - إدارة غير محدودة للمشاريع
 - أدوات حساب الكميات بالكامل
@@ -46,10 +50,6 @@
 - دعم العمل بدون إنترنت
 - تحديثات دورية مجانية
 - ترخيص لمستخدم واحد (جهاز واحد)
-
-##### الطلب:
-<!-- - [طلب ترخيص لايت][wa_lite_perm] -->
-- [قريباً...][]
 
 ##### القيود
 - لا يدعم تعدد المستخدمين
@@ -67,15 +67,15 @@
 **Price:** $0
 **Description:** Limited Trial
 
+##### Buttons
+<!-- - [Try Lite][dl_lite] -->
+- [Coming soon...][]
+
 ##### Features
 - Basic project tools
 - 1 active project
 - Standard reports
 - Community support
-
-##### Buttons
-<!-- - [Try Lite][dl_lite] -->
-- [Coming soon...][]
 
 ##### Restrictions
 - Single user only
@@ -89,6 +89,10 @@
 **Discount:** $0
 **Description:** Lifetime
 
+##### Buttons
+<!-- - [Get Lite Lifetime][wa_lite_perm] -->
+- [Coming soon...][]
+
 ##### Features
 - Unlimited project management
 - Quantity calculation tools
@@ -96,10 +100,6 @@
 - Offline mode support
 - Lifetime updates
 - Single user seat
-
-##### Buttons
-<!-- - [Get Lite Lifetime][wa_lite_perm] -->
-- [Coming soon...][]
 
 ##### Restrictions
 - No multi-user support
