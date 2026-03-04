@@ -34,7 +34,7 @@ export const MarkdownContent = ({ content }: MarkdownContentProps) => {
     const cleanContent = content.replace(/<!--[\s\S]*?-->/g, '');
 
     return (
-        <div className="bg-card/80 border border-border/50 rounded-[2.5rem] p-6 md:p-12 shadow-sm backdrop-blur-md">
+        <div className="bg-card/80 border border-border/50 rounded-[2.5rem] p-6 md:px-12 md:py-10 shadow-sm backdrop-blur-md">
             <div className="prose prose-slate dark:prose-invert max-w-none 
         prose-headings:font-black prose-headings:text-foreground prose-headings:tracking-tight
         prose-h1:text-4xl prose-h1:mb-10 prose-h1:text-center
@@ -63,7 +63,7 @@ export const MarkdownContent = ({ content }: MarkdownContentProps) => {
                             if (isTutorials) return null;
 
                             return (
-                                <div className={`flex items-center gap-4 mt-16 mb-8 p-4 rounded-2xl ${isFeatures ? 'bg-primary/5 border border-primary/10 shadow-sm' : ''}`}>
+                                <div className={`flex items-center gap-4 ${node?.position?.start.line === 1 ? 'mt-0' : 'mt-12'} mb-8 p-4 rounded-2xl ${isFeatures ? 'bg-primary/5 border border-primary/10 shadow-sm' : ''}`}>
                                     <div className="h-8 w-1.5 bg-primary rounded-full"></div>
                                     <h3 {...props} className="text-2xl font-black text-foreground m-0 tracking-tight" />
                                 </div>
@@ -71,7 +71,7 @@ export const MarkdownContent = ({ content }: MarkdownContentProps) => {
                         },
                         h4: ({ node, ...props }) => {
                             return (
-                                <div className="mt-16 mb-8 relative group">
+                                <div className={`${node?.position?.start.line === 1 ? 'mt-0' : 'mt-12'} mb-8 relative group`}>
                                     <div className="flex flex-col">
                                         <h4 {...props} className="text-lg md:text-xl font-black text-foreground tracking-tight m-0 w-fit" />
                                         {/* Underline Decoration */}
@@ -221,6 +221,6 @@ export const MarkdownContent = ({ content }: MarkdownContentProps) => {
                 src={selectedImage?.src || ""}
                 alt={selectedImage?.alt}
             />
-        </div>
+        </div >
     );
 };

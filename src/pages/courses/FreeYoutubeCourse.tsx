@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Play, MessageCircle, BookOpen, ExternalLink, Youtube, Gift, Check, Sparkles } from "lucide-react";
+import { Play, MessageCircle, BookOpen, ExternalLink, Youtube, Gift, Check, Sparkles, Clock, Crown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { DetailLayout } from "@/components/layout/DetailLayout";
 import { useReadme } from "@/hooks/useReadme";
@@ -9,6 +9,7 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import { DynamicButtons } from "@/components/details/DynamicButtons";
 import { ItemLogo } from "@/components/details/ItemLogo";
+import { PlatformBadges } from "@/components/details/PlatformBadges";
 
 interface FreeYoutubeCourseProps {
     id: string;
@@ -26,7 +27,11 @@ const FreeYoutubeCourse = ({ id, markdownContent, youtubeLink, playlistLink, log
         readmeContent,
         buttons,
         titleContent,
-        version
+        version,
+        isPaid,
+        isComingSoon,
+        typeLabel,
+        platforms
     } = useReadme({
         localContent: markdownContent,
         id: id,
@@ -53,15 +58,28 @@ const FreeYoutubeCourse = ({ id, markdownContent, youtubeLink, playlistLink, log
                                 </h1>
 
                                 <div className="animate-fade-up delay-100 flex flex-wrap items-center justify-center md:justify-start gap-3 mb-8">
-                                    <span className="inline-block px-4 py-1.5 rounded-full bg-green-500/10 text-green-600 text-sm font-bold border border-green-500/20">
-                                        <Gift className="w-4 h-4 inline-block rtl:ml-2 ltr:mr-2" />
-                                        {t("common.free")}
-                                    </span>
+                                    {typeLabel && (
+                                        <span className={`inline-block px-4 py-1.5 rounded-full text-sm font-bold border ${isComingSoon
+                                            ? 'bg-amber-500/10 text-amber-600 border-amber-500/20'
+                                            : isPaid
+                                                ? 'bg-primary/10 text-primary border-primary/20'
+                                                : 'bg-green-500/10 text-green-600 border-green-500/20'}`}>
+                                            {isComingSoon ? (
+                                                <Clock className="w-4 h-4 inline-block rtl:ml-2 ltr:mr-2" />
+                                            ) : isPaid ? (
+                                                <Crown className="w-4 h-4 inline-block rtl:ml-2 ltr:mr-2" />
+                                            ) : (
+                                                <Gift className="w-4 h-4 inline-block rtl:ml-2 ltr:mr-2" />
+                                            )}
+                                            {typeLabel}
+                                        </span>
+                                    )}
                                     {version && (
                                         <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-bold border border-primary/20">
                                             V{version}
                                         </span>
                                     )}
+                                    <PlatformBadges platforms={platforms} />
                                 </div>
                             </div>
 
@@ -101,7 +119,7 @@ const FreeYoutubeCourse = ({ id, markdownContent, youtubeLink, playlistLink, log
                         </div>
 
                         {overviewContent && (
-                            <div className="mb-10 p-8 md:p-10 bg-card/60 backdrop-blur-md border border-border/50 rounded-[2.5rem] shadow-sm animate-fade-up">
+                            <div className="mb-10 p-8 md:px-10 md:py-8 bg-card/60 backdrop-blur-md border border-border/50 rounded-[2.5rem] shadow-sm animate-fade-up">
                                 <div className="flex items-center gap-3 mb-6">
                                     <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                                         <Sparkles className="w-5 h-5 text-primary" />

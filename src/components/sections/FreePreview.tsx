@@ -1,4 +1,4 @@
-import { Puzzle, BookOpen, CheckSquare, ArrowRight, Sparkles } from "lucide-react";
+import { Puzzle, BookOpen, CheckSquare, ArrowRight, Sparkles, Gift, Crown, Clock } from "lucide-react";
 import { ItemLogo } from "@/components/details/ItemLogo";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -21,6 +21,9 @@ export const FreePreview = () => {
       description: kh.shortDesc || kh.overviewContent || kh.longDesc || "",
       icon: Puzzle,
       link: "/free/kh-tools",
+      isPaid: kh.isPaid,
+      isComingSoon: kh.isComingSoon,
+      typeLabel: kh.typeLabel,
       imageName: "KHTools"
     },
     {
@@ -28,6 +31,9 @@ export const FreePreview = () => {
       description: quran.shortDesc || quran.overviewContent || quran.longDesc || "",
       icon: BookOpen,
       link: "/free/quran-app",
+      isPaid: quran.isPaid,
+      isComingSoon: quran.isComingSoon,
+      typeLabel: quran.typeLabel,
       imageName: "QuranApp"
     },
     {
@@ -35,6 +41,9 @@ export const FreePreview = () => {
       description: task.shortDesc || task.overviewContent || task.longDesc || "",
       icon: CheckSquare,
       link: "/free/task-manager",
+      isPaid: task.isPaid,
+      isComingSoon: task.isComingSoon,
+      typeLabel: task.typeLabel,
       imageName: "TaskManager"
     },
   ];
@@ -64,6 +73,26 @@ export const FreePreview = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="h-1 w-full bg-primary/20 group-hover:bg-primary transition-colors duration-500" />
+
+              {/* Card Header with Badge row (Centered) */}
+              <div className={`relative z-10 py-3 px-6 border-b border-border/50 flex items-center justify-center gap-2 ${tool.isComingSoon ? 'bg-amber-500/5' : (tool.isPaid ? 'bg-primary/5' : 'bg-green-500/5')
+                }`}>
+                {tool.isComingSoon ? (
+                  <>
+                    <Clock className="w-4 h-4 text-amber-600" />
+                    <span className="text-xs font-bold uppercase tracking-wider text-amber-600">
+                      {tool.typeLabel}
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    {tool.isPaid ? <Crown className="w-4 h-4 text-primary" /> : <Gift className="w-4 h-4 text-green-600" />}
+                    <span className={`text-xs font-bold uppercase tracking-wider ${tool.isPaid ? 'text-primary' : 'text-green-600'}`}>
+                      {tool.typeLabel || (tool.isPaid ? t("common.paid") : t("common.free"))}
+                    </span>
+                  </>
+                )}
+              </div>
 
               <div className="relative p-8 flex flex-col items-center text-center h-full z-10">
                 <div className="flex flex-col items-center mb-4">

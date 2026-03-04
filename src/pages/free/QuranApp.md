@@ -1,5 +1,10 @@
 # Quran App
 
+**النوع:** مجاني
+**Version:** 1.0.0
+
+**المنصة:** [ويندوز] [أندرويد] [أونلاين]
+
 [English](#english) | [العربية](#arabic)
 
 [dl_win]: https://u.pcloud.link/publink/show?code=XZ1W8d5ZlMHfruFUXgLrFAgqxhiqIpQGjRly
@@ -12,8 +17,6 @@
 
 <a name="arabic"></a>
 ## العربية (Arabic)
-
-**المنصة:** ويندوز / اندرويد / اونلاين
 
 ### Title
 تطبيق القرآن الكريم
@@ -46,9 +49,6 @@
 
 <a name="english"></a>
 ## English
-
-**Version:** 1.0
-**Platform:** Windows / Android / Online
 
 ### Title
 Quran App

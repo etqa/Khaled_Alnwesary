@@ -1,5 +1,10 @@
 # DR Video Protection Suite
 
+**النوع:** مدفوع
+**Version:** 1.0.0
+
+**المنصة:** [ويندوز]
+
 [English](#english) | [العربية](#arabic)
 
 [yt_lock]: https://www.youtube.com/watch?v=VRzW72Ptnug&t=52s
@@ -12,11 +17,6 @@
 
 <a name="arabic"></a>
 ## العربية (Arabic)
-
-**النوع:** مدفوع
-**Version:** 1.0.0
-
-**متوافق مع:** ويندوز 10/11
 
 ### Title
 تشفير وحماية الملفات
@@ -67,15 +67,12 @@
 
 <a name="english"></a>
 ## English
-**Type:** Paid
-
-**Compatibility:** Windows 10/11
 
 ### Title
 File Encryption
 
 ### Short Description
-Strong protection for your files and educational courses from copying and piracy using the latest encryption technologies.
+Strong protection for your files and educational courses from copying, piracy, and screen recording using the latest encryption technologies.
 
 ### Buttons
 - [Order Product][wa_order]

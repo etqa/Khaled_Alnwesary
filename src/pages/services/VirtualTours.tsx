@@ -146,7 +146,7 @@ const VirtualTours = () => {
                                 <div className="bg-card/80 border border-border/50 rounded-[2.5rem] p-8 md:p-12 shadow-sm animate-fade-up backdrop-blur-md">
                                     {/* Features Subsection */}
                                     {featuresContent && (
-                                        <div className="mb-12 last:mb-0">
+                                        <div className="mb-8 last:mb-0">
                                             <div className="flex items-center gap-3 mb-8">
                                                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                                                     <Sparkles className="w-5 h-5 text-primary" />
@@ -158,10 +158,10 @@ const VirtualTours = () => {
                                                     remarkPlugins={[remarkGfm]}
                                                     rehypePlugins={[rehypeRaw]}
                                                     components={{
-                                                        ul: ({ node, ...props }) => <ul {...props} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 list-none p-0" />,
+                                                        ul: ({ node, ...props }) => <ul {...props} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-1 list-none p-0" />,
                                                         li: ({ node, children, ...props }) => (
                                                             <li className="flex items-center justify-center p-4 rounded-2xl bg-background/50 border border-border hover:border-primary/20 transition-colors text-center">
-                                                                <span className="text-foreground font-medium">{children}</span>
+                                                                <span className="text-foreground font-medium text-sm">{children}</span>
                                                             </li>
                                                         )
                                                     }}
@@ -174,12 +174,12 @@ const VirtualTours = () => {
 
                                     {/* Divider if Features and (Collaboration or Terms) exist */}
                                     {featuresContent && (collaborationContent || termsContent) && (
-                                        <div className="h-px bg-border/50 my-12" />
+                                        <div className="h-px bg-border/50 my-6" />
                                     )}
 
                                     {/* Collaboration Subsection */}
                                     {collaborationContent && (
-                                        <div className="mb-12 last:mb-0">
+                                        <div className="mb-6 last:mb-0">
                                             <div className="flex items-center gap-3 mb-8">
                                                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                                                     <ImageIcon className="w-5 h-5 text-primary" />
@@ -198,7 +198,7 @@ const VirtualTours = () => {
                                                                         <span className="text-xs font-bold text-primary leading-none after:content-[counter(service-step)]" />
                                                                     </div>
                                                                 </div>
-                                                                <span className="group-hover:text-foreground transition-colors">{children}</span>
+                                                                <span className="group-hover:text-foreground transition-colors text-sm md:text-base">{children}</span>
                                                             </li>
                                                         )
                                                     }}
@@ -211,7 +211,7 @@ const VirtualTours = () => {
 
                                     {/* Divider if Collaboration and Terms exist */}
                                     {collaborationContent && termsContent && (
-                                        <div className="h-px bg-border/50 my-12" />
+                                        <div className="h-px bg-border/50 my-6" />
                                     )}
 
                                     {/* Terms Subsection */}

@@ -21,7 +21,9 @@ export const CoursesPreview = () => {
       title: blender.titleContent || "",
       description: blender.shortDesc || blender.overviewContent || blender.longDesc || "",
       link: "/courses/blender",
-      isFree: false,
+      isPaid: blender.isPaid,
+      isComingSoon: blender.isComingSoon,
+      typeLabel: blender.typeLabel,
       imageName: "BlenderCourse"
     },
     {
@@ -29,7 +31,9 @@ export const CoursesPreview = () => {
       title: bFreeExt.titleContent || "",
       description: bFreeExt.shortDesc || bFreeExt.overviewContent || bFreeExt.longDesc || "",
       link: "/courses/blender-free-ext",
-      isFree: true,
+      isPaid: bFreeExt.isPaid,
+      isComingSoon: bFreeExt.isComingSoon,
+      typeLabel: bFreeExt.typeLabel,
       imageName: "BlenderFreeExt"
     },
     {
@@ -37,7 +41,9 @@ export const CoursesPreview = () => {
       title: d5Free.titleContent || "",
       description: d5Free.shortDesc || d5Free.overviewContent || d5Free.longDesc || "",
       link: "/courses/d5-render-free",
-      isFree: true,
+      isPaid: d5Free.isPaid,
+      isComingSoon: d5Free.isComingSoon,
+      typeLabel: d5Free.typeLabel,
       imageName: "D5RenderFree"
     },
   ];
@@ -70,15 +76,23 @@ export const CoursesPreview = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
 
               {/* Card Header with Badge */}
-              <div className={`relative z-10 py-3 px-6 ${course.isFree ? 'bg-green-500/5' : 'bg-primary/5'} border-b border-border/50 flex items-center justify-center gap-2`}>
-                {course.isFree ? (
-                  <Gift className="w-4 h-4 text-green-600" />
+              <div className={`relative z-10 py-3 px-6 border-b border-border/50 flex items-center justify-center gap-2 ${course.isComingSoon ? 'bg-amber-500/5' : (course.isPaid ? 'bg-primary/5' : 'bg-green-500/5')
+                }`}>
+                {course.isComingSoon ? (
+                  <>
+                    <Clock className="w-4 h-4 text-amber-600" />
+                    <span className="text-xs font-bold uppercase tracking-wider text-amber-600">
+                      {course.typeLabel}
+                    </span>
+                  </>
                 ) : (
-                  <Crown className="w-4 h-4 text-primary" />
+                  <>
+                    {course.isPaid ? <Crown className="w-4 h-4 text-primary" /> : <Gift className="w-4 h-4 text-green-600" />}
+                    <span className={`text-xs font-bold uppercase tracking-wider ${course.isPaid ? 'text-primary' : 'text-green-600'}`}>
+                      {course.typeLabel || (course.isPaid ? t("common.paid") : t("common.free"))}
+                    </span>
+                  </>
                 )}
-                <span className={`text-xs font-bold uppercase tracking-wider ${course.isFree ? 'text-green-600' : 'text-primary'}`}>
-                  {course.isFree ? t("common.free") : t("common.paid")}
-                </span>
               </div>
 
               <div className="relative p-8 flex flex-col items-center text-center h-full z-10">

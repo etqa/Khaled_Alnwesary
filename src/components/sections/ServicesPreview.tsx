@@ -59,9 +59,14 @@ export const ServicesPreview = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="animate-fade-up group relative overflow-hidden rounded-2xl border border-border hover-lift flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-sm transition-all duration-300 bg-card"
+              className="animate-fade-up group relative overflow-hidden rounded-2xl border border-border hover-lift flex flex-col w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] xl:w-[calc(25%-1.5rem)] max-w-sm transition-all duration-300 bg-card"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
+              {/* Card Header Bar */}
+              <div className="relative z-20 h-8 w-full bg-primary/5 border-b border-border/50">
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 opacity-50" />
+              </div>
+
               {/* Card Content Overlay Background */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
 

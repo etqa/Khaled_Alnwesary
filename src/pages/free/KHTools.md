@@ -1,5 +1,10 @@
 # KH-Tools
 
+**النوع:** مجاني
+**Version:** 1.99
+
+**المنصة:** [Blender +4.0] [ويندوز]
+
 [English](#english) | [العربية](#arabic)
 
 [yt_chan]: https://www.youtube.com/watch?v=5zqKJOf-D4U&list=PLRrETGQR_7qJqvlELqqF6ReO45dVsYxyt
@@ -10,8 +15,6 @@
 
 <a name="arabic"></a>
 ## العربية (Arabic)
-
-**متوافق مع Blender :** 4.0.0+
 
 ### Title
 KH Tools Addon
@@ -81,9 +84,6 @@ KH Tools Addon
 
 <a name="english"></a>
 ## English
-
-**Version:** 1.99
-**Blender Compatibility:** 4.0.0+
 
 ### Title
 KH Tools Addon

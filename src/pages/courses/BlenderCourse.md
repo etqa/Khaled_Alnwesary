@@ -1,11 +1,13 @@
 # Blender for ArchViz Course
 
+**النوع:** قريبا
+
+**المنصة:** [Blender 5.2] [أونلاين]
+
 [English](#english) | [العربية](#arabic)
 
 [yt_promo]: https://www.youtube.com/watch?v=snId9bXK_48
 [wa_order]: whatsapp:218928198656?message=السلام عليكم، أريد طلب كورس Blender للإظهار المعماري
-
----
 
 <a name="arabic"></a>
 ## العربية (Arabic)
@@ -29,7 +31,7 @@
 - **المستوى:** من الصفر للاحتراف
 
 ### نظرة عامة
-احترف الإظهار المعماري باستخدام برنامج Blender. يأخذك هذا الكورس الشامل من أساسيات النمذجة ثلاثية الأبعاد وصولاً إلى إنشاء رندرات داخلية وخارجية بمستوى احترافي. تعلم أسرار الإضاءة الواقعية، المواد عالية الجودة، وتقنيات المعالجة البعدية المتقدمة.
+احترف الإظهار المعماري باستخدام برنامج Blender. يأخذك هذا الكورس الشامل من أساسيات البرنامج وصولاً إلى إنشاء رندرات داخلية وخارجية بمستوى احترافي. تعلم أسرار الاستيراد والإضاءة الواقعية، المواد عالية الجودة، وتقنيات المعالجة البعدية المتقدمة.
 
 <!-- ### محتوى الكورس
 - **الوحدة 1:** مقدمة لواجهة Blender 4.0
@@ -61,18 +63,17 @@
 <a name="english"></a>
 ## English
 
-**Version:** V5.2
-
 ### Title
 Blender for ArchViz Course
 
 ### Short Description
-Learn professional architectural visualization using Blender from scratch to mastery. High-quality recorded videos you can watch anytime.
+Learn professional architectural rendering using Blender from scratch to professional. The course consists of high-quality recorded videos that you can watch at any time.
 
 ### Buttons
-- [Enroll Now][wa_order]
+<!-- - [Enroll Now][wa_order]
 - [View Syllabus](#course-content)
-- [Contact Instructor][wa_order]
+- [Contact Instructor][wa_order] -->
+- [Coming soon ...][]
 
 ### Stats
 - **Duration:** 20+ Hours
@@ -81,7 +82,7 @@ Learn professional architectural visualization using Blender from scratch to mas
 - **Skill Level:** Beginner to Pro
 
 ### Overview
-Master architectural visualization using Blender. This comprehensive course takes you from the basics of 3D modeling to creating professional-grade interior and exterior renders. Learn the secrets of realistic lighting, high-quality materials, and advanced post-production techniques.
+Master architectural rendering with Blender. This comprehensive course takes you from the program's fundamentals to creating professional-grade interior and exterior renders. Learn the secrets of importing, realistic lighting, high-quality materials, and advanced post-processing techniques.
 
 <!-- ### Course Content
 - **Module 1:** Introduction to Blender 4.0 Interface

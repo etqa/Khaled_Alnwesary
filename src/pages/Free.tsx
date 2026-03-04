@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { Puzzle, BookOpen, CheckSquare, ArrowRight, Download, Search, Gift } from "lucide-react";
+import { Puzzle, BookOpen, CheckSquare, ArrowRight, Download, Search, Gift, Crown, Clock } from "lucide-react";
 import { ItemLogo } from "@/components/details/ItemLogo";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -30,6 +30,9 @@ const Free = () => {
       icon: Puzzle,
       category: t("free.categories.blender"),
       link: "/free/kh-tools",
+      isPaid: kh.isPaid,
+      isComingSoon: kh.isComingSoon,
+      typeLabel: kh.typeLabel,
       imageName: "KHTools"
     },
     {
@@ -40,6 +43,9 @@ const Free = () => {
       icon: BookOpen,
       category: t("free.categories.mobile_app"),
       link: "/free/quran-app",
+      isPaid: quran.isPaid,
+      isComingSoon: quran.isComingSoon,
+      typeLabel: quran.typeLabel,
       imageName: "QuranApp"
     },
     {
@@ -50,6 +56,9 @@ const Free = () => {
       icon: CheckSquare,
       category: t("free.categories.mobile_app"),
       link: "/free/task-manager",
+      isPaid: task.isPaid,
+      isComingSoon: task.isComingSoon,
+      typeLabel: task.typeLabel,
       imageName: "TaskManager"
     },
   ];
@@ -108,11 +117,20 @@ const Free = () => {
                     <div className="absolute inset-0 geometric-pattern opacity-[0.05] group-hover:opacity-[0.1] transition-opacity duration-500" />
 
                     {/* Card Header with Badge */}
-                    <div className="relative z-20 py-4 px-8 bg-green-500/5 border-b border-border/50 flex justify-center items-center">
-                      <div className="absolute inset-0 bg-gradient-to-r from-green-500/10 via-green-500/5 to-green-500/10 opacity-50" />
-                      <span className="relative z-10 flex items-center gap-2 text-green-600 text-sm font-bold">
-                        <Gift className="w-4 h-4 fill-green-500/20" />
-                        {t("common.free")}
+                    <div className={`relative z-20 py-4 px-8 ${tool.isComingSoon ? 'bg-amber-500/5' : (tool.isPaid ? 'bg-primary/5' : 'bg-green-500/5')
+                      } border-b border-border/50 flex justify-center items-center`}>
+                      <div className={`absolute inset-0 bg-gradient-to-r ${tool.isComingSoon ? 'from-amber-500/10 via-amber-500/5 to-amber-500/10' : (tool.isPaid ? 'from-primary/10 via-primary/5 to-primary/10' : 'from-green-500/10 via-green-500/5 to-green-500/10')
+                        } opacity-50`} />
+                      <span className={`relative z-10 flex items-center gap-2 ${tool.isComingSoon ? 'text-amber-600' : (tool.isPaid ? 'text-primary' : 'text-green-600')
+                        } text-sm font-bold`}>
+                        {tool.isComingSoon ? (
+                          <Clock className="w-4 h-4 fill-amber-500/20" />
+                        ) : tool.isPaid ? (
+                          <Crown className="w-4 h-4 fill-primary/20" />
+                        ) : (
+                          <Gift className="w-4 h-4 fill-green-500/20" />
+                        )}
+                        {tool.typeLabel || (tool.isPaid ? t("common.paid") : t("common.free"))}
                       </span>
                     </div>
 

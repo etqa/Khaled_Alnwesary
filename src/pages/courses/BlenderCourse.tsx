@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Play, Clock, Users, Check, MessageCircle, BookOpen, Crown, Sparkles } from "lucide-react";
+import { Play, Clock, Users, Check, MessageCircle, BookOpen, Crown, Sparkles, Gift } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { DetailLayout } from "@/components/layout/DetailLayout";
 import { useReadme } from "@/hooks/useReadme";
@@ -9,6 +9,7 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import { DynamicButtons } from "@/components/details/DynamicButtons";
 import { ItemLogo } from "@/components/details/ItemLogo";
+import { PlatformBadges } from "@/components/details/PlatformBadges";
 import localReadme from "./BlenderCourse.md?raw";
 
 const BlenderCourse = () => {
@@ -23,7 +24,11 @@ const BlenderCourse = () => {
         titleContent,
         shortDesc,
         longDesc,
-        version
+        version,
+        isPaid,
+        isComingSoon,
+        typeLabel,
+        platforms
     } = useReadme({
         localContent: localReadme,
         id: "blender-course",
@@ -59,15 +64,28 @@ const BlenderCourse = () => {
                                 </h1>
 
                                 <div className="animate-fade-up delay-100 flex flex-wrap items-center justify-center md:justify-start gap-3 mb-8">
-                                    <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-bold border border-primary/20">
-                                        <Crown className="w-4 h-4 inline-block rtl:ml-2 ltr:mr-2" />
-                                        {t("common.paid")}
-                                    </span>
+                                    {typeLabel && (
+                                        <span className={`inline-block px-4 py-1.5 rounded-full text-sm font-bold border ${isComingSoon
+                                            ? 'bg-amber-500/10 text-amber-600 border-amber-500/20'
+                                            : isPaid
+                                                ? 'bg-primary/10 text-primary border-primary/20'
+                                                : 'bg-green-500/10 text-green-600 border-green-500/20'}`}>
+                                            {isComingSoon ? (
+                                                <Clock className="w-4 h-4 inline-block rtl:ml-2 ltr:mr-2" />
+                                            ) : isPaid ? (
+                                                <Crown className="w-4 h-4 inline-block rtl:ml-2 ltr:mr-2" />
+                                            ) : (
+                                                <Gift className="w-4 h-4 inline-block rtl:ml-2 ltr:mr-2" />
+                                            )}
+                                            {typeLabel}
+                                        </span>
+                                    )}
                                     {version && (
                                         <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-bold border border-primary/20">
                                             V{version}
                                         </span>
                                     )}
+                                    <PlatformBadges platforms={platforms} />
                                 </div>
                             </div>
 

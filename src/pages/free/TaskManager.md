@@ -1,5 +1,10 @@
 # Task Manager
 
+**النوع:** مجاني
+**Version:** 1.0.0
+
+**المنصة:** [ويندوز] [أندرويد] [أونلاين]
+
 [English](#english) | [العربية](#arabic)
 
 [dl_win]: https://u.pcloud.link/publink/show?code=XZW4Fd5ZeHUIb3Y1E1V2jGXQp0GlRbkKR1bV
@@ -12,8 +17,6 @@
 
 <a name="arabic"></a>
 ## العربية (Arabic)
-
-**المنصة:** ويندوز / اندرويد / اونلاين
 
 ### Title
 تطبيق إدارة المهام
@@ -47,9 +50,6 @@
 
 <a name="english"></a>
 ## English
-
-**Version:** 1.0
-**Platform:** Windows 10/11 / Android / Online
 
 ### Title
 Task Manager

@@ -150,7 +150,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ markdownContent 
     ];
 
     return (
-        <div className="mb-20 animate-fade-up delay-100 p-6 md:p-10 bg-card/70 backdrop-blur-md border border-border/40 rounded-[2.5rem] shadow-sm relative overflow-hidden">
+        <div className="mb-20 animate-fade-up delay-100 p-6 md:px-10 md:py-8 bg-card/70 backdrop-blur-md border border-border/40 rounded-[2.5rem] shadow-sm relative overflow-hidden">
             {/* Background decorative glow - subtler */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-24 bg-primary/5 blur-[80px] pointer-events-none"></div>
 

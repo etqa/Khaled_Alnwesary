@@ -11,7 +11,7 @@ interface UseReadmeProps {
 }
 
 export const useReadme = ({ readmeUrl, id, isProduct, isService, isCourse, localContent }: UseReadmeProps) => {
-    const { i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
     const [readmeContent, setReadmeContent] = useState<string | null>(null);
     const [overviewContent, setOverviewContent] = useState<string | null>(null);
     const [titleContent, setTitleContent] = useState<string | null>(null);
@@ -23,8 +23,11 @@ export const useReadme = ({ readmeUrl, id, isProduct, isService, isCourse, local
     const [playerDownloadUrl, setPlayerDownloadUrl] = useState<string | null>(null);
     const [tutorialsUrl, setTutorialsUrl] = useState<string | null>(null);
     const [buttons, setButtons] = useState<{ label: string; url: string }[]>([]);
+    const [platforms, setPlatforms] = useState<string[]>([]);
 
     const [isPaid, setIsPaid] = useState(false);
+    const [isComingSoon, setIsComingSoon] = useState(false);
+    const [typeLabel, setTypeLabel] = useState<string | null>(null);
     const [pricingContent, setPricingContent] = useState<string | null>(null);
 
     // Service specific content
@@ -112,19 +115,53 @@ export const useReadme = ({ readmeUrl, id, isProduct, isService, isCourse, local
 
             let processedContent = preamble ? preamble + "\n\n" + langContent : langContent;
 
-            // Extract and remove type (Paid/Free)
-            const typeMatch = text.match(/(?:\*\*Type:\*\*|\*\*النوع:\*\*)\s*(Paid|Free|مدفوع|مجاني)/i);
+            // Extract and remove type (Paid/Free/Coming Soon)
+            const typeMatch = text.match(/(?:\*\*Type:\*\*|\*\*النوع:\*\*)\s*([^\r\n]+)/i);
             if (typeMatch) {
-                const type = typeMatch[1].toLowerCase();
-                setIsPaid(type === 'paid' || type === 'مدفوع');
+                const rawType = typeMatch[1].trim();
+                const typeLower = rawType.toLowerCase();
+                const paid = typeLower.includes('paid') || typeLower.includes('مدفوع');
+                const comingSoon = typeLower.includes('coming') || typeLower.includes('قريبا');
+
+                setIsPaid(paid);
+                setIsComingSoon(comingSoon);
+
+                if (comingSoon) {
+                    setTypeLabel(t("common.coming_soon"));
+                } else if (paid) {
+                    setTypeLabel(t("common.paid"));
+                } else if (typeLower.includes('مجاني') || typeLower.includes('free')) {
+                    setTypeLabel(t("common.free"));
+                } else {
+                    setTypeLabel(rawType);
+                }
             } else {
                 // Default logic for isCourse
-                if (isCourse) setIsPaid(true);
-                else setIsPaid(false);
+                const defaultPaid = !!isCourse;
+                setIsPaid(defaultPaid);
+                setIsComingSoon(false);
+                setTypeLabel(defaultPaid ? t("common.paid") : t("common.free"));
             }
-            processedContent = processedContent.replace(/(?:\*\*Type:\*\*|\*\*النوع:\*\*)\s*(Paid|Free|مدفوع|مجاني)\s*(?:\r?\n|$)/i, '').trim();
+            processedContent = processedContent.replace(/(?:\*\*Type:\*\*|\*\*النوع:\*\*)\s*([^\r\n]+)\s*(?:\r?\n|$)/i, '').trim();
 
             processedContent = processedContent.replace(/(?:\*\*Version:\*\*|\*\*الإصدار:\*\*)\s*[vV]?\s*[\d.]+\s*(?:\r?\n|$)/i, '').trim();
+
+            const platformMatch = text.match(/(?:\*\*المنصة:\*\*|\*\*المنصات:\*\*|\*\*Platform:\*\*)\s*(.*)/i);
+            if (platformMatch) {
+                const platformText = platformMatch[1].trim();
+                // Match links [Label][ref], [Label](url) OR just [Label]
+                const platformLinks = Array.from(platformText.matchAll(/\[([^\]]+)\](?:\[[^\]]+\]|\([^)]+\))?/g));
+                if (platformLinks.length > 0) {
+                    setPlatforms(platformLinks.map(m => m[1].trim()));
+                } else {
+                    // Fallback to comma/space separated
+                    setPlatforms(platformText.split(/[,/|\s]+/).filter(p => p.trim().length > 0).map(p => p.trim()));
+                }
+            } else {
+                setPlatforms([]);
+            }
+            processedContent = processedContent.replace(/(?:\*\*المنصة:\*\*|\*\*المنصات:\*\*|\*\*Platform:\*\*|\*\*متوافق مع:\*\*)\s*(.*)\s*(?:\r?\n|$)/i, '').trim();
+
             processedContent = processedContent.replace(/<a\s+name="[^"]*"><\/a>/gi, '').trim();
             processedContent = processedContent.replace(/^-{3,}\s*$/gm, '').trim();
 
@@ -279,9 +316,12 @@ export const useReadme = ({ readmeUrl, id, isProduct, isService, isCourse, local
         loading,
         version,
         isPaid,
+        isComingSoon,
+        typeLabel,
         encryptionDownloadUrl,
         playerDownloadUrl,
         tutorialsUrl,
-        buttons
+        buttons,
+        platforms
     };
 };

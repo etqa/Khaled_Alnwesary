@@ -1,4 +1,4 @@
-import { Shield, Wrench, ArrowRight, Star, Zap, Layout, Calculator, Layers } from "lucide-react";
+import { Shield, Wrench, ArrowRight, Star, Zap, Layout, Calculator, Layers, Crown, Gift, Clock } from "lucide-react";
 import { ItemLogo } from "@/components/details/ItemLogo";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -21,30 +21,30 @@ export const ProductsPreview = () => {
       description: es.shortDesc || es.overviewContent || es.longDesc || "",
       icon: Layout,
       link: "/products/engineer-system",
-      badge: t("products.badges.popular"),
-      badgeIcon: Star,
-      type: "popular",
+      isPaid: es.isPaid,
+      isComingSoon: es.isComingSoon,
+      typeLabel: es.typeLabel,
       imageName: "EngineerSystem"
-    },
-    {
-      title: esl.titleContent || "",
-      description: esl.shortDesc || esl.overviewContent || esl.longDesc || "",
-      icon: Calculator,
-      link: "/products/engineer-system-lite",
-      badge: t("products.badges.new"),
-      badgeIcon: Zap,
-      type: "new",
-      imageName: "EngineerSystemLite"
     },
     {
       title: fe.titleContent || "",
       description: fe.shortDesc || fe.overviewContent || fe.longDesc || "",
       icon: Shield,
       link: "/products/file-encryption",
-      badge: t("products.badges.new"),
-      badgeIcon: Zap,
-      type: "new",
+      isPaid: fe.isPaid,
+      isComingSoon: fe.isComingSoon,
+      typeLabel: fe.typeLabel,
       imageName: "FileEncryption"
+    },
+    {
+      title: esl.titleContent || "",
+      description: esl.shortDesc || esl.overviewContent || esl.longDesc || "",
+      icon: Calculator,
+      link: "/products/engineer-system-lite",
+      isPaid: esl.isPaid,
+      isComingSoon: esl.isComingSoon,
+      typeLabel: esl.typeLabel,
+      imageName: "EngineerSystemLite"
     },
   ];
 
@@ -76,11 +76,23 @@ export const ProductsPreview = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-accent/5 opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
 
               {/* Card Header with Badge row (Centered) */}
-              <div className="relative z-10 py-3 px-6 bg-primary/5 border-b border-border/50 flex items-center justify-center gap-2">
-                <product.badgeIcon className="w-4 h-4 text-primary" />
-                <span className="text-xs font-bold uppercase tracking-wider text-primary">
-                  {product.badge}
-                </span>
+              <div className={`relative z-10 py-3 px-6 border-b border-border/50 flex items-center justify-center gap-2 ${product.isComingSoon ? 'bg-amber-500/5' : (product.isPaid ? 'bg-primary/5' : 'bg-green-500/5')
+                }`}>
+                {product.isComingSoon ? (
+                  <>
+                    <Clock className="w-4 h-4 text-amber-600" />
+                    <span className="text-xs font-bold uppercase tracking-wider text-amber-600">
+                      {product.typeLabel}
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    {product.isPaid ? <Crown className="w-4 h-4 text-primary" /> : <Gift className="w-4 h-4 text-green-600" />}
+                    <span className={`text-xs font-bold uppercase tracking-wider ${product.isPaid ? 'text-primary' : 'text-green-600'}`}>
+                      {product.typeLabel || (product.isPaid ? t("common.paid") : t("common.free"))}
+                    </span>
+                  </>
+                )}
               </div>
 
               <div className="relative p-8 flex flex-col h-full z-10 items-center text-center">

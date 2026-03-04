@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { ArrowRight, Star, Search, Shield, Layout, Calculator } from "lucide-react";
+import { ArrowRight, Star, Search, Shield, Layout, Calculator, Crown, Gift, Clock } from "lucide-react";
 import { ItemLogo } from "@/components/details/ItemLogo";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -26,8 +26,10 @@ const Products = () => {
       title: es.titleContent || "",
       description: es.shortDesc || es.overviewContent || es.longDesc || "",
       longDescription: es.longDesc || "",
-      badge: t("products.badges.popular"),
       link: "/products/engineer-system",
+      isPaid: es.isPaid,
+      isComingSoon: es.isComingSoon,
+      typeLabel: es.typeLabel,
       icon: Layout,
       imageName: "EngineerSystem"
     },
@@ -36,8 +38,10 @@ const Products = () => {
       title: esLite.titleContent || "",
       description: esLite.shortDesc || esLite.overviewContent || esLite.longDesc || "",
       longDescription: esLite.longDesc || "",
-      badge: t("products.badges.new"),
       link: "/products/engineer-system-lite",
+      isPaid: esLite.isPaid,
+      isComingSoon: esLite.isComingSoon,
+      typeLabel: esLite.typeLabel,
       icon: Calculator,
       imageName: "EngineerSystemLite"
     },
@@ -46,8 +50,10 @@ const Products = () => {
       title: fe.titleContent || "",
       description: fe.shortDesc || fe.overviewContent || fe.longDesc || "",
       longDescription: fe.longDesc || "",
-      badge: t("products.badges.new"),
       link: "/products/file-encryption",
+      isPaid: fe.isPaid,
+      isComingSoon: fe.isComingSoon,
+      typeLabel: fe.typeLabel,
       icon: Shield,
       imageName: "FileEncryption"
     },
@@ -107,18 +113,21 @@ const Products = () => {
                     <div className="absolute inset-0 geometric-pattern opacity-[0.05] group-hover:opacity-[0.1] transition-opacity duration-500" />
 
                     {/* Card Header with Badge */}
-                    <div className="relative z-20 py-4 px-8 bg-primary/5 border-b border-border/50 flex justify-center items-center">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 opacity-50" />
-                      {product.badge ? (
-                        <span className="relative z-10 flex items-center gap-2 text-primary text-sm font-bold">
-                          <Star className="w-4 h-4 fill-primary/20" />
-                          {product.badge}
-                        </span>
-                      ) : (
-                        <span className="relative z-10 flex items-center gap-2 text-muted-foreground/60 text-sm font-bold italic">
-                          {t("products.preview.tag")}
-                        </span>
-                      )}
+                    <div className={`relative z-20 py-4 px-8 ${product.isComingSoon ? 'bg-amber-500/5' : (product.isPaid ? 'bg-primary/5' : 'bg-green-500/5')
+                      } border-b border-border/50 flex justify-center items-center`}>
+                      <div className={`absolute inset-0 bg-gradient-to-r ${product.isComingSoon ? 'from-amber-500/10 via-amber-500/5 to-amber-500/10' : (product.isPaid ? 'from-primary/10 via-primary/5 to-primary/10' : 'from-green-500/10 via-green-500/5 to-green-500/10')
+                        } opacity-50`} />
+                      <span className={`relative z-10 flex items-center gap-2 ${product.isComingSoon ? 'text-amber-600' : (product.isPaid ? 'text-primary' : 'text-green-600')
+                        } text-sm font-bold`}>
+                        {product.isComingSoon ? (
+                          <Clock className="w-4 h-4 fill-amber-500/20" />
+                        ) : product.isPaid ? (
+                          <Crown className="w-4 h-4 fill-primary/20" />
+                        ) : (
+                          <Gift className="w-4 h-4 fill-green-500/20" />
+                        )}
+                        {product.typeLabel || (product.isPaid ? t("common.paid") : t("common.free"))}
+                      </span>
                     </div>
 
                     <div className="relative p-8 flex flex-col h-full z-10 items-center text-center">

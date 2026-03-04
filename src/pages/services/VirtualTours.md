@@ -16,8 +16,6 @@
 
 [v3]: https://www.facebook.com/photo/?fbid=2133149760221715
 
-[v4]: https://www.facebook.com/reel/922254829295774/?s=single_unit
-
 ---
 
 <a name="arabic"></a>
@@ -66,7 +64,6 @@
 - [جولة 360 درجة لفيلا سكنية فاخرة][v1]
 - [جولة تفاعلية لمكتب عمل مودرن][v2]
 - [مشروع معرض تجاري تفاعلي][v3]
-- [مستكشف مساقط أفقية لشقة][v4]
 
 <!-- ### فيديوهات توضيحية
 - [عرض الجولات التفاعلية - يوتيوب][yt_port]
@@ -119,7 +116,6 @@ We create interactive 360° 3D tours that allow high-resolution project explorat
 - [Luxury Villa 360 Tour][v1]
 - [Modern Office Interactive Walkthrough][v2]
 - [Commercial Showroom Tour][v3]
-- [Apartment Floor Plan Explorer][v4]
 
 <!-- ### Video Tutorials
 - [Virtual Tours Portfolio Youtube][yt_port]

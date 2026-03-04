@@ -36,6 +36,7 @@
         "inquire_price": "Inquire Price",
         "free": "Free",
         "paid": "Paid",
+        "coming_soon": "Coming Soon",
         "free_download": "Free Download",
         "register_course": "Register for Course",
         "course_content": "Course Content",
@@ -43,7 +44,14 @@
         "oops": "Oops! Page not found",
         "return_to_home": "Return to Home",
         "search_placeholder": "Search what you want...",
-        "no_results": "Sorry, we couldn't find any results matching your search."
+        "no_results": "Sorry, we couldn't find any results matching your search.",
+        "platforms": {
+            "windows": "Windows",
+            "android": "Android",
+            "online": "Online",
+            "mac": "Mac",
+            "ios": "iOS"
+        }
     },
     "hero": {
         "badge": "Architectural Visualization & Digital Solutions",

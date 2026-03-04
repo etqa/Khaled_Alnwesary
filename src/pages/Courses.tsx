@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { Play, ArrowRight, Search, Crown, Gift } from "lucide-react";
+import { Play, ArrowRight, Search, Crown, Gift, Clock } from "lucide-react";
 import { ItemLogo } from "@/components/details/ItemLogo";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -24,15 +24,20 @@ const CourseCard = ({ course, index, t }: { course: any, index: number, t: any }
       <div className="absolute inset-0 geometric-pattern opacity-[0.05] group-hover:opacity-[0.1] transition-opacity duration-500" />
 
       {/* Card Header with Badge */}
-      <div className={`relative z-20 py-4 px-8 ${course.isFree ? 'bg-green-500/5' : 'bg-primary/5'} border-b border-border/50 flex justify-center items-center`}>
-        <div className={`absolute inset-0 bg-gradient-to-r ${course.isFree ? 'from-green-500/10 via-green-500/5 to-green-500/10' : 'from-primary/10 via-primary/5 to-primary/10'} opacity-50`} />
-        <span className={`relative z-10 flex items-center gap-2 ${course.isFree ? 'text-green-600' : 'text-primary'} text-sm font-bold`}>
-          {course.isFree ? (
-            <Gift className="w-4 h-4 fill-green-500/20" />
-          ) : (
+      <div className={`relative z-20 py-4 px-8 ${course.isComingSoon ? 'bg-amber-500/5' : (course.isPaid ? 'bg-primary/5' : 'bg-green-500/5')
+        } border-b border-border/50 flex justify-center items-center`}>
+        <div className={`absolute inset-0 bg-gradient-to-r ${course.isComingSoon ? 'from-amber-500/10 via-amber-500/5 to-amber-500/10' : (course.isPaid ? 'from-primary/10 via-primary/5 to-primary/10' : 'from-green-500/10 via-green-500/5 to-green-500/10')
+          } opacity-50`} />
+        <span className={`relative z-10 flex items-center gap-2 ${course.isComingSoon ? 'text-amber-600' : (course.isPaid ? 'text-primary' : 'text-green-600')
+          } text-sm font-bold`}>
+          {course.isComingSoon ? (
+            <Clock className="w-4 h-4 fill-amber-500/20" />
+          ) : course.isPaid ? (
             <Crown className="w-4 h-4 fill-primary/20" />
+          ) : (
+            <Gift className="w-4 h-4 fill-green-500/20" />
           )}
-          {course.isFree ? t("common.free") : t("common.paid")}
+          {course.typeLabel || (course.isPaid ? t("common.paid") : t("common.free"))}
         </span>
       </div>
 
@@ -81,7 +86,9 @@ const Courses = () => {
       description: bRead.shortDesc || bRead.overviewContent || bRead.longDesc || "",
       featured: true,
       link: "/courses/blender",
-      isFree: false,
+      isPaid: bRead.isPaid,
+      isComingSoon: bRead.isComingSoon,
+      typeLabel: bRead.typeLabel,
       imageName: "BlenderCourse"
     },
     {
@@ -90,7 +97,9 @@ const Courses = () => {
       description: bExtFreeRead.shortDesc || bExtFreeRead.overviewContent || bExtFreeRead.longDesc || "",
       featured: false,
       link: "/courses/blender-free-ext",
-      isFree: true,
+      isPaid: bExtFreeRead.isPaid,
+      isComingSoon: bExtFreeRead.isComingSoon,
+      typeLabel: bExtFreeRead.typeLabel,
       imageName: "BlenderFreeExt"
     },
     {
@@ -99,7 +108,9 @@ const Courses = () => {
       description: d5FreeRead.shortDesc || d5FreeRead.overviewContent || d5FreeRead.longDesc || "",
       featured: false,
       link: "/courses/d5-render-free",
-      isFree: true,
+      isPaid: d5FreeRead.isPaid,
+      isComingSoon: d5FreeRead.isComingSoon,
+      typeLabel: d5FreeRead.typeLabel,
       imageName: "D5RenderFree"
     },
     {
@@ -108,7 +119,9 @@ const Courses = () => {
       description: bIntFreeRead.shortDesc || bIntFreeRead.overviewContent || bIntFreeRead.longDesc || "",
       featured: false,
       link: "/courses/blender-free-int",
-      isFree: true,
+      isPaid: bIntFreeRead.isPaid,
+      isComingSoon: bIntFreeRead.isComingSoon,
+      typeLabel: bIntFreeRead.typeLabel,
       imageName: "BlenderFreeInt"
     },
   ];
