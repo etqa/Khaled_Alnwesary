@@ -6,12 +6,13 @@
 **المنصة:** [ويندوز]
 
 [English](#english) | [العربية](#arabic)
-
-[yt_lock]: https://www.youtube.com/watch?v=VRzW72Ptnug&t=52s
-[yt_player]: https://www.youtube.com/watch?v=VRzW72Ptnug&t=52s
 [wa_order]: whatsapp:218928198656?message=السلام عليكم، أريد طلب برنامج حماية الفيديوهات (DR Video Protection)
-[dl_lock]: https://u.pcloud.link/publink/show?code=XZd0Al5Z7KIE4xOyCLLdC4THj3qkp58g1gCX
-[dl_player]: https://u.pcloud.link/publink/show?code=XZK0Al5ZUNYkQSng2XJS4lsisXxmX8mjQSYy
+
+[yt_lock]: https://youtu.be/ypQxprYIWhQ
+[dl_lock]: https://u.pcloud.link/publink/show?code=XZq4qd5Zg7DGu7BIzwRHFBJnA6tWmmENOyry
+
+[yt_player]: https://youtu.be/svsEP9EaPag
+[dl_player]: https://u.pcloud.link/publink/show?code=XZt4qd5Z5TrCzHhBFvQae0uOxbYlsmYOTMqV
 
 ---
 
@@ -59,9 +60,9 @@
 2. قم بتوزيع `DR_Player` على الطلاب أو العملاء.
 3. استخدم DR Lock لتشفير ملفاتك وتوليد مفاتيح التفعيل.
 
-<!-- ### فيديوهات توضيحية
-- [شرح كيفية تفعيل DR Lock][yt_lock]
-- [شرح كيفية تفعيل DR Player][yt_player] -->
+### فيديوهات توضيحية
+- [شرح برنامج المشغل الآمن DR Player][yt_player]
+- [شرح برنامج التشفير DR Lock][yt_lock]
 
 -------------------------------------------------------
 
@@ -109,8 +110,9 @@ The DR Video Protection Suite is a powerful security solution designed for conte
 2. Distribute `DR_Player` to your students or clients.
 3. Use DR Lock to encrypt your files and generate activation keys.
 
-<!-- ### Video Tutorials
-- [How to activate DR Lock][yt_lock]
-- [How to activate DR Player][yt_player] -->
+### Video Tutorials
+- [How to use DR Player][yt_player]
+- [How to use DR Lock][yt_lock]
+
 
 
