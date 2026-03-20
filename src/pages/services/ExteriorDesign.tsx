@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Building2, Image as ImageIcon, FileText, Sparkles } from "lucide-react";
 import { DetailLayout } from "@/components/layout/DetailLayout";
@@ -14,7 +14,9 @@ import localReadme from "./ExteriorDesign.md?raw";
 
 const ExteriorDesign = () => {
     const { t } = useTranslation();
-    const [selectedImage, setSelectedImage] = useState<{ src: string; alt?: string } | null>(null);
+    const [selectedImage, setSelectedImage] = useState<{ src: string; alt?: string; index: number } | null>(null);
+    const [portfolioImages, setPortfolioImages] = useState<Array<{ src: string; alt?: string }>>([]);
+    
     const {
         overviewContent,
         portfolioContent,
@@ -35,6 +37,43 @@ const ExteriorDesign = () => {
         title: titleContent || "",
         description: shortDesc || "",
         icon: Building2,
+    };
+
+    // Extract images from portfolio content
+    React.useEffect(() => {
+        if (portfolioContent) {
+            const imgRegex = /!\[([^\]]*)\]\(([^)]+)\)/g;
+            const images: Array<{ src: string; alt?: string }> = [];
+            let match;
+            
+            while ((match = imgRegex.exec(portfolioContent)) !== null) {
+                images.push({
+                    alt: match[1] || undefined,
+                    src: match[2]
+                });
+            }
+            
+            setPortfolioImages(images);
+        }
+    }, [portfolioContent]);
+
+    const handleImageClick = (src: string, alt?: string) => {
+        const index = portfolioImages.findIndex(img => img.src === src);
+        setSelectedImage({ src, alt, index });
+    };
+
+    const handleNavigate = (direction: 'prev' | 'next') => {
+        if (!selectedImage || portfolioImages.length === 0) return;
+        
+        let newIndex = selectedImage.index;
+        if (direction === 'prev') {
+            newIndex = selectedImage.index > 0 ? selectedImage.index - 1 : portfolioImages.length - 1;
+        } else {
+            newIndex = selectedImage.index < portfolioImages.length - 1 ? selectedImage.index + 1 : 0;
+        }
+        
+        const newImage = portfolioImages[newIndex];
+        setSelectedImage({ ...newImage, index: newIndex });
     };
 
     return (
@@ -86,7 +125,7 @@ const ExteriorDesign = () => {
                                                 <img
                                                     {...props}
                                                     className="rounded-2xl shadow-lg cursor-zoom-in hover:scale-[1.02] transition-transform duration-500 mx-auto"
-                                                    onClick={() => setSelectedImage({ src: props.src || "", alt: props.alt })}
+                                                    onClick={() => handleImageClick(props.src || "", props.alt)}
                                                 />
                                             )
                                         }}
@@ -223,7 +262,7 @@ const ExteriorDesign = () => {
                                                     <img
                                                         {...props}
                                                         className="rounded-[2rem] shadow-2xl cursor-zoom-in hover:scale-[1.02] transition-transform duration-500"
-                                                        onClick={() => setSelectedImage({ src: props.src || "", alt: props.alt })}
+                                                        onClick={() => handleImageClick(props.src || "", props.alt)}
                                                     />
                                                 )
                                             }}
@@ -250,6 +289,9 @@ const ExteriorDesign = () => {
                 onClose={() => setSelectedImage(null)}
                 src={selectedImage?.src || ""}
                 alt={selectedImage?.alt}
+                images={portfolioImages.map(img => img.src)}
+                currentIndex={selectedImage?.index || 0}
+                onNavigate={handleNavigate}
             />
         </DetailLayout>
     );
