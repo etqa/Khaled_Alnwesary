@@ -147,5 +147,15 @@
         "title": "Have a Project?",
         "subtitle": "Contact me via any of the following channels and I'll be happy to help",
         "cta_now": "Contact Now"
+    },
+    "install": {
+        "button_title": "Install App",
+        "ios_title": "Install App",
+        "ios_instructions": "To install the app on iPhone or Mac:",
+        "ios_step1": "Tap the Share button 📤 in the browser bar",
+        "ios_step2": "Scroll down and select \"Add to Home Screen\" ➕",
+        "ios_step3": "Tap \"Add\" in the top corner",
+        "ios_step4": "The app will appear on your home screen",
+        "ios_note": "Note: You must use Safari browser to install the app on Apple devices"
     }
 }

@@ -4,6 +4,7 @@ import { Menu, X, Moon, Sun, Home, LayoutGrid, Package, Gift, GraduationCap } fr
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
+import { InstallButton } from "@/components/ui/InstallButton";
 
 const navLinks = [
   { href: "/", labelKey: "nav.home", icon: Home },
@@ -88,6 +89,7 @@ export const Navbar = () => {
 
           {/* Actions */}
           <div className="flex items-center gap-3">
+            <InstallButton />
             <LanguageSwitcher />
 
             <Button
