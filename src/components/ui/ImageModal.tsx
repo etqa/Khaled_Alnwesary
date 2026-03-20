@@ -230,18 +230,18 @@ export const ImageModal = ({
                             </button>
                         </div>
 
-                        {/* Navigation Buttons */}
+                        {/* Navigation Buttons - Desktop */}
                         {showNavigation && (
                             <>
                                 <button
-                                    onClick={handlePrevious}
-                                    className="absolute left-6 top-1/2 -translate-y-1/2 z-10 w-14 h-14 flex items-center justify-center rounded-2xl bg-primary/20 backdrop-blur-sm text-white shadow-xl hover:bg-primary/30 hover:scale-110 active:scale-95 transition-all duration-300"
+                                    onClick={handleNext}
+                                    className="absolute left-6 top-1/2 -translate-y-1/2 max-md:hidden z-10 w-14 h-14 flex items-center justify-center rounded-2xl bg-primary/20 backdrop-blur-sm text-white shadow-xl hover:bg-primary/30 hover:scale-110 active:scale-95 transition-all duration-300"
                                 >
                                     <ChevronLeft className="w-8 h-8" />
                                 </button>
                                 <button
-                                    onClick={handleNext}
-                                    className="absolute right-6 top-1/2 -translate-y-1/2 z-10 w-14 h-14 flex items-center justify-center rounded-2xl bg-primary/20 backdrop-blur-sm text-white shadow-xl hover:bg-primary/30 hover:scale-110 active:scale-95 transition-all duration-300"
+                                    onClick={handlePrevious}
+                                    className="absolute right-6 top-1/2 -translate-y-1/2 max-md:hidden z-10 w-14 h-14 flex items-center justify-center rounded-2xl bg-primary/20 backdrop-blur-sm text-white shadow-xl hover:bg-primary/30 hover:scale-110 active:scale-95 transition-all duration-300"
                                 >
                                     <ChevronRight className="w-8 h-8" />
                                 </button>
@@ -252,10 +252,26 @@ export const ImageModal = ({
                         <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/90 via-black/50 to-transparent">
                             <div className="max-w-3xl mx-auto text-center">
                                 {hasMultipleImages && (
-                                    <div className="mb-3">
+                                    <div className="mb-3 flex items-center justify-center gap-4">
+                                        {/* Mobile Navigation Buttons */}
+                                        <button
+                                            onClick={handlePrevious}
+                                            className="md:hidden w-10 h-10 flex items-center justify-center rounded-2xl bg-primary/20 backdrop-blur-sm text-white shadow-xl hover:bg-primary/30 active:scale-95 transition-all duration-300"
+                                        >
+                                            <ChevronRight className="w-5 h-5" />
+                                        </button>
+                                        
                                         <span className="inline-block px-4 py-2 rounded-full bg-primary/30 backdrop-blur-sm text-white font-bold text-sm">
                                             {currentIndex + 1}/{images.length}
                                         </span>
+                                        
+                                        {/* Mobile Navigation Buttons */}
+                                        <button
+                                            onClick={handleNext}
+                                            className="md:hidden w-10 h-10 flex items-center justify-center rounded-2xl bg-primary/20 backdrop-blur-sm text-white shadow-xl hover:bg-primary/30 active:scale-95 transition-all duration-300"
+                                        >
+                                            <ChevronLeft className="w-5 h-5" />
+                                        </button>
                                     </div>
                                 )}
                                 {alt && (
