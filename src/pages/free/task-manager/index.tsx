@@ -9,7 +9,7 @@ import rehypeRaw from "rehype-raw";
 import { DynamicButtons } from "@/components/details/DynamicButtons";
 import { ItemLogo } from "@/components/details/ItemLogo";
 import { PlatformBadges } from "@/components/details/PlatformBadges";
-import localReadme from "./TaskManager.md?raw";
+import localReadme from "./content.md?raw";
 
 const TaskManager = () => {
     const { t } = useTranslation();

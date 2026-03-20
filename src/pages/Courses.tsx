@@ -8,10 +8,10 @@ import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useReadme } from "@/hooks/useReadme";
-import blenderMd from "@/pages/courses/BlenderCourse.md?raw";
-import blenderFreeExtMd from "@/pages/courses/BlenderFreeExt.md?raw";
-import d5RenderFreeMd from "@/pages/courses/D5RenderFree.md?raw";
-import blenderFreeIntMd from "@/pages/courses/BlenderFreeInt.md?raw";
+import blenderMd from "@/pages/courses/blender/content.md?raw";
+import blenderFreeExtMd from "@/pages/courses/blender-free-ext/content.md?raw";
+import d5RenderFreeMd from "@/pages/courses/d5-render-free/content.md?raw";
+import blenderFreeIntMd from "@/pages/courses/blender-free-int/content.md?raw";
 
 const CourseCard = ({ course, index, t }: { course: any, index: number, t: any }) => {
   return (

@@ -1,5 +1,5 @@
-import FreeYoutubeCourse from "./FreeYoutubeCourse";
-import localReadme from "./BlenderFreeExt.md?raw";
+import FreeYoutubeCourse from "../FreeYoutubeCourse";
+import localReadme from "./content.md?raw";
 
 const BlenderFreeExtCourse = () => {
     return (

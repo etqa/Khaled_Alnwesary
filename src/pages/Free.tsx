@@ -8,9 +8,9 @@ import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useReadme } from "@/hooks/useReadme";
-import khToolsMd from "@/pages/free/KHTools.md?raw";
-import quranAppMd from "@/pages/free/QuranApp.md?raw";
-import taskManagerMd from "@/pages/free/TaskManager.md?raw";
+import khToolsMd from "@/pages/free/kh-tools/content.md?raw";
+import quranAppMd from "@/pages/free/quran-app/content.md?raw";
+import taskManagerMd from "@/pages/free/task-manager/content.md?raw";
 
 const Free = () => {
   const { t, i18n } = useTranslation();

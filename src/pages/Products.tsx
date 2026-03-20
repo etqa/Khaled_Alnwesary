@@ -8,9 +8,9 @@ import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useReadme } from "@/hooks/useReadme";
-import engineerSystemMd from "@/pages/products/EngineerSystem.md?raw";
-import engineerSystemLiteMd from "@/pages/products/EngineerSystemLite.md?raw";
-import fileEncryptionMd from "@/pages/products/FileEncryption.md?raw";
+import engineerSystemMd from "@/pages/products/engineer-system/content.md?raw";
+import engineerSystemLiteMd from "@/pages/products/engineer-system-lite/content.md?raw";
+import fileEncryptionMd from "@/pages/products/file-encryption/content.md?raw";
 
 const Products = () => {
   const { t } = useTranslation();

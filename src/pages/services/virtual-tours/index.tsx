@@ -1,22 +1,72 @@
-import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Building2, Image as ImageIcon, FileText, Sparkles } from "lucide-react";
+import { Orbit as Panorama, Video, FileText, Image as ImageIcon, Sparkles } from "lucide-react";
 import { DetailLayout } from "@/components/layout/DetailLayout";
 import { useReadme } from "@/hooks/useReadme";
 import { MarkdownContent } from "@/components/details/MarkdownContent";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
-import { ImageModal } from "@/components/ui/ImageModal";
 import { DynamicButtons } from "@/components/details/DynamicButtons";
 import { ItemLogo } from "@/components/details/ItemLogo";
-import localReadme from "./ExteriorDesign.md?raw";
+import localReadme from "./content.md?raw";
 
-const ExteriorDesign = () => {
+const YouTubeEmbed = ({ url }: { url: string }) => {
+    const getVideoId = (url: string) => {
+        const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+        const match = url.match(regExp);
+        return (match && match[2].length === 11) ? match[2] : null;
+    };
+
+    const videoId = getVideoId(url);
+
+    if (videoId) return (
+        <div className="relative w-full overflow-hidden rounded-2xl shadow-lg aspect-video my-8 border border-white/10 bg-black">
+            <iframe
+                src={`https://www.youtube.com/embed/${videoId}`}
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute top-0 left-0 w-full h-full border-0"
+            />
+        </div >
+    );
+
+    return null;
+};
+
+const FacebookEmbed = ({ url }: { url: string }) => {
+    // Check if it's a Facebook URL
+    if (!url.includes("facebook.com")) return null;
+
+    // Use a larger width for the embed request to get high res
+    const embedWidth = 750;
+
+    // Encode the URL for the iframe src
+    const encodedUrl = encodeURIComponent(url);
+    // Use show_text=false to focus on the media/360 view
+    const src = `https://www.facebook.com/plugins/post.php?href=${encodedUrl}&show_text=false&width=${embedWidth}`;
+
+    return (
+        <div className="w-full flex justify-center my-8">
+            <div className="relative w-full max-w-[750px] overflow-hidden rounded-xl shadow-md bg-white border border-border/50">
+                <iframe
+                    src={src}
+                    width={embedWidth}
+                    height="420"
+                    style={{ border: 'none', overflow: 'hidden' }}
+                    scrolling="no"
+                    frameBorder="0"
+                    allowFullScreen={true}
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    className="w-full"
+                />
+            </div>
+        </div>
+    );
+};
+
+const VirtualTours = () => {
     const { t } = useTranslation();
-    const [selectedImage, setSelectedImage] = useState<{ src: string; alt?: string; index: number } | null>(null);
-    const [portfolioImages, setPortfolioImages] = useState<Array<{ src: string; alt?: string }>>([]);
-    
     const {
         overviewContent,
         portfolioContent,
@@ -29,51 +79,14 @@ const ExteriorDesign = () => {
         shortDesc
     } = useReadme({
         localContent: localReadme,
-        id: "exterior",
+        id: "virtual-tours",
         isService: true
     });
 
     const service = {
         title: titleContent || "",
         description: shortDesc || "",
-        icon: Building2,
-    };
-
-    // Extract images from portfolio content
-    React.useEffect(() => {
-        if (portfolioContent) {
-            const imgRegex = /!\[([^\]]*)\]\(([^)]+)\)/g;
-            const images: Array<{ src: string; alt?: string }> = [];
-            let match;
-            
-            while ((match = imgRegex.exec(portfolioContent)) !== null) {
-                images.push({
-                    alt: match[1] || undefined,
-                    src: match[2]
-                });
-            }
-            
-            setPortfolioImages(images);
-        }
-    }, [portfolioContent]);
-
-    const handleImageClick = (src: string, alt?: string) => {
-        const index = portfolioImages.findIndex(img => img.src === src);
-        setSelectedImage({ src, alt, index });
-    };
-
-    const handleNavigate = (direction: 'prev' | 'next') => {
-        if (!selectedImage || portfolioImages.length === 0) return;
-        
-        let newIndex = selectedImage.index;
-        if (direction === 'prev') {
-            newIndex = selectedImage.index > 0 ? selectedImage.index - 1 : portfolioImages.length - 1;
-        } else {
-            newIndex = selectedImage.index < portfolioImages.length - 1 ? selectedImage.index + 1 : 0;
-        }
-        
-        const newImage = portfolioImages[newIndex];
-        setSelectedImage({ ...newImage, index: newIndex });
+        icon: Panorama,
     };
 
     return (
@@ -98,7 +111,7 @@ const ExteriorDesign = () => {
                             <div className="order-1 md:order-2">
                                 <div className="w-24 h-24 md:w-32 md:h-32 rounded-[2rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2">
                                     <ItemLogo
-                                        imageName="ExteriorDesign"
+                                        imageName="VirtualTours"
                                         fallbackIcon={service.icon}
                                         className="w-full h-full object-contain"
                                         iconClassName="w-12 h-12 md:w-16 md:h-16 text-primary"
@@ -120,15 +133,6 @@ const ExteriorDesign = () => {
                                     <ReactMarkdown
                                         remarkPlugins={[remarkGfm]}
                                         rehypePlugins={[rehypeRaw]}
-                                        components={{
-                                            img: ({ node, ...props }) => (
-                                                <img
-                                                    {...props}
-                                                    className="rounded-2xl shadow-lg cursor-zoom-in hover:scale-[1.02] transition-transform duration-500 mx-auto"
-                                                    onClick={() => handleImageClick(props.src || "", props.alt)}
-                                                />
-                                            )
-                                        }}
                                     >
                                         {overviewContent}
                                     </ReactMarkdown>
@@ -170,7 +174,7 @@ const ExteriorDesign = () => {
 
                                     {/* Divider if Features and (Collaboration or Terms) exist */}
                                     {featuresContent && (collaborationContent || termsContent) && (
-                                        <div className="h-px bg-border/50 my-8" />
+                                        <div className="h-px bg-border/50 my-6" />
                                     )}
 
                                     {/* Collaboration Subsection */}
@@ -231,7 +235,7 @@ const ExteriorDesign = () => {
                                                                         <span className="text-xs font-bold text-primary leading-none after:content-[counter(service-step)]" />
                                                                     </div>
                                                                 </div>
-                                                                <span className="group-hover:text-foreground transition-colors text-sm md:text-base">{children}</span>
+                                                                <span className="group-hover:text-foreground transition-colors">{children}</span>
                                                             </li>
                                                         )
                                                     }}
@@ -244,27 +248,37 @@ const ExteriorDesign = () => {
                                 </div>
                             )}
 
-                            {/* Portfolio Section */}
+                            {/* Portfolio Section with Videos */}
                             {portfolioContent && (
-                                <div className="bg-card/80 border border-border/50 rounded-[2.5rem] p-8 md:p-12 shadow-sm animate-fade-up backdrop-blur-md">
+                                <div className="bg-card/80 backdrop-blur-md border border-border/50 rounded-[2.5rem] p-8 md:p-12 shadow-sm animate-fade-up">
                                     <div className="flex items-center gap-3 mb-8">
-                                        <ImageIcon className="w-6 h-6 text-primary" />
+                                        <Video className="w-6 h-6 text-primary" />
                                         <h2 className="text-3xl font-black text-foreground tracking-tight">{t("services.page.detail.portfolio_title")}</h2>
                                     </div>
-                                    <div className="prose prose-slate dark:prose-invert max-w-none
-                    prose-img:rounded-[2rem] prose-img:shadow-2xl prose-img:hover:scale-[1.01] prose-img:transition-transform prose-img:duration-500">
+                                    <div className="prose prose-slate dark:prose-invert max-w-none">
                                         <ReactMarkdown
                                             remarkPlugins={[remarkGfm]}
                                             rehypePlugins={[rehypeRaw]}
                                             components={{
-                                                div: ({ node, ...props }) => <div {...props} />,
-                                                img: ({ node, ...props }) => (
-                                                    <img
-                                                        {...props}
-                                                        className="rounded-[2rem] shadow-2xl cursor-zoom-in hover:scale-[1.02] transition-transform duration-500"
-                                                        onClick={() => handleImageClick(props.src || "", props.alt)}
-                                                    />
-                                                )
+                                                a: ({ node, href, children, ...props }) => {
+                                                    if (!href) return <>{children}</>;
+
+                                                    const yt = YouTubeEmbed({ url: href });
+                                                    if (yt) return yt;
+
+                                                    const fb = FacebookEmbed({ url: href });
+                                                    if (fb) return fb;
+
+                                                    return (
+                                                        <a href={href} target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80 break-all">
+                                                            {href}
+                                                        </a>
+                                                    );
+                                                },
+                                                p: ({ node, children }) => {
+                                                    // This is to prevent p tags from wrapping divs which is invalid HTML
+                                                    return <div className="mb-4">{children}</div>;
+                                                }
                                             }}
                                         >
                                             {portfolioContent}
@@ -283,18 +297,8 @@ const ExteriorDesign = () => {
                     </div>
                 </div>
             </section>
-
-            <ImageModal
-                isOpen={!!selectedImage}
-                onClose={() => setSelectedImage(null)}
-                src={selectedImage?.src || ""}
-                alt={selectedImage?.alt}
-                images={portfolioImages.map(img => img.src)}
-                currentIndex={selectedImage?.index || 0}
-                onNavigate={handleNavigate}
-            />
-        </DetailLayout>
+        </DetailLayout >
     );
 };
 
-export default ExteriorDesign;
+export default VirtualTours;

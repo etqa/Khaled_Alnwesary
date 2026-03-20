@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Sofa, Image as ImageIcon, FileText, Sparkles } from "lucide-react";
+import { Building2, Image as ImageIcon, FileText, Sparkles } from "lucide-react";
 import { DetailLayout } from "@/components/layout/DetailLayout";
 import { useReadme } from "@/hooks/useReadme";
 import { MarkdownContent } from "@/components/details/MarkdownContent";
@@ -10,9 +10,9 @@ import rehypeRaw from "rehype-raw";
 import { ImageModal } from "@/components/ui/ImageModal";
 import { DynamicButtons } from "@/components/details/DynamicButtons";
 import { ItemLogo } from "@/components/details/ItemLogo";
-import localReadme from "./InteriorDesign.md?raw";
+import localReadme from "./content.md?raw";
 
-const InteriorDesign = () => {
+const ExteriorDesign = () => {
     const { t } = useTranslation();
     const [selectedImage, setSelectedImage] = useState<{ src: string; alt?: string; index: number } | null>(null);
     const [portfolioImages, setPortfolioImages] = useState<Array<{ src: string; alt?: string }>>([]);
@@ -29,14 +29,14 @@ const InteriorDesign = () => {
         shortDesc
     } = useReadme({
         localContent: localReadme,
-        id: "interior",
+        id: "exterior",
         isService: true
     });
 
     const service = {
         title: titleContent || "",
         description: shortDesc || "",
-        icon: Sofa,
+        icon: Building2,
     };
 
     // Extract images from portfolio content
@@ -98,7 +98,7 @@ const InteriorDesign = () => {
                             <div className="order-1 md:order-2">
                                 <div className="w-24 h-24 md:w-32 md:h-32 rounded-[2rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2">
                                     <ItemLogo
-                                        imageName="InteriorDesign"
+                                        imageName="ExteriorDesign"
                                         fallbackIcon={service.icon}
                                         className="w-full h-full object-contain"
                                         iconClassName="w-12 h-12 md:w-16 md:h-16 text-primary"
@@ -142,7 +142,7 @@ const InteriorDesign = () => {
                                 <div className="bg-card/80 border border-border/50 rounded-[2.5rem] p-8 md:p-12 shadow-sm animate-fade-up backdrop-blur-md">
                                     {/* Features Subsection */}
                                     {featuresContent && (
-                                        <div className="mb-6 last:mb-0">
+                                        <div className="mb-8 last:mb-0">
                                             <div className="flex items-center gap-3 mb-8">
                                                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                                                     <Sparkles className="w-5 h-5 text-primary" />
@@ -156,7 +156,7 @@ const InteriorDesign = () => {
                                                     components={{
                                                         ul: ({ node, ...props }) => <ul {...props} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-1 list-none p-0" />,
                                                         li: ({ node, children, ...props }) => (
-                                                            <li className="flex items-center justify-center p-4 rounded-2xl bg-background/50 border border-border hover-border-primary/20 transition-colors text-center">
+                                                            <li className="flex items-center justify-center p-4 rounded-2xl bg-background/50 border border-border hover:border-primary/20 transition-colors text-center">
                                                                 <span className="text-foreground font-medium text-sm">{children}</span>
                                                             </li>
                                                         )
@@ -170,7 +170,7 @@ const InteriorDesign = () => {
 
                                     {/* Divider if Features and (Collaboration or Terms) exist */}
                                     {featuresContent && (collaborationContent || termsContent) && (
-                                        <div className="h-px bg-border/50 my-6" />
+                                        <div className="h-px bg-border/50 my-8" />
                                     )}
 
                                     {/* Collaboration Subsection */}
@@ -297,4 +297,4 @@ const InteriorDesign = () => {
     );
 };
 
-export default InteriorDesign;
+export default ExteriorDesign;

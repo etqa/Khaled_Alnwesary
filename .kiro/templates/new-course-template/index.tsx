@@ -10,9 +10,9 @@ import rehypeRaw from "rehype-raw";
 import { DynamicButtons } from "@/components/details/DynamicButtons";
 import { ItemLogo } from "@/components/details/ItemLogo";
 import { PlatformBadges } from "@/components/details/PlatformBadges";
-import localReadme from "./BlenderCourse.md?raw";
+import localReadme from "./content.md?raw";
 
-const BlenderCourse = () => {
+const NewCourse = () => {
     const { t } = useTranslation();
     const {
         overviewContent,
@@ -31,19 +31,15 @@ const BlenderCourse = () => {
         platforms
     } = useReadme({
         localContent: localReadme,
-        id: "blender-course",
+        id: "new-course",
         isCourse: true
     });
-
 
     const course = {
         title: titleContent || "",
         description: shortDesc || "",
         longDescription: longDesc || "",
         icon: BookOpen,
-        duration: t("courses.blender.stats.hours"),
-        students: t("courses.blender.stats.students"),
-        type: t("courses.blender.stats.type_detail"),
     };
 
     let moduleIndex = 0;
@@ -92,57 +88,13 @@ const BlenderCourse = () => {
                             <div className="animate-fade-up shrink-0 order-1 md:order-2">
                                 <div className="w-24 h-24 md:w-32 md:h-32 rounded-[2rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2">
                                     <ItemLogo
-                                        imageName="BlenderCourse"
+                                        imageName="NewCourse"
                                         fallbackIcon={course.icon}
                                         className="w-full h-full object-contain"
                                         iconClassName="w-12 h-12 md:w-16 md:h-16 text-primary"
                                     />
                                 </div>
                             </div>
-                        </div>
-
-                        <div className="animate-fade-up delay-200 flex flex-wrap gap-6 mb-8">
-                            {statsContent ? (
-                                <div className="flex flex-wrap gap-6">
-                                    <ReactMarkdown
-                                        remarkPlugins={[remarkGfm]}
-                                        components={{
-                                            ul: ({ children }) => <>{children}</>,
-                                            li: ({ children }) => {
-                                                const text = children?.toString() || "";
-                                                let icon = <Clock className="w-5 h-5 text-primary" />;
-                                                if (text.includes("Student") || text.includes("طلاب")) icon = <Users className="w-5 h-5 text-primary" />;
-                                                if (text.includes("Type") || text.includes("النوع")) icon = <Play className="w-5 h-5 text-primary" />;
-
-                                                return (
-                                                    <div className="flex items-center gap-2 text-foreground font-medium">
-                                                        {icon}
-                                                        <span>{children}</span>
-                                                    </div>
-                                                );
-                                            },
-                                            p: ({ children }) => <>{children}</>
-                                        }}
-                                    >
-                                        {statsContent}
-                                    </ReactMarkdown>
-                                </div>
-                            ) : (
-                                <>
-                                    <div className="flex items-center gap-2 text-foreground font-medium">
-                                        <Clock className="w-5 h-5 text-primary" />
-                                        <span>{course.duration}</span>
-                                    </div>
-                                    <div className="flex items-center gap-2 text-foreground font-medium">
-                                        <Users className="w-5 h-5 text-primary" />
-                                        <span>{course.students}</span>
-                                    </div>
-                                    <div className="flex items-center gap-2 text-foreground font-medium">
-                                        <Play className="w-5 h-5 text-primary" />
-                                        <span>{course.type}</span>
-                                    </div>
-                                </>
-                            )}
                         </div>
 
                         <div className="animate-fade-up delay-300 mb-0">
@@ -154,11 +106,6 @@ const BlenderCourse = () => {
                                         <a href="https://wa.me/218928198656" target="_blank" rel="noopener noreferrer">
                                             <MessageCircle className="w-5 h-5 rtl:ml-2 ltr:mr-2" />
                                             {t("common.register_course")}
-                                        </a>
-                                    </Button>
-                                    <Button variant="outline" size="lg" asChild>
-                                        <a href="https://wa.me/218928198656" target="_blank" rel="noopener noreferrer">
-                                            {t("common.inquire_price")}
                                         </a>
                                     </Button>
                                 </div>
@@ -180,12 +127,10 @@ const BlenderCourse = () => {
                                 </div>
                             </div>
                         )}
-
                     </div>
                 </div>
             </section>
 
-            {/* Course Content */}
             {courseContent && (
                 <section className="pt-4 pb-8 bg-muted/30">
                     <div className="container mx-auto px-4">
@@ -235,7 +180,6 @@ const BlenderCourse = () => {
                 </section>
             )}
 
-            {/* What You Get / Features */}
             {featuresContent && (
                 <section className="pt-16 pb-8">
                     <div className="container mx-auto px-4">
@@ -265,7 +209,6 @@ const BlenderCourse = () => {
                 </section>
             )}
 
-            {/* Rest of README content if any */}
             {readmeContent && (
                 <section className="pt-16 pb-8">
                     <div className="container mx-auto px-4">
@@ -279,4 +222,4 @@ const BlenderCourse = () => {
     );
 };
 
-export default BlenderCourse;
+export default NewCourse;

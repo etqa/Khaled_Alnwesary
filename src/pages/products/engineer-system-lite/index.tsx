@@ -10,10 +10,10 @@ import { PricingSection } from "@/components/products/PricingSection";
 import { DynamicButtons } from "@/components/details/DynamicButtons";
 import { ItemLogo } from "@/components/details/ItemLogo";
 import { PlatformBadges } from "@/components/details/PlatformBadges";
-import localReadme from "./EngineerSystem.md?raw";
-import pricingMarkdown from "./EngineerSystem_Prices.md?raw";
+import localReadme from "./content.md?raw";
+import pricingMarkdown from "./prices.md?raw";
 
-const EngineerSystem = () => {
+const EngineerSystemLite = () => {
     const { t } = useTranslation();
     const {
         readmeContent,
@@ -28,7 +28,7 @@ const EngineerSystem = () => {
         platforms
     } = useReadme({
         localContent: localReadme,
-        id: "engineer-system",
+        id: "engineer-system-lite",
         isProduct: true
     });
 
@@ -85,7 +85,7 @@ const EngineerSystem = () => {
                             <div className="order-1 md:order-2">
                                 <div className="w-24 h-24 md:w-32 md:h-32 rounded-[2rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2">
                                     <ItemLogo
-                                        imageName="EngineerSystem"
+                                        imageName="EngineerSystemLite"
                                         fallbackIcon={product.icon}
                                         className="w-full h-full object-contain"
                                         iconClassName="w-12 h-12 md:w-16 md:h-16 text-primary"
@@ -127,4 +127,4 @@ const EngineerSystem = () => {
     );
 };
 
-export default EngineerSystem;
+export default EngineerSystemLite;

@@ -7,10 +7,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useTranslation } from "react-i18next";
 import { useReadme } from "@/hooks/useReadme";
-import exteriorMd from "@/pages/services/ExteriorDesign.md?raw";
-import interiorMd from "@/pages/services/InteriorDesign.md?raw";
-import virtualToursMd from "@/pages/services/VirtualTours.md?raw";
-import animationMd from "@/pages/services/Animation.md?raw";
+import exteriorMd from "@/pages/services/exterior-design/content.md?raw";
+import interiorMd from "@/pages/services/interior-design/content.md?raw";
+import virtualToursMd from "@/pages/services/virtual-tours/content.md?raw";
+import animationMd from "@/pages/services/animation/content.md?raw";
 
 const Services = () => {
   const { t } = useTranslation();

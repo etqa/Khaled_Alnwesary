@@ -1,5 +1,5 @@
-import FreeYoutubeCourse from "./FreeYoutubeCourse";
-import localReadme from "./D5RenderFree.md?raw";
+import FreeYoutubeCourse from "../FreeYoutubeCourse";
+import localReadme from "./content.md?raw";
 
 const D5RenderFreeCourse = () => {
     return (

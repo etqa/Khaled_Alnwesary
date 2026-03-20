@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Orbit as Panorama, Video, FileText, Image as ImageIcon, Sparkles } from "lucide-react";
+import { Layers, Video, Film, Image as ImageIcon, FileText, Sparkles } from "lucide-react";
 import { DetailLayout } from "@/components/layout/DetailLayout";
 import { useReadme } from "@/hooks/useReadme";
 import { MarkdownContent } from "@/components/details/MarkdownContent";
@@ -8,7 +8,7 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import { DynamicButtons } from "@/components/details/DynamicButtons";
 import { ItemLogo } from "@/components/details/ItemLogo";
-import localReadme from "./VirtualTours.md?raw";
+import localReadme from "./content.md?raw";
 
 const YouTubeEmbed = ({ url }: { url: string }) => {
     const getVideoId = (url: string) => {
@@ -34,38 +34,7 @@ const YouTubeEmbed = ({ url }: { url: string }) => {
     return null;
 };
 
-const FacebookEmbed = ({ url }: { url: string }) => {
-    // Check if it's a Facebook URL
-    if (!url.includes("facebook.com")) return null;
-
-    // Use a larger width for the embed request to get high res
-    const embedWidth = 750;
-
-    // Encode the URL for the iframe src
-    const encodedUrl = encodeURIComponent(url);
-    // Use show_text=false to focus on the media/360 view
-    const src = `https://www.facebook.com/plugins/post.php?href=${encodedUrl}&show_text=false&width=${embedWidth}`;
-
-    return (
-        <div className="w-full flex justify-center my-8">
-            <div className="relative w-full max-w-[750px] overflow-hidden rounded-xl shadow-md bg-white border border-border/50">
-                <iframe
-                    src={src}
-                    width={embedWidth}
-                    height="420"
-                    style={{ border: 'none', overflow: 'hidden' }}
-                    scrolling="no"
-                    frameBorder="0"
-                    allowFullScreen={true}
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                    className="w-full"
-                />
-            </div>
-        </div>
-    );
-};
-
-const VirtualTours = () => {
+const Animation = () => {
     const { t } = useTranslation();
     const {
         overviewContent,
@@ -79,14 +48,14 @@ const VirtualTours = () => {
         shortDesc
     } = useReadme({
         localContent: localReadme,
-        id: "virtual-tours",
+        id: "animation",
         isService: true
     });
 
     const service = {
         title: titleContent || "",
         description: shortDesc || "",
-        icon: Panorama,
+        icon: Video,
     };
 
     return (
@@ -111,7 +80,7 @@ const VirtualTours = () => {
                             <div className="order-1 md:order-2">
                                 <div className="w-24 h-24 md:w-32 md:h-32 rounded-[2rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2">
                                     <ItemLogo
-                                        imageName="VirtualTours"
+                                        imageName="Animation"
                                         fallbackIcon={service.icon}
                                         className="w-full h-full object-contain"
                                         iconClassName="w-12 h-12 md:w-16 md:h-16 text-primary"
@@ -146,7 +115,7 @@ const VirtualTours = () => {
                                 <div className="bg-card/80 border border-border/50 rounded-[2.5rem] p-8 md:p-12 shadow-sm animate-fade-up backdrop-blur-md">
                                     {/* Features Subsection */}
                                     {featuresContent && (
-                                        <div className="mb-8 last:mb-0">
+                                        <div className="mb-6 last:mb-0">
                                             <div className="flex items-center gap-3 mb-8">
                                                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                                                     <Sparkles className="w-5 h-5 text-primary" />
@@ -235,7 +204,7 @@ const VirtualTours = () => {
                                                                         <span className="text-xs font-bold text-primary leading-none after:content-[counter(service-step)]" />
                                                                     </div>
                                                                 </div>
-                                                                <span className="group-hover:text-foreground transition-colors">{children}</span>
+                                                                <span className="group-hover:text-foreground transition-colors text-sm md:text-base">{children}</span>
                                                             </li>
                                                         )
                                                     }}
@@ -262,18 +231,7 @@ const VirtualTours = () => {
                                             components={{
                                                 a: ({ node, href, children, ...props }) => {
                                                     if (!href) return <>{children}</>;
-
-                                                    const yt = YouTubeEmbed({ url: href });
-                                                    if (yt) return yt;
-
-                                                    const fb = FacebookEmbed({ url: href });
-                                                    if (fb) return fb;
-
-                                                    return (
-                                                        <a href={href} target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80 break-all">
-                                                            {href}
-                                                        </a>
-                                                    );
+                                                    return <YouTubeEmbed url={href} />;
                                                 },
                                                 p: ({ node, children }) => {
                                                     // This is to prevent p tags from wrapping divs which is invalid HTML
@@ -297,8 +255,8 @@ const VirtualTours = () => {
                     </div>
                 </div>
             </section>
-        </DetailLayout >
+        </DetailLayout>
     );
 };
 
-export default VirtualTours;
+export default Animation;

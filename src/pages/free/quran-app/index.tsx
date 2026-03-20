@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Puzzle, Sparkles, Gift, Crown, Clock } from "lucide-react";
+import { BookOpen, Sparkles, Gift, Crown, Clock } from "lucide-react";
 import { DetailLayout } from "@/components/layout/DetailLayout";
 import { useReadme } from "@/hooks/useReadme";
 import { MarkdownContent } from "@/components/details/MarkdownContent";
@@ -9,9 +9,9 @@ import rehypeRaw from "rehype-raw";
 import { DynamicButtons } from "@/components/details/DynamicButtons";
 import { ItemLogo } from "@/components/details/ItemLogo";
 import { PlatformBadges } from "@/components/details/PlatformBadges";
-import localReadme from "./KHTools.md?raw";
+import localReadme from "./content.md?raw";
 
-const KHTools = () => {
+const QuranApp = () => {
     const { t } = useTranslation();
     const {
         readmeContent,
@@ -26,13 +26,13 @@ const KHTools = () => {
         platforms
     } = useReadme({
         localContent: localReadme,
-        id: "kh-tools"
+        id: "quran-app"
     });
 
     const tool = {
         title: titleContent || "",
         description: shortDesc || "",
-        icon: Puzzle,
+        icon: BookOpen,
     };
 
     return (
@@ -81,7 +81,7 @@ const KHTools = () => {
                             <div className="order-1 md:order-2">
                                 <div className="w-24 h-24 md:w-32 md:h-32 rounded-[2rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2">
                                     <ItemLogo
-                                        imageName="KHTools"
+                                        imageName="QuranApp"
                                         fallbackIcon={tool.icon}
                                         className="w-full h-full object-contain"
                                         iconClassName="w-12 h-12 md:w-16 md:h-16 text-primary"
@@ -120,4 +120,4 @@ const KHTools = () => {
     );
 };
 
-export default KHTools;
+export default QuranApp;

@@ -1,21 +1,24 @@
 import { useParams } from "react-router-dom";
+import { lazy, Suspense } from "react";
 import NotFound from "./NotFound";
-import EngineerSystem from "./products/EngineerSystem";
-import EngineerSystemLite from "./products/EngineerSystemLite";
-import FileEncryption from "./products/FileEncryption";
 
 const ProductDetail = () => {
   const { id } = useParams();
 
-  switch (id) {
-    case "engineer-system":
-      return <EngineerSystem />;
-    case "engineer-system-lite":
-      return <EngineerSystemLite />;
-    case "file-encryption":
-      return <FileEncryption />;
-    default:
-      return <NotFound />;
+  if (!id) return <NotFound />;
+
+  try {
+    const ProductComponent = lazy(() => import(`./products/${id}/index.tsx`));
+    
+    return (
+      <Suspense fallback={<div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+      </div>}>
+        <ProductComponent />
+      </Suspense>
+    );
+  } catch {
+    return <NotFound />;
   }
 };
 

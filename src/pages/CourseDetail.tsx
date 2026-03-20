@@ -1,24 +1,24 @@
 import { useParams } from "react-router-dom";
+import { lazy, Suspense } from "react";
 import NotFound from "./NotFound";
-import BlenderCourse from "./courses/BlenderCourse";
-import BlenderFreeExtCourse from "./courses/BlenderFreeExtCourse";
-import D5RenderFreeCourse from "./courses/D5RenderFreeCourse";
-import BlenderFreeIntCourse from "./courses/BlenderFreeIntCourse";
 
 const CourseDetail = () => {
   const { id } = useParams();
 
-  switch (id) {
-    case "blender":
-      return <BlenderCourse />;
-    case "blender-free-ext":
-      return <BlenderFreeExtCourse />;
-    case "d5-render-free":
-      return <D5RenderFreeCourse />;
-    case "blender-free-int":
-      return <BlenderFreeIntCourse />;
-    default:
-      return <NotFound />;
+  if (!id) return <NotFound />;
+
+  try {
+    const CourseComponent = lazy(() => import(`./courses/${id}/index.tsx`));
+    
+    return (
+      <Suspense fallback={<div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+      </div>}>
+        <CourseComponent />
+      </Suspense>
+    );
+  } catch {
+    return <NotFound />;
   }
 };
 

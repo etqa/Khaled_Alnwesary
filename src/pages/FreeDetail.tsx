@@ -1,21 +1,24 @@
 import { useParams } from "react-router-dom";
+import { lazy, Suspense } from "react";
 import NotFound from "./NotFound";
-import KHTools from "./free/KHTools";
-import QuranApp from "./free/QuranApp";
-import TaskManager from "./free/TaskManager";
 
 const FreeDetail = () => {
   const { id } = useParams();
 
-  switch (id) {
-    case "kh-tools":
-      return <KHTools />;
-    case "quran-app":
-      return <QuranApp />;
-    case "task-manager":
-      return <TaskManager />;
-    default:
-      return <NotFound />;
+  if (!id) return <NotFound />;
+
+  try {
+    const FreeComponent = lazy(() => import(`./free/${id}/index.tsx`));
+    
+    return (
+      <Suspense fallback={<div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+      </div>}>
+        <FreeComponent />
+      </Suspense>
+    );
+  } catch {
+    return <NotFound />;
   }
 };
 

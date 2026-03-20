@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useReadme } from "@/hooks/useReadme";
-import blenderMd from "@/pages/courses/BlenderCourse.md?raw";
-import blenderFreeExtMd from "@/pages/courses/BlenderFreeExt.md?raw";
-import d5RenderFreeMd from "@/pages/courses/D5RenderFree.md?raw";
+import blenderMd from "@/pages/courses/blender/content.md?raw";
+import blenderFreeExtMd from "@/pages/courses/blender-free-ext/content.md?raw";
+import d5RenderFreeMd from "@/pages/courses/d5-render-free/content.md?raw";
 
 export const CoursesPreview = () => {
   const { t } = useTranslation();
