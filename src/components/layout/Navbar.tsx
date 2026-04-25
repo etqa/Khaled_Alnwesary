@@ -53,10 +53,9 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || isOpen
-        ? "bg-background/95 backdrop-blur-xl shadow-card"
-        : "bg-transparent"
-        }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background/60 backdrop-blur-md ${
+        isScrolled || isOpen ? "shadow-card" : ""
+      }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
@@ -119,11 +118,16 @@ export const Navbar = () => {
             </Button>
           </div>
         </div>
+      </div>
 
-        {/* Mobile Navigation */}
+      {/* Title Bar Divider */}
+      <div className="w-full h-[2px] bg-gradient-to-r from-primary/20 via-primary/80 to-primary/20" />
+
+      {/* Mobile Navigation */}
+      <div className="container mx-auto px-4">
         <div
           className={`lg:hidden overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-[500px] opacity-100 py-8" : "max-h-0 opacity-0"
-            } border-t border-border/50`}
+            }`}
         >
           <div className="flex flex-col items-center gap-2">
             {navLinks.map((link, index) => (

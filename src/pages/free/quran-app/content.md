@@ -1,14 +1,14 @@
 # Quran App
 
 **النوع:** مجاني
-**Version:** 1.0.0
+**Version:** 1.2.0
 
 **المنصة:** [ويندوز] [أندرويد] [أونلاين]
 
 [English](#english) | [العربية](#arabic)
 
-[dl_win]: https://u.pcloud.link/publink/show?code=XZ1W8d5ZlMHfruFUXgLrFAgqxhiqIpQGjRly
-[dl_and]: https://u.pcloud.link/publink/show?code=XZnded5Z9K5V6f4CKizmEz4LNJI34ymX8MPy
+[dl_win]: https://u.pcloud.link/publink/show?code=XZnkOE5Zrd6hhJPIMDBKBwLaqBByFXhwx7o7
+[dl_and]: https://u.pcloud.link/publink/show?code=XZ9kOE5ZvT9VcTvz0SX8tSOIrAzlDBfQoQGX
 [dl_web]: https://quran-2e1.pages.dev/
 [yt_chan]: https://www.youtube.com/watch?v=IoqC9d4hric
 [contact]: whatsapp:218928198656?message=السلام عليكم، أريد التواصل معكم بخصوص تطبيق القرآن الكريم

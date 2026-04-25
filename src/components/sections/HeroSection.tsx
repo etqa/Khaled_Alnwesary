@@ -1,7 +1,28 @@
-import { ArrowRight, Code2, Building2, Layers } from "lucide-react";
+import { ArrowRight, Code2, Building2, Layers, Facebook, Youtube, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
+const socialLinks = [
+  {
+    icon: Phone,
+    href: "https://wa.me/218928198656",
+    labelKey: "footer.social.whatsapp",
+    color: "bg-transparent border border-green-500/50 text-green-500 hover:bg-green-500 hover:text-white",
+  },
+  {
+    icon: Facebook,
+    href: "https://www.facebook.com/share/1CnV7XpzGx/",
+    labelKey: "footer.social.facebook",
+    color: "bg-transparent border border-blue-500/50 text-blue-500 hover:bg-blue-500 hover:text-white",
+  },
+  {
+    icon: Youtube,
+    href: "https://youtube.com/channel/UCi27il8T6SbWDVgGPF0Tz5w",
+    labelKey: "footer.social.youtube",
+    color: "bg-transparent border border-red-500/50 text-red-500 hover:bg-red-500 hover:text-white",
+  },
+];
 
 export const HeroSection = () => {
   const { t } = useTranslation();
@@ -27,8 +48,24 @@ export const HeroSection = () => {
             {t("hero.description")}
           </p>
 
+          {/* Social Links */}
+          <div className="animate-fade-up delay-300 flex flex-wrap justify-center gap-4 mb-10">
+            {socialLinks.map((social) => (
+              <a
+                key={social.href}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex items-center gap-3 px-6 py-4 rounded-xl font-medium transition-all duration-300 ${social.color}`}
+              >
+                <social.icon className="w-5 h-5" />
+                <span>{t(social.labelKey)}</span>
+              </a>
+            ))}
+          </div>
+
           {/* CTA Buttons */}
-          <div className="animate-fade-up delay-300 grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center gap-3 sm:gap-4">
+          <div className="animate-fade-up delay-400 grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center gap-3 sm:gap-4">
             <Button variant="outline" size="lg" asChild className="w-full sm:w-52 text-sm sm:text-base px-2 sm:px-8">
               <Link to="/services">
                 {t("hero.cta_services")}
@@ -56,7 +93,7 @@ export const HeroSection = () => {
           </div>
 
           {/* Stats */}
-          <div className="animate-fade-up delay-400 grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-border/50">
+          <div className="animate-fade-up delay-500 grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-border/50">
             <div className="text-center">
               <div className="flex items-center justify-center mb-3">
                 <Building2 className="w-8 h-8 text-primary" />

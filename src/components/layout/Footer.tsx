@@ -7,16 +7,22 @@ const socialLinks = [
     icon: Facebook,
     href: "https://www.facebook.com/share/1CnV7XpzGx/",
     labelKey: "footer.social.facebook",
+    color: "text-[#1877F2]",
+    hoverBg: "hover:from-[#1877F2] hover:to-[#1877F2]/80",
   },
   {
     icon: Youtube,
     href: "https://youtube.com/channel/UCi27il8T6SbWDVgGPF0Tz5w",
     labelKey: "footer.social.youtube",
+    color: "text-[#FF0000]",
+    hoverBg: "hover:from-[#FF0000] hover:to-[#FF0000]/80",
   },
   {
     icon: MessageCircle,
     href: "https://wa.me/218928198656",
     labelKey: "footer.social.whatsapp",
+    color: "text-[#25D366]",
+    hoverBg: "hover:from-[#25D366] hover:to-[#25D366]/80",
   },
 ];
 
@@ -105,6 +111,8 @@ export const Footer = () => {
               <li>
                 <a
                   href="https://wa.me/218928198656"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 text-muted-foreground hover:text-primary transition-all duration-300 group"
                 >
                   <Phone className="w-5 h-5 group-hover:scale-110 transition-transform" />
@@ -123,7 +131,7 @@ export const Footer = () => {
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-11 h-11 rounded-xl bg-gradient-to-br from-muted to-muted/50 flex items-center justify-center text-muted-foreground hover:from-primary hover:to-primary/80 hover:text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1 shadow-sm hover:shadow-glow animate-fade-in"
+                      className={`w-11 h-11 rounded-xl bg-gradient-to-br from-muted to-muted/50 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:-translate-y-1 shadow-sm hover:shadow-glow animate-fade-in hover:text-white ${social.color} ${social.hoverBg}`}
                       style={{ animationDelay: `${index * 0.1}s` }}
                       aria-label={t(social.labelKey)}
                     >

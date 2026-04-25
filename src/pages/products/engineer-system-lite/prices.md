@@ -3,6 +3,7 @@
 [English](#english-pricing) | [العربية](#arabic-pricing)
 
 [dl_lite]: https://example.com/download-lite
+[wa_lite_annual]: whatsapp:218928198656?message=السلام عليكم، أريد الاشتراك في نظام المهندس لايت - سنوي
 [wa_lite_perm]: whatsapp:218928198656?message=السلام عليكم، أريد طلب ترخيص دائم لنظام المهندس لايت
 
 ---
@@ -17,8 +18,7 @@
 **الوصف:** تجربة محدودة
 
 ##### الطلب:
-<!-- - [تجربة الآن][dl_lite] -->
-- [قريباً...][]
+- [تجربة الآن][dl_lite]
 
 ##### المميزات
 - أدوات أساسية للمشاريع
@@ -31,17 +31,38 @@
 - لا تشمل قاعدة بيانات سيرفر
 - مميزات متقدمة محدودة
 
----------------
+----------------------------------------------------------
+
+<!-- #### الاشتراك السنوي -->
+**السعر:** 400 د.ل
+**الخصم:** 0 د.ل
+**الوصف:** لمدة سنة
+
+##### الطلب:
+- [اشترك الآن][wa_lite_annual]
+
+##### المميزات:
+- عدد غير محدود من تقديرات المشاريع
+- تعاون متعدد المستخدمين
+- تقارير متقدمة وتصدير CSV
+- هوية مخصصة للشركة
+- دعم فني ذو أولوية
+- نسخ احتياطي سحابي كامل
+
+##### القيود:
+- التجديد مطلوب سنوياً
+- تعدد المستخدمين محدود بـ 5 مقاعد
+- يتطلب اتصالاً بالإنترنت
+
+----------------------------------------------------------------
 
 <!-- #### ترخيص دائم -->
-**السعر:** قريباً...
-<!-- **السعر:** 600 دينار -->
-**الخصم:** 0 دينار
+**السعر:** 1000 د.ل
+**الخصم:** 0 د.ل
 **الوصف:** مدى الحياة
 
 ##### الطلب:
-<!-- - [طلب ترخيص لايت][wa_lite_perm] -->
-- [قريباً...][]
+- [طلب ترخيص لايت][wa_lite_perm]
 
 ##### المميزات
 - إدارة غير محدودة للمشاريع
@@ -68,8 +89,7 @@
 **Description:** Limited Trial
 
 ##### Buttons
-<!-- - [Try Lite][dl_lite] -->
-- [Coming soon...][]
+- [Try Lite][dl_lite]
 
 ##### Features
 - Basic project tools
@@ -82,16 +102,38 @@
 - No server database
 - Limited advanced features
 
------------------
+----------------------------------------------------------
+
+<!-- #### Annual Subscription -->
+**Price:** 400 LYD
+**Discount:** 0 LYD
+**Description:** Per Year
+
+##### Buttons
+- [Subscribe Now][wa_lite_annual]
+
+##### Features
+- Number of unlimited project estimates
+- Multi-user collaboration
+- Advanced reporting & CSV export
+- Custom company branding
+- Priority technical support
+- Full cloud backup
+
+##### Restrictions
+- Renewal required annually
+- Multi-user limited to 5 seats
+- Internet connection required
+
+----------------------------------------------------------------
 
 <!-- #### Permanent License -->
-**Price:** $150
+**Price:** 1000 LYD
 **Discount:** $0
 **Description:** Lifetime
 
 ##### Buttons
-<!-- - [Get Lite Lifetime][wa_lite_perm] -->
-- [Coming soon...][]
+- [Get Lite Lifetime][wa_lite_perm]
 
 ##### Features
 - Unlimited project management
