@@ -1,14 +1,14 @@
 # KH-Tools
 
 **النوع:** مجاني
-**Version:** 1.99
+**Version:** 1.993
 
 **المنصة:** [Blender +4.0] [ويندوز]
 
 [English](#english) | [العربية](#arabic)
 
 [yt_chan]: https://www.youtube.com/watch?v=5zqKJOf-D4U&list=PLRrETGQR_7qJqvlELqqF6ReO45dVsYxyt
-[tg_dl]: https://t.me/Khalid_Alnwesary
+[tg_dl]: https://u.pcloud.link/publink/show?code=XZNfNE5ZfvJIYeqRuRV5JA0VgB2payBTf4Qk
 [contact]: whatsapp:218928198656?message=السلام عليكم، أريد التواصل معكم بخصوص إضافة KH Tools
 
 ---
@@ -23,7 +23,7 @@ KH Tools Addon
 أدون مجاني لبرنامج Blender يسهل عملية الإظهار المعماري
 
 ### الأزرار
-- [تحميل عبر تيلجرام][tg_dl]
+- [تنزيل الادون][tg_dl]
 - [دروس تعليمية][yt_chan]
 - [تواصل معنا][contact]
 
@@ -92,7 +92,7 @@ KH Tools Addon
 A free Blender addon designed to streamline the architectural visualization (ArchViz) workflow.
 
 ### Buttons
-- [Telegram Download][tg_dl]
+- [Download][tg_dl]
 - [Tutorials][yt_chan]
 - [Contact Us][contact]
 
