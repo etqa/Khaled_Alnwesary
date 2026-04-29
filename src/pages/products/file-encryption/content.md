@@ -12,7 +12,7 @@
 [dl_lock]: https://u.pcloud.link/publink/show?code=XZq4qd5Zg7DGu7BIzwRHFBJnA6tWmmENOyry
 
 [yt_player]: https://youtu.be/svsEP9EaPag
-[dl_player]: https://u.pcloud.link/publink/show?code=XZt4qd5Z5TrCzHhBFvQae0uOxbYlsmYOTMqV
+[dl_player]: https://u.pcloud.link/publink/show?code=XZO8XO5ZOK8wmfie6c7gnLR3x2L6jLLbrFs7
 
 ---
 
