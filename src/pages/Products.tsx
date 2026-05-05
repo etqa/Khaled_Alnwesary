@@ -12,6 +12,11 @@ import engineerSystemMd from "@/pages/products/engineer-system/content.md?raw";
 import engineerSystemLiteMd from "@/pages/products/engineer-system-lite/content.md?raw";
 import fileEncryptionMd from "@/pages/products/file-encryption/content.md?raw";
 
+const productIcons = import.meta.glob("./products/*/icon.{png,svg,jpg,jpeg,webp}", { 
+  eager: true, 
+  as: "url" 
+});
+
 const Products = () => {
   const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState("");
@@ -134,7 +139,7 @@ const Products = () => {
                       <div className="mb-4">
                         <div className="w-16 h-16 rounded-[1rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2">
                           <ItemLogo
-                            imageName={product.imageName}
+                            src={Object.entries(productIcons).find(([path]) => path.includes(`${product.id}/icon.png`))?.[1] as string}
                             fallbackIcon={product.icon}
                             className="w-full h-full object-contain"
                             iconClassName="w-8 h-8 text-primary"

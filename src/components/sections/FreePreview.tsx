@@ -7,6 +7,11 @@ import { useReadme } from "@/hooks/useReadme";
 import khToolsMd from "@/pages/free/kh-tools/content.md?raw";
 import quranAppMd from "@/pages/free/quran-app/content.md?raw";
 import taskManagerMd from "@/pages/free/task-manager/content.md?raw";
+ 
+const freeIcons = import.meta.glob("../../pages/free/*/icon.{png,svg,jpg,jpeg,webp}", { 
+  eager: true, 
+  as: "url" 
+});
 
 export const FreePreview = () => {
   const { t } = useTranslation();
@@ -17,6 +22,7 @@ export const FreePreview = () => {
 
   const freeItems = [
     {
+      id: "kh-tools",
       title: kh.titleContent || "",
       description: kh.shortDesc || kh.overviewContent || kh.longDesc || "",
       icon: Puzzle,
@@ -27,6 +33,7 @@ export const FreePreview = () => {
       imageName: "KHTools"
     },
     {
+      id: "quran-app",
       title: quran.titleContent || "",
       description: quran.shortDesc || quran.overviewContent || quran.longDesc || "",
       icon: BookOpen,
@@ -37,6 +44,7 @@ export const FreePreview = () => {
       imageName: "QuranApp"
     },
     {
+      id: "task-manager",
       title: task.titleContent || "",
       description: task.shortDesc || task.overviewContent || task.longDesc || "",
       icon: CheckSquare,
@@ -98,7 +106,7 @@ export const FreePreview = () => {
                 <div className="flex flex-col items-center mb-4">
                   <div className="w-16 h-16 rounded-[1rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2 mb-4 relative z-10">
                     <ItemLogo
-                      imageName={tool.imageName}
+                      src={Object.entries(freeIcons).find(([path]) => path.includes(`${tool.id}/icon.png`))?.[1] as string}
                       fallbackIcon={tool.icon}
                       className="w-full h-full object-contain"
                       iconClassName="w-8 h-8 text-primary group-hover:text-primary-foreground transition-all duration-500 transform group-hover:-rotate-6"

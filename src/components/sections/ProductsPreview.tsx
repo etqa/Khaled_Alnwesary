@@ -7,6 +7,11 @@ import { useReadme } from "@/hooks/useReadme";
 import engineerSystemMd from "@/pages/products/engineer-system/content.md?raw";
 import fileEncryptionMd from "@/pages/products/file-encryption/content.md?raw";
 import engineerSystemLiteMd from "@/pages/products/engineer-system-lite/content.md?raw";
+ 
+const productIcons = import.meta.glob("../../pages/products/*/icon.{png,svg,jpg,jpeg,webp}", { 
+  eager: true, 
+  as: "url" 
+});
 
 export const ProductsPreview = () => {
   const { t } = useTranslation();
@@ -17,6 +22,7 @@ export const ProductsPreview = () => {
 
   const products = [
     {
+      id: "engineer-system",
       title: es.titleContent || "",
       description: es.shortDesc || es.overviewContent || es.longDesc || "",
       icon: Layout,
@@ -27,6 +33,7 @@ export const ProductsPreview = () => {
       imageName: "EngineerSystem"
     },
     {
+      id: "file-encryption",
       title: fe.titleContent || "",
       description: fe.shortDesc || fe.overviewContent || fe.longDesc || "",
       icon: Shield,
@@ -37,6 +44,7 @@ export const ProductsPreview = () => {
       imageName: "FileEncryption"
     },
     {
+      id: "engineer-system-lite",
       title: esl.titleContent || "",
       description: esl.shortDesc || esl.overviewContent || esl.longDesc || "",
       icon: Calculator,
@@ -99,7 +107,7 @@ export const ProductsPreview = () => {
                 <div className="flex flex-col items-center mb-4">
                   <div className="w-16 h-16 rounded-[1rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2 mb-4">
                     <ItemLogo
-                      imageName={product.imageName}
+                      src={Object.entries(productIcons).find(([path]) => path.includes(`${product.id}/icon.png`))?.[1] as string}
                       fallbackIcon={product.icon}
                       className="w-full h-full object-contain"
                       iconClassName="w-8 h-8 text-primary"

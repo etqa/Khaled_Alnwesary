@@ -16,10 +16,10 @@ interface FreeYoutubeCourseProps {
     markdownContent: string;
     youtubeLink: string;
     playlistLink: string;
-    logoName?: string;
+    icon?: string;
 }
 
-const FreeYoutubeCourse = ({ id, markdownContent, youtubeLink, playlistLink, logoName }: FreeYoutubeCourseProps) => {
+const FreeYoutubeCourse = ({ id, markdownContent, youtubeLink, playlistLink, icon }: FreeYoutubeCourseProps) => {
     const { t } = useTranslation();
     const {
         overviewContent,
@@ -83,18 +83,16 @@ const FreeYoutubeCourse = ({ id, markdownContent, youtubeLink, playlistLink, log
                                 </div>
                             </div>
 
-                            {logoName && (
-                                <div className="animate-fade-up shrink-0 order-1 md:order-2">
-                                    <div className="w-24 h-24 md:w-32 md:h-32 rounded-[2rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2">
-                                        <ItemLogo
-                                            imageName={logoName}
-                                            fallbackIcon={Gift}
-                                            className="w-full h-full object-contain"
-                                            iconClassName="w-12 h-12 md:w-16 md:h-16 text-primary"
-                                        />
-                                    </div>
+                            <div className="animate-fade-up shrink-0 order-1 md:order-2">
+                                <div className="w-24 h-24 md:w-32 md:h-32 rounded-[2rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2">
+                                    <ItemLogo
+                                        src={icon}
+                                        fallbackIcon={Gift}
+                                        className="w-full h-full object-contain"
+                                        iconClassName="w-12 h-12 md:w-16 md:h-16 text-primary"
+                                    />
                                 </div>
-                            )}
+                            </div>
                         </div>
 
                         <div className="animate-fade-up delay-150 mb-10">

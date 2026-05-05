@@ -12,6 +12,7 @@ import { ItemLogo } from "@/components/details/ItemLogo";
 import { PlatformBadges } from "@/components/details/PlatformBadges";
 import localReadme from "./content.md?raw";
 import pricingMarkdown from "./prices.md?raw";
+const icon = new URL("./icon.png", import.meta.url).href;
 
 const EngineerSystem = () => {
     const { t } = useTranslation();
@@ -85,7 +86,7 @@ const EngineerSystem = () => {
                             <div className="order-1 md:order-2">
                                 <div className="w-24 h-24 md:w-32 md:h-32 rounded-[2rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2">
                                     <ItemLogo
-                                        imageName="EngineerSystem"
+                                        src={icon}
                                         fallbackIcon={product.icon}
                                         className="w-full h-full object-contain"
                                         iconClassName="w-12 h-12 md:w-16 md:h-16 text-primary"

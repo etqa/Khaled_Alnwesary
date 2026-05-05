@@ -12,6 +12,11 @@ import khToolsMd from "@/pages/free/kh-tools/content.md?raw";
 import quranAppMd from "@/pages/free/quran-app/content.md?raw";
 import taskManagerMd from "@/pages/free/task-manager/content.md?raw";
 
+const freeIcons = import.meta.glob("./free/*/icon.{png,svg,jpg,jpeg,webp}", { 
+  eager: true, 
+  as: "url" 
+});
+
 const Free = () => {
   const { t, i18n } = useTranslation();
   const isRtl = i18n.dir() === "rtl";
@@ -138,7 +143,7 @@ const Free = () => {
                       <div className="mb-4">
                         <div className="w-16 h-16 rounded-[1rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2">
                           <ItemLogo
-                            imageName={tool.imageName}
+                            src={Object.entries(freeIcons).find(([path]) => path.includes(`${tool.id}/icon.png`))?.[1] as string}
                             fallbackIcon={tool.icon}
                             className="w-full h-full object-contain"
                             iconClassName="w-8 h-8 text-primary"

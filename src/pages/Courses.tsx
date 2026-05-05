@@ -13,6 +13,11 @@ import blenderFreeExtMd from "@/pages/courses/blender-free-ext/content.md?raw";
 import d5RenderFreeMd from "@/pages/courses/d5-render-free/content.md?raw";
 import blenderFreeIntMd from "@/pages/courses/blender-free-int/content.md?raw";
 
+const courseIcons = import.meta.glob("./courses/*/icon.{png,svg,jpg,jpeg,webp}", { 
+  eager: true, 
+  as: "url" 
+});
+
 const CourseCard = ({ course, index, t }: { course: any, index: number, t: any }) => {
   return (
     <div
@@ -45,7 +50,7 @@ const CourseCard = ({ course, index, t }: { course: any, index: number, t: any }
         <div className="mb-4">
           <div className="w-16 h-16 rounded-[1rem] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center shadow-inner border border-primary/5 overflow-hidden p-2">
             <ItemLogo
-              imageName={course.imageName}
+              src={Object.entries(courseIcons).find(([path]) => path.includes(`${course.id}/icon.png`))?.[1] as string}
               fallbackIcon={Play}
               className="w-full h-full object-contain"
               iconClassName="w-8 h-8 text-primary"
