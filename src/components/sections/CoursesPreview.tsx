@@ -10,7 +10,8 @@ import d5RenderFreeMd from "@/pages/courses/d5-render-free/content.md?raw";
  
 const courseIcons = import.meta.glob("../../pages/courses/*/icon.{png,svg,jpg,jpeg,webp}", { 
   eager: true, 
-  as: "url" 
+  query: '?url',
+  import: 'default'
 });
 
 export const CoursesPreview = () => {

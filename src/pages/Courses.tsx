@@ -15,7 +15,8 @@ import blenderFreeIntMd from "@/pages/courses/blender-free-int/content.md?raw";
 
 const courseIcons = import.meta.glob("./courses/*/icon.{png,svg,jpg,jpeg,webp}", { 
   eager: true, 
-  as: "url" 
+  query: '?url',
+  import: 'default'
 });
 
 const CourseCard = ({ course, index, t }: { course: any, index: number, t: any }) => {

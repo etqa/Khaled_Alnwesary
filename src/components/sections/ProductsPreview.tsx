@@ -10,7 +10,8 @@ import engineerSystemLiteMd from "@/pages/products/engineer-system-lite/content.
  
 const productIcons = import.meta.glob("../../pages/products/*/icon.{png,svg,jpg,jpeg,webp}", { 
   eager: true, 
-  as: "url" 
+  query: '?url',
+  import: 'default'
 });
 
 export const ProductsPreview = () => {

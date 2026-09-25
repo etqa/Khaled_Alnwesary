@@ -10,11 +10,13 @@ import { useTranslation } from "react-i18next";
 import { useReadme } from "@/hooks/useReadme";
 import khToolsMd from "@/pages/free/kh-tools/content.md?raw";
 import quranAppMd from "@/pages/free/quran-app/content.md?raw";
+import noorAppMd from "@/pages/free/noor_app/content.md?raw";
 import taskManagerMd from "@/pages/free/task-manager/content.md?raw";
 
 const freeIcons = import.meta.glob("./free/*/icon.{png,svg,jpg,jpeg,webp}", { 
   eager: true, 
-  as: "url" 
+  query: '?url',
+  import: 'default'
 });
 
 const Free = () => {
@@ -24,6 +26,7 @@ const Free = () => {
 
   const kh = useReadme({ localContent: khToolsMd, id: "kh-tools" });
   const quran = useReadme({ localContent: quranAppMd, id: "quran-app" });
+  const noor = useReadme({ localContent: noorAppMd, id: "noor_app" });
   const task = useReadme({ localContent: taskManagerMd, id: "task-manager" });
 
   const freeItems = [
@@ -52,6 +55,19 @@ const Free = () => {
       isComingSoon: quran.isComingSoon,
       typeLabel: quran.typeLabel,
       imageName: "QuranApp"
+    },
+    {
+      id: "noor_app",
+      title: noor.titleContent || "",
+      description: noor.shortDesc || noor.overviewContent || noor.longDesc || "",
+      longDescription: noor.longDesc || "",
+      icon: BookOpen,
+      category: t("free.categories.mobile_app"),
+      link: "/free/noor_app",
+      isPaid: noor.isPaid,
+      isComingSoon: noor.isComingSoon,
+      typeLabel: noor.typeLabel,
+      imageName: "NoorApp"
     },
     {
       id: "task-manager",

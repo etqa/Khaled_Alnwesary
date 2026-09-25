@@ -1,36 +1,37 @@
-import { Puzzle, BookOpen, CheckSquare, ArrowRight, Sparkles, Gift, Crown, Clock } from "lucide-react";
+import { BookOpen, CheckSquare, ArrowRight, Sparkles, Gift, Crown, Clock } from "lucide-react";
 import { ItemLogo } from "@/components/details/ItemLogo";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useReadme } from "@/hooks/useReadme";
-import khToolsMd from "@/pages/free/kh-tools/content.md?raw";
 import quranAppMd from "@/pages/free/quran-app/content.md?raw";
+import noorAppMd from "@/pages/free/noor_app/content.md?raw";
 import taskManagerMd from "@/pages/free/task-manager/content.md?raw";
  
 const freeIcons = import.meta.glob("../../pages/free/*/icon.{png,svg,jpg,jpeg,webp}", { 
   eager: true, 
-  as: "url" 
+  query: '?url',
+  import: 'default'
 });
 
 export const FreePreview = () => {
   const { t } = useTranslation();
 
-  const kh = useReadme({ localContent: khToolsMd, id: "kh-tools" });
-  const quran = useReadme({ localContent: quranAppMd, id: "quran-app" });
   const task = useReadme({ localContent: taskManagerMd, id: "task-manager" });
+  const quran = useReadme({ localContent: quranAppMd, id: "quran-app" });
+  const noor = useReadme({ localContent: noorAppMd, id: "noor_app" });
 
   const freeItems = [
     {
-      id: "kh-tools",
-      title: kh.titleContent || "",
-      description: kh.shortDesc || kh.overviewContent || kh.longDesc || "",
-      icon: Puzzle,
-      link: "/free/kh-tools",
-      isPaid: kh.isPaid,
-      isComingSoon: kh.isComingSoon,
-      typeLabel: kh.typeLabel,
-      imageName: "KHTools"
+      id: "task-manager",
+      title: task.titleContent || "",
+      description: task.shortDesc || task.overviewContent || task.longDesc || "",
+      icon: CheckSquare,
+      link: "/free/task-manager",
+      isPaid: task.isPaid,
+      isComingSoon: task.isComingSoon,
+      typeLabel: task.typeLabel,
+      imageName: "TaskManager"
     },
     {
       id: "quran-app",
@@ -44,15 +45,15 @@ export const FreePreview = () => {
       imageName: "QuranApp"
     },
     {
-      id: "task-manager",
-      title: task.titleContent || "",
-      description: task.shortDesc || task.overviewContent || task.longDesc || "",
-      icon: CheckSquare,
-      link: "/free/task-manager",
-      isPaid: task.isPaid,
-      isComingSoon: task.isComingSoon,
-      typeLabel: task.typeLabel,
-      imageName: "TaskManager"
+      id: "noor_app",
+      title: noor.titleContent || "",
+      description: noor.shortDesc || noor.overviewContent || noor.longDesc || "",
+      icon: BookOpen,
+      link: "/free/noor_app",
+      isPaid: noor.isPaid,
+      isComingSoon: noor.isComingSoon,
+      typeLabel: noor.typeLabel,
+      imageName: "NoorApp"
     },
   ];
 

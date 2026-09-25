@@ -14,7 +14,8 @@ import fileEncryptionMd from "@/pages/products/file-encryption/content.md?raw";
 
 const productIcons = import.meta.glob("./products/*/icon.{png,svg,jpg,jpeg,webp}", { 
   eager: true, 
-  as: "url" 
+  query: '?url',
+  import: 'default'
 });
 
 const Products = () => {

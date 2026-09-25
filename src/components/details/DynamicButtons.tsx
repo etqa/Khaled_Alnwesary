@@ -1,14 +1,30 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Download, Globe, Smartphone, Monitor, ExternalLink, Youtube, Play, Video, Clock } from "lucide-react";
+import {
+    MessageCircle,
+    Download,
+    Globe,
+    Smartphone,
+    Monitor,
+    ExternalLink,
+    Youtube,
+    Play,
+    Video,
+    Clock,
+    ChevronDown,
+    ShoppingBag,
+    Sparkles
+} from "lucide-react";
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { useTranslation } from "react-i18next";
-
-interface ButtonData {
-    label: string;
-    url: string;
-}
+import { ButtonItem } from "@/hooks/useReadme";
 
 interface DynamicButtonsProps {
-    buttons: ButtonData[];
+    buttons: ButtonItem[];
 }
 
 const getIcon = (label: string) => {
@@ -101,16 +117,67 @@ const getIcon = (label: string) => {
     return ExternalLink;
 };
 
+const getOptionIcon = (label: string, url: string) => {
+    const combined = `${label} ${url}`.toLowerCase();
+    if (combined.includes("play.google") || combined.includes("متجر") || combined.includes("store")) {
+        return ShoppingBag;
+    }
+    if (combined.includes("microsoft") || combined.includes("ويندوز") || combined.includes("windows")) {
+        return Monitor;
+    }
+    if (combined.includes("apple") || combined.includes("ios") || combined.includes("iphone") || combined.includes("ايفون")) {
+        return Smartphone;
+    }
+    if (
+        combined.includes("تحميل") ||
+        combined.includes("download") ||
+        combined.includes("direct") ||
+        combined.includes("مباشر") ||
+        combined.includes("pcloud") ||
+        combined.includes("drive")
+    ) {
+        return Download;
+    }
+    return ExternalLink;
+};
+
+const getOptionSubtitle = (label: string, url: string, isArabic: boolean) => {
+    const lower = url.toLowerCase();
+    if (lower.includes("play.google.com") || lower.includes("google.com/store")) {
+        return "Google Play";
+    }
+    if (lower.includes("apps.microsoft.com")) {
+        return "Microsoft Store";
+    }
+    if (lower.includes("apple.com") || lower.includes("testflight")) {
+        return "App Store";
+    }
+    if (lower.includes("pcloud")) {
+        return "pCloud Storage";
+    }
+    if (lower.includes("mediafire")) {
+        return "MediaFire";
+    }
+    if (lower.includes("drive.google")) {
+        return "Google Drive";
+    }
+    if (lower.endsWith(".apk")) {
+        return isArabic ? "تثبيت مباشر APK" : "Direct APK";
+    }
+    if (lower.endsWith(".exe") || lower.endsWith(".zip") || lower.endsWith(".rar")) {
+        return isArabic ? "ملف تثبيت مباشر" : "Direct Setup File";
+    }
+    return isArabic ? "رابط خارجي" : "External Link";
+};
 
 export const DynamicButtons = ({ buttons }: DynamicButtonsProps) => {
-    const { i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const isArabic = i18n.language === "ar";
 
     if (!buttons || buttons.length === 0) return null;
 
     const isValidUrl = (url: string) => {
         if (!url) return false;
-        // Check if it's a valid web URL or a specific scheme like whatsapp/mailto
-        // If it's just a placeholder name or empty, it's invalid
         return /^(https?:\/\/|mailto:|tel:|#)/i.test(url);
     };
 
@@ -118,6 +185,71 @@ export const DynamicButtons = ({ buttons }: DynamicButtonsProps) => {
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 mb-10 w-full">
             {buttons.map((button, index) => {
                 const Icon = getIcon(button.label);
+                const hasOptions = button.options && button.options.length > 1;
+
+                // Multi-option button (Dropdown)
+                if (hasOptions && button.options) {
+                    return (
+                        <DropdownMenu key={index} dir={isArabic ? "rtl" : "ltr"}>
+                            <DropdownMenuTrigger asChild>
+                                <Button
+                                    variant="hero"
+                                    size="lg"
+                                    className="w-full sm:w-auto min-w-[200px] rounded-2xl shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95 text-sm sm:text-base px-6 h-14 group flex items-center justify-between gap-3 cursor-pointer"
+                                >
+                                    <div className="flex items-center">
+                                        <Icon className="w-5 h-5 rtl:ml-2 ltr:mr-2 flex-shrink-0" />
+                                        <span>{button.label}</span>
+                                    </div>
+                                    <ChevronDown className="w-4 h-4 transition-transform duration-300 group-data-[state=open]:rotate-180 opacity-75" />
+                                </Button>
+                            </DropdownMenuTrigger>
+                            <DropdownMenuContent
+                                align="center"
+                                sideOffset={8}
+                                style={{ direction: isArabic ? "rtl" : "ltr" }}
+                                className="w-[260px] p-2 rounded-2xl border border-primary/20 bg-card/95 backdrop-blur-xl shadow-2xl shadow-black/25 z-50 animate-in fade-in-0 zoom-in-95 text-start"
+                            >
+                                <div className="px-3 py-2 text-xs font-semibold text-muted-foreground border-b border-border/40 mb-1.5 flex items-center gap-2">
+                                    <Sparkles className="w-3.5 h-3.5 text-primary" />
+                                    <span>{t("common.choose_source")}</span>
+                                </div>
+                                <div className="space-y-1">
+                                    {button.options.map((option, optIdx) => {
+                                        const OptionIcon = getOptionIcon(option.label, option.url);
+                                        return (
+                                            <DropdownMenuItem
+                                                key={optIdx}
+                                                asChild
+                                                className="cursor-pointer rounded-xl p-0 focus:bg-primary/10 focus:text-primary transition-all duration-200"
+                                            >
+                                                <a
+                                                    href={option.url}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="flex items-center gap-3 w-full px-3 py-2.5 text-sm font-medium text-foreground hover:text-primary transition-colors group/item"
+                                                >
+                                                    <div className="w-9 h-9 rounded-xl bg-primary/10 group-hover/item:bg-primary group-hover/item:text-primary-foreground flex items-center justify-center flex-shrink-0 text-primary transition-colors">
+                                                        <OptionIcon className="w-4 h-4" />
+                                                    </div>
+                                                    <div className="flex flex-col text-start flex-1 min-w-0">
+                                                        <span className="font-bold text-sm truncate">{option.label}</span>
+                                                        <span className="text-[11px] text-muted-foreground truncate group-hover/item:text-primary/70 transition-colors">
+                                                            {getOptionSubtitle(option.label, option.url, isArabic)}
+                                                        </span>
+                                                    </div>
+                                                    <ExternalLink className="w-3.5 h-3.5 text-muted-foreground/60 group-hover/item:text-primary flex-shrink-0 rtl:-scale-x-100 transition-colors" />
+                                                </a>
+                                            </DropdownMenuItem>
+                                        );
+                                    })}
+                                </div>
+                            </DropdownMenuContent>
+                        </DropdownMenu>
+                    );
+                }
+
+                // Single URL or invalid URL
                 const isUrlValid = isValidUrl(button.url);
 
                 if (!isUrlValid) {

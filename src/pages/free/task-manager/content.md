@@ -8,7 +8,12 @@
 [English](#english) | [العربية](#arabic)
 
 [dl_win]: https://u.pcloud.link/publink/show?code=XZW4Fd5ZeHUIb3Y1E1V2jGXQp0GlRbkKR1bV
-[dl_and]: https://u.pcloud.link/publink/show?code=XZs4Fd5ZHaqw3vKIW95JB9yWm9lkRHsVa0Mk
+[dl_win_2]: https://u.pcloud.link/publink/show?code=XZW4Fd5ZeHUIb3Y1E1V2jGXQp0GlRbkKR1bV
+
+[dl_and]: https://play.google.com/store/apps/details?id=com.taskmanager.task 
+[dl_and_2]: https://u.pcloud.link/publink/show?code=XZs4Fd5ZHaqw3vKIW95JB9yWm9lkRHsVa0Mk
+
+
 [dl_web]: https://task-manager-23r.pages.dev/
 [yt_chan]: https://youtu.be/xLHL8nFDqeg
 [contact]: whatsapp:218928198656?message=السلام عليكم، أريد التواصل معكم بخصوص تطبيق إدارة المهام
@@ -26,8 +31,14 @@
 تطبيق مجاني لتنظيم وإدارة المهام والإيرادات والديون والمصروفات اليومية
 
 ### الأزرار
-- [تحميل للويندوز][dl_win]
-- [تحميل للاندرويد][dl_and]
+- [تحميل للويندوز]
+  - [من المتجر][dl_win]
+  - [تحميل مباشر][dl_win_2]
+  
+- [تحميل للاندرويد]
+  - [من المتجر][dl_and]
+  - [تحميل مباشر][dl_and_2]
+  
 - [اونلاين][dl_web]
 - [تحميل ايفون][dl_iphone]
 <!-- - [تواصل معنا][contact] -->
@@ -61,7 +72,9 @@ A free application to organize and manage daily tasks, income, debts, and expens
 
 ### Buttons
 - [Download Windows][dl_win]
+
 - [Download Android][dl_and]
+  
 - [Online][dl_web]
 - [Contact Us][contact]
 

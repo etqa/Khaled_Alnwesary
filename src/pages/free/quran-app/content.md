@@ -7,8 +7,12 @@
 
 [English](#english) | [العربية](#arabic)
 
-[dl_win]: https://u.pcloud.link/publink/show?code=XZnkOE5Zrd6hhJPIMDBKBwLaqBByFXhwx7o7
-[dl_and]: https://u.pcloud.link/publink/show?code=XZ9kOE5ZvT9VcTvz0SX8tSOIrAzlDBfQoQGX
+[dl_win]: https://u.pcloud.link/publink/show?code=XZnkOE5Zrd6hhJPIMDBKBwLaqBByFXhwx7o7 
+[dl_win2]: https://apps.microsoft.com/store/detail/9NW605ZPNC6T?cid=DevShareMCLPCS
+
+[dl_and]: https://play.google.com/store/apps/details?id=com.quransafe.app
+[dl_and2]: https://u.pcloud.link/publink/show?code=XZ9kOE5ZvT9VcTvz0SX8tSOIrAzlDBfQoQGX 
+
 [dl_web]: https://quran-2e1.pages.dev/
 [yt_chan]: https://www.youtube.com/watch?v=IoqC9d4hric
 [contact]: whatsapp:218928198656?message=السلام عليكم، أريد التواصل معكم بخصوص تطبيق القرآن الكريم
@@ -26,8 +30,16 @@
 تطبيق مجاني للإستماع للقرآن الكريم بواجهة سهلة الاستخدام ومميزات متعددة.
 
 ### الأزرار
-- [تحميل للويندوز][dl_win]
-- [تحميل للاندرويد][dl_and]
+- [تحميل للويندوز]
+  - [من المتجر][dl_win2]
+  - [تحميل مباشر][dl_win]
+  
+
+- [تحميل للاندرويد]
+  - [من المتجر][dl_and]
+  - [تحميل مباشر][dl_and2]
+  
+
 - [اونلاين][dl_web]
 - [تحميل ايفون][dl_iphone]
 <!-- - [تواصل معنا][contact] -->
