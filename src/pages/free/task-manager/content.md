@@ -71,12 +71,17 @@ Task Manager
 A free application to organize and manage daily tasks, income, debts, and expenses.
 
 ### Buttons
-- [Download Windows][dl_win]
+- [Download Windows]
+  - [From Store][dl_win]
+  - [Direct Link][dl_win_2]
 
-- [Download Android][dl_and]
+- [Download Android]
+  - [From Store][dl_and]
+  - [Direct Link][dl_and_2]
   
 - [Online][dl_web]
-- [Contact Us][contact]
+- [Download iPhone][dl_iphone]
+<!-- - [Contact Us][contact] -->
 
 ### Overview
 A simple task management application designed for individuals and small teams to organize daily activities, track income, expenses, and debts, and improve overall productivity with built-in report printing capabilities.

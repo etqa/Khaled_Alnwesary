@@ -182,7 +182,7 @@ export const DynamicButtons = ({ buttons }: DynamicButtonsProps) => {
     };
 
     return (
-        <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 mb-10 w-full">
+        <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 sm:gap-3.5 mb-10 w-full">
             {buttons.map((button, index) => {
                 const Icon = getIcon(button.label);
                 const hasOptions = button.options && button.options.length > 1;
@@ -195,13 +195,11 @@ export const DynamicButtons = ({ buttons }: DynamicButtonsProps) => {
                                 <Button
                                     variant="hero"
                                     size="lg"
-                                    className="w-full sm:w-auto min-w-[200px] rounded-2xl shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95 text-sm sm:text-base px-6 h-14 group flex items-center justify-between gap-3 cursor-pointer"
+                                    className="w-full sm:w-auto min-w-[140px] sm:min-w-[160px] rounded-2xl shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95 text-sm sm:text-base px-5 h-14 group flex items-center justify-center gap-2 cursor-pointer whitespace-nowrap"
                                 >
-                                    <div className="flex items-center">
-                                        <Icon className="w-5 h-5 rtl:ml-2 ltr:mr-2 flex-shrink-0" />
-                                        <span>{button.label}</span>
-                                    </div>
-                                    <ChevronDown className="w-4 h-4 transition-transform duration-300 group-data-[state=open]:rotate-180 opacity-75" />
+                                    <Icon className="w-5 h-5 flex-shrink-0" />
+                                    <span>{button.label}</span>
+                                    <ChevronDown className="w-4 h-4 transition-transform duration-300 group-data-[state=open]:rotate-180 opacity-75 flex-shrink-0" />
                                 </Button>
                             </DropdownMenuTrigger>
                             <DropdownMenuContent
@@ -258,13 +256,11 @@ export const DynamicButtons = ({ buttons }: DynamicButtonsProps) => {
                             key={index}
                             variant="hero"
                             size="lg"
-                            className="w-full sm:w-auto min-w-[190px] rounded-2xl shadow-lg shadow-primary/20 transition-all opacity-70 cursor-default text-sm sm:text-base px-6 h-14"
+                            className="w-full sm:w-auto min-w-[140px] sm:min-w-[160px] rounded-2xl shadow-lg shadow-primary/20 transition-all opacity-70 cursor-default text-sm sm:text-base px-5 h-14 whitespace-nowrap flex items-center justify-center gap-2"
                             onClick={(e) => e.preventDefault()}
                         >
-                            <div className="flex items-center justify-center">
-                                <Icon className="w-5 h-5 rtl:ml-2 ltr:mr-2" />
-                                {button.label}
-                            </div>
+                            <Icon className="w-5 h-5 flex-shrink-0" />
+                            <span>{button.label}</span>
                         </Button>
                     );
                 }
@@ -275,16 +271,16 @@ export const DynamicButtons = ({ buttons }: DynamicButtonsProps) => {
                         variant="hero"
                         size="lg"
                         asChild
-                        className="w-full sm:w-auto min-w-[190px] rounded-2xl shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95 text-sm sm:text-base px-6 h-14"
+                        className="w-full sm:w-auto min-w-[140px] sm:min-w-[160px] rounded-2xl shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95 text-sm sm:text-base px-5 h-14 whitespace-nowrap cursor-pointer"
                     >
                         <a
                             href={button.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center justify-center"
+                            className="flex items-center justify-center gap-2"
                         >
-                            <Icon className="w-5 h-5 rtl:ml-2 ltr:mr-2" />
-                            {button.label}
+                            <Icon className="w-5 h-5 flex-shrink-0" />
+                            <span>{button.label}</span>
                         </a>
                     </Button>
                 );

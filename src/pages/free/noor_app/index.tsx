@@ -44,7 +44,7 @@ const NoorApp = () => {
         >
             <section className="py-12">
                 <div className="container mx-auto px-4">
-                    <div className="max-w-5xl mx-auto">
+                    <div className="max-w-6xl mx-auto">
                         <div className="animate-fade-up flex flex-col md:flex-row items-center md:items-start justify-between gap-8 mb-4">
                             <div className="flex flex-col items-center md:items-start text-center md:text-start flex-1 order-2 md:order-1 pt-4">
                                 <h1 className="text-3xl md:text-5xl font-black text-foreground mb-6 tracking-tight">

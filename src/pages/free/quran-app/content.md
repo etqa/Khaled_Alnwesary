@@ -34,12 +34,10 @@
   - [من المتجر][dl_win2]
   - [تحميل مباشر][dl_win]
   
-
 - [تحميل للاندرويد]
   - [من المتجر][dl_and]
   - [تحميل مباشر][dl_and2]
   
-
 - [اونلاين][dl_web]
 - [تحميل ايفون][dl_iphone]
 <!-- - [تواصل معنا][contact] -->
@@ -71,10 +69,17 @@ Quran App
 A free Quran audio application featuring a user-friendly interface and comprehensive features.
 
 ### Buttons
-- [Download Windows][dl_win]
-- [Download Android][dl_and]
+- [Download Windows]
+  - [From Store][dl_win2]
+  - [Direct Link][dl_win]
+
+- [Download Android]
+  - [From Store][dl_and]
+  - [Direct Link][dl_and2]
+  
 - [Online][dl_web]
-- [Contact Us][contact]
+- [Download iPhone][dl_iphone]
+<!-- - [Contact Us][contact] -->
 
 ### Overview
 The Holy Quran App offers a seamless listening experience. It features high-quality recitations from world-renowned reciters, with the ability to download surahs and reciters for offline listening. The app is fully responsive across various screen sizes and platforms, including optimized support for Android-based car head units.
