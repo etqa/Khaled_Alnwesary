@@ -7,7 +7,7 @@
 
 [English](#english) | [العربية](#arabic)
 
-[dl_win]: https://u.pcloud.link/publink/show?code=XZW4Fd5ZeHUIb3Y1E1V2jGXQp0GlRbkKR1bV
+[dl_win]: https://apps.microsoft.com/detail/9NBFPPTWQFPL?hl=ar-sa&gl=LY&ocid=pdpshare
 [dl_win_2]: https://u.pcloud.link/publink/show?code=XZW4Fd5ZeHUIb3Y1E1V2jGXQp0GlRbkKR1bV
 
 [dl_and]: https://play.google.com/store/apps/details?id=com.taskmanager.task 
