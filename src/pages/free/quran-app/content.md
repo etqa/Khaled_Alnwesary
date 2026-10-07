@@ -7,15 +7,15 @@
 
 [English](#english) | [العربية](#arabic)
 
-[dl_win]: https://u.pcloud.link/publink/show?code=XZnkOE5Zrd6hhJPIMDBKBwLaqBByFXhwx7o7 
-[dl_win2]: https://apps.microsoft.com/store/detail/9NW605ZPNC6T?cid=DevShareMCLPCS
+[dl_win]: https://apps.microsoft.com/store/detail/9NW605ZPNC6T?cid=DevShareMCLPCS
+[dl_win2]: https://u.pcloud.link/publink/show?code=XZnkOE5Zrd6hhJPIMDBKBwLaqBByFXhwx7o7 
 
 [dl_and]: https://play.google.com/store/apps/details?id=com.quransafe.app
 [dl_and2]: https://u.pcloud.link/publink/show?code=XZ9kOE5ZvT9VcTvz0SX8tSOIrAzlDBfQoQGX 
 
 [dl_web]: https://quran-2e1.pages.dev/
 [yt_chan]: https://www.youtube.com/watch?v=IoqC9d4hric
-[contact]: whatsapp:218928198656?message=السلام عليكم، أريد التواصل معكم بخصوص تطبيق القرآن الكريم
+[contact]: whatsapp:218928198656?message=السلام عليكم، أريد التواصل معكم بخصوص تطبيق أثر- إستماع وتلاوة القرآن
 [dl_iphone]: https://youtube.com/shorts/WBf9u8Nhlsw
 
 ---
@@ -24,19 +24,19 @@
 ## العربية (Arabic)
 
 ### Title
-تطبيق القرآن الكريم
+أثر- إستماع وتلاوة القرآن
 
 ### Short Description
 تطبيق مجاني للإستماع للقرآن الكريم بواجهة سهلة الاستخدام ومميزات متعددة.
 
 ### الأزرار
-- [تحميل للويندوز]
-  - [من المتجر][dl_win2]
-  - [تحميل مباشر][dl_win]
+- [تحميل للويندوز][dl_win]
+  <!-- - [من المتجر][dl_win]
+  - [تحميل مباشر][dl_win2] -->
   
-- [تحميل للاندرويد]
-  - [من المتجر][dl_and]
-  - [تحميل مباشر][dl_and2]
+- [تحميل للاندرويد][dl_and]
+  <!-- - [من المتجر][dl_and]
+  - [تحميل مباشر][dl_and2] -->
   
 - [اونلاين][dl_web]
 - [تحميل ايفون][dl_iphone]
@@ -55,7 +55,7 @@
 - تخصيص كامل : إمكانية تعديل ألوان الواجهة وتخصيص الثيمات في الوضع النهاري بما يتناسب مع ذوقك الشخصي.
 
 ### فيديوهات توضيحية
-- [شرح تطبيق القرآن الكريم][yt_chan]
+- [شرح تطبيق أثر- إستماع وتلاوة القرآن][yt_chan]
 
 -------------------------------------------------------------
 
@@ -63,7 +63,7 @@
 ## English
 
 ### Title
-Quran App
+Athar App – Quran
 
 ### Short Description
 A free Quran audio application featuring a user-friendly interface and comprehensive features.
