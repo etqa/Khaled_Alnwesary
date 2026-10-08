@@ -10,7 +10,8 @@
 [dl_win]: https://apps.microsoft.com/detail/9N5PQMG3JHZB?hl=ar-ly&gl=LY&ocid=pdpshare
 [dl_and]: https://play.google.com/store/apps/details?id=com.quranapp.quan_ama
 [dl_web]: https://nour-quran.pages.dev/
-[yt_chan]: https://www.youtube.com/watch?v=Ji8dDJB10V8
+[yt_chan]:https://youtu.be/J6vZc6vjfKY
+[yt_chan1]: https://www.youtube.com/watch?v=Ji8dDJB10V8
 [contact]: whatsapp:218928198656?message=السلام عليكم، أريد التواصل معكم بخصوص تطبيق نور
 [dl_iphone]: https://youtube.com/shorts/WBf9u8Nhlsw
 
@@ -47,7 +48,7 @@
 
 ### فيديوهات توضيحية
 - [شرح تطبيق نور لحفظ القرآن الكريم][yt_chan]
-- [تفعيل التعرف الصوتي على ويندوز][yt_chan]
+- [تفعيل التعرف الصوتي على ويندوز][yt_chan1]
 
 -------------------------------------------------------------
 
@@ -81,5 +82,5 @@ Noor is your daily companion for memorizing and reviewing the Holy Quran in an e
 - Download recitations for offline listening without an internet connection.
 
 ### Video Tutorials
-- [Noor Quran Memorization App Tutorial][yt_chan]
-- [Noor Quran][yt_chan]
+- [Noor App Tutorial][yt_chan]
+- [Noor Quran][yt_chan1]
