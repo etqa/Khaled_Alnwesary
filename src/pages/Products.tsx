@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { ArrowRight, Star, Search, Shield, Layout, Calculator, Crown, Gift, Clock } from "lucide-react";
+import { ArrowRight, Star, Search, Shield, Layout, Calculator, Crown, Gift, Clock, Blend } from "lucide-react";
 import { ItemLogo } from "@/components/details/ItemLogo";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -11,6 +11,7 @@ import { useReadme } from "@/hooks/useReadme";
 import engineerSystemMd from "@/pages/products/engineer-system/content.md?raw";
 import engineerSystemLiteMd from "@/pages/products/engineer-system-lite/content.md?raw";
 import fileEncryptionMd from "@/pages/products/file-encryption/content.md?raw";
+import blendAssetMd from "@/pages/products/blend_asset/content.md?raw";
 
 const productIcons = import.meta.glob("./products/*/icon.{png,svg,jpg,jpeg,webp}", { 
   eager: true, 
@@ -25,6 +26,7 @@ const Products = () => {
   const es = useReadme({ localContent: engineerSystemMd, id: "engineer-system", isProduct: true });
   const esLite = useReadme({ localContent: engineerSystemLiteMd, id: "engineer-system-lite", isProduct: true });
   const fe = useReadme({ localContent: fileEncryptionMd, id: "file-encryption", isProduct: true });
+  const ba = useReadme({ localContent: blendAssetMd, id: "blend_asset", isProduct: true });
 
   const products = [
     {
@@ -62,6 +64,18 @@ const Products = () => {
       typeLabel: fe.typeLabel,
       icon: Shield,
       imageName: "FileEncryption"
+    },
+    {
+      id: "blend_asset",
+      title: ba.titleContent || "",
+      description: ba.shortDesc || ba.overviewContent || ba.longDesc || "",
+      longDescription: ba.longDesc || "",
+      link: "/products/blend_asset",
+      isPaid: ba.isPaid,
+      isComingSoon: ba.isComingSoon,
+      typeLabel: ba.typeLabel,
+      icon: Blend,
+      imageName: "BlendAsset"
     },
   ];
 

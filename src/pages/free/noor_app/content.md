@@ -59,7 +59,7 @@
 Noor - Quran Memorization
 
 ### Short Description
-Noor is designed to be your companion for memorizing the Holy Quran through repetition, listening, and Tajweed rules, helping you establish a consistent daily recitation from the Book of Allah.
+Noor is designed to be your companion for memorizing the Quran through repetition, listening, and Tajweed rules, helping you establish a consistent daily recitation from the Book of Allah.
 
 ### Buttons
 - [Download Windows][dl_win]

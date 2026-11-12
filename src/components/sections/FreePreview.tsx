@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useReadme } from "@/hooks/useReadme";
-import quranAppMd from "@/pages/free/quran-app/content.md?raw";
 import noorAppMd from "@/pages/free/noor_app/content.md?raw";
+import hadeAppMd from "@/pages/free/hade_app/content.md?raw";
 import taskManagerMd from "@/pages/free/task-manager/content.md?raw";
  
 const freeIcons = import.meta.glob("../../pages/free/*/icon.{png,svg,jpg,jpeg,webp}", { 
@@ -18,7 +18,7 @@ export const FreePreview = () => {
   const { t } = useTranslation();
 
   const task = useReadme({ localContent: taskManagerMd, id: "task-manager" });
-  const quran = useReadme({ localContent: quranAppMd, id: "quran-app" });
+  const hade = useReadme({ localContent: hadeAppMd, id: "hade_app" });
   const noor = useReadme({ localContent: noorAppMd, id: "noor_app" });
 
   const freeItems = [
@@ -34,15 +34,15 @@ export const FreePreview = () => {
       imageName: "TaskManager"
     },
     {
-      id: "quran-app",
-      title: quran.titleContent || "",
-      description: quran.shortDesc || quran.overviewContent || quran.longDesc || "",
+      id: "hade_app",
+      title: hade.titleContent || "",
+      description: hade.shortDesc || hade.overviewContent || hade.longDesc || "",
       icon: BookOpen,
-      link: "/free/quran-app",
-      isPaid: quran.isPaid,
-      isComingSoon: quran.isComingSoon,
-      typeLabel: quran.typeLabel,
-      imageName: "QuranApp"
+      link: "/free/hade_app",
+      isPaid: hade.isPaid,
+      isComingSoon: hade.isComingSoon,
+      typeLabel: hade.typeLabel,
+      imageName: "HadeApp"
     },
     {
       id: "noor_app",

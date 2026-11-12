@@ -11,6 +11,8 @@ import { useReadme } from "@/hooks/useReadme";
 import khToolsMd from "@/pages/free/kh-tools/content.md?raw";
 import quranAppMd from "@/pages/free/quran-app/content.md?raw";
 import noorAppMd from "@/pages/free/noor_app/content.md?raw";
+import hadeAppMd from "@/pages/free/hade_app/content.md?raw";
+import realsMd from "@/pages/free/reals/content.md?raw";
 import taskManagerMd from "@/pages/free/task-manager/content.md?raw";
 
 const freeIcons = import.meta.glob("./free/*/icon.{png,svg,jpg,jpeg,webp}", { 
@@ -27,6 +29,8 @@ const Free = () => {
   const kh = useReadme({ localContent: khToolsMd, id: "kh-tools" });
   const quran = useReadme({ localContent: quranAppMd, id: "quran-app" });
   const noor = useReadme({ localContent: noorAppMd, id: "noor_app" });
+  const hade = useReadme({ localContent: hadeAppMd, id: "hade_app" });
+  const reals = useReadme({ localContent: realsMd, id: "reals" });
   const task = useReadme({ localContent: taskManagerMd, id: "task-manager" });
 
   const freeItems = [
@@ -68,6 +72,32 @@ const Free = () => {
       isComingSoon: noor.isComingSoon,
       typeLabel: noor.typeLabel,
       imageName: "NoorApp"
+    },
+    {
+      id: "hade_app",
+      title: hade.titleContent || "",
+      description: hade.shortDesc || hade.overviewContent || hade.longDesc || "",
+      longDescription: hade.longDesc || "",
+      icon: BookOpen,
+      category: t("free.categories.mobile_app"),
+      link: "/free/hade_app",
+      isPaid: hade.isPaid,
+      isComingSoon: hade.isComingSoon,
+      typeLabel: hade.typeLabel,
+      imageName: "HadeApp"
+    },
+    {
+      id: "reals",
+      title: reals.titleContent || "",
+      description: reals.shortDesc || reals.overviewContent || reals.longDesc || "",
+      longDescription: reals.longDesc || "",
+      icon: BookOpen,
+      category: t("free.categories.mobile_app"),
+      link: "/free/reals",
+      isPaid: reals.isPaid,
+      isComingSoon: reals.isComingSoon,
+      typeLabel: reals.typeLabel,
+      imageName: "RealsApp"
     },
     {
       id: "task-manager",
