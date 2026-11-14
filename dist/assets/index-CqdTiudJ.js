@@ -1,4 +1,4 @@
-import{u as p,a as x,n as f,j as r,C as u,h,G as b,I as g,o as w,S as y}from"./index-PSSxXNOj.js";import{D as j,a as v,M as k,r as N,b as L,c as C}from"./DynamicButtons-BxA89O0q.js";import{P}from"./PricingSection-CMUapeE3.js";import{P as D}from"./PlatformBadges-CAYqvwPA.js";const R=`# 💰 Pricing Plans\r
+import{u as p,a as x,n as f,j as r,C as u,h,G as b,I as g,o as w,S as y}from"./index-DHBqze08.js";import{D as j,a as v,M as k,r as N,b as L,c as C}from"./DynamicButtons-BczVdXhy.js";import{P}from"./PricingSection-Dow0xiBW.js";import{P as D}from"./PlatformBadges-BqX8pij5.js";const R=`# 💰 Pricing Plans\r
 \r
 [English](#english-pricing) | [العربية](#arabic-pricing)\r
 \r

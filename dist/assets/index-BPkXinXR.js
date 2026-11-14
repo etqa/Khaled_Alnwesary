@@ -1,4 +1,4 @@
-import{u as p,a as u,g as x,j as r,C as b,h,G as g,I as f,i as w,S as j}from"./index-PSSxXNOj.js";import{D as y,a as v,M as N,r as k,b as P,c as C}from"./DynamicButtons-BxA89O0q.js";import{P as B}from"./PricingSection-CMUapeE3.js";import{P as F}from"./PlatformBadges-CAYqvwPA.js";const L=`# 💰 Pricing Plans\r
+import{u as p,a as u,g as x,j as r,C as b,h,G as g,I as f,i as w,S as j}from"./index-DHBqze08.js";import{D as y,a as v,M as N,r as k,b as P,c as C}from"./DynamicButtons-BczVdXhy.js";import{P as B}from"./PricingSection-Dow0xiBW.js";import{P as F}from"./PlatformBadges-BqX8pij5.js";const L=`# 💰 Pricing Plans\r
 \r
 [English](#english-pricing) | [العربية](#arabic-pricing)\r
 \r
@@ -36,7 +36,7 @@ import{u as p,a as u,g as x,j as r,C as b,h,G as g,I as f,i as w,S as j}from"./i
 ------------\r
 \r
 #### مدفوع\r
-**السعر:** 400 د.ل\r
+**السعر:** 300 د.ل\r
 **الوصف:** نسخة مدفوعة\r
 \r
 ##### الأزرار\r
@@ -85,7 +85,7 @@ import{u as p,a as u,g as x,j as r,C as b,h,G as g,I as f,i as w,S as j}from"./i
 ----------\r
 \r
 #### Paid\r
-**Price:** 400 LYD\r
+**Price:** 300 LYD\r
 **Description:** Paid version\r
 \r
 ##### Buttons\r
