@@ -3,11 +3,12 @@
 **النوع:** مجاني
 **Version:** 1.0.0
 
-**المنصة:** [أندرويد]
+**المنصة:** [ويندوز] [أندرويد]
 
 [English](#english) | [العربية](#arabic)
 
 [dl_and]: https://play.google.com/store/apps/details?id=com.hade_app
+[dl_win]: https://apps.microsoft.com/detail/9PHV7J7J19Q4?hl=ar-ly&gl=LY
 [contact]: whatsapp:218928198656?message=السلام عليكم، أريد التواصل معكم بخصوص تطبيق هَدْي
 
 ---
@@ -22,7 +23,8 @@
 رفيقك لتنظيم اليوم بين الصلوات والعبادات والعمل مع تنبيهات دقيقة ووضع صامت للصلاة.
 
 ### الأزرار
-- [تحميل للاندرويد][dl_and]
+- **[تحميل للويندوز][dl_win]**
+- **[تحميل للاندرويد][dl_and]**
 - [تواصل معنا][contact]
 
 ### نظرة عامة
@@ -82,7 +84,8 @@ Hade - Muslim's Daily Plan
 Your companion for organizing the day between prayers, worship and work with accurate notifications and silent mode for prayer.
 
 ### Buttons
-- [Download Android][dl_and]
+- **[Download Windows][dl_win]**
+- **[Download Android][dl_and]**
 - [Contact Us][contact]
 
 ### Overview

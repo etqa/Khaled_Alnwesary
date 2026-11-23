@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useReadme } from "@/hooks/useReadme";
-import khToolsMd from "@/pages/free/kh-tools/content.md?raw";
+import khToolsMd from "@/pages/free/k-hub/content.md?raw";
 import quranAppMd from "@/pages/free/quran-app/content.md?raw";
 import noorAppMd from "@/pages/free/noor_app/content.md?raw";
 import hadeAppMd from "@/pages/free/hade_app/content.md?raw";
@@ -26,7 +26,7 @@ const Free = () => {
   const isRtl = i18n.dir() === "rtl";
   const [searchQuery, setSearchQuery] = useState("");
 
-  const kh = useReadme({ localContent: khToolsMd, id: "kh-tools" });
+  const kh = useReadme({ localContent: khToolsMd, id: "k-hub" });
   const quran = useReadme({ localContent: quranAppMd, id: "quran-app" });
   const noor = useReadme({ localContent: noorAppMd, id: "noor_app" });
   const hade = useReadme({ localContent: hadeAppMd, id: "hade_app" });
@@ -35,13 +35,13 @@ const Free = () => {
 
   const freeItems = [
     {
-      id: "kh-tools",
+      id: "k-hub",
       title: kh.titleContent || "",
       description: kh.shortDesc || kh.overviewContent || kh.longDesc || "",
       longDescription: kh.longDesc || "",
       icon: Puzzle,
       category: t("free.categories.blender"),
-      link: "/free/kh-tools",
+      link: "/free/k-hub",
       isPaid: kh.isPaid,
       isComingSoon: kh.isComingSoon,
       typeLabel: kh.typeLabel,
